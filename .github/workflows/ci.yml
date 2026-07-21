@@ -1,0 +1,66 @@
+name: SP5 Tools CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate HTML & SEO
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check required files exist
+        run: |
+          echo "=== Checking critical files ==="
+          test -f index.html || (echo "❌ index.html missing" && exit 1)
+          test -f css/style.css || (echo "❌ style.css missing" && exit 1)
+          test -f js/main.js || (echo "❌ main.js missing" && exit 1)
+          test -f robots.txt || (echo "❌ robots.txt missing" && exit 1)
+          test -f sitemap.xml || (echo "❌ sitemap.xml missing" && exit 1)
+          echo "✅ All critical files present"
+
+      - name: Count tools and pages
+        run: |
+          TOOL_COUNT=$(ls tools/*.html 2>/dev/null | wc -l)
+          BLOG_COUNT=$(ls blog/*.html 2>/dev/null | wc -l)
+          echo "Tools: $TOOL_COUNT"
+          echo "Blog posts: $BLOG_COUNT"
+          if [ "$TOOL_COUNT" -lt 50 ]; then
+            echo "⚠️ Warning: Expected 50+ tools, found $TOOL_COUNT"
+          else
+            echo "✅ $TOOL_COUNT tools found"
+          fi
+
+      - name: Validate HTML structure
+        run: |
+          echo "=== Checking HTML structure ==="
+          for f in index.html $(ls tools/*.html 2>/dev/null | head -10); do
+            if [ -f "$f" ]; then
+              if ! grep -q "</html>" "$f"; then
+                echo "❌ $f: missing </html>"
+                exit 1
+              fi
+              if ! grep -q "<!DOCTYPE html>" "$f"; then
+                echo "❌ $f: missing DOCTYPE"
+                exit 1
+              fi
+            fi
+          done
+          echo "✅ HTML structure valid"
+
+      - name: Check Arabic content
+        run: |
+          if ! grep -q 'dir="rtl"' index.html; then
+            echo "❌ Missing dir='rtl' in index.html"
+            exit 1
+          fi
+          if ! grep -q 'lang="ar"' index.html; then
+            echo "❌ Missing lang='ar' in index.html"
+            exit 1
+          fi
+          echo "✅ Arabic RTL content verified"
