@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مولد robots.txt | Robots.txt Generator | SP5 Tools</title>
+<meta name="description" content="مولد robots.txt المجاني: أنشئ ملف robots.txt لموقعك بسهولة. اختر User-agent، أضف Allow/Disallow/Crawl-delay، وولّد الكود جاهزاً للنسخ.">
+<meta name="keywords" content="robots.txt generator, مولد robots.txt, SEO, محركات البحث, Googlebot, Bingbot, crawl delay, sitemap">
+<link rel="canonical" href="https://sp5.fun/tools/robots-txt-generator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260621a">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"مولد robots.txt","description":"مولد robots.txt المجاني لإنشاء ملف robots.txt لموقعك بسهولة.","url":"https://sp5.fun/tools/robots-txt-generator.html","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"inLanguage":"ar","isPartOf":{"@type":"WebSite","name":"SP5 Tools","url":"https://sp5.fun"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "ما هو ملف robots.txt؟", "acceptedAnswer": {"@type": "Answer", "text": "ملف robots.txt هو ملف نصي يخبر محركات البحث بأي أجزاء من موقعك يمكنها زيارتها وأيها ممنوع. يوضع في جذر الموقع."}},{"@type": "Question", "name": "أين أضع ملف robots.txt؟", "acceptedAnswer": {"@type": "Answer", "text": "يُرفع ملف robots.txt إلى جذر الموقع، مثلاً: https://example.com/robots.txt"}},{"@type": "Question", "name": "ما الفرق بين Allow و Disallow؟", "acceptedAnswer": {"@type": "Answer", "text": "Disallow يمنع محركات البحث من زيارة مسار معين، بينما Allow يسمح بزيارة مسار معين داخل مسار ممنوع."}}]}</script>
+<meta property="og:title" content="مولد robots.txt | SP5 Tools">
+<meta property="og:description" content="مولد robots.txt المجاني: أنشئ ملف robots.txt لموقعك بسهولة.">
+<meta property="og:url" content="https://sp5.fun/tools/robots-txt-generator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="مولد robots.txt | SP5 Tools">
+<meta name="twitter:description" content="مولد robots.txt المجاني: أنشئ ملف robots.txt لموقعك بسهولة.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:700px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600}
+.btn-calc:hover{background:#1d4ed8}
+.btn-outline{background:transparent;color:#2563eb;border:2px solid #2563eb;padding:10px 24px;border-radius:8px;font-size:.9rem;font-family:inherit;cursor:pointer;font-weight:600}
+.btn-outline:hover{background:#eff6ff}
+.btn-success{background:#059669;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-size:.9rem;font-family:inherit;cursor:pointer;font-weight:600}
+.btn-success:hover{background:#047857}
+.agent-row{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:16px;margin-bottom:12px;position:relative}
+.agent-row .remove-btn{position:absolute;top:8px;left:8px;background:#fee2e2;color:#dc2626;border:none;border-radius:50%;width:28px;height:28px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center}
+.agent-row .remove-btn:hover{background:#fecaca}
+.agent-row h4{font-size:.95rem;color:#1e293b;margin-bottom:10px}
+.rule-row{display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.rule-row select{flex:1;min-width:80px}
+.rule-row input{flex:2;min-width:120px}
+.rule-row .remove-rule{background:#fee2e2;color:#dc2626;border:none;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:.8rem}
+.rule-row .add-rule{background:#d1fae5;color:#059669;border:none;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:.8rem}
+.quick-presets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.quick-presets button{padding:8px 16px;border:2px solid #e5e7eb;border-radius:8px;background:#fff;font-family:inherit;font-size:.85rem;cursor:pointer;transition:all .2s}
+.quick-presets button:hover{border-color:#2563eb;color:#2563eb}
+.code-preview{background:#1e293b;color:#e2e8f0;border-radius:10px;padding:20px;font-family:'Courier New',monospace;font-size:.85rem;direction:ltr;text-align:left;white-space:pre-wrap;word-break:break-all;margin:16px 0;max-height:400px;overflow:auto}
+.code-preview .comment{color:#94a3b8}
+.code-preview .directive{color:#60a5fa}
+.code-preview .value{color:#34d399}
+.code-preview .url{color:#f472b6}
+.copy-bar{display:flex;gap:10px;align-items:center;margin:12px 0;flex-wrap:wrap}
+.copy-bar .file-info{font-size:.85rem;color:#64748b}
+</style>
+</head>
+<body>
+<div class="news-ticker"><div class="ticker-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>الأكثر استخداماً</div><div class="ticker-track"><div class="ticker-scroll"><a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a><a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a><a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a><a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a><a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a><a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a><a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a><a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a><a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a><a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a><a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a><a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a></div></div></div>
+<header class="header"><div class="header-inner"><a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a><button class="menu-toggle" aria-label="القائمة">☰</button><nav class="nav"><a href="/">الرئيسية</a><a href="/#financial">حاسبات مالية</a><a href="/#converter">محولات</a><a href="/#security">أدوات أمنية</a><a href="/#text">أدوات نصية</a><a href="/pages/privacy.html">سياسة الخصوصية</a></nav></div></header>
+<nav class="breadcrumb"><a href="/">الرئيسية</a><span class="separator">/</span><a href="/#security">أدوات أمنية</a><span class="separator">/</span><span class="current">مولد robots.txt</span></nav>
+<main class="tool-page">
+  <h1>🤖 مولد robots.txt</h1>
+  <p class="tool-desc">أنشئ ملف robots.txt لموقعك بسهولة. اختر User-agent، أضف قواعد Allow/Disallow/Crawl-delay، وولّد الكود جاهزاً للنسخ والرفع إلى جذر موقعك.</p>
+  <div class="share-bar" style="max-width:700px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:#64748b">مشاركة:</span><a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a><a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a><a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a></div>
+<script>function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}</script>
+  <div class="ad-slot"></div>
+  <div class="calc-box">
+    <h3 style="color:#1e40af;margin-bottom:12px">⚡ إعدادات سريعة</h3>
+    <div class="quick-presets">
+      <button onclick="presetAllowAll()">✅ السماح للجميع</button>
+      <button onclick="presetBlockAll()">🚫 منع الجميع</button>
+      <button onclick="presetBlockAdmin()">🔒 منع /admin</button>
+      <button onclick="presetBlockWpAdmin()">🔒 منع /wp-admin</button>
+    </div>
+    <div class="form-group"><label for="sitemapUrl">🗺️ رابط Sitemap (اختياري)</label><input type="url" id="sitemapUrl" placeholder="https://example.com/sitemap.xml"></div>
+    <div id="agentsContainer">
+      <div class="agent-row" data-agent="0">
+        <button class="remove-btn" onclick="removeAgent(this)" title="إزالة">✕</button>
+        <h4>🧑‍💻 وكيل 1</h4>
+        <div class="form-group"><label>User-agent</label><select onchange="updateAgentName(this)"><option value="*">All (جميع محركات البحث)</option><option value="Googlebot">Googlebot</option><option value="Googlebot-Image">Googlebot-Image</option><option value="Googlebot-News">Googlebot-News</option><option value="Googlebot-Video">Googlebot-Video</option><option value="Bingbot">Bingbot</option><option value="Yandex">Yandex</option><option value="YandexImages">YandexImages</option><option value="Slurp">Slurp (Yahoo)</option><option value="DuckDuckBot">DuckDuckBot</option><option value="Baiduspider">Baiduspider</option><option value="Sogou">Sogou</option><option value="Exabot">Exabot</option><option value="facebookexternalhit">facebookexternalhit</option><option value="Twitterbot">Twitterbot</option><option value="Applebot">Applebot</option></select></div>
+        <div id="rules-0">
+          <div class="rule-row" data-rule="0">
+            <select><option value="Disallow">Disallow</option><option value="Allow">Allow</option></select>
+            <input type="text" value="/" placeholder="/path">
+            <button class="remove-rule" onclick="removeRule(this)">✕</button>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+          <button class="add-rule" onclick="addRule(0)" style="background:#d1fae5;color:#059669;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-size:.85rem;font-family:inherit">+ إضافة قاعدة</button>
+          <div class="form-group" style="margin-bottom:0;flex:1;min-width:120px"><label style="font-size:.8rem">Crawl-delay (ثوانٍ)</label><input type="number" class="crawl-delay" min="0" max="60" placeholder="10" style="width:100px"></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+      <button type="button" class="btn-outline" onclick="addAgent()">+ إضافة وكيل</button>
+      <button type="button" class="btn-calc" onclick="generateRobots()">⚡ توليد robots.txt</button>
+    </div>
+  </div>
+  <div id="result" style="max-width:700px;margin:20px auto"></div>
+  <div class="ad-slot"></div>
+  <div class="tool-content">
+    <h2>ما هو ملف robots.txt؟</h2>
+    <p>ملف robots.txt هو ملف نصي بسيط يُرفع إلى جذر موقعك الإلكتروني (مثل https://example.com/robots.txt) لتوجيه محركات البحث حول الأجزاء التي يمكنها زيارتها وتصفحها والأجزاء الممنوعة. يستخدم هذا الملف بروتوكول استبعاد الروبوتات (Robots Exclusion Protocol) وهو معيار معتمد من جميع محركات البحث الرئيسية مثل جوجل وبينغ وياندكس.</p>
+    <h3>كيف يعمل ملف robots.txt؟</h3>
+    <p>عندما يزور روبوت محرك البحث موقعك، فإن أول ما يفعله هو البحث عن ملف robots.txt. إذا وجده، يقرأ التعليمات ويطبقها. يتكون الملف من عدة أقسام، كل قسم يبدأ بتحديد User-agent (الروبوت المستهدف)، ثم قواعد Allow و Disallow التي تحدد المسارات المسموحة والممنوعة. يمكنك أيضاً إضافة توجيه Crawl-delay لتحديد فترة الانتظار بين الزيارات، ورابط Sitemap لتوجيه المحرك إلى خريطة موقعك.</p>
+    <h3>أهمية ملف robots.txt لتحسين SEO</h3>
+    <p>استخدام ملف robots.txt بشكل صحيح يساعد في تحسين أداء موقعك في محركات البحث بعدة طرق: يمنع فهرسة الصفحات غير المهمة مثل صفحات الإدارة وتسجيل الدخول، يوجه محركات البحث إلى المحتوى المهم، يقلل من استهلاك حصة الزحف (Crawl Budget) على الصفحات غير الضرورية، ويساعد في تسريع عملية فهرسة المحتوى الجديد. باستخدام مولد robots.txt من SP5 Tools، يمكنك إنشاء ملف متوافق مع جميع محركات البحث في ثوانٍ.</p>
+    <div class="ad-slot"></div>
+    <h2>نصائح لكتابة robots.txt فعال</h2>
+    <ul>
+      <li><strong>لا تمنع ملفات CSS و JavaScript:</strong> منع هذه الملفات قد يمنع جوجل من فهم تخطيط صفحتك.</li>
+      <li><strong>استخدم Allow بحذر:</strong> يمكن استخدام Allow للسماح بمسار داخل مسار ممنوع.</li>
+      <li><strong>أضف Sitemap:</strong> توجيه محركات البحث إلى خريطة موقعك يساعد في فهرسة أسرع.</li>
+      <li><strong>اختبر ملفك:</strong> استخدم أداة اختبار robots.txt في Google Search Console.</li>
+      <li><strong>لا تستخدمه للصفحات الحساسة:</strong> robots.txt يمنع الزحف فقط وليس الوصول - استخدم كلمة مرور للصفحات الحساسة.</li>
+    </ul>
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item"><strong>ما هو ملف robots.txt؟</strong><p>ملف نصي يخبر محركات البحث بأي أجزاء من موقعك يمكنها زيارتها وأيها ممنوع. يوضع في جذر الموقع.</p></div>
+    <div class="faq-item"><strong>أين أضع ملف robots.txt؟</strong><p>يُرفع إلى جذر الموقع: https://example.com/robots.txt</p></div>
+    <div class="faq-item"><strong>ما الفرق بين Allow و Disallow؟</strong><p>Disallow يمنع الزيارة، Allow يسمح بزيارة مسار داخل مسار ممنوع.</p></div>
+    <div class="faq-item"><strong>هل يضمن robots.txt عدم فهرسة الصفحات؟</strong><p>لا، بعض محركات البحث قد تتجاهل الملف. استخدم meta robots noindex للصفحات الحساسة.</p></div>
+  </div>
+</main>
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/sitemap-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🗺️</span> مولد Sitemap</a>
+    <a href="/tools/keyword-density-checker.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">📊</span> حاسبة كثافة الكلمات</a>
+    <a href="/tools/broken-link-checker.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🔗</span> فاحص الروابط المكسورة</a>
+    <a href="/tools/password-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🔐</span> مولد كلمات المرور</a>
+    <a href="/tools/hashtag-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">#️⃣</span> مولد هاشتاقات</a>
+  </div>
+</div>
+<footer class="footer"><div class="footer-inner"><div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div><div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div><div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div><div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div></div><div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div></footer>
+<script src="/js/main.js?v=20260621a"></script>
+<script>
+var agentCounter = 1;
+
+function addAgent() {
+  var container = document.getElementById('agentsContainer');
+  var idx = agentCounter;
+  var html = '<div class="agent-row" data-agent="' + idx + '">';
+  html += '<button class="remove-btn" onclick="removeAgent(this)" title="إزالة">✕</button>';
+  html += '<h4>🧑‍💻 وكيل ' + (idx + 1) + '</h4>';
+  html += '<div class="form-group"><label>User-agent</label><select onchange="updateAgentName(this)"><option value="*">All (جميع محركات البحث)</option><option value="Googlebot">Googlebot</option><option value="Googlebot-Image">Googlebot-Image</option><option value="Googlebot-News">Googlebot-News</option><option value="Googlebot-Video">Googlebot-Video</option><option value="Bingbot">Bingbot</option><option value="Yandex">Yandex</option><option value="YandexImages">YandexImages</option><option value="Slurp">Slurp (Yahoo)</option><option value="DuckDuckBot">DuckDuckBot</option><option value="Baiduspider">Baiduspider</option><option value="Sogou">Sogou</option><option value="Exabot">Exabot</option><option value="facebookexternalhit">facebookexternalhit</option><option value="Twitterbot">Twitterbot</option><option value="Applebot">Applebot</option></select></div>';
+  html += '<div id="rules-' + idx + '">';
+  html += '<div class="rule-row" data-rule="0"><select><option value="Disallow">Disallow</option><option value="Allow">Allow</option></select><input type="text" value="/" placeholder="/path"><button class="remove-rule" onclick="removeRule(this)">✕</button></div>';
+  html += '</div>';
+  html += '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">';
+  html += '<button class="add-rule" onclick="addRule(' + idx + ')" style="background:#d1fae5;color:#059669;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-size:.85rem;font-family:inherit">+ إضافة قاعدة</button>';
+  html += '<div class="form-group" style="margin-bottom:0;flex:1;min-width:120px"><label style="font-size:.8rem">Crawl-delay (ثوانٍ)</label><input type="number" class="crawl-delay" min="0" max="60" placeholder="10" style="width:100px"></div>';
+  html += '</div></div>';
+  container.insertAdjacentHTML('beforeend', html);
+  agentCounter++;
+}
+
+function removeAgent(btn) {
+  var row = btn.closest('.agent-row');
+  if (document.querySelectorAll('.agent-row').length <= 1) return;
+  row.remove();
+}
+
+function addRule(agentIdx) {
+  var container = document.getElementById('rules-' + agentIdx);
+  var ruleCount = container.querySelectorAll('.rule-row').length;
+  var html = '<div class="rule-row" data-rule="' + ruleCount + '">';
+  html += '<select><option value="Disallow">Disallow</option><option value="Allow">Allow</option></select>';
+  html += '<input type="text" value="" placeholder="/path">';
+  html += '<button class="remove-rule" onclick="removeRule(this)">✕</button>';
+  html += '</div>';
+  container.insertAdjacentHTML('beforeend', html);
+}
+
+function removeRule(btn) {
+  var row = btn.closest('.rule-row');
+  var container = row.closest('[id^="rules-"]');
+  if (container.querySelectorAll('.rule-row').length <= 1) return;
+  row.remove();
+}
+
+function updateAgentName(sel) {
+  var row = sel.closest('.agent-row');
+  var h4 = row.querySelector('h4');
+  var names = { '*': 'جميع محركات البحث', 'Googlebot': 'Googlebot', 'Googlebot-Image': 'Googlebot-Image', 'Googlebot-News': 'Googlebot-News', 'Googlebot-Video': 'Googlebot-Video', 'Bingbot': 'Bingbot', 'Yandex': 'Yandex', 'YandexImages': 'YandexImages', 'Slurp': 'Slurp (Yahoo)', 'DuckDuckBot': 'DuckDuckBot', 'Baiduspider': 'Baiduspider', 'Sogou': 'Sogou', 'Exabot': 'Exabot', 'facebookexternalhit': 'facebookexternalhit', 'Twitterbot': 'Twitterbot', 'Applebot': 'Applebot' };
+  h4.textContent = '🧑‍💻 ' + (names[sel.value] || sel.value);
+}
+
+function presetAllowAll() {
+  clearAgents();
+  document.getElementById('sitemapUrl').value = '';
+  generateRobots();
+}
+
+function presetBlockAll() {
+  clearAgents();
+  document.getElementById('sitemapUrl').value = '';
+  generateRobots();
+}
+
+function presetBlockAdmin() {
+  clearAgents();
+  document.getElementById('sitemapUrl').value = '';
+  var firstAgent = document.querySelector('.agent-row');
+  firstAgent.querySelector('select').value = '*';
+  updateAgentName(firstAgent.querySelector('select'));
+  var rulesContainer = document.getElementById('rules-0');
+  rulesContainer.innerHTML = '<div class="rule-row" data-rule="0"><select><option value="Disallow">Disallow</option><option value="Allow">Allow</option></select><input type="text" value="/admin" placeholder="/path"><button class="remove-rule" onclick="removeRule(this)">✕</button></div>';
+  generateRobots();
+}
+
+function presetBlockWpAdmin() {
+  clearAgents();
+  document.getElementById('sitemapUrl').value = '';
+  var firstAgent = document.querySelector('.agent-row');
+  firstAgent.querySelector('select').value = '*';
+  updateAgentName(firstAgent.querySelector('select'));
+  var rulesContainer = document.getElementById('rules-0');
+  rulesContainer.innerHTML = '<div class="rule-row" data-rule="0"><select><option value="Disallow">Disallow</option><option value="Allow">Allow</option></select><input type="text" value="/wp-admin" placeholder="/path"><button class="remove-rule" onclick="removeRule(this)">✕</button></div>';
+  generateRobots();
+}
+
+function clearAgents() {
+  var container = document.getElementById('agentsContainer');
+  container.innerHTML = '<div class="agent-row" data-agent="0"><button class="remove-btn" onclick="removeAgent(this)" title="إزالة">✕</button><h4>🧑‍💻 وكيل 1</h4><div class="form-group"><label>User-agent</label><select onchange="updateAgentName(this)"><option value="*">All (جميع محركات البحث)</option><option value="Googlebot">Googlebot</option><option value="Googlebot-Image">Googlebot-Image</option><option value="Googlebot-News">Googlebot-News</option><option value="Googlebot-Video">Googlebot-Video</option><option value="Bingbot">Bingbot</option><option value="Yandex">Yandex</option><option value="YandexImages">YandexImages</option><option value="Slurp">Slurp (Yahoo)</option><option value="DuckDuckBot">DuckDuckBot</option><option value="Baiduspider">Baiduspider</option><option value="Sogou">Sogou</option><option value="Exabot">Exabot</option><option value="facebookexternalhit">facebookexternalhit</option><option value="Twitterbot">Twitterbot</option><option value="Applebot">Applebot</option></select></div><div id="rules-0"><div class="rule-row" data-rule="0"><select><option value="Disallow">Disallow</option><option value="Allow">Allow</option></select><input type="text" value="/" placeholder="/path"><button class="remove-rule" onclick="removeRule(this)">✕</button></div></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px"><button class="add-rule" onclick="addRule(0)" style="background:#d1fae5;color:#059669;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-size:.85rem;font-family:inherit">+ إضافة قاعدة</button><div class="form-group" style="margin-bottom:0;flex:1;min-width:120px"><label style="font-size:.8rem">Crawl-delay (ثوانٍ)</label><input type="number" class="crawl-delay" min="0" max="60" placeholder="10" style="width:100px"></div></div></div>';
+  agentCounter = 1;
+}
+
+function generateRobots() {
+  var sitemap = document.getElementById('sitemapUrl').value.trim();
+  var agents = document.querySelectorAll('.agent-row');
+  var lines = [];
+  lines.push('# robots.txt generated by SP5 Tools');
+  lines.push('# https://sp5.fun/tools/robots-txt-generator.html');
+  lines.push('# Last updated: ' + new Date().toISOString().split('T')[0]);
+  lines.push('');
+
+  agents.forEach(function(agent) {
+    var ua = agent.querySelector('select').value;
+    lines.push('User-agent: ' + ua);
+    var rules = agent.querySelectorAll('[id^="rules-"] .rule-row');
+    rules.forEach(function(rule) {
+      var type = rule.querySelector('select').value;
+      var path = rule.querySelector('input').value.trim();
+      if (path) {
+        lines.push(type + ': ' + path);
+      }
+    });
+    var delay = agent.querySelector('.crawl-delay').value.trim();
+    if (delay && parseInt(delay) > 0) {
+      lines.push('Crawl-delay: ' + delay);
+    }
+    lines.push('');
+  });
+
+  if (sitemap) {
+    lines.push('Sitemap: ' + sitemap);
+    lines.push('');
+  }
+
+  var code = lines.join('\n');
+  var lineCount = lines.length;
+  var byteSize = new Blob([code]).size;
+
+  var html = '<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">📄 ملف robots.txt المُنشأ</h3>';
+  html += '<div class="copy-bar">';
+  html += '<button class="btn-calc" onclick="copyRobotsCode()" id="copyBtn" style="padding:8px 20px;font-size:.85rem">📋 نسخ الكود</button>';
+  html += '<button class="btn-success" onclick="downloadRobots()" style="padding:8px 20px;font-size:.85rem">⬇️ تحميل الملف</button>';
+  html += '<span class="file-info">' + lineCount.toLocaleString('en-US') + ' سطر | ' + byteSize.toLocaleString('en-US') + ' بايت</span>';
+  html += '</div>';
+  html += '<div class="code-preview" id="robotsCode">';
+  code.split('\n').forEach(function(line) {
+    if (line.startsWith('#')) {
+      html += '<span class="comment">' + escapeHtml(line) + '</span>\n';
+    } else if (line.startsWith('User-agent:') || line.startsWith('Crawl-delay:') || line.startsWith('Sitemap:')) {
+      var parts = line.split(': ');
+      html += '<span class="directive">' + escapeHtml(parts[0]) + ':</span> <span class="value">' + escapeHtml(parts.slice(1).join(': ')) + '</span>\n';
+    } else if (line.startsWith('Disallow:') || line.startsWith('Allow:')) {
+      var parts = line.split(': ');
+      html += '<span class="directive">' + escapeHtml(parts[0]) + ':</span> <span class="url">' + escapeHtml(parts.slice(1).join(': ')) + '</span>\n';
+    } else {
+      html += escapeHtml(line) + '\n';
+    }
+  });
+  html += '</div>';
+
+  // Store code for copy/download
+  document.getElementById('result').innerHTML = html;
+  window._robotsCode = code;
+}
+
+function escapeHtml(str) {
+  var div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function copyRobotsCode() {
+  var code = window._robotsCode || '';
+  navigator.clipboard.writeText(code).then(function() {
+    var btn = document.getElementById('copyBtn');
+    btn.textContent = '✓ تم النسخ';
+    setTimeout(function() { btn.textContent = '📋 نسخ الكود'; }, 2000);
+  });
+}
+
+function downloadRobots() {
+  var code = window._robotsCode || '';
+  var blob = new Blob([code], {type: 'text/plain'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'robots.txt';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+</script>
+</body></html>

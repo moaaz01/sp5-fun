@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محول السرعة - تحويل بين كم/س وميل/س وعقدة وماخ | SP5 Tools</title>
+<meta name="description" content="محول السرعة المجاني: حوّل بين متر/ثانية وكم/ساعة وميل/ساعة وعقدة وقدم/ثانية وماخ. سهل الاستخدام ودقيق.">
+<meta name="keywords" content="محول السرعة, تحويل سرعة, كم ساعة الى ميل ساعة, محول سرعة عربي, حساب السرعة, عقدة كم ساعة, ماخ, سرعة الصوت">
+<link rel="canonical" href="https://sp5.fun/tools/speed-converter.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260609e">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "محول السرعة",
+  "description": "محول السرعة المجاني لتحويل بين وحدات السرعة المختلفة: متر/ثانية، كم/ساعة، ميل/ساعة، عقدة، قدم/ثانية، ماخ.",
+  "url": "https://sp5.fun/tools/speed-converter.html",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "SAR"},
+  "inLanguage": "ar",
+  "isPartOf": {"@type": "WebSite", "name": "SP5 Tools", "url": "https://sp5.fun"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "كيف أحول من كم/ساعة إلى ميل/ساعة؟", "acceptedAnswer": {"@type": "Answer", "text": "للتحويل من كم/ساعة إلى ميل/ساعة، اضرب السرعة في 0.621371. مثلاً: 100 كم/ساعة = 62.14 ميل/ساعة. يمكنك استخدام محول السرعة أعلاه للحصول على النتيجة فوراً."}},
+    {"@type": "Question", "name": "ما هي العقدة البحرية؟", "acceptedAnswer": {"@type": "Answer", "text": "العقدة البحرية (knot) هي وحدة سرعة تساوي ميل بحري واحد في الساعة، أي حوالي 1.852 كم/ساعة. تُستخدم في الملاحة البحرية والجوية عالمياً."}},
+    {"@type": "Question", "name": "ما سرعة ماخ 1؟", "acceptedAnswer": {"@type": "Answer", "text": "ماخ 1 تساوي سرعة الصوت في الهواء عند مستوى البحر ودرجة حرارة 20°م، وهي حوالي 343 متر/ثانية أو 1235 كم/ساعة. تزداد سرعة الصوت مع ارتفاع الحرارة."}},
+    {"@type": "Question", "name": "هل محول السرعة مجاني؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، محول السرعة مجاني تماماً ولا يحتاج تسجيل. جميع العمليات تتم في متصفحك مباشرة لحماية خصوصيتك."}}
+  ]
+}
+</script>
+<meta property="og:title" content="محول السرعة | SP5 Tools">
+<meta property="og:description" content="حوّل بين كم/ساعة وميل/ساعة وعقدة وماخ. محول سرعة مجاني وسهل الاستخدام.">
+<meta property="og:url" content="https://sp5.fun/tools/speed-converter.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="محول السرعة | SP5 Tools">
+<meta name="twitter:description" content="حوّل بين كم/ساعة وميل/ساعة وعقدة وماخ بسهولة.">
+<style>
+.converter-page{max-width:800px;margin:0 auto;padding:20px}
+.converter-page h1{font-size:1.5rem;color:#2563eb;margin-bottom:20px;text-align:center}
+.calc-box{background:#fff;border-radius:14px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.08);margin-bottom:24px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-weight:600;margin-bottom:6px;color:#1e293b;font-size:.92rem}
+.form-group input,.form-group select{width:100%;padding:12px 14px;border:1px solid #d1d5db;border-radius:8px;font-size:1rem;font-family:'Tajawal',sans-serif;box-sizing:border-box;transition:border-color .2s}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.swap-btn{display:flex;align-items:center;justify-content:center;margin:12px auto;padding:8px 20px;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:8px;cursor:pointer;font-family:'Tajawal',sans-serif;font-size:.9rem;color:#475569;transition:all .2s}
+.swap-btn:hover{background:#eef2ff;border-color:#2563eb;color:#2563eb}
+.result-card{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-radius:12px;padding:20px;text-align:center;margin-bottom:16px}
+.result-card .result-value{font-size:2rem;font-weight:800}
+.result-card .result-unit{font-size:.9rem;opacity:.9;margin-top:4px}
+.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.result-item{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:12px;text-align:center}
+.result-item .ri-value{font-size:1.1rem;font-weight:700;color:#1e40af}
+.result-item .ri-label{font-size:.8rem;color:#64748b;margin-top:2px}
+.ref-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.88rem}
+.ref-table th{background:#2563eb;color:#fff;padding:10px 12px;text-align:right}
+.ref-table td{padding:10px 12px;border-bottom:1px solid #e5e7eb;color:#475569}
+.ref-table tr:nth-child(even){background:#f8fafc}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 32px;border-radius:8px;font-size:1rem;font-family:'Tajawal',sans-serif;cursor:pointer;font-weight:600;width:100%;transition:background .2s}
+.btn-calc:hover{background:#1d4ed8}
+.tool-content h2{font-size:1.2rem;color:#1e40af;margin:30px 0 12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1rem;color:#1e293b;margin:20px 0 8px}
+.tool-content p{color:#475569;line-height:1.9;margin:10px 0}
+.tool-content ul{color:#475569;line-height:1.9;padding-right:20px;margin:10px 0}
+.faq-item{background:#f8fafc;border-right:4px solid #2563eb;padding:14px 18px;margin:12px 0;border-radius:0 8px 8px 0}
+.faq-item strong{color:#1e40af;display:block;margin-bottom:4px}
+.faq-item p{margin:4px 0 0;color:#475569;font-size:.92rem}
+.share-bar{display:flex;gap:10px;margin:24px 0;flex-wrap:wrap}
+.share-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;text-decoration:none;font-size:.85rem;font-weight:600;color:#fff;transition:opacity .2s}
+.share-bar a:hover{opacity:.85}
+.share-fb{background:#1877f2}.share-tw{background:#1da1f2}.share-wa{background:#25d366}
+.related-tools{margin:30px 0}
+.related-tools h3{font-size:1.1rem;color:#1e40af;margin-bottom:12px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.related-grid a{display:block;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px 12px;text-decoration:none;color:#1e40af;font-size:.85rem;font-weight:500;transition:all .2s}
+.related-grid a:hover{background:#2563eb;color:#fff;border-color:#2563eb}
+@media(max-width:600px){
+  .converter-page{padding:14px}
+  .converter-page h1{font-size:1.25rem}
+  .result-grid{grid-template-columns:1fr}
+  .result-card .result-value{font-size:1.5rem}
+  .ref-table{font-size:.78rem}
+  .ref-table th,.ref-table td{padding:8px 6px}
+}
+</style>
+</head>
+<body>
+<div class="news-ticker">
+  <div class="ticker-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    الأكثر استخداماً
+  </div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+      <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+      <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+      <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+      <a href="/tools/word-counter.html" class="ticker-item"><span class="ticker-icon">📝</span>عداد الكلمات</a>
+      <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+    <button class="menu-toggle" aria-label="القائمة">☰</button>
+    <nav class="nav">
+      <a href="/">الرئيسية</a>
+      <a href="/#financial">حاسبات مالية</a>
+      <a href="/#converter">محولات</a>
+      <a href="/#security">أدوات أمنية</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="/">الرئيسية</a>
+  <span class="separator">/</span>
+  <span class="current">محول السرعة</span>
+</nav>
+
+<main class="converter-page">
+  <h1>🏃 محول السرعة</h1>
+
+  <!-- Ad slot 1 -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2351071222567371" data-ad-slot="speed-top" data-ad-format="auto" data-full-width-responsive="true"></ins>
+
+  <div class="calc-box">
+    <div class="form-group">
+      <label for="fromValue">القيمة</label>
+      <input type="number" id="fromValue" value="100" step="any" oninput="convert()">
+    </div>
+    <div class="form-group">
+      <label for="fromUnit">من وحدة</label>
+      <select id="fromUnit" onchange="convert()">
+        <option value="ms">متر/ثانية (م/ث)</option>
+        <option value="kmh" selected>كم/ساعة (كم/س)</option>
+        <option value="mph">ميل/ساعة (ميل/س)</option>
+        <option value="knot">عقدة (knot)</option>
+        <option value="fts">قدم/ثانية (قدم/ث)</option>
+        <option value="mach">ماخ (Mach)</option>
+      </select>
+    </div>
+    <button class="swap-btn" onclick="swapUnits()">🔄 تبديل الوحدات</button>
+    <div class="form-group">
+      <label for="toUnit">إلى وحدة</label>
+      <select id="toUnit" onchange="convert()">
+        <option value="ms">متر/ثانية (م/ث)</option>
+        <option value="kmh">كم/ساعة (كم/س)</option>
+        <option value="mph" selected>ميل/ساعة (ميل/س)</option>
+        <option value="knot">عقدة (knot)</option>
+        <option value="fts">قدم/ثانية (قدم/ث)</option>
+        <option value="mach">ماخ (Mach)</option>
+      </select>
+    </div>
+    <div class="result-card" id="mainResult">
+      <div class="result-value" id="resultValue">62.14</div>
+      <div class="result-unit" id="resultUnit">ميل/ساعة</div>
+    </div>
+  </div>
+
+  <!-- Ad slot 2 -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2351071222567371" data-ad-slot="speed-mid" data-ad-format="auto" data-full-width-responsive="true"></ins>
+
+  <div id="allResults" style="display:none">
+    <h2 style="font-size:1.1rem;color:#1e40af;margin:20px 0 10px">جميع التحويلات</h2>
+    <div class="result-grid" id="resultGrid"></div>
+  </div>
+
+  <div class="calc-box" style="margin-top:20px">
+    <h3 style="margin:0 0 12px;color:#1e40af;font-size:1rem">📊 جدول مرجعي سريع</h3>
+    <table class="ref-table">
+      <thead>
+        <tr><th>الوحدة</th><th>متر/ثانية</th><th>كم/ساعة</th><th>ميل/ساعة</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1 متر/ثانية</td><td>1</td><td>3.6</td><td>2.237</td></tr>
+        <tr><td>1 كم/ساعة</td><td>0.278</td><td>1</td><td>0.621</td></tr>
+        <tr><td>1 ميل/ساعة</td><td>0.447</td><td>1.609</td><td>1</td></tr>
+        <tr><td>1 عقدة</td><td>0.514</td><td>1.852</td><td>1.151</td></tr>
+        <tr><td>1 ماخ</td><td>343</td><td>1235</td><td>767.3</td></tr>
+        <tr><td>1 قدم/ثانية</td><td>0.305</td><td>1.097</td><td>0.682</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tool-content">
+    <!-- Ad slot 3 -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2351071222567371" data-ad-slot="speed-content1" data-ad-format="auto" data-full-width-responsive="true"></ins>
+
+    <h2>ما هو محول السرعة؟</h2>
+    <p>محول السرعة هو أداة مجانية أونلاين تتيح لك التحويل السريع والدقيق بين مختلف وحدات قياس السرعة. سواء كنت تحتاج تحويل كم/ساعة إلى ميل/ساعة لفهم سرعة سيارة مستوردة، أو تحويل عقدة بحرية إلى كم/ساعة لحساب سرعة سفينة، فإن هذه الأداة توفر لك النتائج فوراً بدقة عالية.</p>
+    <p>يدعم المحول ست وحدات سرعة شائعة: المتر في الثانية (الوحدة الدولية)، الكيلومتر في الساعة، الميل في الساعة، العقدة البحرية، القدم في الثانية، وماخ (سرعة الصوت). كل ما عليك هو إدخال القيمة واختيار الوحدتين للحصول على النتيجة لحظياً.</p>
+
+    <h2>وحدات السرعة المختلفة واستخداماتها</h2>
+    <p>تُستخدم وحدات سرعة مختلفة حول العالم بحسب السياق والبلد. فهم الفروقات بينها يساعدك في قراءة لوحات السرعة، فهم تقارير الطقس، وحساب أوقات الرحلات بدقة.</p>
+    <ul>
+      <li><strong>متر/ثانية (م/ث):</strong> الوحدة الدولية للسرعة، تُستخدم في الفيزياء والعلوم والأبحاث العلمية</li>
+      <li><strong>كم/ساعة:</strong> الوحدة الأكثر شيوعاً في الدول العربية وأوروبا، تُستخدم في لوحات سرعة الطرق والمقاييس</li>
+      <li><strong>ميل/ساعة:</strong> تُستخدم في الولايات المتحدة وبريطانيا وبعض الدول للإشارة إلى سرعة المركبات</li>
+      <li><strong>العقدة:</strong> وحدة بحرية تساوي ميل بحري في الساعة، تُستخدم في الملاحة البحرية والجوية</li>
+      <li><strong>قدم/ثانية:</strong> تُستخدم في الهندسة والفيزياء في النظام الإمبراطوري</li>
+      <li><strong>ماخ:</strong> نسبة السرعة إلى سرعة الصوت، تُستخدم في الطيران العسكري والأبحاث الفضائية</li>
+    </ul>
+
+    <!-- Ad slot 4 -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2351071222567371" data-ad-slot="speed-content2" data-ad-format="auto" data-full-width-responsive="true"></ins>
+
+    <h2>كيف تحسب السرعة يدوياً؟</h2>
+    <p>السرعة تُحسب بقسمة المسافة على الزمن. مثلاً: إذا قطعت سيارة 120 كيلومتراً في ساعتين، سرعتها = 120 ÷ 2 = 60 كم/ساعة. لكن التحويل بين الوحدات يحتاج معاملات تحويل دقيقة، وهنا يأتي دور محول السرعة لتوفير النتائج بدون أخطاء حسابية.</p>
+    <p>من أهم معاملات التحويل: 1 كم/ساعة = 0.621 ميل/ساعة، و 1 عقدة = 1.852 كم/ساعة، و ماخ 1 ≈ 343 م/ث عند مستوى البحر ودرجة 20°م.</p>
+
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item">
+      <strong>كيف أحول من كم/ساعة إلى ميل/ساعة؟</strong>
+      <p>اضرب السرعة في 0.621371. مثلاً: 100 كم/ساعة = 62.14 ميل/ساعة. استخدم المحول أعلاه للحصول على النتيجة فوراً.</p>
+    </div>
+    <div class="faq-item">
+      <strong>ما هي العقدة البحرية؟</strong>
+      <p>العقدة البحرية تساوي ميل بحري واحد في الساعة (حوالي 1.852 كم/ساعة). تُستخدم عالمياً في الملاحة البحرية والجوية لقياس سرعة السفن والطائرات.</p>
+    </div>
+    <div class="faq-item">
+      <strong>ما سرعة ماخ 1؟</strong>
+      <p>ماخ 1 تساوي سرعة الصوت عند مستوى البحر ودرجة حرارة 20°م، أي حوالي 343 متر/ثانية أو 1235 كم/ساعة. سرعة الصوت تتغير حسب الارتفاع والحرارة.</p>
+    </div>
+    <div class="faq-item">
+      <strong>هل محول السرعة مجاني؟</strong>
+      <p>نعم، المحول مجاني تماماً ولا يحتاج تسجيل. جميع العمليات تتم في متصفحك مباشرة لحماية خصوصيتك.</p>
+    </div>
+
+    <!-- Ad slot 5 -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2351071222567371" data-ad-slot="speed-content3" data-ad-format="auto" data-full-width-responsive="true"></ins>
+
+    <div class="share-bar">
+      <a href="#" class="share-fb" onclick="shareOn('facebook')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a>
+      <a href="#" class="share-tw" onclick="shareOn('twitter')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>تويتر</a>
+      <a href="#" class="share-wa" onclick="shareOn('whatsapp')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.438-9.856 9.884-9.856 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.42-4.437 9.856-9.881 9.856m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+    </div>
+
+    <div class="related-tools">
+      <h3>أدوات ذات صلة</h3>
+      <div class="related-grid">
+        <a href="/tools/fuel-calculator.html">⛽ حاسبة استهلاك الوقود</a>
+        <a href="/tools/length-converter.html">📏 محول الطول</a>
+        <a href="/tools/time-calculator.html">⏱️ حاسبة الوقت</a>
+        <a href="/tools/temperature-converter.html">🌡️ محول الحرارة</a>
+        <a href="/tools/data-converter.html">💾 محول حجم البيانات</a>
+        <a href="/tools/area-converter.html">📐 محول المساحة</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ad slot 6 -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2351071222567371" data-ad-slot="speed-bottom" data-ad-format="auto" data-full-width-responsive="true"></ins>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة.</p></div>
+    <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة</a></div>
+    <div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div>
+    <div><h4>روابط قانونية</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة.</div>
+</footer>
+
+<script src="/js/main.js?v=20260609e"></script>
+<script>
+const units={
+  ms:{name:'متر/ثانية',factor:1},
+  kmh:{name:'كم/ساعة',factor:0.277778},
+  mph:{name:'ميل/ساعة',factor:0.44704},
+  knot:{name:'عقدة',factor:0.514444},
+  fts:{name:'قدم/ثانية',factor:0.3048},
+  mach:{name:'ماخ',factor:343}
+};
+
+function convert(){
+  const val=parseFloat(document.getElementById('fromValue').value)||0;
+  const from=document.getElementById('fromUnit').value;
+  const to=document.getElementById('toUnit').value;
+  const msVal=val*units[from].factor;
+  const result=msVal/units[to].factor;
+  document.getElementById('resultValue').textContent=result%1===0?result:result.toFixed(4);
+  document.getElementById('resultUnit').textContent=units[to].name;
+  // All results
+  const grid=document.getElementById('resultGrid');
+  grid.innerHTML='';
+  document.getElementById('allResults').style.display='block';
+  for(const key in units){
+    if(key===from)continue;
+    const converted=msVal/units[key].factor;
+    const div=document.createElement('div');
+    div.className='result-item';
+    div.innerHTML=`<div class="ri-value">${converted%1===0?converted:converted.toFixed(4)}</div><div class="ri-label">${units[key].name}</div>`;
+    grid.appendChild(div);
+  }
+}
+
+function swapUnits(){
+  const from=document.getElementById('fromUnit');
+  const to=document.getElementById('toUnit');
+  const temp=from.value;
+  from.value=to.value;
+  to.value=temp;
+  convert();
+}
+
+function shareOn(platform){
+  const url=encodeURIComponent(window.location.href);
+  const text=encodeURIComponent('محول السرعة المجاني - SP5 Tools');
+  if(platform==='facebook')window.open('https://www.facebook.com/sharer/sharer.php?u='+url,'_blank');
+  else if(platform==='twitter')window.open('https://twitter.com/intent/tweet?url='+url+'&text='+text,'_blank');
+  else if(platform==='whatsapp')window.open('https://wa.me/?text='+text+' '+url,'_blank');
+}
+
+convert();
+</script>
+</body>
+</html>

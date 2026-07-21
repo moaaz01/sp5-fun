@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محول المساحة - حوّل بين وحدات المساحة والأرض | SP5 Tools</title>
+<meta name="description" content="محول المساحة المجاني: حوّل بين متر مربع وكيلومتر مربع وهكتار ودونم وفدان وقدم مربع وأكر بسهولة وسرعة.">
+<meta name="keywords" content="محول المساحة, تحويل وحدات المساحة, دونم, فدان, هكتار, أكر, area converter">
+<link rel="canonical" href="https://sp5.fun/tools/area-converter.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260609e">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"محول المساحة","description":"أداة مجانية لتحويل وحدات المساحة.","url":"https://sp5.fun/tools/area-converter.html","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"inLanguage":"ar","isPartOf":{"@type":"WebSite","name":"SP5 Tools","url":"https://sp5.fun"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"كم متر مربع في الدونم؟","acceptedAnswer":{"@type":"Answer","text":"الدونم الواحد يساوي 1000 متر مربع."}},{"@type":"Question","name":"ما الفرق بين الفدان والأكر؟","acceptedAnswer":{"@type":"Answer","text":"الفدان والأكر كلاهما يساوي تقريباً 4046.86 متر مربع."}},{"@type":"Question","name":"كيف أحول من متر مربع إلى قدم مربع؟","acceptedAnswer":{"@type":"Answer","text":"اضرب عدد الأمتار المربعة في 10.7639."}},{"@type":"Question","name":"كم هكتار في الكيلومتر المربع؟","acceptedAnswer":{"@type":"Answer","text":"الكيلومتر المربع الواحد يساوي 100 هكتار."}}]}
+</script>
+<meta property="og:title" content="محول المساحة | SP5 Tools">
+<meta property="og:description" content="حوّل بين وحدات المساحة بسهولة">
+<meta property="og:url" content="https://sp5.fun/tools/area-converter.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="محول المساحة | SP5 Tools">
+<meta name="twitter:description" content="حوّل بين وحدات المساحة والأرض بسهولة">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:600px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600;transition:all .2s}
+.btn-calc:hover{background:#1d4ed8}
+.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.result-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.result-card .result-label{display:block;font-size:.85rem;color:#64748b;margin-bottom:4px}
+.result-card .result-value{display:block;font-size:1.1rem;font-weight:700;color:#1e40af;direction:ltr}
+</style>
+</head>
+<body>
+<div class="news-ticker">
+  <div class="ticker-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    الأكثر استخداماً
+  </div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a>
+      <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+      <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+      <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+      <a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a>
+      <a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🎿</span>حاسبة الخصم</a>
+      <a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">📾</span>حاسبة الضريبة VAT</a>
+      <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+      <a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a>
+      <a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a>
+      <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+      <a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a>
+    </div>
+  </div>
+</div>
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+    <button class="menu-toggle" aria-label="القائمة">☰</button>
+    <nav class="nav">
+      <a href="/">الرئيسية</a>
+      <a href="/#financial">حاسبات مالية</a>
+      <a href="/#converter">محولات</a>
+      <a href="/#security">أدوات أمنية</a>
+      <a href="/#text">أدوات نصية</a>
+      <a href="/pages/privacy.html">سياسة الخصوصية</a>
+    </nav>
+  </div>
+</header>
+<nav class="breadcrumb">
+  <a href="/">الرئيسية</a>
+  <span class="separator">/</span>
+  <a href="/#converter">محولات</a>
+  <span class="separator">/</span>
+  <span class="current">محول المساحة</span>
+</nav>
+<main class="tool-page">
+  <h1>📐 محول المساحة</h1>
+  <p class="tool-desc">حوّل بين وحدات المساحة بسهولة: متر مربع، كيلومتر مربع، هكتار، دونم، فدان، قدم مربع، ياردة مربعة، ميل مربع، أكر. تحويل فوري ثنائي الاتجاه.</p>
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+    <span style="font-size:.85rem;color:#64748b">مشاركة:</span>
+    <a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem">فيسبوك</a>
+    <a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem">تويتر</a>
+    <a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem">واتساب</a>
+  </div>
+  <div class="ad-slot"></div>
+  <div class="calc-box">
+    <div class="form-group">
+      <label for="areaValue">📐 أدخل القيمة</label>
+      <input type="number" id="areaValue" placeholder="أدخل القيمة" min="0" step="any" value="1" oninput="convertArea()">
+    </div>
+    <div style="display:flex;gap:10px;align-items:center">
+      <div class="form-group" style="flex:1;margin-bottom:0">
+        <label for="fromUnit">من وحدة</label>
+        <select id="fromUnit" onchange="convertArea()">
+          <option value="m2" selected>م² (متر مربع)</option>
+          <option value="km2">كم² (كيلومتر مربع)</option>
+          <option value="ha">هكتار</option>
+          <option value="dunam">دونم</option>
+          <option value="feddan">فدان</option>
+          <option value="ft2">قدم² (قدم مربع)</option>
+          <option value="yd2">ياردة² (ياردة مربعة)</option>
+          <option value="mi2">ميل² (ميل مربع)</option>
+          <option value="acre">أكر</option>
+          <option value="mm2">مم² (مليمتر مربع)</option>
+          <option value="cm2">سم² (سنتيمتر مربع)</option>
+        </select>
+      </div>
+      <button class="btn-swap" onclick="swapUnits()" title="تبديل الوحدات" style="background:#f1f5f9;border:2px solid #e5e7eb;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.2rem;flex-shrink:0;transition:all .2s">⇄</button>
+      <div class="form-group" style="flex:1;margin-bottom:0">
+        <label for="toUnit">إلى وحدة</label>
+        <select id="toUnit" onchange="convertArea()">
+          <option value="m2">م² (متر مربع)</option>
+          <option value="km2">كم² (كيلومتر مربع)</option>
+          <option value="ha">هكتار</option>
+          <option value="dunam">دونم</option>
+          <option value="feddan">فدان</option>
+          <option value="ft2" selected>قدم² (قدم مربع)</option>
+          <option value="yd2">ياردة² (ياردة مربعة)</option>
+          <option value="mi2">ميل² (ميل مربع)</option>
+          <option value="acre">أكر</option>
+          <option value="mm2">مم² (مليمتر مربع)</option>
+          <option value="cm2">سم² (سنتيمتر مربع)</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div id="result" style="max-width:600px;margin:20px auto"></div>
+  <div class="ad-slot"></div>
+  <div class="tool-content">
+    <h2>ما هو محول المساحة؟</h2>
+    <p>محول المساحة من SP5 Tools هو أداة مجانية لتحويل وحدات المساحة بين مختلف الأنظمة المستخدمة عالمياً وعربياً. يدعم المحول الوحدات المترية مثل المتر المربع والكيلومتر المربع والهكتار، والوحدات الإمبراطورية مثل القدم المربع والأكر والميل المربع، بالإضافة إلى وحدات عربية مهمة مثل الدونم والفدان التي تستخدم بكثرة في البلدان العربية لقياس مساحات الأراضي الزراعية والعقارات.</p>
+    <p>سواء كنت تعمل في العقارات أو الزراعة أو الهندسة المعمارية، يوفر لك هذا المحول تحويلاً دقيقاً وفورياً بين جميع وحدات المساحة الشائعة بضغطة زر واحدة فقط. يتميز المحول بدقة عالية في الحسابات وسهولة الاستخدام مع واجهة عربية بالكامل.</p>
+
+    <h3>الوحدات المدعومة</h3>
+    <ul>
+      <li><strong>متر مربع (م²):</strong> الوحدة الأساسية لقياس المساحة في النظام المتري</li>
+      <li><strong>كيلومتر مربع (كم²):</strong> للمساحات الكبيرة — 1 كم² = 1,000,000 م²</li>
+      <li><strong>هكتار:</strong> وحدة زراعية عالمية — 1 هكتار = 10,000 م²</li>
+      <li><strong>دونم:</strong> وحدة عربية شائعة — 1 دونم = 1,000 م²</li>
+      <li><strong>فدان:</strong> وحدة مصرية — 1 فدان = 4,046.86 م²</li>
+      <li><strong>قدم مربع (قدم²):</strong> وحدة إنجليزية — 1 قدم² = 0.092903 م²</li>
+      <li><strong>ياردة مربعة (ياردة²):</strong> وحدة إنجليزية — 1 ياردة² = 0.836127 م²</li>
+      <li><strong>ميل مربع (ميل²):</strong> للمساحات الواسعة — 1 ميل² = 2,589,988 م²</li>
+      <li><strong>أكر:</strong> وحدة أمريكية — 1 أكر = 4,046.86 م²</li>
+      <li><strong>مليمتر مربع (مم²):</strong> للمساحات الدقيقة — 1 مم² = 0.000001 م²</li>
+      <li><strong>سنتيمتر مربع (سم²):</strong> وحدة صغيرة — 1 سم² = 0.0001 م²</li>
+    </ul>
+
+    <h2>جدول التحويلات الشائعة</h2>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:.85rem;margin:12px 0">
+        <thead><tr style="background:#2563eb;color:#fff"><th style="padding:10px 8px">من</th><th style="padding:10px 8px">إلى</th><th style="padding:10px 8px">المعامل</th><th style="padding:10px 8px">مثال</th></tr></thead>
+        <tbody>
+          <tr style="background:#f8fafc"><td style="padding:8px;text-align:center">1 هكتار</td><td style="padding:8px;text-align:center">متر مربع</td><td style="padding:8px;text-align:center">× 10,000</td><td style="padding:8px;text-align:center">1 هكتار = 10,000 م²</td></tr>
+          <tr><td style="padding:8px;text-align:center">1 دونم</td><td style="padding:8px;text-align:center">متر مربع</td><td style="padding:8px;text-align:center">× 1,000</td><td style="padding:8px;text-align:center">1 دونم = 1,000 م²</td></tr>
+          <tr style="background:#f8fafc"><td style="padding:8px;text-align:center">1 فدان</td><td style="padding:8px;text-align:center">متر مربع</td><td style="padding:8px;text-align:center">× 4,046.86</td><td style="padding:8px;text-align:center">1 فدان ≈ 4,046.86 م²</td></tr>
+          <tr><td style="padding:8px;text-align:center">1 أكر</td><td style="padding:8px;text-align:center">متر مربع</td><td style="padding:8px;text-align:center">× 4,046.86</td><td style="padding:8px;text-align:center">1 أكر ≈ 4,046.86 م²</td></tr>
+          <tr style="background:#f8fafc"><td style="padding:8px;text-align:center">1 كم²</td><td style="padding:8px;text-align:center">متر مربع</td><td style="padding:8px;text-align:center">× 1,000,000</td><td style="padding:8px;text-align:center">1 كم² = 1,000,000 م²</td></tr>
+          <tr><td style="padding:8px;text-align:center">1 م²</td><td style="padding:8px;text-align:center">قدم مربع</td><td style="padding:8px;text-align:center">× 10.7639</td><td style="padding:8px;text-align:center">1 م² = 10.7639 قدم²</td></tr>
+          <tr style="background:#f8fafc"><td style="padding:8px;text-align:center">1 ميل مربع</td><td style="padding:8px;text-align:center">كم مربع</td><td style="padding:8px;text-align:center">× 2.58999</td><td style="padding:8px;text-align:center">1 ميل² ≈ 2.59 كم²</td></tr>
+          <tr><td style="padding:8px;text-align:center">1 هكتار</td><td style="padding:8px;text-align:center">دونم</td><td style="padding:8px;text-align:center">× 10</td><td style="padding:8px;text-align:center">1 هكتار = 10 دونم</td></tr>
+          <tr style="background:#f8fafc"><td style="padding:8px;text-align:center">1 فدان</td><td style="padding:8px;text-align:center">دونم</td><td style="padding:8px;text-align:center">× 4.047</td><td style="padding:8px;text-align:center">1 فدان ≈ 4.047 دونم</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="ad-slot"></div>
+
+    <div class="ad-slot"></div>
+
+    <h2>أهمية تحويل وحدات المساحة في الدول العربية</h2>
+    <p>تختلف وحدات قياس المساحة المستخدمة في الدول العربية بشكل كبير، مما يجعل التحويل بينها ضرورة يومية في مجالات العقارات والزراعة والتخطيط العمراني. ففي مصر يستخدم الفدان كوحدة أساسية لقياس الأراضي الزراعية، بينما في سوريا وفلسطين والأردن ولبنان يعتمد الدونم كوحدة شائعة. وفي دول الخليج العربي يكثر استخدام المتر المربع والقدم المربع في المعاملات العقارية.</p>
+    <p>كثيراً ما يحتاج المهندسون والمقاولون والعاملون في قطاع العقارات إلى التحويل بين هذه الوحدات المختلفة عند تقييم الأراضي أو إعداد المخططات أو حساب تكاليف البناء. على سبيل المثال، قد تجد قطعة أرض معروضة بالفدان في مصر لكنك تحتاج لمعرفة مساحتها بالدونم للمقارنة مع أراضٍ في سوريا أو الأردن. هذا المحول يوفر لك هذه التحويلات بسرعة ودقة.</p>
+
+    <div class="ad-slot"></div>
+
+    <h3>ما هو الدونم؟</h3>
+    <p>الدونم هو وحدة مساحة تستخدم بشكل واسع في بلاد الشام ومصر وتركيا والعراق. الدونم العثماني القديم كان يساوي 919.3 متر مربع تقريباً، لكن الدونم المعياري الحديث يساوي 1,000 متر مربع (0.1 هكتار). يستخدم الدونم بكثرة في المعاملات العقارية والإعلانات عن بيع الأراضي في سوريا ولبنان وفلسطين والأردن والعراق، لذلك من المهم جداً معرفة كيفية التحويل بينه وبين الوحدات الأخرى.</p>
+
+    <h3>ما هو الفدان؟</h3>
+    <p>الفدان هو وحدة مساحة مصرية تساوي 4,046.86 متر مربع تقريباً (وهو تقريباً مساوي للأكر الإنجليزي). يستخدم الفدان بشكل رئيسي في مصر والسودان لقياس الأراضي الزراعية. الفدان الواحد يساوي حوالي 4.047 دونم. يعد الفدان من أهم الوحدات التي يبحث عنها المستخدمون العرب عند التعامل مع الأراضي في مصر.</p>
+
+    <div class="ad-slot"></div>
+
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item">
+      <strong>كيف أحول من متر مربع إلى قدم مربع؟</strong>
+      <p>اضرب عدد الأمتار المربعة في 10.7639. مثلاً: 100 متر مربع × 10.7639 = 1,076.39 قدم مربع. يمكنك استخدام المحول أعلاه للحصول على النتيجة فوراً.</p>
+    </div>
+    <div class="faq-item">
+      <strong>كم متر مربع في الدونم؟</strong>
+      <p>الدونم الواحد يساوي 1,000 متر مربع. الدونم يستخدم كثيراً في سوريا وفلسطين والأردن ولبنان لقياس مساحات الأراضي الزراعية والسكنية.</p>
+    </div>
+    <div class="faq-item">
+      <strong>ما الفرق بين الفدان والأكر؟</strong>
+      <p>الفدان والأكر كلاهما يساوي تقريباً 4,046.86 متر مربع. الفدان يستخدم في مصر والسودان، بينما الأكر يستخدم في الدول الناطقة بالإنجليزية. القياس متطابق تقريباً.</p>
+    </div>
+    <div class="faq-item">
+      <strong>كم هكتار في الكيلومتر المربع؟</strong>
+      <p>الكيلومتر المربع الواحد يساوي 100 هكتار. الهكتار يساوي 10,000 متر مربع ويستخدم عالمياً لقياس المساحات الزراعية والغابات.</p>
+    </div>
+    <div class="faq-item">
+      <strong>كيف أحول من دونم إلى فدان؟</strong>
+      <p>الدونم الواحد يساوي حوالي 0.247 فدان. أي أن الفدان الواحد يساوي حوالي 4.047 دونم. يمكنك استخدام المحول أعلاه للتحويل الدقيق بين هاتين الوحدتين.</p>
+    </div>
+    <div class="faq-item">
+      <strong>هل المحول مجاني بالكامل؟</strong>
+      <p>نعم، محول المساحة مجاني تماماً ويعمل في متصفحك مباشرة بدون تسجيل. يدعم جميع وحدات المساحة المذكورة أعلاه بتحويل فوري ودقيق.</p>
+    </div>
+  </div>
+</main><div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/length-converter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">📏</span> محول الطول</a>
+    <a href="/tools/geometry-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">📐</span> حاسبة الهندسة</a>
+    <a href="/tools/currency-converter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">💱</span> محول العملات</a>
+    <a href="/tools/ratio-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">⚖️</span> حاسبة النسبة</a>
+    <a href="/tools/discount-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🏷️</span> حاسبة الخصم</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div>
+    <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div>
+    <div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a><a href="/tools/length-converter.html">محول الطول</a><a href="/tools/area-converter.html">محول المساحة</a></div>
+    <div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div>
+</footer>
+
+<script src="/js/main.js?v=20260609e"></script>
+<script>
+function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}
+
+// Conversion factors relative to square meters
+var toSqMeter={m2:1,km2:1000000,ha:10000,dunam:1000,feddan:4046.86,ft2:0.092903,yd2:0.836127,mi2:2589988,acre:4046.86,mm2:0.000001,cm2:0.0001};
+var unitNames={m2:'متر مربع',km2:'كيلومتر مربع',ha:'هكتار',dunam:'دونم',feddan:'فدان',ft2:'قدم مربع',yd2:'ياردة مربعة',mi2:'ميل مربع',acre:'أكر',mm2:'مليمتر مربع',cm2:'سنتيمتر مربع'};
+var unitSymbols={m2:'م²',km2:'كم²',ha:'هكتار',dunam:'دونم',feddan:'فدان',ft2:'قدم²',yd2:'ياردة²',mi2:'ميل²',acre:'أكر',mm2:'مم²',cm2:'سم²'};
+
+function convertArea(){
+  var value=parseFloat(document.getElementById('areaValue').value);
+  var from=document.getElementById('fromUnit').value;
+  var to=document.getElementById('toUnit').value;
+
+  if(isNaN(value)){document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">يرجى إدخال قيمة صحيحة</p>';return;}
+
+  // Convert to square meters first, then to target unit
+  var inSqMeters=value*toSqMeter[from];
+  var result=inSqMeters/toSqMeter[to];
+
+  // Format result
+  var formattedResult;
+  if(Math.abs(result)<0.0001)formattedResult=result.toExponential(4);
+  else if(Math.abs(result)>=1000000)formattedResult=result.toLocaleString('en',{maximumFractionDigits:2});
+  else if(Math.abs(result)>=100)formattedResult=result.toLocaleString('en',{maximumFractionDigits:4});
+  else formattedResult=result.toLocaleString('en',{maximumFractionDigits:6});
+
+  var html='<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">📐 نتيجة التحويل</h3>';
+  html+='<div style="background:linear-gradient(135deg,#2563eb,#1d4ed8);border-radius:12px;padding:20px;text-align:center;margin-bottom:16px">';
+  html+='<div style="font-size:.9rem;color:rgba(255,255,255,.8);margin-bottom:4px">'+value+' '+unitNames[from]+' ('+unitSymbols[from]+')</div>';
+  html+='<div style="font-size:1.6rem;font-weight:700;color:#fff">'+formattedResult+' '+unitNames[to]+' ('+unitSymbols[to]+')</div>';
+  html+='</div>';
+
+  html+='<h4 style="color:#1e40af;margin-bottom:8px;text-align:center">كل الوحدات</h4>';
+  html+='<div class="result-grid">';
+
+  for(var unit in toSqMeter){
+    var converted=inSqMeters/toSqMeter[unit];
+    var fVal;
+    if(Math.abs(converted)<0.0001)fVal=converted.toExponential(3);
+    else if(Math.abs(converted)>=1000000)fVal=converted.toLocaleString('en',{maximumFractionDigits:2});
+    else if(Math.abs(converted)>=100)fVal=converted.toLocaleString('en',{maximumFractionDigits:2});
+    else fVal=converted.toLocaleString('en',{maximumFractionDigits:6});
+
+    var highlight=(unit===to)?'border:2px solid #2563eb;background:#f0f7ff;':'';
+    html+='<div class="result-card" style="'+highlight+'"><span class="result-label">'+unitNames[unit]+'</span><span class="result-value">'+fVal+' '+unitSymbols[unit]+'</span></div>';
+  }
+
+  html+='</div>';
+  document.getElementById('result').innerHTML=html;
+}
+
+function swapUnits(){
+  var from=document.getElementById('fromUnit');
+  var to=document.getElementById('toUnit');
+  var temp=from.value;
+  from.value=to.value;
+  to.value=temp;
+  convertArea();
+}
+
+convertArea();
+</script>
+</body>
+</html>

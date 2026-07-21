@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حاسبة الدورة الشهرية والتبويض - تتبع الدورة | SP5 Tools</title>
+<meta name="description" content="حاسبة الدورة الشهرية والتبويض المجانية — تتبعي دورتك واحسبي أيام الخصوبة وموعد الدورة القادمة. تقويم 6 أشهر ملون ونصائح صحية.">
+<meta name="keywords" content="حاسبة الدورة الشهرية, حاسبة التبويض, أيام الخصوبة, موعد الدورة, تتبع الدورة, تقويم الدورة">
+<link rel="canonical" href="https://sp5.fun/tools/period-calculator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260610a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "حاسبة الدورة الشهرية والتبويض",
+  "description": "حاسبة الدورة الشهرية والتبويض — تتبعي دورتك واحسبي أيام الخصوبة",
+  "url": "https://sp5.fun/tools/period-calculator.html",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "SAR" },
+  "inLanguage": "ar",
+  "isPartOf": { "@type": "WebSite", "name": "SP5 Tools", "url": "https://sp5.fun" }
+}
+</script>
+<meta property="og:title" content="حاسبة الدورة الشهرية والتبويض | SP5 Tools">
+<meta property="og:description" content="تتبعي دورتك الشهرية واحسبي أيام التبويض والخصوبة مجاناً.">
+<meta property="og:url" content="https://sp5.fun/tools/period-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<style>
+.period-calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;margin:16px 0;max-width:400px;margin-left:auto;margin-right:auto}
+.period-cal-header{text-align:center;font-size:.75rem;font-weight:700;color:var(--primary-dark);padding:6px 0}
+.period-day{text-align:center;padding:8px 4px;border-radius:6px;font-size:.82rem;cursor:default;transition:var(--transition)}
+.period-day.period{background:#fce7f3;color:#be185d}
+.period-day.fertile{background:#d1fae5;color:#065f46}
+.period-day.ovulation{background:#fef3c7;color:#92400e;font-weight:700}
+.period-day.today{border:2px solid var(--primary);font-weight:700}
+.period-day.empty{background:transparent}
+.period-legend{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:12px 0;font-size:.8rem}
+.period-legend span{display:flex;align-items:center;gap:4px}
+.period-legend .dot{width:12px;height:12px;border-radius:3px;display:inline-block}
+.period-month-nav{display:flex;align-items:center;justify-content:space-between;margin:12px 0}
+.period-month-nav button{padding:6px 14px;border:1px solid var(--border);border-radius:6px;background:var(--card-bg);font-family:inherit;cursor:pointer;transition:var(--transition)}
+.period-month-nav button:hover{border-color:var(--primary);color:var(--primary)}
+.period-month-nav h3{font-size:1.1rem;color:var(--primary-dark);margin:0}
+.next-period-info{text-align:center;padding:20px;background:linear-gradient(135deg,#fce7f3,#fdf2f8);border-radius:var(--radius-sm);margin:16px 0}
+.next-period-info .big-num{font-size:2rem;font-weight:800;color:#be185d;display:block}
+.next-period-info .label{font-size:.9rem;color:#9d174d}
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:16px 0}
+.tip-card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px}
+.tip-card h4{font-size:.9rem;color:var(--primary-dark);margin:0 0 6px}
+.tip-card p{font-size:.8rem;color:var(--text-light);line-height:1.6;margin:0}
+</style>
+</head>
+<body>
+
+<div class="news-ticker">
+  <div class="ticker-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    الأكثر استخداماً
+  </div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a>
+      <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+      <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+      <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+      <a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a>
+      <a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a>
+      <a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a>
+      <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+      <a href="/tools/instagram-bio-generator.html" class="ticker-item"><span class="ticker-icon">📱</span>مولد بيو انستغرام</a>
+      <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+      <a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a>
+      <a href="/tools/geometry-calculator.html" class="ticker-item"><span class="ticker-icon">📐</span>حاسبة الأشكال الهندسية</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+    <button class="menu-toggle" aria-label="القائمة">☰</button>
+    <nav class="nav">
+      <a href="/">الرئيسية</a>
+      <a href="/#financial">حاسبات مالية</a>
+      <a href="/#converter">محولات</a>
+      <a href="/#security">أدوات أمنية</a>
+      <a href="/#text">أدوات نصية</a>
+      <a href="/pages/privacy.html">سياسة الخصوصية</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="/">الرئيسية</a>
+  <span class="separator">/</span>
+  <a href="/#health">صحة ولياقة</a>
+  <span class="separator">/</span>
+  <span class="current">حاسبة الدورة الشهرية</span>
+</nav>
+
+<main class="tool-page">
+  <h1>🩸 حاسبة الدورة الشهرية والتبويض</h1>
+  <p class="tool-desc">تتبعي دورتك الشهرية واحسبي أيام التبويض والخصوبة — تقويم ملون لـ 6 أشهر مع مواعيد الدورات القادمة ونصائح صحية.</p>
+
+  <div class="share-bar">
+    <button class="share-toggle" onclick="toggleShareMenu()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+      مشاركة
+    </button>
+    <button class="share-btn share-btn--copy" onclick="copyToolLink(this)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+      نسخ الرابط
+    </button>
+    <div class="share-menu" id="shareMenu">
+      <a class="share-btn" href="#" onclick="shareTool('whatsapp');return false;" style="color:#25D366;border-color:#25D366;">واتساب</a>
+      <a class="share-btn" href="#" onclick="shareTool('telegram');return false;" style="color:#0088cc;border-color:#0088cc;">تيليجرام</a>
+      <a class="share-btn" href="#" onclick="shareTool('twitter');return false;" style="color:#000;border-color:#000;">تويتر</a>
+      <a class="share-btn" href="#" onclick="shareTool('facebook');return false;" style="color:#1877F2;border-color:#1877F2;">فيسبوك</a>
+    </div>
+  </div>
+
+  <div class="ad-slot"></div>
+
+  <div class="calc-box">
+    <div class="form-group">
+      <label for="lastPeriod">تاريخ آخر دورة شهرية</label>
+      <input type="date" id="lastPeriod">
+    </div>
+    <div class="form-group">
+      <label for="cycleLength">معدل طول الدورة (بالأيام)</label>
+      <input type="number" id="cycleLength" value="28" min="20" max="45">
+      <small>المعدل الطبيعي: 28 يوم (المدى 21-35)</small>
+    </div>
+    <div class="form-group">
+      <label for="periodLength">مدة الحيض (بالأيام)</label>
+      <input type="number" id="periodLength" value="5" min="2" max="10">
+      <small>المعدل الطبيعي: 3-7 أيام</small>
+    </div>
+    <button type="button" class="btn btn-primary btn-lg" onclick="calculatePeriod()">🩸 احسبي دورتك</button>
+  </div>
+
+  <div id="periodResult"></div>
+
+  <div class="ad-slot"></div>
+
+  <div class="content-section">
+    <h2>كيف تعمل حاسبة الدورة الشهرية؟</h2>
+    <p>تحسب الحاسبة مواعيد دوراتك القادمة وأيام التبويض والخصوبة بناءً على تاريخ آخر دورة ومعدل طول الدورة. تستخدم قاعدة الحساب القياسية:</p>
+    <ul>
+      <li><strong>التبويض:</strong> يحدث عادة قبل 14 يوم من الدورة التالية</li>
+      <li><strong>نافذة الخصوبة:</strong> 5 أيام قبل التبويض + يوم التبويض</li>
+      <li><strong>اليوم الآمن:</strong> خارج فترة الخصوبة والحيض</li>
+    </ul>
+
+    <h2>⚠️ تنبيه مهم</h2>
+    <p>هذه الحاسبة للتقدير التقريبي فقط ولا تُغني عن استشارة الطبيب. الدورة الشهرية تتأثر بعوامل كثيرة (الإجهاد، التغذية، التمرين) وقد تختلف من شهر لآخر.</p>
+  </div>
+</main>
+
+<div class="related-tools">
+  <h3>🔗 أدوات ذات صلة</h3>
+  <div class="related-grid">
+    <a href="/tools/pregnancy-calculator.html" class="related-card"><span class="rc-icon">🤰</span><span class="rc-text">حاسبة الحمل</span></a>
+    <a href="/tools/bmi-calculator.html" class="related-card"><span class="rc-icon">⚖️</span><span class="rc-text">حاسبة BMI</span></a>
+    <a href="/tools/calorie-calculator.html" class="related-card"><span class="rc-icon">🔥</span><span class="rc-text">حاسبة السعرات</span></a>
+    <a href="/tools/ideal-weight-calculator.html" class="related-card"><span class="rc-icon">⚖️</span><span class="rc-text">الوزن المثالي</span></a>
+    <a href="/tools/date-calculator.html" class="related-card"><span class="rc-icon">📅</span><span class="rc-text">حاسبة التاريخ</span></a>
+    <a href="/tools/countdown-timer.html" class="related-card"><span class="rc-icon">⏱️</span><span class="rc-text">عداد تنازلي</span></a>
+    <a href="/tools/age-calculator.html" class="related-card"><span class="rc-icon">🎂</span><span class="rc-text">حاسبة العمر</span></a>
+    <a href="/tools/clothing-sizes.html" class="related-card"><span class="rc-icon">👗</span><span class="rc-text">محول المقاسات</span></a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div>
+    <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة</a></div>
+    <div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة.</div>
+</footer>
+
+<script src="/js/main.js?v=20260610a"></script>
+<script>
+var calMonth = new Date().getMonth();
+var calYear = new Date().getFullYear();
+var periodData = null;
+
+function calculatePeriod() {
+  var lastInput = document.getElementById('lastPeriod').value;
+  if (!lastInput) {
+    document.getElementById('periodResult').innerHTML = '<p style="color:var(--danger);text-align:center;">يرجى إدخال تاريخ آخر دورة</p>';
+    return;
+  }
+
+  var lastPeriod = new Date(lastInput);
+  var cycleLength = parseInt(document.getElementById('cycleLength').value) || 28;
+  var periodLength = parseInt(document.getElementById('periodLength').value) || 5;
+
+  if (cycleLength < 20 || cycleLength > 45) {
+    document.getElementById('periodResult').innerHTML = '<p style="color:var(--danger);text-align:center;">طول الدورة يجب أن يكون بين 20 و 45 يوماً</p>';
+    return;
+  }
+
+  // Calculate next 6 periods
+  var periods = [];
+  for (var i = 0; i < 6; i++) {
+    var start = new Date(lastPeriod);
+    start.setDate(start.getDate() + (cycleLength * i));
+    var end = new Date(start);
+    end.setDate(end.getDate() + periodLength - 1);
+
+    // Ovulation: 14 days before next period
+    var ovulation = new Date(start);
+    ovulation.setDate(ovulation.getDate() + cycleLength - 14);
+
+    // Fertile window: 5 days before ovulation + ovulation day + 1 day after
+    var fertileStart = new Date(ovulation);
+    fertileStart.setDate(fertileStart.getDate() - 5);
+    var fertileEnd = new Date(ovulation);
+    fertileEnd.setDate(fertileEnd.getDate() + 1);
+
+    periods.push({
+      start: start,
+      end: end,
+      ovulation: ovulation,
+      fertileStart: fertileStart,
+      fertileEnd: fertileEnd
+    });
+  }
+
+  periodData = periods;
+
+  // Next period countdown
+  var now = new Date();
+  var nextPeriod = periods[0];
+  // Find the next upcoming period
+  for (var j = 0; j < periods.length; j++) {
+    if (periods[j].start > now) { nextPeriod = periods[j]; break; }
+  }
+
+  var daysUntil = Math.ceil((nextPeriod.start.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+
+  var monthsAr = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+
+  var html = '<div class="next-period-info">' +
+    '<span class="big-num">' + (daysUntil > 0 ? daysUntil : 0) + '</span>' +
+    '<span class="label">يوم حتى الدورة القادمة</span>' +
+    '</div>';
+
+  // Period schedule table
+  html += '<h3 style="margin:20px 0 12px">📅 مواعيد الدورات الـ 6 القادمة</h3>';
+  html += '<table class="size-table"><thead><tr><th>#</th><th>بداية الدورة</th><th>نهاية الدورة</th><th>يوم التبويض</th><th>أيام الخصوبة</th></tr></thead><tbody>';
+
+  for (var k = 0; k < periods.length; k++) {
+    var p = periods[k];
+    html += '<tr>' +
+      '<td>' + (k + 1) + '</td>' +
+      '<td>' + p.start.getDate() + ' ' + monthsAr[p.start.getMonth()] + '</td>' +
+      '<td>' + p.end.getDate() + ' ' + monthsAr[p.end.getMonth()] + '</td>' +
+      '<td style="color:#92400e;font-weight:600">' + p.ovulation.getDate() + ' ' + monthsAr[p.ovulation.getMonth()] + '</td>' +
+      '<td style="color:#065f46">' + p.fertileStart.getDate() + ' ' + monthsAr[p.fertileStart.getMonth()] + ' — ' + p.fertileEnd.getDate() + ' ' + monthsAr[p.fertileEnd.getMonth()] + '</td>' +
+      '</tr>';
+  }
+  html += '</tbody></table>';
+
+  // Calendar
+  html += '<h3 style="margin:20px 0 12px">📆 تقويم الدورة</h3>';
+  html += '<div class="period-legend">' +
+    '<span><span class="dot" style="background:#fce7f3;border:1px solid #f9a8d4"></span> أيام الحيض</span>' +
+    '<span><span class="dot" style="background:#d1fae5;border:1px solid #6ee7b7"></span> أيام الخصوبة</span>' +
+    '<span><span class="dot" style="background:#fef3c7;border:1px solid #fcd34d"></span> يوم التبويض</span>' +
+    '</div>';
+
+  calMonth = lastPeriod.getMonth();
+  calYear = lastPeriod.getFullYear();
+  html += renderCalendar();
+
+  // Tips
+  html += '<h3 style="margin:20px 0 12px">💡 نصائح صحية</h3>';
+  html += '<div class="tips-grid">' +
+    '<div class="tip-card"><h4>🩸 أثناء الحيض</h4><p>اشربي ماء كثير، تجنبي الكافيين الزائد، خذي قسطاً من الراحة. مسكنات الألم مثل الإيبوبروفين تساعد.</p></div>' +
+    '<div class="tip-card"><h4>🌿 أثناء التبويض</h4><p>زيادة الإفرازات وتغير درجة الحرارة القاعدية علامات طبيعية. هذا أفضل وقت للحمل إن رغبتِ.</p></div>' +
+    '<div class="tip-card"><h4>🧘 عام</h4><p>التمارين الرياضية الخفيفة تحسن المزاج وتخفف التشنجات. النوم الكافي والغذاء المتوازن ضروريان.</p></div>' +
+    '<div class="tip-card"><h4>⚠️ متى تزورين الطبيب؟</h4><p>إذا كانت دورتك أقصر من 21 أو أطول من 35 يوماً، أو الألم شديد جداً، أو النزيف غير طبيعي.</p></div>' +
+    '</div>';
+
+  document.getElementById('periodResult').innerHTML = html;
+}
+
+function renderCalendar() {
+  var monthsAr = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+  var daysAr = ['أحد','إثنين','ثلاثاء','أربعاء','خميس','جمعة','سبت'];
+
+  var html = '<div class="period-month-nav">' +
+    '<button onclick="changeMonth(-1)">◀ السابق</button>' +
+    '<h3>' + monthsAr[calMonth] + ' ' + calYear + '</h3>' +
+    '<button onclick="changeMonth(1)">التالي ▶</button>' +
+    '</div>';
+
+  html += '<div class="period-calendar">';
+  for (var d = 0; d < 7; d++) {
+    html += '<div class="period-cal-header">' + daysAr[d] + '</div>';
+  }
+
+  var firstDay = new Date(calYear, calMonth, 1).getDay();
+  var daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+  var today = new Date();
+
+  // Empty cells before first day
+  for (var e = 0; e < firstDay; e++) {
+    html += '<div class="period-day empty"></div>';
+  }
+
+  for (var day = 1; day <= daysInMonth; day++) {
+    var date = new Date(calYear, calMonth, day);
+    var cls = 'period-day';
+
+    if (periodData) {
+      for (var p = 0; p < periodData.length; p++) {
+        var pd = periodData[p];
+        if (date >= pd.start && date <= pd.end) { cls += ' period'; }
+        if (date >= pd.fertileStart && date <= pd.fertileEnd) { cls += ' fertile'; }
+        if (date.getTime() === pd.ovulation.getTime()) { cls += ' ovulation'; }
+      }
+    }
+
+    if (date.toDateString() === today.toDateString()) { cls += ' today'; }
+
+    html += '<div class="' + cls + '">' + day + '</div>';
+  }
+
+  html += '</div>';
+  return html;
+}
+
+function changeMonth(delta) {
+  calMonth += delta;
+  if (calMonth > 11) { calMonth = 0; calYear++; }
+  if (calMonth < 0) { calMonth = 11; calYear--; }
+  // Re-render the calendar part only
+  var resultDiv = document.getElementById('periodResult');
+  var calHeader = resultDiv.querySelector('.period-month-nav');
+  var calGrid = resultDiv.querySelector('.period-calendar');
+  if (calHeader && calGrid) {
+    var monthsAr = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+    calHeader.querySelector('h3').textContent = monthsAr[calMonth] + ' ' + calYear;
+    var tempDiv = document.createElement('div');
+    tempDiv.innerHTML = renderCalendar();
+    var newGrid = tempDiv.querySelector('.period-calendar');
+    calGrid.innerHTML = newGrid.innerHTML;
+  }
+}
+</script>
+</body>
+</html>

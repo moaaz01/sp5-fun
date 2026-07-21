@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حاسبة فرق الطول | SP5 Tools</title>
+<meta name="description" content="حاسبة فرق الطول المجانية: احسب الفرق بين طول شخصين بالـ cm والنسبة المئوية. مقارنة بصرية بأشكال بشرية SVG. تعرف من الأطول وفئة الفرق.">
+<meta name="keywords" content="حاسبة فرق الطول, فرق الطول, مقارنة الأطوال, حساب فرق الطول, height difference calculator, مقارنة الطول">
+<link rel="canonical" href="https://sp5.fun/tools/height-difference-calculator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260621a">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة فرق الطول","description":"حاسبة فرق الطول المجانية لمقارنة طول شخصين مع تمثيل بصري.","url":"https://sp5.fun/tools/height-difference-calculator.html","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"inLanguage":"ar","isPartOf":{"@type":"WebSite","name":"SP5 Tools","url":"https://sp5.fun"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "كيف أحسب فرق الطول بين شخصين؟", "acceptedAnswer": {"@type": "Answer", "text": "أدخل طول الشخص الأول والثاني بالسنتيمتر. ستحصل على الفرق بالـ cm والنسبة المئوية مع مقارنة بصرية."}},{"@type": "Question", "name": "ما هو متوسط الطول العالمي؟", "acceptedAnswer": {"@type": "Answer", "text": "متوسط طول الذكور عالمياً حوالي 171 سم والإناث 159 سم. يختلف حسب المنطقة والجنسية."}},{"@type": "Question", "name": "كيف تصنف فئة فرق الطول؟", "acceptedAnswer": {"@type": "Answer", "text": "أقل من 5 سم: فرق صغير. 5-10 سم: فرق متوسط. 10-20 سم: فرق كبير. أكثر من 20 سم: فرق كبير جداً."}}]}</script>
+<meta property="og:title" content="حاسبة فرق الطول | SP5 Tools">
+<meta property="og:description" content="حاسبة فرق الطول المجانية: احسب الفرق بين طول شخصين بالـ cm والنسبة المئوية. مقارنة بصرية بأشكال بشرية SVG.">
+<meta property="og:url" content="https://sp5.fun/tools/height-difference-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="حاسبة فرق الطول | SP5 Tools">
+<meta name="twitter:description" content="حاسبة فرق الطول المجانية: احسب الفرق بين طول شخصين بالـ cm والنسبة المئوية.">
+<style>
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:600px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600;width:100%}
+.btn-calc:hover{background:#1d4ed8}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.result-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.result-card .result-label{display:block;font-size:.85rem;color:#64748b;margin-bottom:4px}
+.result-card .result-value{display:block;font-size:1.2rem;font-weight:700;color:#1e40af}
+.result-card.result-highlight{background:linear-gradient(135deg,#2563eb,#1d4ed8);border:none}
+.result-card.result-highlight .result-label{color:rgba(255,255,255,.8)}
+.result-card.result-highlight .result-value{color:#fff;font-size:1.4rem}
+.visual-compare{max-width:400px;margin:20px auto;text-align:center;position:relative;height:320px}
+.visual-compare svg{width:100%;height:100%}
+.diff-badge{display:inline-block;padding:6px 16px;border-radius:20px;font-weight:700;font-size:.9rem;margin:8px 0}
+.diff-badge.small{background:#dbeafe;color:#1d4ed8}
+.diff-badge.medium{background:#fef3c7;color:#92400e}
+.diff-badge.large{background:#fee2e2;color:#991b1b}
+.diff-badge.extreme{background:#fce7f3;color:#9d174d}
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+</style>
+</head>
+<body>
+<div class="news-ticker"><div class="ticker-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>الأكثر استخداماً</div><div class="ticker-track"><div class="ticker-scroll"><a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a><a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a><a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a><a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a><a href="/tools/height-difference-calculator.html" class="ticker-item"><span class="ticker-icon">📏</span>حاسبة فرق الطول</a><a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a><a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a><a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a><a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a><a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a><a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a><a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a></div></div></div>
+<header class="header"><div class="header-inner"><a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a><button class="menu-toggle" aria-label="القائمة">☰</button><nav class="nav"><a href="/">الرئيسية</a><a href="/#financial">حاسبات مالية</a><a href="/#converter">محولات</a><a href="/#security">أدوات أمنية</a><a href="/#text">أدوات نصية</a><a href="/pages/privacy.html">سياسة الخصوصية</a></nav></div></header>
+<nav class="breadcrumb"><a href="/">الرئيسية</a><span class="separator">/</span><a href="/#health">حاسبات صحية</a><span class="separator">/</span><span class="current">حاسبة فرق الطول</span></nav>
+<main class="tool-page">
+  <h1>📏 حاسبة فرق الطول</h1>
+  <p class="tool-desc">حاسبة فرق الطول المجانية: احسب الفرق بين طول شخصين بالسنتيمتر والنسبة المئوية مع مقارنة بصرية بأشكال بشرية. تعرف من الأطول وفئة الفرق.</p>
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:#64748b">مشاركة:</span><a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a><a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a><a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a></div>
+<script>function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}</script>
+  <div class="ad-slot"></div>
+  <div class="calc-box">
+    <div class="form-group"><label for="person1">👤 طول الشخص الأول (سم)</label><input type="number" id="person1" placeholder="مثال: 175" min="50" max="300" step="0.1"></div>
+    <div class="form-group"><label for="person2">👤 طول الشخص الثاني (سم)</label><input type="number" id="person2" placeholder="مثال: 165" min="50" max="300" step="0.1"></div>
+    <button type="button" class="btn-calc" onclick="calcHeightDiff()">📏 احسب فرق الطول</button>
+  </div>
+  <div id="result" style="max-width:600px;margin:20px auto"></div>
+  <div id="visualResult" style="max-width:600px;margin:20px auto"></div>
+  <div class="ad-slot"></div>
+  <div class="tool-content">
+    <h2>ما هي حاسبة فرق الطول؟</h2>
+    <p>حاسبة فرق الطول هي أداة مجانية تتيح لك مقارنة طول شخصين بسهولة. أدخل طول كل شخص بالسنتيمتر لتحصل على الفرق الدقيق بالـ cm، النسبة المئوية للفرق، ومعرفة من هو الأطول. كما توفر الأداة مقارنة بصرية بأشكال بشرية SVG توضح الفرق بوضوح، وتصنف الفرق إلى فئات: صغير، متوسط، كبير، أو كبير جداً.</p>
+    <h3>كيف تستخدم حاسبة فرق الطول؟</h3>
+    <p>استخدام الأداة بسيط جداً: أدخل طول الشخص الأول في الحقل الأول، ثم طول الشخص الثاني في الحقل الثاني، واضغط على زر "احسب فرق الطول". ستظهر النتائج فوراً مع المقارنة البصرية. يمكنك استخدام الأداة لمقارنة طولك مع صديق، أو لمقارنة متوسطات الأطوال في عائلتك.</p>
+    <h3>تصنيفات فرق الطول</h3>
+    <ul>
+      <li><strong>فرق صغير:</strong> أقل من 5 سم — فرق غير ملحوظ</li>
+      <li><strong>فرق متوسط:</strong> 5 - 10 سم — فرق واضح عند الوقوف جنباً إلى جنب</li>
+      <li><strong>فرق كبير:</strong> 10 - 20 سم — فرق ملحوظ جداً</li>
+      <li><strong>فرق كبير جداً:</strong> أكثر من 20 سم — فرق شاسع</li>
+    </ul>
+    <h2>متوسط الطول العالمي</h2>
+    <p>يختلف متوسط الطول حول العالم حسب المنطقة والجنس. وفقاً لإحصائيات 2026، يبلغ متوسط طول الذكور عالمياً حوالي 171 سم، بينما يبلغ متوسط طول الإناث حوالي 159 سم. في الدول الأوروبية مثل هولندا، يصل متوسط الطول إلى 184 سم للذكور، بينما في دول شرق آسيا يبلغ حوالي 170 سم للذكور. في العالم العربي، يتراوح متوسط الطول بين 168-175 سم للذكور و 155-162 سم للإناث.</p>
+    <h2>العوامل المؤثرة في الطول</h2>
+    <p>يتأثر الطول بعدة عوامل منها الوراثة التي تلعب الدور الأكبر (60-80%)، والتغذية السليمة خاصة في مرحلة الطفولة والمراهقة، والنوم الكافي لأن هرمون النمو يُفرز أثناء النوم العميق، والنشاط البدني والرياضة. كما تؤثر الحالة الصحية العامة والأمراض المزمنة على الطول. من المهم ملاحظة أن الطول يتوقف عن الزيادة بعد إغلاق صفائح النمو في العظام، والذي يحدث عادة بين سن 18-25 سنة.</p>
+    <div class="ad-slot"></div>
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item"><strong>كيف أحسب فرق الطول بين شخصين؟</strong><p>أدخل طول الشخص الأول والثاني بالسنتيمتر. ستحصل على الفرق بالـ cm والنسبة المئوية مع مقارنة بصرية.</p></div>
+    <div class="faq-item"><strong>ما هو متوسط الطول العالمي؟</strong><p>متوسط طول الذكور عالمياً حوالي 171 سم والإناث 159 سم. يختلف حسب المنطقة والجنسية.</p></div>
+    <div class="faq-item"><strong>كيف تصنف فئة فرق الطول؟</strong><p>أقل من 5 سم: فرق صغير. 5-10 سم: فرق متوسط. 10-20 سم: فرق كبير. أكثر من 20 سم: فرق كبير جداً.</p></div>
+    <div class="faq-item"><strong>هل يمكن استخدام الأداة لأكثر من شخصين؟</strong><p>الأداة مصممة لمقارنة شخصين في كل مرة. يمكنك تكرار العملية لمقارنة أزواج مختلفة.</p></div>
+  </div>
+</main>
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/bmi-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">⚖️</span> حاسبة BMI</a>
+    <a href="/tools/ideal-weight-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">⚖️</span> حاسبة الوزن المثالي</a>
+    <a href="/tools/calorie-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🔥</span> حاسبة السعرات</a>
+    <a href="/tools/age-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🎂</span> حاسبة العمر</a>
+    <a href="/tools/percentage-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">📊</span> حاسبة النسبة المئوية</a>
+  </div>
+</div>
+<footer class="footer"><div class="footer-inner"><div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div><div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div><div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div><div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div></div><div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div></footer>
+<script src="/js/main.js?v=20260621a"></script>
+<script>
+function formatNum(n,d){if(d===undefined)d=2;return Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});}
+
+function calcHeightDiff(){
+  var h1=parseFloat(document.getElementById('person1').value);
+  var h2=parseFloat(document.getElementById('person2').value);
+  if(isNaN(h1)||h1<=0||isNaN(h2)||h2<=0){
+    document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">يرجى إدخال طول الشخصين</p>';
+    document.getElementById('visualResult').innerHTML='';
+    return;
+  }
+  var diff=Math.abs(h1-h2);
+  var pct=diff/Math.max(h1,h2)*100;
+  var taller=h1>h2?'الشخص الأول':'الشخص الثاني';
+  var shorter=h1>h2?'الشخص الثاني':'الشخص الأول';
+  var cat='',catClass='';
+  if(diff<5){cat='فرق صغير';catClass='small';}
+  else if(diff<10){cat='فرق متوسط';catClass='medium';}
+  else if(diff<20){cat='فرق كبير';catClass='large';}
+  else{cat='فرق كبير جداً';catClass='extreme';}
+
+  var html='<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">📊 نتائج فرق الطول</h3>';
+  html+='<div class="result-grid">';
+  html+='<div class="result-card result-highlight"><span class="result-label">الفرق</span><span class="result-value">'+formatNum(diff,1)+' سم</span></div>';
+  html+='<div class="result-card"><span class="result-label">النسبة المئوية</span><span class="result-value">'+formatNum(pct,1)+'%</span></div>';
+  html+='<div class="result-card"><span class="result-label">الأطول</span><span class="result-value">'+taller+'</span></div>';
+  html+='<div class="result-card"><span class="result-label">التصنيف</span><span class="result-value"><span class="diff-badge '+catClass+'">'+cat+'</span></span></div>';
+  html+='</div>';
+  document.getElementById('result').innerHTML=html;
+
+  // Visual comparison
+  var maxH=Math.max(h1,h2);
+  var scale=250/maxH;
+  var h1px=h1*scale;
+  var h2px=h2*scale;
+  var headSize=30;
+  var bodyWidth=50;
+  var svgH=Math.max(h1px,h2px)+headSize+20;
+  var svgW=300;
+
+  var vis='<div class="visual-compare"><svg viewBox="0 0 '+svgW+' '+svgH+'" xmlns="http://www.w3.org/2000/svg">';
+  // Person 1
+  vis+=drawPerson(60,svgH-10-h1px,headSize,bodyWidth,h1px,'#2563eb','الشخص الأول');
+  // Person 2
+  vis+=drawPerson(180,svgH-10-h2px,headSize,bodyWidth,h2px,'#10b981','الشخص الثاني');
+  // Ground line
+  vis+='<line x1="20" y1="'+(svgH-10)+'" x2="'+(svgW-20)+'" y2="'+(svgH-10)+'" stroke="#94a3b8" stroke-width="2"/>';
+  // Diff arrow
+  if(diff>1){
+    var midX=svgW/2;
+    var topY=Math.min(svgH-10-h1px-headSize,svgH-10-h2px-headSize)-15;
+    vis+='<line x1="'+(midX-20)+'" y1="'+topY+'" x2="'+(midX+20)+'" y2="'+topY+'" stroke="#f59e0b" stroke-width="2"/>';
+    vis+='<text x="'+midX+'" y="'+(topY-5)+'" text-anchor="middle" fill="#f59e0b" font-size="12" font-weight="bold">'+formatNum(diff,1)+' سم</text>';
+  }
+  vis+='</svg></div>';
+  document.getElementById('visualResult').innerHTML=vis;
+}
+
+function drawPerson(cx,baseY,headSize,bodyWidth,bodyH,color,label){
+  var headR=headSize/2;
+  var neckY=baseY-bodyH;
+  var headCY=neckY-headR;
+  var r=bodyWidth/2;
+  var bodyTop=neckY;
+  var bodyBottom=baseY;
+  var s='';
+  // Head
+  s+='<circle cx="'+cx+'" cy="'+headCY+'" r="'+headR+'" fill="'+color+'" opacity="0.8"/>';
+  // Body
+  s+='<rect x="'+(cx-r)+'" y="'+bodyTop+'" width="'+bodyWidth+'" height="'+(bodyBottom-bodyTop)+'" rx="8" fill="'+color+'" opacity="0.6"/>';
+  // Label
+  s+='<text x="'+cx+'" y="'+(bodyBottom+16)+'" text-anchor="middle" fill="'+color+'" font-size="11" font-weight="bold">'+label+'</text>';
+  // Height text
+  s+='<text x="'+(cx+bodyWidth/2+12)+'" y="'+(bodyTop+bodyH/2+4)+'" text-anchor="start" fill="#64748b" font-size="10">'+formatNum(bodyH/scale,1)+' سم</text>';
+  return s;
+}
+</script>
+</body></html>

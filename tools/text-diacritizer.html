@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تشكيل النص العربي أونلاين - إضافة الحركات والتنوين | SP5 Tools</title>
+<meta name="description" content="أداة تشكيل النص العربي مجاناً — أضف الفتحة والضمة والكسرة والسكون والشدة والتنوين لأي نص عربي. تشكيل تلقائي ويدوي.">
+<meta name="keywords" content="تشكيل النص العربي, إضافة الحركات, تشكيل القرآن, التنوين, الفتحة, الضمة, الكسرة, تشكيل أونلاين">
+<link rel="canonical" href="https://sp5.fun/tools/text-diacritizer.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260610a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "تشكيل النص العربي",
+  "description": "أداة تشكيل النص العربي أونلاين — إضافة الحركات والتنوين تلقائياً ويدوياً",
+  "url": "https://sp5.fun/tools/text-diacritizer.html",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "SAR" },
+  "inLanguage": "ar",
+  "isPartOf": { "@type": "WebSite", "name": "SP5 Tools", "url": "https://sp5.fun" }
+}
+</script>
+<meta property="og:title" content="تشكيل النص العربي أونلاين | SP5 Tools">
+<meta property="og:description" content="أضف الحركات والتنوين لأي نص عربي — تشكيل تلقائي ويدوي مجاناً.">
+<meta property="og:url" content="https://sp5.fun/tools/text-diacritizer.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<style>
+.diacritics-bar{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:16px 0}
+.diacritics-bar button{width:44px;height:44px;border:1px solid var(--border);border-radius:8px;background:var(--card-bg);font-size:1.4rem;cursor:pointer;transition:var(--transition);display:flex;align-items:center;justify-content:center}
+.diacritics-bar button:hover{border-color:var(--primary);background:var(--primary-light);transform:scale(1.1)}
+.diacritics-bar button.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.diac-textarea{width:100%;min-height:150px;padding:14px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:1.1rem;font-family:inherit;direction:rtl;outline:none;resize:vertical;line-height:2;transition:var(--transition)}
+.diac-textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(37,99,235,.1)}
+.diac-output{background:var(--primary-light);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px;min-height:80px;font-size:1.1rem;line-height:2;direction:rtl;word-break:break-word}
+.diac-actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.diac-actions button{padding:10px 20px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--card-bg);font-family:inherit;font-size:.9rem;cursor:pointer;transition:var(--transition)}
+.diac-actions button:hover{border-color:var(--primary);color:var(--primary)}
+.diac-actions .btn-primary-action{background:var(--primary);color:#fff;border-color:var(--primary)}
+.diac-actions .btn-primary-action:hover{background:var(--primary-dark)}
+</style>
+</head>
+<body>
+
+<div class="news-ticker">
+  <div class="ticker-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    الأكثر استخداماً
+  </div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a>
+      <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+      <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+      <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+      <a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a>
+      <a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a>
+      <a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a>
+      <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+      <a href="/tools/instagram-bio-generator.html" class="ticker-item"><span class="ticker-icon">📱</span>مولد بيو انستغرام</a>
+      <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+      <a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a>
+      <a href="/tools/geometry-calculator.html" class="ticker-item"><span class="ticker-icon">📐</span>حاسبة الأشكال الهندسية</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+    <button class="menu-toggle" aria-label="القائمة">☰</button>
+    <nav class="nav">
+      <a href="/">الرئيسية</a>
+      <a href="/#financial">حاسبات مالية</a>
+      <a href="/#converter">محولات</a>
+      <a href="/#security">أدوات أمنية</a>
+      <a href="/#text">أدوات نصية</a>
+      <a href="/pages/privacy.html">سياسة الخصوصية</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="/">الرئيسية</a>
+  <span class="separator">/</span>
+  <a href="/#text">أدوات نصية وترفيهية</a>
+  <span class="separator">/</span>
+  <span class="current">تشكيل النص</span>
+</nav>
+
+<main class="tool-page">
+  <h1>📖 تشكيل النص العربي</h1>
+  <p class="tool-desc">أضف الحركات والتشكيل لأي نص عربي — الفتحة والضمة والكسرة والسكون والشدة والتنوين. أدخل النص ثم اضغط على الحركات لإضافتها يدوياً.</p>
+
+  <div class="share-bar">
+    <button class="share-toggle" onclick="toggleShareMenu()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+      مشاركة
+    </button>
+    <button class="share-btn share-btn--copy" onclick="copyToolLink(this)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+      نسخ الرابط
+    </button>
+    <div class="share-menu" id="shareMenu">
+      <a class="share-btn" href="#" onclick="shareTool('whatsapp');return false;" style="color:#25D366;border-color:#25D366;">واتساب</a>
+      <a class="share-btn" href="#" onclick="shareTool('telegram');return false;" style="color:#0088cc;border-color:#0088cc;">تيليجرام</a>
+      <a class="share-btn" href="#" onclick="shareTool('twitter');return false;" style="color:#000;border-color:#000;">تويتر</a>
+      <a class="share-btn" href="#" onclick="shareTool('facebook');return false;" style="color:#1877F2;border-color:#1877F2;">فيسبوك</a>
+    </div>
+  </div>
+
+  <div class="ad-slot"></div>
+
+  <div class="calc-box">
+    <div class="form-group">
+      <label for="inputText">أدخل النص العربي</label>
+      <textarea id="inputText" class="diac-textarea" placeholder="اكتب أو الصق النص العربي هنا..." oninput="updateOutput()"></textarea>
+    </div>
+
+    <label>الحركات — اضغط على حركة ثم اضغط على الحرف في النص</label>
+    <div class="diacritics-bar">
+      <button onclick="selectDiac(this, '\u064B')" title="فتحتن">ً</button>
+      <button onclick="selectDiac(this, '\u064C')" title="ضمتين">ٌ</button>
+      <button onclick="selectDiac(this, '\u064D')" title="كسرتين">ٍ</button>
+      <button onclick="selectDiac(this, '\u064E')" title="فتحة">َ</button>
+      <button onclick="selectDiac(this, '\u064F')" title="ضمة">ُ</button>
+      <button onclick="selectDiac(this, '\u0650')" title="كسرة">ِ</button>
+      <button onclick="selectDiac(this, '\u0651')" title="شدة">ّ</button>
+      <button onclick="selectDiac(this, '\u0652')" title="سكون">ْ</button>
+      <button onclick="selectDiac(this, '')" title="إزالة التشكيل">✕</button>
+    </div>
+
+    <div class="diac-actions">
+      <button class="btn-primary-action" onclick="copyResult()">📋 نسخ النتيجة</button>
+      <button onclick="clearDiacritics()">🧹 إزالة كل التشكيل</button>
+      <button onclick="autoDiacritize()">🤖 تشكيل تلقائي (تجريبي)</button>
+    </div>
+  </div>
+
+  <div id="resultSection" style="display:none">
+    <h3 style="margin:16px 0 8px">النتيجة:</h3>
+    <div class="diac-output" id="outputText"></div>
+  </div>
+
+  <div class="ad-slot"></div>
+
+  <div class="content-section">
+    <h2>ما هو تشكيل النص العربي؟</h2>
+    <p>التشكيل هو إضافة الحركات (الفتحة، الضمة، الكسرة، السكون) والتنوين والشدة إلى الحروف العربية لتحديد نطقها بدقة. يُستخدم التشكيل في:</p>
+    <ul>
+      <li><strong>القرآن الكريم:</strong> لضمان النطق الصحيح</li>
+      <li><strong>الشعر:</strong> للحفاظ على الوزن العروضي</li>
+      <li><strong>النصوص التعليمية:</strong> لمساعدة الطلاب على القراءة الصحيحة</li>
+      <li><strong>الوثائق الرسمية:</strong> لتجنب اللبس في الأسماء</li>
+    </ul>
+
+    <h2>كيف تضيف التشكيل؟</h2>
+    <ol>
+      <li>اكتب أو الصق النص في الخانة</li>
+      <li>اختر الحركة المطلوبة من شريط الحركات</li>
+      <li>ضع المؤشر بعد الحرف المراد تشكيله في النص</li>
+      <li>سيتم إضافة الحركة تلقائياً</li>
+      <li>استخدم زر "إزالة التشكيل" للبدء من جديد</li>
+    </ol>
+  </div>
+</main>
+
+<div class="content-section">
+<h2>أهمية التشكيل في النص العربي</h2>
+<p>التشكيل أو إضافة الحركات إلى الحروف العربية هو عنصر أساسي لفهم النص العربي قراءة صحيحة. في اللغة العربية، تغيير حركة واحدة قد يغير معنى الكلمة بالكامل، فمثلاً كلمة "عَلِمَ" (بفتح العين وكسر اللام) تعنى المعرفة، بينما "عُلِمَ" (بضم العين وكسر اللام) تعنى المبني للمجهول. في عام 2026، تظل الحاجة إلى التشكيل الدقيق قائمة في مجالات متعددة: تلاوة القرآن الكريم حيث التشكيل ضروري للنطق الصحيح، الشعر العربي حيث الحركات تحافظ على الوزن العروضي، النصوص التعليمية لمساعدة الطلاب على القراءة الصحيحة، والوثائق الرسمية لتجنب اللبس في الأسماء والمصطلحات.</p>
+<p>أخطاء التشكيل الشائعة تشمل الخلط بين الفتحة والكسرة في بعض الكلمات، إهمال الشدة في الكلمات التي تحتاجها، وضع السكون في غير محله، والخلط بين التنوين بأنواعه (فتحتن، ضمتين، كسرتين). في النصوص القرآنية، التشكيل الصحيح ليس مجرد تجميل بل ضرورة دينية، حيث أن الخطأ في تشكيل كلمة قد يغير المعنى المقصود بالكامل. أداة تشكيل النص العربي تساعدك في إضافة الحركات بدقة، سواء كنت تريد تشكيل آية قرآنية، بيت شعر، أو نصاً تعليمياً، مع إمكانية التشكيل اليدوي لكل حرف على حدة أو استخدام التشكيل التلقائي التجريبي.</p>
+<p>للاستخدام الأمثل لأداة التشكيل، ابدأ بكتابة النص العربي في خانة الإدخال، ثم اختر الحركة المطلوبة من شريط الحركات (الفتحة، الضمة، الكسرة، السكون، الشدة، التنوين)، وضع المؤشر بعد الحرف المراد تشكيله. يمكنك إزالة التشكيل بالكامل والبدء من جديد بنقرة زر واحدة. التشكيل التلقائي (التجريبي) يحاول تشكيل النص تلقائياً بناءً على قاموس شامل للكلمات العربية. تذكر أن التشكيل الدقيق يتطلب فهماً للسياق النحوي، لذا يُنصح بمراجعة النص المشكَّل يدوياً للتأكد من دقته، خاصة في النصوص المهمة.</p>
+</div>
+<div class="related-tools">
+  <h3>🔗 أدوات ذات صلة</h3>
+  <div class="related-grid">
+    <a href="/tools/word-counter.html" class="related-card"><span class="rc-icon">📝</span><span class="rc-text">عداد الكلمات</span></a>
+    <a href="/tools/text-decorator.html" class="related-card"><span class="rc-icon">✨</span><span class="rc-text">زخرفة نصوص</span></a>
+    <a href="/tools/emoji-keyboard.html" class="related-card"><span class="rc-icon">😀</span><span class="rc-text">لوحة الإيموجي</span></a>
+    <a href="/tools/lorem-ipsum.html" class="related-card"><span class="rc-icon">📄</span><span class="rc-text">مولد نص عربي</span></a>
+    <a href="/tools/hashtag-generator.html" class="related-card"><span class="rc-icon">#️⃣</span><span class="rc-text">مولد هاشتاقات</span></a>
+    <a href="/tools/instagram-bio-generator.html" class="related-card"><span class="rc-icon">📱</span><span class="rc-text">مولد بيو انستغرام</span></a>
+    <a href="/tools/countdown-timer.html" class="related-card"><span class="rc-icon">⏱️</span><span class="rc-text">عداد تنازلي</span></a>
+    <a href="/tools/love-calculator.html" class="related-card"><span class="rc-icon">💕</span><span class="rc-text">حاسبة الحب</span></a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div>
+    <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة</a></div>
+    <div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة.</div>
+</footer>
+
+<script src="/js/main.js?v=20260610a"></script>
+<script>
+var selectedDiac = '';
+
+function selectDiac(btn, diac) {
+  selectedDiac = diac;
+  var btns = document.querySelectorAll('.diacritics-bar button');
+  for (var i = 0; i < btns.length; i++) { btns[i].classList.remove('active'); }
+  btn.classList.add('active');
+
+  // Insert diacritic at cursor position
+  var ta = document.getElementById('inputText');
+  var start = ta.selectionStart;
+  var end = ta.selectionEnd;
+  var text = ta.value;
+  if (start === end && selectedDiac) {
+    // Insert diacritic after cursor position (after the character)
+    ta.value = text.substring(0, start) + selectedDiac + text.substring(end);
+    ta.selectionStart = ta.selectionEnd = start + selectedDiac.length;
+  } else if (!selectedDiac) {
+    // Remove diacritic: find and remove any diacritic at cursor position
+    var charBefore = text.substring(start - 1, start);
+    var diacriticsRegex = /[\u064B-\u0652\u0670\u0653-\u0657]/;
+    if (diacriticsRegex.test(charBefore)) {
+      ta.value = text.substring(0, start - 1) + text.substring(start);
+      ta.selectionStart = ta.selectionEnd = start - 1;
+    }
+  }
+  ta.focus();
+  updateOutput();
+}
+
+function updateOutput() {
+  var text = document.getElementById('inputText').value;
+  var section = document.getElementById('resultSection');
+  var output = document.getElementById('outputText');
+  if (text.trim()) {
+    section.style.display = 'block';
+    output.textContent = text;
+  } else {
+    section.style.display = 'none';
+  }
+}
+
+function copyResult() {
+  var text = document.getElementById('inputText').value;
+  if (!text.trim()) return;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() { alert('✅ تم نسخ النص المشكّل!'); });
+  } else {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); alert('✅ تم نسخ النص المشكّل!'); } catch(e) {}
+    document.body.removeChild(ta);
+  }
+}
+
+function clearDiacritics() {
+  var ta = document.getElementById('inputText');
+  ta.value = ta.value.replace(/[\u064B-\u0652\u0670\u0653-\u0657]/g, '');
+  updateOutput();
+}
+
+// Auto-diacritizer using comprehensive Arabic word patterns
+function autoDiacritize() {
+  var ta = document.getElementById('inputText');
+  var text = ta.value;
+  if (!text.trim()) return;
+
+  // Step 1: Remove all existing diacritics first
+  text = text.replace(/[\u064B-\u0652\u0670\u0653-\u0657]/g, '');
+
+  // Step 2: Comprehensive word-by-word replacement
+  // Key: undiacritized word, Value: diacritized word
+  var dict = {
+    // === Prepositions & Conjunctions ===
+    'في': 'فِي', 'من': 'مِنْ', 'إلى': 'إِلَى', 'على': 'عَلَى', 'عن': 'عَنْ',
+    'مع': 'مَعَ', 'إلى': 'إِلَى', 'حتى': 'حَتَّى', 'منذ': 'مُنْذُ',
+    'بعد': 'بَعْدَ', 'قبل': 'قَبْلَ', 'عند': 'عِنْدَ', 'بين': 'بَيْنَ',
+    'خلال': 'خِلَالَ', 'دون': 'دُونَ', 'فوق': 'فَوْقَ', 'تحت': 'تَحْتَ',
+    'أمام': 'أَمَامَ', 'وراء': 'وَرَاءَ', 'داخل': 'دَاخِلَ', 'خارج': 'خَارِجَ',
+    'ل': 'لِ', 'ب': 'بِ', 'ك': 'كَ', 'ف': 'فَ', 'و': 'وَ',
+    'ثم': 'ثُمَّ', 'أو': 'أَوْ', 'و': 'وَ', 'بل': 'بَلْ', 'لكن': 'لَكِنْ',
+    'لأن': 'لِأَنَّ', 'حيث': 'حَيْثُ', 'كما': 'كَمَا', 'حين': 'حِينَ',
+    'سوى': 'سِوَى', 'نحو': 'نَحْوَ', 'دون': 'دُونَ',
+
+    // === Pronouns ===
+    'هو': 'هُوَ', 'هي': 'هِيَ', 'هم': 'هُمْ', 'هن': 'هُنَّ',
+    'أنا': 'أَنَا', 'نحن': 'نَحْنُ', 'أنت': 'أَنْتَ', 'أنتم': 'أَنْتُمْ',
+    'أنتن': 'أَنْتُنَّ', 'هذا': 'هَذَا', 'هذه': 'هَذِهِ', 'ذلك': 'ذَلِكَ',
+    'تلك': 'تِلْكَ', 'هذان': 'هَذَانِ', 'هاتان': 'هَاتَانِ',
+    'هؤلاء': 'هَؤُلَاءِ', 'أولئك': 'أُولَئِكَ',
+    'الذي': 'اَلَّذِي', 'التي': 'اَلَّتِي', 'الذين': 'اَلَّذِينَ',
+    'اللذان': 'اَللَّذَانِ', 'اللتان': 'اَللَّتَانِ', 'اللاتي': 'اَللَّاتِي',
+    'اللائي': 'اَللَّائِي', 'اللواتي': 'اَللَّوَاتِي',
+
+    // === Core verbs ===
+    'كان': 'كَانَ', 'كانت': 'كَانَتْ', 'كانوا': 'كَانُوا', 'كنا': 'كُنَّا',
+    'كنت': 'كُنْتَ', 'يكون': 'يَكُونُ', 'تكون': 'تَكُونُ',
+    'ليس': 'لَيْسَ', 'ليست': 'لَيْسَتْ', 'ليسوا': 'لَيْسُوا',
+    'قال': 'قَالَ', 'قالت': 'قَالَتْ', 'قالوا': 'قَالُوا', 'يقول': 'يَقُولُ',
+    'تقول': 'تَقُولُ', 'أقول': 'أَقُولُ', 'نقول': 'نَقُولُ',
+    'فعل': 'فَعَلَ', 'فعلت': 'فَعَلَتْ', 'فعلوا': 'فَعَلُوا',
+    'يفعل': 'يَفْعَلُ', 'تفعل': 'تَفْعَلُ', 'نفعل': 'نَفْعَلُ',
+    'جاء': 'جَاءَ', 'جاءت': 'جَاءَتْ', 'جاءوا': 'جَاءُوا',
+    'يأتي': 'يَأْتِي', 'تأتي': 'تَأْتِي',
+    'ذهب': 'ذَهَبَ', 'ذهبت': 'ذَهَبَتْ', 'ذهبوا': 'ذَهَبُوا',
+    'يذهب': 'يَذْهَبُ', 'تذهب': 'تَذْهَبُ',
+    'علم': 'عَلِمَ', 'يعلم': 'يَعْلَمُ', 'تعلم': 'تَعْلَمُ',
+    'أراد': 'أَرَادَ', 'أرادت': 'أَرَادَتْ', 'يريد': 'يُرِيدُ', 'تريد': 'تُرِيدُ',
+    'أخذ': 'أَخَذَ', 'أخذت': 'أَخَذَتْ', 'يأخذ': 'يَأْخُذُ',
+    'أعطى': 'أَعْطَى', 'أعطت': 'أَعْطَتْ', 'يعطي': 'يُعْطِي',
+    'وجد': 'وَجَدَ', 'وجدت': 'وَجَدَتْ', 'يجد': 'يَجِدُ',
+    'عاد': 'عَادَ', 'عادت': 'عَادَتْ', 'يعود': 'يَعُودُ',
+    'صار': 'صَارَ', 'صارت': 'صَارَتْ', 'يصير': 'يَصِيرُ',
+    'أصبح': 'أَصْبَحَ', 'أصبحت': 'أَصْبَحَتْ',
+    'أمسى': 'أَمْسَى', 'أمسكت': 'أَمْسَتْ',
+    'يقدر': 'يَقْدِرُ', 'قدر': 'قَدَرَ',
+    'شاء': 'شَاءَ', 'يشاء': 'يَشَاءُ',
+    'شاء': 'شَاءَ',
+    'دخل': 'دَخَلَ', 'دخلت': 'دَخَلَتْ', 'يدخل': 'يَدْخُلُ',
+    'خرج': 'خَرَجَ', 'خرجت': 'خَرَجَتْ', 'يخرج': 'يَخْرُجُ',
+    'كتب': 'كَتَبَ', 'كتبت': 'كَتَبَتْ', 'يكتب': 'يَكْتُبُ',
+    'قرأ': 'قَرَأَ', 'قرأت': 'قَرَأَتْ', 'يقرأ': 'يَقْرَأُ',
+    'سمع': 'سَمِعَ', 'سمعت': 'سَمِعَتْ', 'يسمع': 'يَسْمَعُ',
+    'نظر': 'نَظَرَ', 'نظرت': 'نَظَرَتْ', 'ينظر': 'يَنْظُرُ',
+    'فهم': 'فَهِمَ', 'فهمت': 'فَهِمَتْ', 'يفهم': 'يَفْهَمُ',
+    'عمل': 'عَمِلَ', 'عملت': 'عَمِلَتْ', 'يعمل': 'يَعْمَلُ',
+    'عرف': 'عَرَفَ', 'عرفت': 'عَرَفَتْ', 'يعرف': 'يَعْرِفُ',
+    'حب': 'حُبٌّ', 'أحب': 'أَحَبَّ', 'أحبت': 'أَحَبَّتْ', 'يحب': 'يُحِبُّ',
+    'طلب': 'طَلَبَ', 'طلبت': 'طَلَبَتْ', 'يطلب': 'يَطْلُبُ',
+    'شكر': 'شُكْرٌ', 'شكرا': 'شُكْرًا', 'شكراً': 'شُكْرًا',
+    'نسي': 'نَسِيَ', 'نسيت': 'نَسِيتُ', 'ينسى': 'يَنْسَى',
+    'مات': 'مَاتَ', 'ماتت': 'مَاتَتْ', 'يموت': 'يَمُوتُ',
+    'عاش': 'عَاشَ', 'عاشت': 'عَاشَتْ', 'يعيش': 'يَعِيشُ',
+    'بكى': 'بَكَى', 'بكت': 'بَكَتْ', 'يبكي': 'يَبْكِي',
+    'ضحك': 'ضَحِكَ', 'ضحكت': 'ضَحِكَتْ', 'يضحك': 'يَضْحَكُ',
+    'فتح': 'فَتَحَ', 'فتحت': 'فَتَحَتْ', 'يفتح': 'يَفْتَحُ',
+    'أغلق': 'أَغْلَقَ', 'أغلقت': 'أَغْلَقَتْ', 'يغلق': 'يُغْلِقُ',
+    'سأل': 'سَأَلَ', 'سألت': 'سَأَلَتْ', 'يسأل': 'يَسْأَلُ',
+    'أجاب': 'أَجَابَ', 'أجابت': 'أَجَابَتْ', 'يجيب': 'يُجِيبُ',
+    'جلس': 'جَلَسَ', 'جلست': 'جَلَسَتْ', 'يجلس': 'يَجْلِسُ',
+    'وقف': 'وَقَفَ', 'وقفت': 'وَقَفَتْ', 'يقف': 'يَقِفُ',
+    'مشى': 'مَشَى', 'مشت': 'مَشَتْ', 'يمشي': 'يَمْشِي',
+    'ركض': 'رَكَضَ', 'ركضت': 'رَكَضَتْ', 'يركض': 'يَرْكُضُ',
+    'نام': 'نَامَ', 'نامت': 'نَامَتْ', 'ينام': 'يَنَامُ',
+    'استيقظ': 'اِسْتَيْقَظَ', 'استيقظت': 'اِسْتَيْقَظَتْ',
+    'أكل': 'أَكَلَ', 'أكلت': 'أَكَلَتْ', 'يأكل': 'يَأْكُلُ',
+    'شرب': 'شَرِبَ', 'شربت': 'شَرِبَتْ', 'يشرب': 'يَشْرَبُ',
+
+    // === Particles & Special ===
+    'أن': 'أَنْ', 'إن': 'إِنْ', 'أنّ': 'أَنَّ', 'إنّ': 'إِنَّ',
+    'لا': 'لَا', 'لم': 'لَمْ', 'لن': 'لَنْ', 'قد': 'قَدْ',
+    'ما': 'مَا', 'هل': 'هَلْ', 'كيف': 'كَيْفَ', 'أين': 'أَيْنَ',
+    'متى': 'مَتَى', 'لماذا': 'لِمَاذَا', 'لما': 'لِمَ',
+    'من': 'مَنْ', 'ماذا': 'مَاذَا', 'أي': 'أَيُّ',
+    'نعم': 'نَعَمْ', 'بلى': 'بَلَى', 'أم': 'أَمْ',
+    'كل': 'كُلّ', 'كلّ': 'كُلٌّ', 'بعض': 'بَعْضٌ',
+    'غير': 'غَيْرُ', 'أيضا': 'أَيْضًا', 'أيضاً': 'أَيْضًا',
+    'هنا': 'هُنَا', 'هناك': 'هُنَاكَ', 'حيث': 'حَيْثُ',
+    'الآن': 'اَلْآنَ', 'أمس': 'أَمْسِ', 'اليوم': 'اَلْيَوْمَ',
+    'غدا': 'غَدًا', 'غداً': 'غَدًا', 'أمس': 'أَمْسِ',
+    'دائما': 'دَائِمًا', 'دائماً': 'دَائِمًا',
+    'جيدا': 'جَيِّدًا', 'جيداً': 'جَيِّدًا',
+    'كثيرا': 'كَثِيرًا', 'كثيراً': 'كَثِيرًا',
+    'حقا': 'حَقًّا', 'حقاً': 'حَقًّا',
+    'أبدا': 'أَبَدًا', 'أبداً': 'أَبَدًا',
+    'رغم': 'رَغْمَ', 'رغم': 'رُغْمَ',
+    'إلا': 'إِلَّا', 'سوى': 'سِوَى',
+
+    // === God & Religion ===
+    'الله': 'اَللَّهُ', 'اللهم': 'اَللَّهُمَّ',
+    'الرحمن': 'اَلرَّحْمَنُ', 'الرحيم': 'اَلرَّحِيمُ',
+    'رب': 'رَبُّ', 'ربي': 'رَبِّي', 'ربنا': 'رَبَّنَا',
+    'الرب': 'اَلرَّبُّ', 'الخالق': 'اَلْخَالِقُ',
+    'الإسلام': 'اَلْإِسْلَامُ', 'المسلم': 'اَلْمُسْلِمُ', 'المسلمون': 'اَلْمُسْلِمُونَ',
+    'القرآن': 'اَلْقُرْآنُ', 'الصلاة': 'اَلصَّلَاةُ', 'الزكاة': 'اَلزَّكَاةُ',
+    'الصيام': 'اَلصِّيَامُ', 'الحج': 'اَلْحَجُّ',
+    'محمد': 'مُحَمَّدٌ',
+
+    // === Nouns & Adjectives ===
+    'الرجل': 'اَلرَّجُلُ', 'المرأة': 'اَلْمَرْأَةُ',
+    'الولد': 'اَلْوَلَدُ', 'البنت': 'اَلْبِنْتُ',
+    'الإنسان': 'اَلْإِنْسَانُ', 'الناس': 'اَلنَّاسُ',
+    'البيت': 'اَلْبَيْتُ', 'الباب': 'اَلْبَابُ',
+    'المدينة': 'اَلْمَدِينَةُ', 'القرية': 'اَلْقَرْيَةُ',
+    'الكتاب': 'اَلْكِتَابُ', 'القلم': 'اَلْقَلَمُ',
+    'الماء': 'اَلْمَاءُ', 'النور': 'اَلنُّورُ',
+    'الليل': 'اَللَّيْلُ', 'النهار': 'اَلنَّهَارُ',
+    'الشمس': 'اَلشَّمْسُ', 'القمر': 'اَلْقَمَرُ',
+    'السماء': 'اَلسَّمَاءُ', 'الأرض': 'اَلْأَرْضُ',
+    'البحر': 'اَلْبَحْرُ', 'النهر': 'اَلنَّهْرُ',
+    'الجبل': 'اَلْجَبَلُ', 'الشجر': 'اَلشَّجَرُ',
+    'الطريق': 'اَلطَّرِيقُ', 'العلم': 'اَلْعِلْمُ',
+    'الحب': 'اَلْحُبُّ', 'الحياة': 'اَلْحَيَاةُ',
+    'الموت': 'اَلْمَوْتُ', 'القلب': 'اَلْقَلْبُ',
+    'العين': 'اَلْعَيْنُ', 'اليد': 'اَلْيَدُ',
+    'الرأس': 'اَلرَّأْسُ', 'الوجه': 'اَلْوَجْهُ',
+    'الأمر': 'اَلْأَمْرُ', 'الشيء': 'اَلشَّيْءُ',
+    'الحق': 'اَلْحَقُّ', 'الباطل': 'اَلْبَاطِلُ',
+    'الخير': 'اَلْخَيْرُ', 'الشر': 'اَلشَّرُّ',
+    'الكبير': 'اَلْكَبِيرُ', 'الصغير': 'اَلصَّغِيرُ',
+    'الجديد': 'اَلْجَدِيدُ', 'القديم': 'اَلْقَدِيمُ',
+    'الحسن': 'اَلْحَسَنُ', 'السيئ': 'اَلسَّيِّئُ',
+    'الأول': 'اَلْأَوَّلُ', 'الأخير': 'اَلْأَخِيرُ',
+    'كبير': 'كَبِيرٌ', 'صغير': 'صَغِيرٌ',
+    'جديد': 'جَدِيدٌ', 'قديم': 'قَدِيمٌ',
+    'حسن': 'حَسَنٌ', 'جميل': 'جَمِيلٌ',
+    'طويل': 'طَوِيلٌ', 'قصير': 'قَصِيرٌ',
+    'عظيم': 'عَظِيمٌ', 'كريم': 'كَرِيمٌ',
+    'حكيم': 'حَكِيمٌ', 'عليم': 'عَلِيمٌ',
+    'قدير': 'قَدِيرٌ', 'سميع': 'سَمِيعٌ',
+    'بصير': 'بَصِيرٌ', 'سريع': 'سَرِيعٌ',
+    'قوي': 'قَوِيٌّ', 'ضعيف': 'ضَعِيفٌ',
+    'أبيض': 'أَبْيَضُ', 'أسود': 'أَسْوَدُ',
+    'أحمر': 'أَحْمَرُ', 'أخضر': 'أَخْضَرُ',
+    'أصفر': 'أَصْفَرُ', 'أزرق': 'أَزْرَقُ',
+    'وحيد': 'وَحِيدٌ', 'كثير': 'كَثِيرٌ', 'قليل': 'قَلِيلٌ',
+    'أول': 'أَوَّلُ', 'آخر': 'آخِرُ',
+    'صحيح': 'صَحِيحٌ', 'خطأ': 'خَطَأٌ',
+    'مهم': 'مُهِمٌّ', 'صعب': 'صَعْبٌ', 'سهل': 'سَهْلٌ',
+
+    // === Preposition + pronoun combos ===
+    'له': 'لَهُ', 'لها': 'لَهَا', 'لهم': 'لَهُمْ', 'لهن': 'لَهُنَّ',
+    'به': 'بِهِ', 'بها': 'بِهَا', 'بهم': 'بِهِمْ',
+    'فيه': 'فِيهِ', 'فيها': 'فِيهَا', 'فيهم': 'فِيهِمْ',
+    'منه': 'مِنْهُ', 'منها': 'مِنْهَا', 'منهم': 'مِنْهُمْ',
+    'عليه': 'عَلَيْهِ', 'عليها': 'عَلَيْهَا', 'عليهم': 'عَلَيْهِمْ',
+    'إليه': 'إِلَيْهِ', 'إليها': 'إِلَيْهَا',
+    'عنه': 'عَنْهُ', 'عنها': 'عَنْهَا', 'عنهم': 'عَنْهُمْ',
+    'معه': 'مَعَهُ', 'معها': 'مَعَهَا', 'معهم': 'مَعَهُمْ',
+
+    // === Numbers ===
+    'واحد': 'وَاحِدٌ', 'اثنان': 'اِثْنَانِ', 'ثلاثة': 'ثَلَاثَةٌ',
+    'أربعة': 'أَرْبَعَةٌ', 'خمسة': 'خَمْسَةٌ', 'ستة': 'سِتَّةٌ',
+    'سبعة': 'سَبْعَةٌ', 'ثمانية': 'ثَمَانِيَةٌ', 'تسعة': 'تِسْعَةٌ',
+    'عشرة': 'عَشَرَةٌ', 'مئة': 'مِئَةٌ', 'ألف': 'أَلْفٌ', 'مليون': 'مِلْيُونٌ',
+
+    // === Time words ===
+    'اليوم': 'اَلْيَوْمَ', 'أمس': 'أَمْسِ', 'غدا': 'غَدًا',
+    'الصباح': 'اَلصَّبَاحُ', 'المساء': 'اَلْمَسَاءُ',
+    'الأسبوع': 'اَلْأُسْبُوعُ', 'الشهر': 'اَلشَّهْرُ', 'السنة': 'اَلسَّنَةُ',
+    'الساعة': 'اَلسَّاعَةُ', 'الدقيقة': 'اَلدَّقِيقَةُ',
+    'الليل': 'اَللَّيْلُ', 'النهار': 'اَلنَّهَارُ',
+    'أولا': 'أَوَّلًا', 'أولاً': 'أَوَّلًا', 'ثانيا': 'ثَانِيًا', 'ثانياً': 'ثَانِيًا',
+    'ثالثا': 'ثَالِثًا', 'رابعا': 'رَابِعًا',
+    'أخيرا': 'أَخِيرًا', 'أخيراً': 'أَخِيرًا',
+
+    // === Common phrases ===
+    'بسم': 'بِسْمِ', 'الحمد': 'اَلْحَمْدُ', 'لله': 'لِلَّهِ',
+    'سلام': 'سَلَامٌ', 'عليكم': 'عَلَيْكُمْ',
+    'شكرا': 'شُكْرًا', 'شكراً': 'شُكْرًا',
+    'عفوا': 'عَفْوًا', 'عفواً': 'عَفْوًا',
+    'مرحبا': 'مَرْحَبًا', 'مرحباً': 'مَرْحَبًا',
+    'أهلا': 'أَهْلًا', 'أهلاً': 'أَهْلًا',
+    'صباح': 'صَبَاحُ', 'خير': 'خَيْرٌ',
+    'مساء': 'مَسَاءُ',
+    'يرحمك': 'يَرْحَمُكَ', 'الله': 'اَللَّهَ'
+  };
+
+  // Step 3: Split text into words preserving whitespace/punctuation
+  var tokens = text.split(/(\s+|[,.;:!؟?«»"'()\[\]{}])/);
+  for (var i = 0; i < tokens.length; i++) {
+    var word = tokens[i];
+    // Skip whitespace and punctuation
+    if (/^\s+$/.test(word) || /^[,.;:!؟?«"\'()\[\]{}]$/.test(word)) continue;
+    // Strip diacritics from token for lookup
+    var clean = word.replace(/[\u064B-\u0652\u0670\u0653-\u0657]/g, '');
+    if (dict[clean]) {
+      tokens[i] = dict[clean];
+    } else {
+      // Step 4: Apply rules for unmatched words
+      // Rule: "ال" definite article at word start
+      if (clean.length > 2 && clean.substring(0, 2) === 'ال') {
+        // Don't re-process if already matched in dict
+        var rest = clean.substring(2);
+        var firstRest = rest.charAt(0);
+        // Shamsiyya letters: ت ث د ذ ر ز س ش ص ض ط ظ ل ن
+        var shamsiyya = 'تثدرزسشصضطظلن';
+        if (shamsiyya.indexOf(firstRest) !== -1) {
+          // Shamsiyya: laam is silent, lam is assimilated
+          // e.g. الشمس → اَلشَّمْسُ
+          tokens[i] = 'اَل' + firstRest + 'ّ' + rest.substring(1);
+        } else {
+          // Qamariyya: laam is pronounced
+          // e.g. الكتاب → اَلْكِتَابُ
+          tokens[i] = 'اَلْ' + rest;
+        }
+      }
+    }
+  }
+  text = tokens.join('');
+
+  ta.value = text;
+  updateOutput();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حاسبة المساحة - احسب مساحة الشقة والأرض بأي وحدة | SP5 Tools</title>
+<meta name="description" content="حاسبة المساحة المجانية: احسب مساحة الشقة أو الأرض أو الغرفة بالمتر المربع والقدم المربع والدونم والهكتار والفدان. سهلة ودقيقة.">
+<meta name="keywords" content="حاسبة المساحة, حساب مساحة الشقة, مساحة الأرض, متر مربع, دونم, هكتار, فدان, قدم مربع, حساب مساحة الغرفة">
+<link rel="canonical" href="https://sp5.fun/tools/property-area-calculator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260609e">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "حاسبة المساحة",
+  "description": "حاسبة المساحة المجانية لحساب مساحة الشقة والأرض بأي وحدة قياس: متر مربع، قدم مربع، دونم، هكتار، فدان.",
+  "url": "https://sp5.fun/tools/property-area-calculator.html",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "SAR"},
+  "inLanguage": "ar",
+  "isPartOf": {"@type": "WebSite", "name": "SP5 Tools", "url": "https://sp5.fun"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "كم متر مربع في الدونم؟", "acceptedAnswer": {"@type": "Answer", "text": "الدونم يساوي 1000 متر مربع. يُستخدم الدونم كوحدة قياس للأراضي في سوريا والأردن ولبنان وفلسطين وتركيا."}},
+    {"@type": "Question", "name": "كم متر مربع في الفدان؟", "acceptedAnswer": {"@type": "Answer", "text": "الفدان يساوي حوالي 4047 متر مربع. يُستخدم الفدان كوحدة قياس للأراضي الزراعية في مصر بشكل رئيسي."}},
+    {"@type": "Question", "name": "كيف أحسب مساحة شقة بالمتر المربع؟", "acceptedAnswer": {"@type": "Answer", "text": "اضرب الطول في العرض لكل غرفة ثم اجمع النتائج. مثلاً: غرفة 5×4 متر = 20 م². استخدم حاسبة المساحة أعلاه لحساب المساحة الكلية بسهولة."}},
+    {"@type": "Question", "name": "ما الفرق بين الهكتار والدونم؟", "acceptedAnswer": {"@type": "Answer", "text": "الهكتار يساوي 10000 متر مربع (10 دونم)، بينما الدونم يساوي 1000 متر مربع. أي أن الهكتار = 10 دونم."}},
+    {"@type": "Question", "name": "هل حاسبة المساحة مجانية؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، حاسبة المساحة مجانية تماماً ولا تحتاج تسجيل. جميع الحسابات تتم في متصفحك مباشرة لحماية خصوصيتك."}}
+  ]
+}
+</script>
+<meta property="og:title" content="حاسبة المساحة | SP5 Tools">
+<meta property="og:description" content="احسب مساحة الشقة أو الأرض بالمتر المربع والقدم المربع والدونم والهكتار والفدان.">
+<meta property="og:url" content="https://sp5.fun/tools/property-area-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="حاسبة المساحة | SP5 Tools">
+<meta name="twitter:description" content="احسب مساحة الشقة أو الأرض بأي وحدة قياس. حاسبة مجانية وسهلة.">
+<style>
+.calc-page{max-width:800px;margin:0 auto;padding:20px}
+.calc-page h1{font-size:1.5rem;color:#2563eb;margin-bottom:20px;text-align:center}
+.calc-box{background:#fff;border-radius:14px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.08);margin-bottom:24px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-weight:600;margin-bottom:6px;color:#1e293b;font-size:.92rem}
+.form-group input,.form-group select{width:100%;padding:12px 14px;border:1px solid #d1d5db;border-radius:8px;font-size:1rem;font-family:'Tajawal',sans-serif;box-sizing:border-box;transition:border-color .2s}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.shape-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.shape-tab{padding:10px 16px;border:1px solid #e5e7eb;border-radius:8px;background:#f8fafc;cursor:pointer;font-family:'Tajawal',sans-serif;font-size:.88rem;font-weight:600;color:#475569;transition:all .2s}
+.shape-tab:hover{background:#eef2ff;border-color:#2563eb;color:#2563eb}
+.shape-tab.active{background:#2563eb;color:#fff;border-color:#2563eb}
+.rooms-section{margin-top:16px;padding-top:16px;border-top:1px solid #e5e7eb}
+.room-row{display:flex;gap:10px;margin-bottom:10px;align-items:center;flex-wrap:wrap}
+.room-row input{flex:1;min-width:80px}
+.room-row .room-label{font-size:.85rem;color:#64748b;min-width:70px}
+.remove-room{background:#fee2e2;color:#dc2626;border:none;border-radius:6px;padding:8px 12px;cursor:pointer;font-family:'Tajawal',sans-serif;font-size:.85rem}
+.remove-room:hover{background:#fecaca}
+.add-room{background:#f0f7ff;color:#2563eb;border:1px solid #bfdbfe;border-radius:8px;padding:10px 20px;cursor:pointer;font-family:'Tajawal',sans-serif;font-size:.9rem;font-weight:600;margin-top:8px}
+.add-room:hover{background:#2563eb;color:#fff}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 32px;border-radius:8px;font-size:1rem;font-family:'Tajawal',sans-serif;cursor:pointer;font-weight:600;width:100%;transition:background .2s;margin-top:12px}
+.btn-calc:hover{background:#1d4ed8}
+.result-highlight{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-radius:12px;padding:20px;text-align:center;margin:16px 0}
+.result-highlight .rh-value{font-size:2.2rem;font-weight:800}
+.result-highlight .rh-label{font-size:.9rem;opacity:.9;margin-top:4px}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:16px 0}
+.result-card{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:12px;text-align:center}
+.result-card .rc-value{font-size:1.1rem;font-weight:700;color:#1e40af}
+.result-card .rc-label{font-size:.8rem;color:#64748b;margin-top:2px}
+.tool-content h2{font-size:1.2rem;color:#1e40af;margin:30px 0 12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1rem;color:#1e293b;margin:20px 0 8px}
+.tool-content p{color:#475569;line-height:1.9;margin:10px 0}
+.tool-content ul{color:#475569;line-height:1.9;padding-right:20px;margin:10px 0}
+.tool-content table{width:100%;border-collapse:collapse;margin:15px 0;font-size:.88rem}
+.tool-content th{background:#2563eb;color:#fff;padding:10px 12px;text-align:right}
+.tool-content td{padding:10px 12px;border-bottom:1px solid #e5e7eb;color:#475569}
+.tool-content tr:nth-child(even){background:#f8fafc}
+.faq-item{background:#f8fafc;border-right:4px solid #2563eb;padding:14px 18px;margin:12px 0;border-radius:0 8px 8px 0}
+.faq-item strong{color:#1e40af;display:block;margin-bottom:4px}
+.faq-item p{margin:4px 0 0;color:#475569;font-size:.92rem}
+.share-bar{display:flex;gap:10px;margin:24px 0;flex-wrap:wrap}
+.share-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;text-decoration:none;font-size:.85rem;font-weight:600;color:#fff;transition:opacity .2s}
+.share-bar a:hover{opacity:.85}
+.share-fb{background:#1877f2}.share-tw{background:#1da1f2}.share-wa{background:#25d366}
+.related-tools{margin:30px 0}
+.related-tools h3{font-size:1.1rem;color:#1e40af;margin-bottom:12px}
+.related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.related-grid a{display:block;background:#f0f7ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px 12px;text-decoration:none;color:#1e40af;font-size:.85rem;font-weight:500;transition:all .2s}
+.related-grid a:hover{background:#2563eb;color:#fff;border-color:#2563eb}
+@media(max-width:600px){
+  .calc-page{padding:14px}
+  .calc-page h1{font-size:1.25rem}
+  .result-highlight .rh-value{font-size:1.6rem}
+  .result-grid{grid-template-columns:1fr 1fr}
+  .room-row{flex-direction:column;gap:4px}
+  .room-row .room-label{min-width:auto}
+}
+</style>
+</head>
+<body>
+<div class="news-ticker">
+  <div class="ticker-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    الأكثر استخداماً
+  </div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+      <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+      <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+      <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+      <a href="/tools/word-counter.html" class="ticker-item"><span class="ticker-icon">📝</span>عداد الكلمات</a>
+      <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+    <button class="menu-toggle" aria-label="القائمة">☰</button>
+    <nav class="nav">
+      <a href="/">الرئيسية</a>
+      <a href="/#financial">حاسبات مالية</a>
+      <a href="/#converter">محولات</a>
+      <a href="/#security">أدوات أمنية</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="/">الرئيسية</a>
+  <span class="separator">/</span>
+  <span class="current">حاسبة المساحة</span>
+</nav>
+
+<main class="calc-page">
+  <h1>🏠 حاسبة المساحة</h1>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2351071222567371" data-ad-slot="area-top" data-ad-format="auto" data-full-width-responsive="true"></ins>
+
+  <div class="calc-box">
+    <div class="shape-tabs" id="shapeTabs">
+      <button class="shape-tab active" onclick="setShape('rect')">▭ مستطيل</button>
+      <button class="shape-tab" onclick="setShape('square')">⬜ مربع</button>
+      <button class="shape-tab" onclick="setShape('circle')">⭕ دائرة</button>
+      <button class="shape-tab" onclick="setShape('triangle')">△ مثلث</button>
+      <button class="shape-tab" onclick="setShape('rooms')">🚪 غرف</button>
+    </div>
+
+    <div id="shapeInputs">
+      <div class="form-group">
+        <label for="unitSelect">وحدة القياس</label>
+        <select id="unitSelect" onchange="calculate()">
+          <option value="m2">متر مربع (م²)</option>
+          <option value="ft2">قدم مربع (قدم²)</option>
+          <option value="dunam">دونم</option>
+          <option value="hectare">هكتار</option>
+          <option value="feddan">فدان</option>
+        </select>
+      </div>
+      <div id="rectInputs">
+        <div class="form-group">
+          <label for="rectWidth">الطول</label>
+          <input type="number" id="rectWidth" placeholder="أدخل الطول" step="any" oninput="calculate()">
+        </div>
+        <div class="form-group">
+          <label for="rectHeight">العرض</label>
+          <input type="number" id="rectHeight" placeholder="أدخل العرض" step="any" oninput="calculate()">
+        </div>
+      </div>
+      <div id="squareInputs" style="display:none">
+        <div class="form-group">
+          <label for="squareSide">طول الضلع</label>
+          <input type="number" id="squareSide" placeholder="أدخل طول الضلع" step="any" oninput="calculate()">
+        </div>
+      </div>
+      <div id="circleInputs" style="display:none">
+        <div class="form-group">
+          <label for="circleRadius">نصف القطر</label>
+          <input type="number" id="circleRadius" placeholder="أدخل نصف القطر" step="any" oninput="calculate()">
+        </div>
+      </div>
+      <div id="triangleInputs" style="display:none">
+        <div class="form-group">
+          <label for="triBase">القاعدة</label>
+          <input type="number" id="triBase" placeholder="أدخل طول القاعدة" step="any" oninput="calculate()">
+        </div>
+        <div class="form-group">
+          <label for="triHeight">الارتفاع</label>
+          <input type="number" id="triHeight" placeholder="أدخل الارتفاع" step="any" oninput="calculate()">
+        </div>
+      </div>
+      <div id="roomsInputs" style="display:none">
+        <p style="color:#64748b;font-size:.9rem;margin:0 0 10px">أدخل أبعاد كل غرفة (الطول × العرض):</p>
+        <div id="roomRows">
+          <div class="room-row">
+            <span class="room-label">الطول:</span>
+            <input type="number" placeholder="الطول" step="any" class="room-w" oninput="calculate()">
+            <span class="room-label">× العرض:</span>
+            <input type="number" placeholder="العرض" step="any" class="room-h" oninput="calculate()">
+          </div>
+        </div>
+        <button class="add-room" onclick="addRoom()">+ إضافة غرفة</button>
+      </div>
+    </div>
+
+    <div class="result-highlight" id="mainResult" style="display:none">
+      <div class="rh-value" id="mainValue">0</div>
+      <div class="rh-label" id="mainLabel">متر مربع</div>
+    </div>
+
+    <div class="result-grid" id="resultGrid" style="display:none"></div>
+  </div>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2351071222567371" data-ad-slot="area-mid" data-ad-format="auto" data-full-width-responsive="true"></ins>
+
+  <div class="tool-content">
+    <h2>ما هي حاسبة المساحة؟</h2>
+    <p>حاسبة المساحة هي أداة مجانية أونلاين لحساب مساحة العقارات والأراضي والشقق والغرف بأي وحدة قياس. سواء كنت تشتري شقة سكنية أو تقيّم قطعة أرض زراعية أو تخطط لتصميم منزلك، هذه الأداة توفر لك حسابات دقيقة مع التحويل الفوري بين وحدات المساحة المختلفة.</p>
+    <p>تدعم الحاسبة خمسة أشكال مختلفة: المستطيل، المربع، الدائرة، المثلث، وحساب المساحة الإجمالية لأكثر من غرفة واحدة. كما تتيح لك التحويل بين وحدات المساحة العربية والعالمية مثل المتر المربع والقدم المربع والدونم والهكتار والفدان.</p>
+
+    <h2>وحدات المساحة العربية</h2>
+    <p>تختلف وحدات قياس المساحة حسب البلد العربي. إليك أهم الوحدات المستخدمة:</p>
+    <ul>
+      <li><strong>المتر المربع (م²):</strong> الوحدة الدولية، تُستخدم عالمياً في العقارات والبناء</li>
+      <li><strong>القدم المربع (قدم²):</strong> يُستخدم في الدول العربية الخليجية وبعض العقارات المسجلة بالنظام الأمريكي</li>
+      <li><strong>الدونم:</strong> يساوي 1000 م²، يُستخدم في سوريا والأردن ولبنان وفلسطين وتركيا</li>
+      <li><strong>الهكتار:</strong> يساوي 10000 م² (10 دونم)، يُستخدم في الزراعة والمشاريع الكبيرة</li>
+      <li><strong>الفدان:</strong> يساوي 4046.86 م²، يُستخدم في مصر للأراضي الزراعية</li>
+    </ul>
+
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2351071222567371" data-ad-slot="area-content1" data-ad-format="auto" data-full-width-responsive="true"></ins>
+
+    <h2>جدول التحويل بين وحدات المساحة</h2>
+    <table>
+      <thead><tr><th>الوحدة</th><th>م²</th><th>قدم²</th><th>دونم</th><th>هكتار</th><th>فدان</th></tr></thead>
+      <tbody>
+        <tr><td>1 متر مربع</td><td>1</td><td>10.76</td><td>0.001</td><td>0.0001</td><td>0.000247</td></tr>
+        <tr><td>1 قدم مربع</td><td>0.0929</td><td>1</td><td>0.000093</td><td>0.000009</td><td>0.000023</td></tr>
+        <tr><td>1 دونم</td><td>1000</td><td>10763.9</td><td>1</td><td>0.1</td><td>0.247</td></tr>
+        <tr><td>1 هكتار</td><td>10000</td><td>107639</td><td>10</td><td>1</td><td>2.47</td></tr>
+        <tr><td>1 فدان</td><td>4046.86</td><td>43560</td><td>4.047</td><td>0.4047</td><td>1</td></tr>
+      </tbody>
+    </table>
+
+    <h2>كيف تحسب مساحة الشقة؟</h2>
+    <p>لحساب مساحة الشقة الكلية، اختر وضع "الغرف" وأدخل أبعاد كل غرفة (الطول × العرض). ستحصل على المساحة الإجمالية بكل الوحدات. هذا مفيد جداً عند مقارنة الشقق أو تقدير تكاليف البناء أو الديكور.</p>
+    <p>مثلاً: شقة مكونة من صالة 5×4 م + غرفة نوم 4×3.5 م + مطبخ 3×2.5 م + حمام 2×2 م = 20 + 14 + 7.5 + 4 = 45.5 م².</p>
+
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item">
+      <strong>كم متر مربع في الدونم؟</strong>
+      <p>الدونم يساوي 1000 متر مربع. يُستخدم الدونم كوحدة قياس للأراضي في سوريا والأردن ولبنان وفلسطين وتركيا.</p>
+    </div>
+    <div class="faq-item">
+      <strong>كم متر مربع في الفدان؟</strong>
+      <p>الفدان يساوي حوالي 4047 متر مربع. يُستخدم الفدان كوحدة قياس للأراضي الزراعية في مصر بشكل رئيسي.</p>
+    </div>
+    <div class="faq-item">
+      <strong>كيف أحسب مساحة شقة بالمتر المربع؟</strong>
+      <p>اضرب الطول في العرض لكل غرفة ثم اجمع النتائج. استخدم وضع "الغروف" في الحاسبة أعلاه لإدخال أبعاد كل غرفة والحصول على المساحة الكلية.</p>
+    </div>
+    <div class="faq-item">
+      <strong>ما الفرق بين الهكتار والدونم؟</strong>
+      <p>الهكتار يساوي 10000 متر مربع (10 دونم)، بينما الدونم يساوي 1000 متر مربع. أي أن الهكتار = 10 دونم.</p>
+    </div>
+    <div class="faq-item">
+      <strong>هل حاسبة المساحة مجانية؟</strong>
+      <p>نعم، حاسبة المساحة مجانية تماماً ولا تحتاج تسجيل. جميع الحسابات تتم في متصفحك مباشرة لحماية خصوصيتك.</p>
+    </div>
+
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2351071222567371" data-ad-slot="area-content2" data-ad-format="auto" data-full-width-responsive="true"></ins>
+
+    <div class="share-bar">
+      <a href="#" class="share-fb" onclick="shareOn('facebook')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a>
+      <a href="#" class="share-tw" onclick="shareOn('twitter')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>تويتر</a>
+      <a href="#" class="share-wa" onclick="shareOn('whatsapp')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.438-9.856 9.884-9.856 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.42-4.437 9.856-9.881 9.856m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>واتساب</a>
+    </div>
+
+    <div class="related-tools">
+      <h3>أدوات ذات صلة</h3>
+      <div class="related-grid">
+        <a href="/tools/area-converter.html">📐 محول المساحة</a>
+        <a href="/tools/length-converter.html">📏 محول الطول</a>
+        <a href="/tools/geometry-calculator.html">📐 حاسبة الأشكال الهندسية</a>
+        <a href="/tools/loan-calculator.html">🏦 حاسبة القروض</a>
+        <a href="/tools/percentage-calculator.html">📊 حاسبة النسبة المئوية</a>
+        <a href="/tools/volume-converter.html">🧪 محول الحجم</a>
+      </div>
+    </div>
+  </div>
+
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2351071222567371" data-ad-slot="area-bottom" data-ad-format="auto" data-full-width-responsive="true"></ins>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة.</p></div>
+    <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة</a></div>
+    <div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div>
+    <div><h4>روابط قانونية</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة.</div>
+</footer>
+
+<script src="/js/main.js?v=20260609e"></script>
+<script>
+let currentShape='rect';
+const unitFactors={
+  m2:{name:'متر مربع',factor:1},
+  ft2:{name:'قدم مربع',factor:0.092903},
+  dunam:{name:'دونم',factor:1000},
+  hectare:{name:'هكتار',factor:10000},
+  feddan:{name:'فدان',factor:4046.86}
+};
+
+function setShape(shape){
+  currentShape=shape;
+  document.querySelectorAll('.shape-tab').forEach(t=>t.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('rectInputs').style.display=shape==='rect'?'block':'none';
+  document.getElementById('squareInputs').style.display=shape==='square'?'block':'none';
+  document.getElementById('circleInputs').style.display=shape==='circle'?'block':'none';
+  document.getElementById('triangleInputs').style.display=shape==='triangle'?'block':'none';
+  document.getElementById('roomsInputs').style.display=shape==='rooms'?'block':'none';
+  calculate();
+}
+
+function calculate(){
+  let areaM2=0;
+  if(currentShape==='rect'){
+    const w=parseFloat(document.getElementById('rectWidth').value)||0;
+    const h=parseFloat(document.getElementById('rectHeight').value)||0;
+    areaM2=w*h;
+  }else if(currentShape==='square'){
+    const s=parseFloat(document.getElementById('squareSide').value)||0;
+    areaM2=s*s;
+  }else if(currentShape==='circle'){
+    const r=parseFloat(document.getElementById('circleRadius').value)||0;
+    areaM2=Math.PI*r*r;
+  }else if(currentShape==='triangle'){
+    const b=parseFloat(document.getElementById('triBase').value)||0;
+    const h=parseFloat(document.getElementById('triHeight').value)||0;
+    areaM2=0.5*b*h;
+  }else if(currentShape==='rooms'){
+    const rows=document.querySelectorAll('#roomRows .room-row');
+    areaM2=0;
+    rows.forEach(row=>{
+      const w=parseFloat(row.querySelector('.room-w').value)||0;
+      const h=parseFloat(row.querySelector('.room-h').value)||0;
+      areaM2+=w*h;
+    });
+  }
+  const selUnit=document.getElementById('unitSelect').value;
+  const inputArea=areaM2/unitFactors[selUnit].factor;
+  // Show main result
+  const mainResult=document.getElementById('mainResult');
+  const mainValue=document.getElementById('mainValue');
+  const mainLabel=document.getElementById('mainLabel');
+  if(areaM2>0){
+    mainResult.style.display='block';
+    mainValue.textContent=inputArea%1===0?inputArea.toLocaleString('en-US'):inputArea.toFixed(2);
+    mainLabel.textContent=unitFactors[selUnit].name;
+  }else{
+    mainResult.style.display='none';
+  }
+  // Show all conversions
+  const grid=document.getElementById('resultGrid');
+  grid.innerHTML='';
+  if(areaM2>0){
+    grid.style.display='grid';
+    for(const key in unitFactors){
+      if(key===selUnit)continue;
+      const converted=areaM2/unitFactors[key].factor;
+      const div=document.createElement('div');
+      div.className='result-card';
+      div.innerHTML=`<div class="rc-value">${converted%1===0?converted.toLocaleString('en-US'):converted.toFixed(2)}</div><div class="rc-label">${unitFactors[key].name}</div>`;
+      grid.appendChild(div);
+    }
+  }else{
+    grid.style.display='none';
+  }
+}
+
+function addRoom(){
+  const container=document.getElementById('roomRows');
+  const row=document.createElement('div');
+  row.className='room-row';
+  row.innerHTML=`
+    <span class="room-label">الطول:</span>
+    <input type="number" placeholder="الطول" step="any" class="room-w" oninput="calculate()">
+    <span class="room-label">× العرض:</span>
+    <input type="number" placeholder="العرض" step="any" class="room-h" oninput="calculate()">
+    <button class="remove-room" onclick="this.parentElement.remove();calculate()">✕</button>
+  `;
+  container.appendChild(row);
+  calculate();
+}
+
+function shareOn(platform){
+  const url=encodeURIComponent(window.location.href);
+  const text=encodeURIComponent('حاسبة المساحة المجانية - SP5 Tools');
+  if(platform==='facebook')window.open('https://www.facebook.com/sharer/sharer.php?u='+url,'_blank');
+  else if(platform==='twitter')window.open('https://twitter.com/intent/tweet?url='+url+'&text='+text,'_blank');
+  else if(platform==='whatsapp')window.open('https://wa.me/?text='+text+' '+url,'_blank');
+}
+
+// Listen to unit change
+document.getElementById('unitSelect').addEventListener('change',calculate);
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+# Binaries
+*.apk
+*.zip
+*.mp3
+*.wav
+
+# Images (regenerable from source)
+images/*.png
+images/*.jpg
+images/*.gif
+images/*.webp
+images/*.ico
+
+# Backups
+*.bak*
+*.orig
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Downloads directory (APK served from here, too large for repo)
+downloads/
+
+# StudyAI landing page (separate repo)
+studyai.html

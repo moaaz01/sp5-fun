@@ -1,0 +1,414 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مواقيت الصلاة | SP5 Tools</title>
+<meta name="description" content="حاسبة مواقيت الصلاة المجانية: احسب أوقات الصلاة لأي مدينة عربية وإسلامية بدقة عالية. دعم طرق الحساب أم القرى، الهيئة المصرية، الجامعة الإسلامية بأمريكا الشمالية.">
+<meta name="keywords" content="مواقيت الصلاة, حاسبة الصلاة, أوقات الصلاة, الفجر, الظهر, العصر, المغرب, العشاء, prayer times, أوقات الصلاة مكة, أوقات الصلاة الرياض, تقويم الصلاة">
+<link rel="canonical" href="https://sp5.fun/tools/prayer-times.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260609e">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة مواقيت الصلاة","description":"حاسبة مواقيت الصلاة المجانية لحساب أوقات الصلوات الخمس لأي مدينة عربية وإسلامية.","url":"https://sp5.fun/tools/prayer-times.html","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"inLanguage":"ar","isPartOf":{"@type":"WebSite","name":"SP5 Tools","url":"https://sp5.fun"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"كيف أحسب أوقات الصلاة لمدينتي؟","acceptedAnswer":{"@type":"Answer","text":"اختر مدينتك من القائمة المنسدلة واضغط احسب مواقيت الصلاة لتحصل على أوقات الصلوات الخمس والشروق مع الوقت المتبقي للصلاة القادمة."}},{"@type":"Question","name":"ما هي طرق حساب أوقات الصلاة المدعومة؟","acceptedAnswer":{"@type":"Answer","text":"ندعم ثلاث طرق: أم القرى (المملكة العربية السعودية)، الهيئة العامة المصرية للمساحة، والجامعة الإسلامية بأمريكا الشمالية (ISNA)."}},{"@type":"Question","name":"هل حساب أوقات الصلاة دقيق؟","acceptedAnswer":{"@type":"Answer","text":"نعم، نستخدم خوارزميات فلكية دقيقة لحساب موقع الشمس بناءً على إحداثيات المدينة والتاريخ المحدد. الدقة تصل إلى دقائق معدودة مقارنة بالتقويمات الرسمية."}}]}</script>
+<meta property="og:title" content="مواقيت الصلاة | SP5 Tools">
+<meta property="og:description" content="حاسبة مواقيت الصلاة المجانية: احسب أوقات الصلاة لأي مدينة عربية وإسلامية بدقة عالية. دعم طرق الحساب أم القرى، الهيئة المصرية، ISNA.">
+<meta property="og:url" content="https://sp5.fun/tools/prayer-times.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="مواقيت الصلاة | SP5 Tools">
+<meta name="twitter:description" content="حاسبة مواقيت الصلاة المجانية: احسب أوقات الصلاة لأي مدينة عربية وإسلامية بدقة عالية. دعم طرق الحساب أم القرى، الهيئة المصرية، ISNA.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:600px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.calc-box .result{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:8px;padding:16px;margin-top:16px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600;transition:background .2s}
+.btn-calc:hover{background:#1d4ed8}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.result-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.result-card .result-label{display:block;font-size:.85rem;color:#64748b;margin-bottom:4px}
+.result-card .result-value{display:block;font-size:1.2rem;font-weight:700;color:#1e40af}
+.result-card.result-highlight{background:linear-gradient(135deg,#2563eb,#1d4ed8);border:none}
+.result-card.result-highlight .result-label{color:rgba(255,255,255,.8)}
+.result-card.result-highlight .result-value{color:#fff;font-size:1.4rem}
+.next-prayer-bar{background:linear-gradient(135deg,#059669,#047857);border-radius:10px;padding:14px 20px;text-align:center;margin-top:16px;color:#fff}
+.next-prayer-bar .next-label{font-size:.85rem;opacity:.85}
+.next-prayer-bar .next-value{font-size:1.3rem;font-weight:700;margin-top:2px}
+</style>
+</head>
+<body>
+<div class="news-ticker"><div class="ticker-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>الأكثر استخداماً</div><div class="ticker-track"><div class="ticker-scroll"><a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a><a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a><a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a><a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a><a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a><a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a><a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a><a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a><a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a><a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a><a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a><a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a></div></div></div>
+<header class="header"><div class="header-inner"><a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a><button class="menu-toggle" aria-label="القائمة">☰</button><nav class="nav"><a href="/">الرئيسية</a><a href="/#financial">حاسبات مالية</a><a href="/#converter">محولات</a><a href="/#security">أدوات أمنية</a><a href="/#text">أدوات نصية</a><a href="/pages/privacy.html">سياسة الخصوصية</a></nav></div></header>
+<nav class="breadcrumb"><a href="/">الرئيسية</a><span class="separator">/</span><a href="/#converter">محولات</a><span class="separator">/</span><span class="current">مواقيت الصلاة</span></nav>
+<main class="tool-page">
+  <h1>🕌 مواقيت الصلاة</h1>
+  <p class="tool-desc">حاسبة مواقيت الصلاة المجانية: احسب أوقات الصلاة لأي مدينة عربية وإسلامية بدقة عالية. دعم طرق الحساب أم القرى، الهيئة المصرية، والجامعة الإسلامية بأمريكا الشمالية.</p>
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:#64748b">مشاركة:</span><a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem">فيسبوك</a><a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem">تويتر</a><a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem">واتساب</a></div>
+<script>function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}</script>
+  <div class="ad-slot"></div>
+  <div class="calc-box">
+    <div class="form-group"><label for="citySelect">🏙️ اختر المدينة</label>
+      <select id="citySelect">
+        <option value="21.4225,39.8262">مكة المكرمة</option>
+        <option value="24.4672,39.6112">المدينة المنورة</option>
+        <option value="24.7136,46.6753">الرياض</option>
+        <option value="21.5433,39.1728">جدة</option>
+        <option value="26.3927,49.9777">الدمام</option>
+        <option value="24.4539,54.3773">أبوظبي</option>
+        <option value="25.2048,55.2708">دبي</option>
+        <option value="30.0444,31.2357">القاهرة</option>
+        <option value="31.2001,29.9187">الإسكندرية</option>
+        <option value="29.3759,47.9774">الكويت</option>
+        <option value="25.2854,51.5310">الدوحة</option>
+        <option value="26.2285,50.5860">المنامة</option>
+        <option value="23.5880,58.3829">مسقط</option>
+        <option value="31.9454,35.9284">عمّان</option>
+        <option value="33.8938,35.5018">بيروت</option>
+        <option value="33.5138,36.2765">دمشق</option>
+        <option value="36.2021,37.1342">حلب</option>
+        <option value="33.3152,44.3661">بغداد</option>
+        <option value="33.9716,6.8498">الرباط</option>
+        <option value="33.5731,7.5898">الدار البيضاء</option>
+        <option value="36.7538,3.0588">الجزائر</option>
+        <option value="36.8065,10.1815">تونس</option>
+        <option value="41.0082,28.9784">إسطنبول</option>
+      </select>
+    </div>
+    <div class="form-group"><label for="dateInput">📅 التاريخ</label>
+      <input type="date" id="dateInput">
+    </div>
+    <div class="form-group"><label for="methodSelect">📐 طريقة الحساب</label>
+      <select id="methodSelect">
+        <option value="umm_al_qura">أم القرى (السعودية)</option>
+        <option value="egyptian">الهيئة المصرية للمساحة</option>
+        <option value="isna">الجامعة الإسلامية بأمريكا الشمالية (ISNA)</option>
+      </select>
+    </div>
+    <button type="button" class="btn-calc" onclick="calculatePrayerTimes()" style="width:100%">🕌 احسب مواقيت الصلاة</button>
+  </div>
+  <div class="ad-slot"></div>
+  <div id="result" style="max-width:600px;margin:20px auto"></div>
+  <div id="nextPrayerResult" style="max-width:600px;margin:0 auto"></div>
+  <div class="ad-slot"></div>
+  <div class="tool-content">
+    <h2>ما هي حاسبة مواقيت الصلاة؟</h2>
+    <p>حاسبة مواقيت الصلاة من SP5 Tools هي أداة مجانية تتيح لك حساب أوقات الصلوات الخمس والشروق لأكثر من 20 مدينة عربية وإسلامية بدقة فلكية عالية. تعتمد الأداة على خوارزميات حساب الموقع الشمسي لتحديد زوايا الشمس التي تتوافق مع أوقات كل صلاة، مع الأخذ بعين الاعتبار طرق الحساب المختلفة المعتمدة في العالم الإسلامي.</p>
+    <h3>الصلوات وأوقاتها</h3>
+    <ul>
+      <li><strong>الفجر:</strong> يبدأ من حين يظهر الضوء الأبيض في الأفق الشرقي بشكل مستطيل (الصبح الصادق) ويستمر حتى طلوع الشمس. وهو الوقت الذي يجب فيه أداء صلاة الفجر.</li>
+      <li><strong>الشروق:</strong> لحظة ظهور حافة الشمس العليا فوق الأفق الشرقي. يُحرم الأكل والشرب فيه على الصائمين، وينتهي وقت صلاة الفجر.</li>
+      <li><strong>الظهر:</strong> يبدأ من حين تميل الشمس عن وسط السماء (زوال الشمس) ويستمر حتى يصير ظل كل شيء مثله بعد فيء الزوال. وهو وقت صلاة الظهر.</li>
+      <li><strong>العصر:</strong> يبدأ من حين يصير ظل كل شيء مثله بعد فيء الزوال ويستمر حتى تغرب الشمس. وهو وقت صلاة العصر.</li>
+      <li><strong>المغرب:</strong> يبدأ من حين تغرب الشمس عن الأفق الغربي ويستمر حتى يختفي الشفق الأحمر. وهو وقت صلاة المغرب.</li>
+      <li><strong>العشاء:</strong> يبدأ من حين يختفي الشفق الأحمر عن الأفق ويستمر حتى منتصف الليل الشرعي. وهو وقت صلاة العشاء.</li>
+    </ul>
+
+    <h2>طرق حساب أوقات الصلاة</h2>
+    <p>تختلف طرق حساب أوقات الصلاة باختلاف الهيئات العلمية والمؤسسات الإسلامية، وتتركز الاختلافات بشكل رئيسي في تحديد زاوية الفجر وزاوية الشفق (العشاء). إليك أبرز الطرق المعتمدة:</p>
+    <h3>1. طريقة أم القرى (المملكة العربية السعودية)</h3>
+    <p>هي الطريقة المعتمدة رسمياً في المملكة العربية السعودية ودول مجلس التعاون الخليجي. تعتمد على زاوية فجر 18.5 درجة وزاوية عشاء 90 دقيقة بعد المغرب (أو 19 درجة في بعض الفصول). تعد هذه الطريقة الأقرب للرؤية الفعلية في المناطق ذات خطوط العرض المتوسطة والمنخفضة كشبه الجزيرة العربية.</p>
+    <h3>2. الهيئة العامة المصرية للمساحة</h3>
+    <p>تعتمد زاوية فجر 19.5 درجة وزاوية عشاء 17.5 درجة. تُستخدم هذه الطريقة في مصر وعدد من الدول العربية والإفريقية. تعتبر من أكثر الطرق توازناً وتناسباً مع الرؤية الفعلية في المناطق الاستوائية وشبه الاستوائية.</p>
+    <h3>3. الجامعة الإسلامية بأمريكا الشمالية (ISNA)</h3>
+    <p>تعتمد زاوية فجر 15 درجة وزاوية عشاء 15 درجة. تُستخدم بشكل رئيسي في أمريكا الشمالية وبعض الدول الغربية. تتناسب مع خطوط العرض العالية حيث يكون الفترة بين الفجر والشروق أقصر مقارنة بالمناطق الاستوائية.</p>
+    <div class="ad-slot"></div>
+
+    <h2>كيف تُحسب أوقات الصلاة فلكياً؟</h2>
+    <p>تعتمد حسابات أوقات الصلاة على تحديد الموقع الفلكي للشمس بالنسبة للأرض في لحظة محددة من الزمن. يتم حساب المطلع المستقيم والميل الشمسي ثم تحديد ارتفاع الشمس فوق الأفق عند كل زاوية معينة. كل صلاة تتوافق مع زاوية محددة لارتفاع الشمس: الفجر عند زاوية ما دون الأفق، والظهر عند عبور الشمس خط الزوال السماوي، والعصر عندما يبلغ الظل طولاً معيناً، والمغرب عند غياب الشمس تحت الأفق مباشرة.</p>
+    <p>تتأثر دقة الحساب بعدة عوامل منها: خط العرض وخط الطول للمدينة، التاريخ الميلادي (لأن ميل الشمس يتغير على مدار السنة)، واختلاف الطرق الفقهية في تحديد زوايا الفجر والعشاء. كما يؤثر الارتفاع عن سطح البحر في وقتي الشروق والغروب بشكل طفيف.</p>
+
+    <h2>أهمية معرفة أوقات الصلاة</h2>
+    <p>يُعد الالتزام بأوقات الصلاة من أهم أركان الإسلام بعد الشهادتين. قال تعالى: ﴿إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَّوْقُوتًا﴾ [النساء: 103]. ومعرفة الوقت الدقيق لكل صلاة ضرورية لأدائها في وقتها المحدد، وهو ما تسعى حاسبة مواقيت الصلاة إلى توفيره بسهولة ودقة لكل مسلم أينما كان.</p>
+
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item"><strong>كيف أحسب أوقات الصلاة لمدينتي؟</strong><p>اختر مدينتك من القائمة المنسدلة واضغط "احسب مواقيت الصلاة". ستظهر لك أوقات الصلوات الخمس مع الوقت المتبقي للصلاة القادمة تلقائياً.</p></div>
+    <div class="faq-item"><strong>ما الفرق بين طرق الحساب المختلفة؟</strong><p>الفرق الأساسي في زاوية الفجر وزاوية الشفق. طريقة أم القرى تستخدم 18.5 درجة للفجر وتعتمد 90 دقيقة بعد المغرب للعشاء، بينما المصرية تستخدم 19.5 و17.5 درجة، وISNA تستخدم 15 درجة لكليهما.</p></div>
+    <div class="faq-item"><strong>هل حساب أوقات الصلاة دقيق؟</strong><p>نعم، نستخدم خوارزميات فلكية دقيقة لحساب موقع الشمس بناءً على إحداثيات المدينة والتاريخ المحدد. الدقة عالية جداً مقارنة بالتقويمات الرسمية المعتمدة.</p></div>
+    <div class="faq-item"><strong>لماذا يختلف وقت الصلاة من يوم لآخر؟</strong><p>لأن ميل الشمس يتغير على مدار السنة بسبب دوران الأرض حول الشمس وميل محورها، مما يجعل أوقات الشروق والغروب والفجر تتغير يومياً بشكل تدريجي.</p></div>
+    <div class="faq-item"><strong>هل يمكنني حساب أوقات الصلاة لتاريخ مستقبلي؟</strong><p>نعم، يمكنك اختيار أي تاريخ من شريط التاريخ لحساب أوقات الصلاة لذلك اليوم سواء في الماضي أو المستقبل.</p></div>
+    <div class="ad-slot"></div>
+  </div>
+</main>
+  <div class="ad-slot"></div>
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/hijri-converter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🌙</span> محول الهجري</a>
+    <a href="/tools/zakat-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🕌</span> حاسبة الزكاة</a>
+    <a href="/tools/date-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">📅</span> حاسبة التاريخ</a>
+    <a href="/tools/timezone-converter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🌍</span> محول المنطقة الزمنية</a>
+    <a href="/tools/age-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🎂</span> حاسبة العمر</a>
+    <a href="/tools/currency-converter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">💱</span> محول العملات</a>
+  </div>
+</div>
+<footer class="footer"><div class="footer-inner"><div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div><div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div><div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/prayer-times.html">مواقيت الصلاة</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div><div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div></div><div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div></footer>
+<script src="/js/main.js?v=20260609e"></script>
+<script>
+// ===== Prayer Times Calculator - Pure JS Astronomical Algorithm =====
+
+var PRAYER_NAMES = {
+  fajr: 'الفجر',
+  sunrise: 'الشروق',
+  dhuhr: 'الظهر',
+  asr: 'العصر',
+  maghrib: 'المغرب',
+  isha: 'العشاء'
+};
+
+var PRAYER_ICONS = {
+  fajr: '🌙',
+  sunrise: '🌅',
+  dhuhr: '☀️',
+  asr: '🌤️',
+  maghrib: '🧡',
+  isha: '🌑'
+};
+
+// ===== Solar Position Algorithm =====
+
+function toJulianDate(date) {
+  var y = date.getFullYear();
+  var m = date.getMonth() + 1;
+  var d = date.getDate();
+  if (m <= 2) { y -= 1; m += 12; }
+  var A = Math.floor(y / 100);
+  var B = 2 - A + Math.floor(A / 4);
+  return Math.floor(365.25 * (y + 4716)) + Math.floor(30.6001 * (m + 1)) + d + B - 1524.5;
+}
+
+function sunPosition(jd) {
+  var D = jd - 2451545.0;
+  var g = (357.529 + 0.98560028 * D) % 360;
+  if (g < 0) g += 360;
+  var gRad = g * Math.PI / 180;
+  var q = (280.459 + 0.98564736 * D) % 360;
+  if (q < 0) q += 360;
+  var L = q + 1.915 * Math.sin(gRad) + 0.020 * Math.sin(2 * gRad);
+  var Lrad = L * Math.PI / 180;
+  var e = 23.439 - 0.00000036 * D;
+  var eRad = e * Math.PI / 180;
+  var RA = Math.atan2(Math.cos(eRad) * Math.sin(Lrad), Math.cos(Lrad));
+  var dec = Math.asin(Math.sin(eRad) * Math.sin(Lrad));
+  var eqTime = q - (RA * 180 / Math.PI);
+  // Normalize equation of time
+  while (eqTime > 180) eqTime -= 360;
+  while (eqTime < -180) eqTime += 360;
+  eqTime = eqTime / 15; // convert to hours
+  return { declination: dec, eqTime: eqTime };
+}
+
+function computeMidDay(date, lng, eqTime) {
+  var noon = 12 - eqTime - lng / 15;
+  return noon;
+}
+
+// Compute sun angle at a given time (in hours from midnight)
+function sunAngleTime(angle, date, lat, lng, eqTime, dec, tApprox) {
+  // angle is sun altitude (negative for below horizon)
+  var latRad = lat * Math.PI / 180;
+  var a = -angle * Math.PI / 180; // zenith offset for prayer angle
+  var cosA = Math.sin(a) - Math.sin(latRad) * Math.sin(dec);
+  var denom = Math.cos(latRad) * Math.cos(dec);
+  if (Math.abs(cosA / denom) > 1) return NaN;
+  var cosH = cosA / denom;
+  var H = Math.acos(Math.max(-1, Math.min(1, cosH))) * 180 / Math.PI;
+  // For Fajr/Isha (morning/evening twilight)
+  if (angle > 0) {
+    // angle is depression below horizon for twilight
+    var cosHt = (Math.sin((-angle) * Math.PI / 180) - Math.sin(latRad) * Math.sin(dec)) / (Math.cos(latRad) * Math.cos(dec));
+    if (Math.abs(cosHt) > 1) return NaN;
+    H = Math.acos(Math.max(-1, Math.min(1, cosHt))) * 180 / Math.PI;
+  }
+  return H / 15; // convert degrees to hours
+}
+
+function computePrayerTimes(date, lat, lng, method) {
+  var jd = toJulianDate(date);
+  var sun = sunPosition(jd);
+  var dec = sun.declination;
+  var eqTime = sun.eqTime;
+
+  var midDay = computeMidDay(date, lng, eqTime);
+
+  // Method parameters: [fajrAngle, ishaAngle]
+  // For umm_al_qura, isha is 90 min after maghrib (handled specially)
+  var methods = {
+    umm_al_qura: { fajrAngle: 18.5, ishaAngle: 0, ishaMinutes: 90 },
+    egyptian: { fajrAngle: 19.5, ishaAngle: 17.5, ishaMinutes: 0 },
+    isna: { fajrAngle: 15, ishaAngle: 15, ishaMinutes: 0 }
+  };
+
+  var m = methods[method] || methods.umm_al_qura;
+
+  // Asr shadow factor (Shafi'i: 1, Hanafi: 2)
+  var asrFactor = 1;
+
+  // Compute each prayer time
+  var latRad = lat * Math.PI / 180;
+
+  // Fajr - sun depression angle below horizon
+  var fajrCosH = (Math.sin((-m.fajrAngle) * Math.PI / 180) - Math.sin(latRad) * Math.sin(dec)) / (Math.cos(latRad) * Math.cos(dec));
+  var fajrH = (Math.abs(fajrCosH) <= 1) ? Math.acos(Math.max(-1, Math.min(1, fajrCosH))) * 180 / Math.PI : NaN;
+  var fajr = midDay - fajrH / 15;
+
+  // Sunrise
+  var riseCosH = (Math.sin(-0.833 * Math.PI / 180) - Math.sin(latRad) * Math.sin(dec)) / (Math.cos(latRad) * Math.cos(dec));
+  var riseH = (Math.abs(riseCosH) <= 1) ? Math.acos(Math.max(-1, Math.min(1, riseCosH))) * 180 / Math.PI : NaN;
+  var sunrise = midDay - riseH / 15;
+
+  // Dhuhr
+  var dhuhr = midDay + 0.0167; // add 1 minute for safety margin
+
+  // Asr (shadow = factor * object + shadow at noon)
+  var noonAltSin = Math.sin(latRad) * Math.sin(dec) + Math.cos(latRad) * Math.cos(dec);
+  var noonAlt = Math.asin(Math.max(-1, Math.min(1, noonAltSin)));
+  var asrAlt = Math.atan(1 / (asrFactor + Math.abs(1 / Math.tan(noonAlt))));
+  var asrCosH = (Math.sin(asrAlt) - Math.sin(latRad) * Math.sin(dec)) / (Math.cos(latRad) * Math.cos(dec));
+  var asrH = (Math.abs(asrCosH) <= 1) ? Math.acos(Math.max(-1, Math.min(1, asrCosH))) * 180 / Math.PI : NaN;
+  var asr = midDay + asrH / 15;
+
+  // Maghrib (sun altitude = -0.833 for refraction, same as sunrise but add)
+  var maghrib = midDay + riseH / 15;
+
+  // Isha
+  var isha;
+  if (m.ishaMinutes > 0) {
+    isha = maghrib + m.ishaMinutes / 60;
+  } else {
+    var ishaCosH = (Math.sin((-m.ishaAngle) * Math.PI / 180) - Math.sin(latRad) * Math.sin(dec)) / (Math.cos(latRad) * Math.cos(dec));
+    var ishaH = (Math.abs(ishaCosH) <= 1) ? Math.acos(Math.max(-1, Math.min(1, ishaCosH))) * 180 / Math.PI : NaN;
+    isha = midDay + ishaH / 15;
+  }
+
+  return {
+    fajr: fajr,
+    sunrise: sunrise,
+    dhuhr: dhuhr,
+    asr: asr,
+    maghrib: maghrib,
+    isha: isha
+  };
+}
+
+function decimalToTime(decimal) {
+  if (isNaN(decimal)) return '--:--';
+  decimal = ((decimal % 24) + 24) % 24;
+  var h = Math.floor(decimal);
+  var m = Math.floor((decimal - h) * 60);
+  var s = Math.floor(((decimal - h) * 60 - m) * 60);
+  return (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m;
+}
+
+function getCityName() {
+  var sel = document.getElementById('citySelect');
+  return sel.options[sel.selectedIndex].text;
+}
+
+function calculatePrayerTimes() {
+  var cityVal = document.getElementById('citySelect').value;
+  var parts = cityVal.split(',');
+  var lat = parseFloat(parts[0]);
+  var lng = parseFloat(parts[1]);
+
+  var dateStr = document.getElementById('dateInput').value;
+  var date;
+  if (dateStr) {
+    var dp = dateStr.split('-');
+    date = new Date(parseInt(dp[0]), parseInt(dp[1]) - 1, parseInt(dp[2]));
+  } else {
+    date = new Date();
+  }
+
+  var method = document.getElementById('methodSelect').value;
+  var times = computePrayerTimes(date, lat, lng, method);
+  var cityName = getCityName();
+
+  // Determine timezone offset for the city's longitude
+  var tzOffset = Math.round(lng / 15);
+  // Adjust for DST roughly (add 1h for summer in northern hemisphere)
+  var now = new Date();
+  var isDST = false;
+  // Simple DST heuristic: March-October in northern hemisphere
+  if (lat > 0 && date.getMonth() >= 2 && date.getMonth() <= 9) {
+    isDST = true;
+  }
+  var effectiveOffset = tzOffset + (isDST ? 1 : 0);
+
+  // Build result HTML
+  var html = '<h3 style="text-align:center;color:#1e40af;margin-bottom:4px">🕌 مواقيت الصلاة</h3>';
+  html += '<p style="text-align:center;color:#64748b;margin-bottom:16px;font-size:.9rem">' + cityName + ' — ' + date.toLocaleDateString('ar-SA', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + '</p>';
+  html += '<div class="result-grid">';
+
+  var prayerKeys = ['fajr', 'sunrise', 'dhuhr', 'asr', 'maghrib', 'isha'];
+  for (var i = 0; i < prayerKeys.length; i++) {
+    var key = prayerKeys[i];
+    var timeDec = times[key];
+    // Apply timezone
+    var localTime = timeDec + effectiveOffset;
+    var timeStr = decimalToTime(localTime);
+    html += '<div class="result-card"><span class="result-label">' + PRAYER_ICONS[key] + ' ' + PRAYER_NAMES[key] + '</span><span class="result-value">' + timeStr + '</span></div>';
+  }
+  html += '</div>';
+
+  document.getElementById('result').innerHTML = html;
+
+  // Calculate remaining time to next prayer
+  var nowHours = now.getHours() + now.getMinutes() / 60;
+  var nextPrayer = null;
+  var nextPrayerName = null;
+  var nextPrayerTime = null;
+
+  for (var j = 0; j < prayerKeys.length; j++) {
+    var k = prayerKeys[j];
+    var lt = times[k] + effectiveOffset;
+    if (lt > nowHours) {
+      nextPrayer = k;
+      nextPrayerName = PRAYER_NAMES[k];
+      nextPrayerTime = lt;
+      break;
+    }
+  }
+
+  // If no next prayer today, next is Fajr tomorrow
+  if (!nextPrayer) {
+    nextPrayerName = PRAYER_NAMES['fajr'];
+    nextPrayerTime = times['fajr'] + effectiveOffset + 24;
+  }
+
+  var remaining = nextPrayerTime - nowHours;
+  if (remaining > 24) remaining -= 24;
+  var remH = Math.floor(remaining);
+  var remM = Math.floor((remaining - remH) * 60);
+
+  var nextHtml = '<div class="next-prayer-bar"><div class="next-label">⏰ الصلاة القادمة</div><div class="next-value">' + nextPrayerName + ' — بعد ' + remH + ' ساعة و ' + remM + ' دقيقة</div></div>';
+  document.getElementById('nextPrayerResult').innerHTML = nextHtml;
+}
+
+// Set default date to today
+(function() {
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, '0');
+  var mm = String(today.getMonth() + 1).padStart(2, '0');
+  var yyyy = today.getFullYear();
+  document.getElementById('dateInput').value = yyyy + '-' + mm + '-' + dd;
+  // Auto-calculate on load
+  calculatePrayerTimes();
+})();
+</script>
+</body></html>

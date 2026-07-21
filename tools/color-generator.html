@@ -1,0 +1,441 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مولد ألوان CSS - اختر الألوان وحول التدرجات | SP5 Tools</title>
+<meta name="description" content="مولد ألوان CSS مجاني: اختر الألوان وحول بين HEX RGB HSL، أنشئ تدرجات لونية، ألواح ألوان جاهزة، وألوان عشوائية مع نسخ فوري.">
+<meta name="keywords" content="مولد ألوان, محول الألوان, HEX إلى RGB, تدرجات لونية, ألواح ألوان, ألوان CSS, منتقي ألوان, color picker, gradient generator">
+<link rel="canonical" href="https://sp5.fun/tools/color-generator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260609d">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "مولد ألوان CSS",
+  "description": "أداة مجانية لاختيار الألوان وتحويلها وإنشاء تدرجات لونية وألواح ألوان لـ CSS.",
+  "url": "https://sp5.fun/tools/color-generator.html",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "SAR"},
+  "inLanguage": "ar",
+  "isPartOf": {"@type": "WebSite", "name": "SP5 Tools", "url": "https://sp5.fun"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "كيف أختار لوناً من الصفحة؟", "acceptedAnswer": {"@type": "Answer", "text": "استخدم تبويب منتقي الألوان واختر اللون من شريط الألوان أو أدخل القيمة مباشرة بصيغة HEX أو RGB أو HSL وسيتم التحويل تلقائياً."}},
+    {"@type": "Question", "name": "كيف أنشئ تدرجاً لونياً؟", "acceptedAnswer": {"@type": "Answer", "text": "انتقل لتبويب التدرجات اللونية واختر لونين وزاوية التدرج وسيتم إنشاء كود CSS جاهز للنسخ."}},
+    {"@type": "Question", "name": "هل يمكنني نسخ الألوان بسهولة؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، كل قيمة لون تحتوي على زر نسخ بضغطة واحدة. يمكنك نسخ HEX أو RGB أو HSL أو كود CSS للتدرج."}}
+  ]
+}
+</script>
+<meta property="og:title" content="مولد ألوان CSS | SP5 Tools">
+<meta property="og:description" content="اختر الألوان وحول بين الصيغ وأنشئ تدرجات لونية وألواح ألوان جاهزة مع نسخ فوري لكود CSS.">
+<meta property="og:url" content="https://sp5.fun/tools/color-generator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="مولد ألوان CSS | SP5 Tools">
+<meta name="twitter:description" content="اختر الألوان وحول بين الصيغ وأنشئ تدرجات لونية وألواح ألوان جاهزة.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;margin:20px auto;max-width:700px;padding:0 15px}
+.tab-btn{padding:10px 16px;border:2px solid #e5e7eb;border-radius:8px;background:#fff;color:#64748b;cursor:pointer;font-family:inherit;font-size:.9rem;font-weight:600;transition:all .2s}
+.tab-btn:hover{border-color:#2563eb;color:#2563eb}
+.tab-btn.active{background:#2563eb;color:#fff;border-color:#2563eb}
+.tab-content{display:none}
+.tab-content.active{display:block}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:700px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600;transition:all .2s}
+.btn-calc:hover{background:#1d4ed8}
+.btn-copy{background:#10b981;color:#fff;border:none;padding:8px 16px;border-radius:6px;font-size:.85rem;font-family:inherit;cursor:pointer;transition:all .2s}
+.btn-copy:hover{background:#059669}
+.btn-copy.copied{background:#6366f1}
+.color-preview{width:100%;height:120px;border-radius:10px;border:2px solid #e5e7eb;margin:12px 0;transition:background .3s}
+.color-values-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.color-value-item{display:flex;align-items:center;justify-content:space-between;padding:10px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px}
+.color-value-item code{font-size:.95rem;color:#1e40af;direction:ltr}
+.gradient-preview{width:100%;height:150px;border-radius:10px;border:2px solid #e5e7eb;margin:12px 0}
+.palette-row{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.palette-color{width:60px;height:60px;border-radius:8px;border:2px solid #e5e7eb;cursor:pointer;position:relative;transition:transform .2s}
+.palette-color:hover{transform:scale(1.1);z-index:1}
+.palette-color .tooltip{position:absolute;bottom:-28px;left:50%;transform:translateX(-50%);background:#1e293b;color:#fff;padding:2px 6px;border-radius:4px;font-size:.7rem;white-space:nowrap;opacity:0;transition:opacity .2s;pointer-events:none;direction:ltr}
+.palette-color:hover .tooltip{opacity:1}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.result-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.result-card .result-label{display:block;font-size:.85rem;color:#64748b;margin-bottom:4px}
+.result-card .result-value{display:block;font-size:1.2rem;font-weight:700;color:#1e40af}
+</style>
+</head>
+<body>
+
+<div class="news-ticker">
+  <div class="ticker-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    الأكثر استخداماً
+  </div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a>
+      <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+      <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+      <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+      <a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a>
+      <a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a>
+      <a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a>
+      <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+      <a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a>
+      <a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a>
+      <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+      <a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+    <button class="menu-toggle" aria-label="القائمة">☰</button>
+    <nav class="nav">
+      <a href="/">الرئيسية</a>
+      <a href="/#financial">حاسبات مالية</a>
+      <a href="/#converter">محولات</a>
+      <a href="/#security">أدوات أمنية</a>
+      <a href="/#text">أدوات نصية</a>
+      <a href="/pages/privacy.html">سياسة الخصوصية</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="/">الرئيسية</a>
+  <span class="separator">/</span>
+  <a href="/#text">أدوات نصية</a>
+  <span class="separator">/</span>
+  <span class="current">مولد ألوان CSS</span>
+</nav>
+
+<main class="tool-page">
+  <h1>🎨 مولد ألوان CSS</h1>
+  <p class="tool-desc">اختر الألوان وحول بين صيغ HEX و RGB و HSL، أنشئ تدرجات لونية وألواح ألوان جاهزة مع نسخ فوري لكود CSS.</p>
+
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+    <span style="font-size:.85rem;color:#64748b">مشاركة:</span>
+    <a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a>
+    <a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a>
+    <a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a>
+  </div>
+
+  <div class="ad-slot"></div>
+
+  <div class="tabs" style="justify-content:center">
+    <button class="tab-btn active" onclick="switchTab('picker')">منتقي الألوان</button>
+    <button class="tab-btn" onclick="switchTab('converter')">محول الألوان</button>
+    <button class="tab-btn" onclick="switchTab('gradient')">تدرجات لونية</button>
+    <button class="tab-btn" onclick="switchTab('palette')">ألواح ألوان</button>
+    <button class="tab-btn" onclick="switchTab('random')">عشوائي</button>
+  </div>
+
+  <!-- Tab 1: Color Picker -->
+  <div id="tab-picker" class="tab-content active">
+    <div class="calc-box">
+      <div class="form-group">
+        <label for="colorPickerInput">🎨 اختر اللون</label>
+        <div style="display:flex;gap:10px;align-items:center">
+          <input type="color" id="colorPickerInput" value="#2563eb" style="width:60px;height:44px;border:none;cursor:pointer;border-radius:8px;padding:0">
+          <input type="text" id="pickerHex" value="#2563eb" style="flex:1" placeholder="#2563eb" oninput="updateFromHex('picker')">
+        </div>
+      </div>
+      <div class="color-preview" id="pickerPreview" style="background:#2563eb"></div>
+      <div class="color-values-grid">
+        <div class="color-value-item">
+          <span style="font-weight:600;color:#1e293b">HEX:</span>
+          <div style="display:flex;align-items:center;gap:6px"><code id="pickerHexVal">#2563eb</code><button class="btn-copy" onclick="copyValue('pickerHexVal')">نسخ</button></div>
+        </div>
+        <div class="color-value-item">
+          <span style="font-weight:600;color:#1e293b">RGB:</span>
+          <div style="display:flex;align-items:center;gap:6px"><code id="pickerRgbVal">rgb(37, 99, 235)</code><button class="btn-copy" onclick="copyValue('pickerRgbVal')">نسخ</button></div>
+        </div>
+        <div class="color-value-item">
+          <span style="font-weight:600;color:#1e293b">HSL:</span>
+          <div style="display:flex;align-items:center;gap:6px"><code id="pickerHslVal">hsl(220, 84%, 53%)</code><button class="btn-copy" onclick="copyValue('pickerHslVal')">نسخ</button></div>
+        </div>
+        <div class="color-value-item">
+          <span style="font-weight:600;color:#1e293b">CSS:</span>
+          <div style="display:flex;align-items:center;gap:6px"><code id="pickerCssVal">color: #2563eb;</code><button class="btn-copy" onclick="copyValue('pickerCssVal')">نسخ</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 2: Color Converter -->
+  <div id="tab-converter" class="tab-content">
+    <div class="calc-box">
+      <div class="form-group">
+        <label for="convType">📋 نوع الإدخال</label>
+        <select id="convType" onchange="updateConvLabels()">
+          <option value="hex">HEX</option>
+          <option value="rgb">RGB</option>
+          <option value="hsl">HSL</option>
+        </select>
+      </div>
+      <div id="convInputs">
+        <div class="form-group">
+          <label for="convHex">HEX</label>
+          <input type="text" id="convHex" placeholder="#2563eb" oninput="convertColor('hex')">
+        </div>
+      </div>
+      <div class="color-preview" id="convPreview" style="background:#2563eb"></div>
+      <div class="color-values-grid">
+        <div class="color-value-item">
+          <span style="font-weight:600;color:#1e293b">HEX:</span>
+          <div style="display:flex;align-items:center;gap:6px"><code id="convHexVal">#2563eb</code><button class="btn-copy" onclick="copyValue('convHexVal')">نسخ</button></div>
+        </div>
+        <div class="color-value-item">
+          <span style="font-weight:600;color:#1e293b">RGB:</span>
+          <div style="display:flex;align-items:center;gap:6px"><code id="convRgbVal">rgb(37, 99, 235)</code><button class="btn-copy" onclick="copyValue('convRgbVal')">نسخ</button></div>
+        </div>
+        <div class="color-value-item">
+          <span style="font-weight:600;color:#1e293b">HSL:</span>
+          <div style="display:flex;align-items:center;gap:6px"><code id="convHslVal">hsl(220, 84%, 53%)</code><button class="btn-copy" onclick="copyValue('convHslVal')">نسخ</button></div>
+        </div>
+        <div class="color-value-item">
+          <span style="font-weight:600;color:#1e293b">CSS:</span>
+          <div style="display:flex;align-items:center;gap:6px"><code id="convCssVal">color: #2563eb;</code><button class="btn-copy" onclick="copyValue('convCssVal')">نسخ</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 3: Gradient Generator -->
+  <div id="tab-gradient" class="tab-content">
+    <div class="calc-box">
+      <div style="display:flex;gap:10px;margin-bottom:14px">
+        <div class="form-group" style="flex:1;margin-bottom:0">
+          <label for="gradColor1">اللون الأول</label>
+          <input type="color" id="gradColor1" value="#2563eb" oninput="updateGradient()">
+        </div>
+        <div class="form-group" style="flex:1;margin-bottom:0">
+          <label for="gradColor2">اللون الثاني</label>
+          <input type="color" id="gradColor2" value="#f59e0b" oninput="updateGradient()">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="gradAngle">زاوية التدرج: <span id="gradAngleVal">135</span>°</label>
+        <input type="range" id="gradAngle" min="0" max="360" value="135" oninput="updateGradient()" style="width:100%">
+      </div>
+      <div class="form-group">
+        <label for="gradType">نوع التدرج</label>
+        <select id="gradType" onchange="updateGradient()">
+          <option value="linear">خطي (Linear)</option>
+          <option value="radial">شعاعي (Radial)</option>
+          <option value="conic">مخروطي (Conic)</option>
+        </select>
+      </div>
+      <div class="gradient-preview" id="gradPreview" style="background:linear-gradient(135deg, #2563eb, #f59e0b)"></div>
+      <div class="form-group" style="margin-top:12px">
+        <label>كود CSS</label>
+        <div style="position:relative">
+          <code id="gradCssCode" style="display:block;padding:12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;font-size:.85rem;direction:ltr;text-align:left;word-break:break-all">background: linear-gradient(135deg, #2563eb, #f59e0b);</code>
+          <button class="btn-copy" onclick="copyValue('gradCssCode')" style="position:absolute;top:8px;left:8px">نسخ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 4: Palettes -->
+  <div id="tab-palette" class="tab-content">
+    <div class="calc-box">
+      <div class="form-group">
+        <label for="paletteType">🎨 نوع اللوح</label>
+        <select id="paletteType" onchange="generatePalette()">
+          <option value="complementary">مكمل (Complementary)</option>
+          <option value="analogous">تناظري (Analogous)</option>
+          <option value="triadic">ثلاثي (Triadic)</option>
+          <option value="split">منقسم المكمل (Split-Complementary)</option>
+          <option value="monochromatic">أحادي اللون (Monochromatic)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="paletteBase">اللون الأساسي</label>
+        <div style="display:flex;gap:10px;align-items:center">
+          <input type="color" id="paletteBase" value="#2563eb" oninput="generatePalette()">
+          <input type="text" id="paletteBaseHex" value="#2563eb" oninput="updatePaletteFromHex()" style="flex:1">
+        </div>
+      </div>
+      <div id="paletteOutput" style="margin-top:16px"></div>
+      <button class="btn-calc" onclick="generatePalette()" style="width:100%;margin-top:12px">🔄 إنشاء لوح ألوان</button>
+    </div>
+  </div>
+
+  <!-- Tab 5: Random -->
+  <div id="tab-random" class="tab-content">
+    <div class="calc-box" style="text-align:center">
+      <div id="randomPreview" style="width:100%;height:180px;border-radius:12px;border:2px solid #e5e7eb;margin-bottom:16px;background:#2563eb;transition:background .5s"></div>
+      <div class="color-values-grid" style="margin-bottom:16px">
+        <div class="color-value-item">
+          <span style="font-weight:600;color:#1e293b">HEX:</span>
+          <div style="display:flex;align-items:center;gap:6px"><code id="randomHex">#2563eb</code><button class="btn-copy" onclick="copyValue('randomHex')">نسخ</button></div>
+        </div>
+        <div class="color-value-item">
+          <span style="font-weight:600;color:#1e293b">RGB:</span>
+          <div style="display:flex;align-items:center;gap:6px"><code id="randomRgb">rgb(37, 99, 235)</code><button class="btn-copy" onclick="copyValue('randomRgb')">نسخ</button></div>
+        </div>
+        <div class="color-value-item">
+          <span style="font-weight:600;color:#1e293b">HSL:</span>
+          <div style="display:flex;align-items:center;gap:6px"><code id="randomHsl">hsl(220, 84%, 53%)</code><button class="btn-copy" onclick="copyValue('randomHsl')">نسخ</button></div>
+        </div>
+        <div class="color-value-item">
+          <span style="font-weight:600;color:#1e293b">CSS:</span>
+          <div style="display:flex;align-items:center;gap:6px"><code id="randomCss">color: #2563eb;</code><button class="btn-copy" onclick="copyValue('randomCss')">نسخ</button></div>
+        </div>
+      </div>
+      <button class="btn-calc" onclick="generateRandom()" style="width:100%">🎲 إنشاء لون عشوائي</button>
+      <h4 style="margin-top:20px;color:#1e40af">ألوان عشوائية سابقة</h4>
+      <div id="randomHistory" class="palette-row" style="justify-content:center;margin-top:8px"></div>
+    </div>
+  </div>
+
+  <div class="ad-slot"></div>
+
+  <div class="tool-content">
+    <h2>ما هو مولد ألوان CSS؟</h2>
+    <p>مولد ألوان CSS من SP5 Tools هو أداة مجانية وشاملة تمكنك من اختيار الألوان وتحويلها بين مختلف الصيغ وإنشاء تدرجات لونية جميلة. سواء كنت مصمماً أو مطوراً، هذه الأداة توفر لك كل ما تحتاجه للعمل مع الألوان في مشاريعك.</p>
+
+    <h3>صيغ الألوان المدعومة</h3>
+    <ul>
+      <li><strong>HEX:</strong> الصيغة الست عشرية مثل #2563eb — الأكثر استخداماً في CSS</li>
+      <li><strong>RGB:</strong> الأحمر والأخضر والأزرق مثل rgb(37, 99, 235) — مناسبة للشفافية</li>
+      <li><strong>HSL:</strong> الصبغة والتشبع والإضاءة مثل hsl(220, 84%, 53%) — الأفضل لتعديل الألوان</li>
+    </ul>
+
+    <h2>كيف تستخدم مولد الألوان؟</h2>
+    <p>يحتوي المولد على خمسة تبويبات رئيسية:</p>
+    <ul>
+      <li><strong>منتقي الألوان:</strong> اختر لوناً من شريط الألوان أو أدخل القيمة مباشرة</li>
+      <li><strong>محول الألوان:</strong> حوّل بين صيغ HEX و RGB و HSL بسهولة</li>
+      <li><strong>تدرجات لونية:</strong> أنشئ تدرجات CSS بخطين لونين وزاوية مخصصة</li>
+      <li><strong>ألواح ألوان:</strong> أنشئ ألواحاً متناغمة (مكملة، تناظرية، ثلاثية، إلخ)</li>
+      <li><strong>عشوائي:</strong> أنشئ ألواناً عشوائية لإلهامك التصميمي</li>
+    </ul>
+
+    <div class="ad-slot"></div>
+
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item">
+      <strong>ما الفرق بين HEX و RGB و HSL؟</strong>
+      <p>HEX هي الصيغة الست عشرية للألوان (مثل #2563eb)، RGB تحدد اللون بنسب الأحمر والأخضر والأزرق، وHSL تحدد اللون بالصبغة والتشبع والإضاءة. كلها تمثل نفس اللون بطرق مختلفة.</p>
+    </div>
+    <div class="faq-item">
+      <strong>كيف أنشئ تدرجاً لونياً لخلفية الموقع؟</strong>
+      <p>انتقل لتبويب التدرجات اللونية، اختر لونين وزاوية التدرج ونوعه (خطي أو شعاعي)، ثم انسخ كود CSS الناتج واستخدمه مباشرة في موقعك.</p>
+    </div>
+    <div class="faq-item">
+      <strong>هل يمكنني نسخ الألوان بسهولة؟</strong>
+      <p>نعم، كل قيمة لون تحتوي على زر نسخ. اضغط عليه وسيتم نسخ القيمة للحافظة فوراً لاستخدامها في مشاريعك.</p>
+    </div>
+    <div class="faq-item">
+      <strong>ما هي الألوان المتناغمة؟</strong>
+      <p>الألوان المتناغمة هي مجموعة ألوان تبدو متناسقة معاً. تشمل الألوان المكملة (على العجلة اللونية)، والتناظرية (متجاورة)، والثلاثية (متباعدة بالتساوي).</p>
+    </div>
+    <div class="faq-item">
+      <strong>هل الأداة مجانية بالكامل؟</strong>
+      <p>نعم، مولد الألوان مجاني تماماً ويعمل في متصفحك مباشرة بدون تسجيل أو تحميل.</p>
+    </div>
+  </div>
+</main>
+
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/speed-test.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">⚡</span> اختبار السرعة</a>
+    <a href="/tools/image-compressor.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🖼️</span> ضاغط الصور</a>
+    <a href="/tools/password-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🔐</span> مولد كلمات المرور</a>
+    <a href="/tools/qr-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">📱</span> مولد QR</a>
+    <a href="/tools/word-counter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">📝</span> عداد الكلمات</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div>
+    <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div>
+    <div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div>
+    <div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div>
+</footer>
+
+<script src="/js/main.js?v=20260609d"></script>
+<script>
+function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}
+
+function copyValue(id){var el=document.getElementById(id);var text=el.textContent||el.innerText;navigator.clipboard.writeText(text).then(function(){var btn=el.parentElement.querySelector('.btn-copy');var orig=btn.textContent;btn.textContent='تم النسخ ✓';btn.classList.add('copied');setTimeout(function(){btn.textContent=orig;btn.classList.remove('copied');},1500);});}
+
+function hexToRgb(hex){hex=hex.replace('#','');if(hex.length===3)hex=hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];var r=parseInt(hex.substr(0,2),16);var g=parseInt(hex.substr(2,2),16);var b=parseInt(hex.substr(4,2),16);return{r:r,g:g,b:b};}
+
+function rgbToHex(r,g,b){return '#'+((1<<24)+(r<<16)+(g<<8)+b).toString(16).slice(1);}
+
+function rgbToHsl(r,g,b){r/=255;g/=255;b/=255;var max=Math.max(r,g,b),min=Math.min(r,g,b);var h,s,l=(max+min)/2;if(max===min){h=s=0;}else{var d=max-min;s=l>0.5?d/(2-max-min):d/(max+min);switch(max){case r:h=((g-b)/d+(g<b?6:0))/6;break;case g:h=((b-r)/d+2)/6;break;case b:h=((r-g)/d+4)/6;break;}}return{h:Math.round(h*360),s:Math.round(s*100),l:Math.round(l*100)};}
+
+function hslToRgb(h,s,l){h/=360;s/=100;l/=100;var r,g,b;if(s===0){r=g=b=l;}else{var hue2rgb=function(p,q,t){if(t<0)t+=1;if(t>1)t-=1;if(t<1/6)return p+(q-p)*6*t;if(t<1/2)return q;if(t<2/3)return p+(q-p)*(2/3-t)*6;return p;};var q=l<0.5?l*(1+s):l+s-l*s;var p=2*l-q;r=hue2rgb(p,q,h+1/3);g=hue2rgb(p,q,h);b=hue2rgb(p,q,h-1/3);}return{r:Math.round(r*255),g:Math.round(g*255),b:Math.round(b*255)};}
+
+function switchTab(name){document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active');});document.querySelectorAll('.tab-content').forEach(function(c){c.classList.remove('active');});event.target.classList.add('active');document.getElementById('tab-'+name).classList.add('active');if(name==='palette')generatePalette();}
+
+// Color Picker
+document.getElementById('colorPickerInput').addEventListener('input',function(){var hex=this.value;document.getElementById('pickerHex').value=hex;updatePickerDisplay(hex);});
+document.getElementById('pickerHex').addEventListener('input',function(){var v=this.value.trim();if(/^#[0-9a-fA-F]{6}$/.test(v)){document.getElementById('colorPickerInput').value=v;updatePickerDisplay(v);}});
+
+function updatePickerDisplay(hex){var rgb=hexToRgb(hex);var hsl=rgbToHsl(rgb.r,rgb.g,rgb.b);document.getElementById('pickerPreview').style.background=hex;document.getElementById('pickerHexVal').textContent=hex;document.getElementById('pickerRgbVal').textContent='rgb('+rgb.r+', '+rgb.g+', '+rgb.b+')';document.getElementById('pickerHslVal').textContent='hsl('+hsl.h+', '+hsl.s+'%, '+hsl.l+'%)';document.getElementById('pickerCssVal').textContent='color: '+hex+';';}
+
+function updateFromHex(){var v=document.getElementById('pickerHex').value.trim();if(/^#[0-9a-fA-F]{6}$/.test(v)){document.getElementById('colorPickerInput').value=v;updatePickerDisplay(v);}}
+
+// Color Converter
+function updateConvLabels(){var type=document.getElementById('convType').value;var container=document.getElementById('convInputs');if(type==='hex'){container.innerHTML='<div class="form-group"><label for="convHex">HEX</label><input type="text" id="convHex" placeholder="#2563eb" oninput="convertColor(\'hex\')"></div>';}else if(type==='rgb'){container.innerHTML='<div style="display:flex;gap:8px"><div class="form-group" style="flex:1"><label>R</label><input type="number" id="convR" min="0" max="255" value="37" oninput="convertColor(\'rgb\')"></div><div class="form-group" style="flex:1"><label>G</label><input type="number" id="convG" min="0" max="255" value="99" oninput="convertColor(\'rgb\')"></div><div class="form-group" style="flex:1"><label>B</label><input type="number" id="convB" min="0" max="255" value="235" oninput="convertColor(\'rgb\')"></div></div>';}else{container.innerHTML='<div style="display:flex;gap:8px"><div class="form-group" style="flex:1"><label>H</label><input type="number" id="convH" min="0" max="360" value="220" oninput="convertColor(\'hsl\')"></div><div class="form-group" style="flex:1"><label>S%</label><input type="number" id="convS" min="0" max="100" value="84" oninput="convertColor(\'hsl\')"></div><div class="form-group" style="flex:1"><label>L%</label><input type="number" id="convL" min="0" max="100" value="53" oninput="convertColor(\'hsl\')"></div></div>';}}
+
+function convertColor(type){var hex,rgb,hsl;if(type==='hex'){var v=document.getElementById('convHex').value.trim();if(!/^#[0-9a-fA-F]{6}$/.test(v))return;rgb=hexToRgb(v);hsl=rgbToHsl(rgb.r,rgb.g,rgb.b);hex=v;}else if(type==='rgb'){var r=parseInt(document.getElementById('convR').value)||0;var g=parseInt(document.getElementById('convG').value)||0;var b=parseInt(document.getElementById('convB').value)||0;r=Math.min(255,Math.max(0,r));g=Math.min(255,Math.max(0,g));b=Math.min(255,Math.max(0,b));rgb={r:r,g:g,b:b};hex=rgbToHex(r,g,b);hsl=rgbToHsl(r,g,b);}else{var h=parseInt(document.getElementById('convH').value)||0;var s=parseInt(document.getElementById('convS').value)||0;var l=parseInt(document.getElementById('convL').value)||0;hsl={h:h,s:s,l:l};rgb=hslToRgb(h,s,l);hex=rgbToHex(rgb.r,rgb.g,rgb.b);}document.getElementById('convPreview').style.background=hex;document.getElementById('convHexVal').textContent=hex;document.getElementById('convRgbVal').textContent='rgb('+rgb.r+', '+rgb.g+', '+rgb.b+')';document.getElementById('convHslVal').textContent='hsl('+hsl.h+', '+hsl.s+'%, '+hsl.l+'%)';document.getElementById('convCssVal').textContent='color: '+hex+';';}
+
+// Gradient Generator
+function updateGradient(){var c1=document.getElementById('gradColor1').value;var c2=document.getElementById('gradColor2').value;var angle=document.getElementById('gradAngle').value;var type=document.getElementById('gradType').value;document.getElementById('gradAngleVal').textContent=angle;var css='';if(type==='linear'){css='linear-gradient('+angle+'deg, '+c1+', '+c2+')';}else if(type==='radial'){css='radial-gradient(circle, '+c1+', '+c2+')';}else{css='conic-gradient(from '+angle+'deg, '+c1+', '+c2+', '+c1+')';}document.getElementById('gradPreview').style.background=css;document.getElementById('gradCssCode').textContent='background: '+css+';';}
+
+// Palette Generator
+function generatePalette(){var baseHex=document.getElementById('paletteBase').value;var type=document.getElementById('paletteType').value;var rgb=hexToRgb(baseHex);var hsl=rgbToHsl(rgb.r,rgb.g,rgb.b);var colors=[];var h=hsl.h,s=hsl.s,l=hsl.l;switch(type){case'complementary':colors=[baseHex,rgbToHex.apply(null,Object.values(hslToRgb((h+180)%360,s,l))),rgbToHex.apply(null,Object.values(hslToRgb(h,Math.min(100,s+10),Math.min(90,l+10)))),rgbToHex.apply(null,Object.values(hslToRgb((h+180)%360,Math.min(100,s+10),Math.min(90,l+10)))),rgbToHex.apply(null,Object.values(hslToRgb(h,s,Math.max(10,l-15))))];break;case'analogous':colors=[rgbToHex.apply(null,Object.values(hslToRgb((h+330)%360,s,l))),baseHex,rgbToHex.apply(null,Object.values(hslToRgb((h+30)%360,s,l))),rgbToHex.apply(null,Object.values(hslToRgb((h+60)%360,s,l))),rgbToHex.apply(null,Object.values(hslToRgb((h+300)%360,s,l)))];break;case'triadic':colors=[baseHex,rgbToHex.apply(null,Object.values(hslToRgb((h+120)%360,s,l))),rgbToHex.apply(null,Object.values(hslToRgb((h+240)%360,s,l))),rgbToHex.apply(null,Object.values(hslToRgb(h,s,Math.min(90,l+20)))),rgbToHex.apply(null,Object.values(hslToRgb(h,s,Math.max(10,l-20))))];break;case'split':colors=[baseHex,rgbToHex.apply(null,Object.values(hslToRgb((h+150)%360,s,l))),rgbToHex.apply(null,Object.values(hslToRgb((h+210)%360,s,l))),rgbToHex.apply(null,Object.values(hslToRgb(h,Math.min(100,s+10),Math.min(90,l+10)))),rgbToHex.apply(null,Object.values(hslToRgb(h,s,Math.max(10,l-15))))];break;case'monochromatic':colors=[rgbToHex.apply(null,Object.values(hslToRgb(h,s,Math.min(95,l+30)))),rgbToHex.apply(null,Object.values(hslToRgb(h,s,Math.min(85,l+15)))),baseHex,rgbToHex.apply(null,Object.values(hslToRgb(h,s,Math.max(15,l-15)))),rgbToHex.apply(null,Object.values(hslToRgb(h,s,Math.max(5,l-30))))];break;}var html='<div class="palette-row" style="justify-content:center">';colors.forEach(function(c){html+='<div class="palette-color" style="background:'+c+'" onclick="copyToClip(\''+c+'\')"><span class="tooltip">'+c+'</span></div>';});html+='</div><div style="margin-top:12px;text-align:center"><button class="btn-copy" onclick="copyPalette([\\\''+colors.join("','")+'\\\'])">📋 نسخ جميع الألوان</button></div>';document.getElementById('paletteOutput').innerHTML=html;}
+
+function copyPalette(colors){navigator.clipboard.writeText(colors.join(', '));}
+
+function updatePaletteFromHex(){var v=document.getElementById('paletteBaseHex').value.trim();if(/^#[0-9a-fA-F]{6}$/.test(v)){document.getElementById('paletteBase').value=v;generatePalette();}}
+
+function copyToClip(text){navigator.clipboard.writeText(text);}
+
+// Random Color
+var randomHistory=[];
+
+function generateRandom(){var h=Math.floor(Math.random()*360);var s=Math.floor(Math.random()*60)+40;var l=Math.floor(Math.random()*40)+30;var rgb=hslToRgb(h,s,l);var hex=rgbToHex(rgb.r,rgb.g,rgb.b);var hslObj={h:h,s:s,l:l};document.getElementById('randomPreview').style.background=hex;document.getElementById('randomHex').textContent=hex;document.getElementById('randomRgb').textContent='rgb('+rgb.r+', '+rgb.g+', '+rgb.b+')';document.getElementById('randomHsl').textContent='hsl('+h+', '+s+'%, '+l+'%)';document.getElementById('randomCss').textContent='color: '+hex+';';randomHistory.unshift(hex);if(randomHistory.length>8)randomHistory.pop();var hHtml='';randomHistory.forEach(function(c){hHtml+='<div class="palette-color" style="width:40px;height:40px;background:'+c+'" onclick="copyToClip(\''+c+'\')"><span class="tooltip">'+c+'</span></div>';});document.getElementById('randomHistory').innerHTML=hHtml;}
+
+// Initialize
+updateGradient();
+generatePalette();
+generateRandom();
+</script>
+</body>
+</html>

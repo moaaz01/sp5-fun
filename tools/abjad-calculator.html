@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حاسبة الأسماء والأبجدية - حساب القيم الأبجدية للكلمات العربية | SP5 Tools</title>
+<meta name="description" content="حاسبة الأسماء والأبجدية: احسب القيمة الأبجدية لأي اسم أو كلمة عربية. حساب القيمة الكبرى والصغرى (أبجد هوز). تفصيل كل حرف مع جدول قيم الأبجدية. أداة مجانية لحساب الجمل.">
+<meta name="keywords" content="حاسبة الأبجدية, حساب الجمل, أبجد هوز, القيمة الأبجدية, حساب الأسماء, علم الأبجدية, حساب الحروف, قيمة الاسم, الأبجدية العربية, حساب الجمل العربي, abjad calculator, Arabic abjad">
+<link rel="canonical" href="https://sp5.fun/tools/abjad-calculator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260621a">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "حاسبة الأسماء والأبجدية",
+  "description": "حاسبة الأسماء والأبجدية العربية لحساب القيمة الأبجدية للكلمات والأسماء حسب نظام أبجد هوز.",
+  "url": "https://sp5.fun/tools/abjad-calculator.html",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "SAR"},
+  "inLanguage": "ar",
+  "isPartOf": {"@type": "WebSite", "name": "SP5 Tools", "url": "https://sp5.fun"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "ما هو حساب الأبجدية؟", "acceptedAnswer": {"@type": "Answer", "text": "حساب الأبجدية (أو حساب الجمل) هو نظام قديم يعطي كل حرف عربي قيمة عددية محددة. يبدأ من أ=1 إلى غ=1000. يستخدم هذا النظام في التراث العربي والإسلامي لحساب القيم العددية للكلمات والأسماء."}},
+    {"@type": "Question", "name": "كيف أحسب القيمة الأبجدية لاسمي؟", "acceptedAnswer": {"@type": "Answer", "text": "أدخل الاسم في حاسبة الأبجدية، وستحصل على القيمة الإجمالية وتفصيل كل حرف. مثلاً: محمد = م(40)+ح(8)+م(40)+د(4) = 92."}},
+    {"@type": "Question", "name": "ما الفرق بين القيمة الكبرى والصغرى؟", "acceptedAnswer": {"@type": "Answer", "text": "القيمة الكبرى (أبجد كامل) تستخدم القيم الأصلية للحروف من 1 إلى 1000. القيمة الصغرى (أبجد) تستخدم القيم المختصرة حيث تُختزل القيم الكبيرة إلى أرقام أصغر (مثلاً 1000 تصبح 1)."}}
+  ]
+}
+</script>
+<meta property="og:title" content="حاسبة الأسماء والأبجدية | SP5 Tools">
+<meta property="og:description" content="احسب القيمة الأبجدية لأي اسم أو كلمة عربية. حساب القيمة الكبرى والصغرى مع تفصيل كل حرف.">
+<meta property="og:url" content="https://sp5.fun/tools/abjad-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="حاسبة الأسماء والأبجدية | SP5 Tools">
+<meta name="twitter:description" content="احسب القيمة الأبجدية لأي كلمة عربية. أداة مجانية.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:650px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.form-group textarea{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box;min-height:100px;resize:vertical}
+.form-group textarea:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600}
+.btn-calc:hover{background:#1d4ed8}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.result-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.result-card .result-label{display:block;font-size:.85rem;color:#64748b;margin-bottom:4px}
+.result-card .result-value{display:block;font-size:1.2rem;font-weight:700;color:#1e40af}
+.result-card.result-highlight{background:linear-gradient(135deg,#2563eb,#1d4ed8);border:none}
+.result-card.result-highlight .result-label{color:rgba(255,255,255,.8)}
+.result-card.result-highlight .result-value{color:#fff;font-size:1.4rem}
+.letter-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.85rem}
+.letter-table th{background:#2563eb;color:#fff;padding:10px;text-align:center}
+.letter-table td{padding:8px;border-bottom:1px solid #e5e7eb;text-align:center}
+.letter-table tr:nth-child(even){background:#f8fafc}
+.letter-table tr:hover{background:#e0e7ff}
+.detail-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.85rem}
+.detail-table th{background:#1e40af;color:#fff;padding:8px;text-align:center}
+.detail-table td{padding:8px;border-bottom:1px solid #e5e7eb;text-align:center}
+.detail-table tr:nth-child(even){background:#f8fafc}
+</style>
+</head>
+<body>
+
+<div class="news-ticker">
+  <div class="ticker-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    الأكثر استخداماً
+  </div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a>
+      <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+      <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+      <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+      <a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a>
+      <a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a>
+      <a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a>
+      <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+      <a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a>
+      <a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a>
+      <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+      <a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+    <button class="menu-toggle" aria-label="القائمة">☰</button>
+    <nav class="nav">
+      <a href="/">الرئيسية</a>
+      <a href="/#financial">حاسبات مالية</a>
+      <a href="/#converter">محولات</a>
+      <a href="/#security">أدوات أمنية</a>
+      <a href="/#text">أدوات نصية</a>
+      <a href="/pages/privacy.html">سياسة الخصوصية</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="/">الرئيسية</a>
+  <span class="separator">/</span>
+  <a href="/#text">أدوات نصية</a>
+  <span class="separator">/</span>
+  <span class="current">حاسبة الأسماء والأبجدية</span>
+</nav>
+
+<main class="tool-page">
+  <h1>🔢 حاسبة الأسماء والأبجدية</h1>
+  <p class="tool-desc">احسب القيمة الأبجدية لأي اسم أو كلمة عربية حسب نظام أبجد هوز. حساب القيمة الكبرى والصغرى مع تفصيل كل حرف ومرجعه العددي.</p>
+
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+    <span style="font-size:.85rem;color:#64748b">مشاركة:</span>
+    <a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a>
+    <a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a>
+    <a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a>
+  </div>
+
+  <div class="ad-slot"></div>
+
+  <div class="calc-box" style="max-width:650px">
+    <div class="form-group">
+      <label for="wordInput">🔤 أدخل الاسم أو الكلمة</label>
+      <textarea id="wordInput" placeholder="مثال: محمد" style="min-height:60px;text-align:center;font-size:1.2rem">محمد</textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="calculationType">🧮 نوع الحساب</label>
+      <select id="calculationType">
+        <option value="both">القيمة الكبرى والصغرى معاً</option>
+        <option value="major">القيمة الكبرى فقط (أبجد كامل)</option>
+        <option value="minor">القيمة الصغرى فقط (أبجد)</option>
+      </select>
+    </div>
+
+    <button type="button" class="btn-calc" onclick="calculateAbjad()" style="width:100%">🔢 احسب القيمة الأبجدية</button>
+  </div>
+
+  <div id="result" style="max-width:650px;margin:20px auto"></div>
+
+  <div class="ad-slot"></div>
+
+  <div class="tool-content">
+    <h2>ما هو حساب الأبجدية (حساب الجمل)؟</h2>
+    <p>حساب الأبجدية، المعروف أيضاً بحساب الجمل، هو نظام قديم يعطي كل حرف من حروف اللغة العربية قيمة عددية محددة. يعود أصل هذا النظام إلى التراث السامي القديم، وقد استخدمه العرب منذ العصر الجاهلي في الشعر والتأريخ والعلوم. يُسمى "أبجد هوز" نسبة إلى أول كلمتين في ترتيب الحروف الأبجدية القديم: أبجد، هوز، حطي، كلمن، سعفص، قرشت، ثخذ، ضظغ.</p>
+
+    <h3>قيم الحروف الأبجدية</h3>
+    <table class="letter-table">
+      <thead>
+        <tr><th>الحرف</th><th>القيمة</th><th>الحرف</th><th>القيمة</th><th>الحرف</th><th>القيمة</th><th>الحرف</th><th>القيمة</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>أ</td><td>1</td><td>ح</td><td>8</td><td>س</td><td>60</td><td>ت</td><td>400</td></tr>
+        <tr><td>ب</td><td>2</td><td>ط</td><td>9</td><td>ع</td><td>70</td><td>ث</td><td>500</td></tr>
+        <tr><td>ج</td><td>3</td><td>ي</td><td>10</td><td>ف</td><td>80</td><td>خ</td><td>600</td></tr>
+        <tr><td>د</td><td>4</td><td>ك</td><td>20</td><td>ص</td><td>90</td><td>ذ</td><td>700</td></tr>
+        <tr><td>ه</td><td>5</td><td>ل</td><td>30</td><td>ق</td><td>100</td><td>ض</td><td>800</td></tr>
+        <tr><td>و</td><td>6</td><td>م</td><td>40</td><td>ر</td><td>200</td><td>ظ</td><td>900</td></tr>
+        <tr><td>ز</td><td>7</td><td>ن</td><td>50</td><td>ش</td><td>300</td><td>غ</td><td>1000</td></tr>
+      </tbody>
+    </table>
+
+    <h2>كيف تحسب القيمة الأبجدية؟</h2>
+    <p>حساب القيمة الأبجدية بسيط: لكل حرف عربي قيمة عددية ثابتة. اجمع قيم حروف الكلمة لتحصل على القيمة الإجمالية. مثلاً: كلمة "محمد" = م(40) + ح(8) + م(40) + د(4) = 92. كلمة "الله" = أ(1) + ل(30) + ل(30) + ه(5) = 66.</p>
+
+    <h3>القيمة الكبرى مقابل القيمة الصغرى</h3>
+    <ul>
+      <li><strong>القيمة الكبرى (أبجد كامل):</strong> تستخدم القيم الأصلية للحروف كما هي من 1 إلى 1000</li>
+      <li><strong>القيمة الصغرى (أبجد):</strong> تُختزل القيم الكبيرة إلى أرقام أصغر (مثلاً 1000 تصبح 1، 200 تصبح 2، إلخ)</li>
+    </ul>
+
+    <h2>استخدامات حساب الأبجدية</h2>
+    <p>استخدم العرب والمسلمون حساب الأبجدية في عدة مجالات: التأريخ (كتابة التواريخ بكلمات ذات قيمة عددية)، الشعر (التاريخ الشعري)، العلوم (ترقيم الأبواب والفصول)، وعلم الحروف. في العصر الحديث، يستخدم البعض حساب الأبجدية في تحليل الأسماء وفهم دلالاتها العددية.</p>
+
+    <div class="ad-slot"></div>
+
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item">
+      <strong>ما هو حساب الأبجدية؟</strong>
+      <p>حساب الأبجدية (أو حساب الجمل) هو نظام قديم يعطي كل حرف عربي قيمة عددية محددة. يبدأ من أ=1 إلى غ=1000. يستخدم هذا النظام في التراث العربي والإسلامي لحساب القيم العددية للكلمات والأسماء.</p>
+    </div>
+    <div class="faq-item">
+      <strong>كيف أحسب القيمة الأبجدية لاسمي؟</strong>
+      <p>أدخل الاسم في حاسبة الأبجدية، وستحصل على القيمة الإجمالية وتفصيل كل حرف. مثلاً: محمد = م(40)+ح(8)+م(40)+د(4) = 92.</p>
+    </div>
+    <div class="faq-item">
+      <strong>ما الفرق بين القيمة الكبرى والصغرى؟</strong>
+      <p>القيمة الكبرى (أبجد كامل) تستخدم القيم الأصلية للحروف من 1 إلى 1000. القيمة الصغرى (أبجد) تستخدم القيم المختصرة حيث تُختزل القيم الكبيرة إلى أرقام أصغر (مثلاً 1000 تصبح 1، 200 تصبح 2).</p>
+    </div>
+    <div class="faq-item">
+      <strong>هل الهمزة والألف لهما نفس القيمة؟</strong>
+      <p>نعم، الهمزة (ء) والألف (ا) لهما نفس القيمة = 1. الألف المقصورة (ى) تحسب كالألف = 1. التاء المربوطة (ة) تحسب كالتاء = 400. الألف اللينة (ى) في آخر الكلمة تحسب كالألف = 1.</p>
+    </div>
+    <div class="faq-item">
+      <strong>هل التشكيل يؤثر على القيمة الأبجدية؟</strong>
+      <p>لا، التشكيل (الفتحة والضمة والكسرة والسكون) لا يؤثر على القيمة الأبجدية. القيمة تعتمد فقط على الحرف نفسه. الحرف المشدد يُحسب مرة واحدة فقط.</p>
+    </div>
+  </div>
+</main>
+
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/kaffara-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🕌</span> حاسبة الكفارات</a>
+    <a href="/tools/zakat-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🕌</span> حاسبة الزكاة</a>
+    <a href="/tools/hijri-converter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🌙</span> محول الهجري</a>
+    <a href="/tools/hashtag-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">#️⃣</span> مولد هاشتاقات</a>
+    <a href="/tools/percentage-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">📊</span> حاسبة النسبة المئوية</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div>
+    <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div>
+    <div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div>
+    <div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div>
+</footer>
+
+<script src="/js/main.js?v=20260621a"></script>
+<script>
+function formatNum(n,d){if(d===undefined)d=2;return Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});}
+
+// Abjad letter values
+var abjadValues={
+  'ا':1,'أ':1,'إ':1,'آ':1,'ء':1,
+  'ب':2,
+  'ج':3,
+  'د':4,
+  'ه':5,'ة':5,
+  'و':6,
+  'ز':7,
+  'ح':8,
+  'ط':9,
+  'ي':10,'ى':10,
+  'ك':20,
+  'ل':30,
+  'م':40,
+  'ن':50,
+  'س':60,
+  'ع':70,
+  'ف':80,
+  'ص':90,
+  'ق':100,
+  'ر':200,
+  'ش':300,
+  'ت':400,
+  'ث':500,
+  'خ':600,
+  'ذ':700,
+  'ض':800,
+  'ظ':900,
+  'غ':1000
+};
+
+function getAbjadValue(char){
+  return abjadValues[char]||0;
+}
+
+function getMinorValue(val){
+  // Reduce large values to single digit sum
+  while(val>=10){
+    var sum=0;
+    while(val>0){
+      sum+=val%10;
+      val=Math.floor(val/10);
+    }
+    val=sum;
+  }
+  return val;
+}
+
+function calculateAbjad(){
+  var input=document.getElementById('wordInput').value.trim();
+  if(!input){
+    document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">يرجى إدخال اسم أو كلمة</p>';
+    return;
+  }
+
+  var calcType=document.getElementById('calculationType').value;
+  var showMajor=(calcType==='both'||calcType==='major');
+  var showMinor=(calcType==='both'||calcType==='minor');
+
+  // Process each character
+  var chars=[];
+  var majorTotal=0;
+  var minorTotal=0;
+
+  for(var i=0;i<input.length;i++){
+    var ch=input[i];
+    var val=getAbjadValue(ch);
+    if(val>0){
+      var minorVal=getMinorValue(val);
+      chars.push({char:ch,value:val,minor:minorVal});
+      majorTotal+=val;
+      minorTotal+=minorVal;
+    }
+  }
+
+  if(chars.length===0){
+    document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">لم يتم العثور على حروف عربية صالحة للحساب</p>';
+    return;
+  }
+
+  var html='<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">🔢 نتيجة حساب الأبجدية</h3>';
+
+  // Summary cards
+  html+='<div class="result-grid">';
+  html+='<div class="result-card result-highlight"><span class="result-label">النص المدخل</span><span class="result-value" style="font-size:1.2rem">'+escapeHtml(input)+'</span></div>';
+  html+='<div class="result-card"><span class="result-label">عدد الحروف</span><span class="result-value">'+formatNum(chars.length,0)+'</span></div>';
+  if(showMajor){
+    html+='<div class="result-card" style="background:linear-gradient(135deg,#1e40af,#2563eb);border:none"><span class="result-label" style="color:rgba(255,255,255,.8)">القيمة الكبرى</span><span class="result-value" style="color:#fff;font-size:1.4rem">'+formatNum(majorTotal,0)+'</span></div>';
+  }
+  if(showMinor){
+    html+='<div class="result-card" style="background:linear-gradient(135deg,#059669,#16a34a);border:none"><span class="result-label" style="color:rgba(255,255,255,.8)">القيمة الصغرى</span><span class="result-value" style="color:#fff;font-size:1.4rem">'+formatNum(minorTotal,0)+'</span></div>';
+  }
+  html+='</div>';
+
+  // Detail table
+  html+='<div style="margin-top:20px">';
+  html+='<h4 style="text-align:center;color:#1e40af;margin-bottom:12px">📋 تفصيل الحروف</h4>';
+  html+='<table class="detail-table">';
+  html+='<thead><tr><th>#</th><th>الحرف</th><th>القيمة الكبرى</th>';
+  if(showMinor) html+='<th>القيمة الصغرى</th>';
+  html+='</tr></thead><tbody>';
+
+  for(var j=0;j<chars.length;j++){
+    html+='<tr>';
+    html+='<td>'+(j+1)+'</td>';
+    html+='<td style="font-size:1.2rem;font-weight:700">'+chars[j].char+'</td>';
+    html+='<td>'+formatNum(chars[j].value,0)+'</td>';
+    if(showMinor) html+='<td>'+formatNum(chars[j].minor,0)+'</td>';
+    html+='</tr>';
+  }
+
+  // Total row
+  html+='<tr style="background:#e0e7ff;font-weight:700">';
+  html+='<td></td>';
+  html+='<td>المجموع</td>';
+  html+='<td>'+formatNum(majorTotal,0)+'</td>';
+  if(showMinor) html+='<td>'+formatNum(minorTotal,0)+'</td>';
+  html+='</tr>';
+
+  html+='</tbody></table>';
+  html+='</div>';
+
+  // Calculation formula
+  html+='<div style="margin-top:16px;padding:12px;background:#f8fafc;border-radius:8px;font-size:.85rem;color:#475569;text-align:center">';
+  html+='<strong>طريقة الحساب:</strong> ';
+  var formulaParts=[];
+  for(var k=0;k<chars.length;k++){
+    formulaParts.push(chars[k].char+'('+formatNum(chars[k].value,0)+')');
+  }
+  html+=formulaParts.join(' + ');
+  html+=' = <strong>'+formatNum(majorTotal,0)+'</strong>';
+  html+='</div>';
+
+  document.getElementById('result').innerHTML=html;
+}
+
+function escapeHtml(str){
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+</script>
+</body>
+</html>

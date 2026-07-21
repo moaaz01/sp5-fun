@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sp5.fun/sitemap.xml

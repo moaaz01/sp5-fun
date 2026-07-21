@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حاسبة مقاس الخاتم | SP5 Tools</title>
+<meta name="description" content="حاسبة مقاس الخاتم: احسب مقاس خاتمك بثلاث طرق (محيط الإصبع، قطر الخاتم، مقاس حالي). تحويل بين المقاييس الدولية والأمريكية والبريطانية والأوروبية واليابانية.">
+<meta name="keywords" content="حاسبة مقاس الخاتم, مقاس الخاتم, ring size calculator, مقاس الخاتم بالملم, تحويل مقاس الخاتم, ring size, ISO ring size, US ring size, UK ring size, EU ring size, JP ring size">
+<link rel="canonical" href="https://sp5.fun/tools/ring-size-checker.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260621a">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة مقاس الخاتم","description":"حاسبة مقاس الخاتم بثلاث طرق: محيط الإصبع، قطر الخاتم، أو مقاس حالي. تحويل بين المقاييس الدولية والأمريكية والبريطانية والأوروبية واليابانية.","url":"https://sp5.fun/tools/ring-size-checker.html","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"inLanguage":"ar","isPartOf":{"@type":"WebSite","name":"SP5 Tools","url":"https://sp5.fun"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "كيف أعرف مقاس خاتمي؟", "acceptedAnswer": {"@type": "Answer", "text": "يمكنك قياس محيط إصبعك بالملم أو قطر خاتم موجود لديك. أدخل القياس وستحصل على المقاس بجميع الأنظمة."}},{"@type": "Question", "name": "ما الفرق بين مقاس الخاتم الأمريكي والأوروبي؟", "acceptedAnswer": {"@type": "Answer", "text": "المقاس الأمريكي يستخدم أرقاماً (5-13)، بينما الأوروبي يستخدم أرقاماً أكبر (44-72) تعبر عن محيط الإصبع بالملم."}},{"@type": "Question", "name": "كيف أقيس محيط إصبعي في المنزل؟", "acceptedAnswer": {"@type": "Answer", "text": "استخدم خيطاً أو شريط قياس ناعماً، لفه حول إصبعك، حدد نقطة التقاطع، ثم قس الطول بالملم باستخدام مسطرة."}}]}</script>
+<meta property="og:title" content="حاسبة مقاس الخاتم | SP5 Tools">
+<meta property="og:description" content="حاسبة مقاس الخاتم بثلاث طرق: محيط الإصبع، قطر الخاتم، أو مقاس حالي. تحويل بين المقاييس الدولية.">
+<meta property="og:url" content="https://sp5.fun/tools/ring-size-checker.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="حاسبة مقاس الخاتم | SP5 Tools">
+<meta name="twitter:description" content="حاسبة مقاس الخاتم بثلاث طرق: محيط الإصبع، قطر الخاتم، أو مقاس حالي. تحويل بين المقاييس الدولية.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:600px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600;width:100%}
+.btn-calc:hover{background:#1d4ed8}
+.method-select{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.method-btn{flex:1;min-width:120px;padding:12px;border:2px solid #e5e7eb;border-radius:8px;background:#fff;cursor:pointer;text-align:center;transition:all .2s;font-family:inherit;font-size:.85rem}
+.method-btn.active{border-color:#2563eb;background:#dbeafe;color:#2563eb;font-weight:700}
+.method-btn:hover{border-color:#93c5fd}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:16px}
+.result-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.result-card .result-label{display:block;font-size:.8rem;color:#64748b;margin-bottom:4px}
+.result-card .result-value{display:block;font-size:1.3rem;font-weight:700;color:#1e40af}
+.result-card.result-highlight{background:linear-gradient(135deg,#2563eb,#1d4ed8);border:none}
+.result-card.result-highlight .result-label{color:rgba(255,255,255,.8)}
+.result-card.result-highlight .result-value{color:#fff;font-size:1.5rem}
+.size-table{width:100%;border-collapse:collapse;margin-top:16px;font-size:.85rem}
+.size-table th,.size-table td{padding:8px 10px;text-align:center;border-bottom:1px solid #e5e7eb}
+.size-table th{background:#f0f7ff;color:#1e40af;font-weight:700;font-size:.8rem}
+.size-table tr:nth-child(even) td{background:#fafbfc}
+.size-table .highlight-row{background:#fef3c7!important;font-weight:700}
+.tips-box{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:8px;padding:16px;margin-top:16px}
+.tips-box h4{color:#1e40af;margin-bottom:8px;font-size:.95rem}
+.tips-box ul{padding-right:18px;color:#64748b;font-size:.85rem}
+.tips-box li{margin-bottom:4px}
+</style>
+</head>
+<body>
+<div class="news-ticker"><div class="ticker-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>الأكثر استخداماً</div><div class="ticker-track"><div class="ticker-scroll"><a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a><a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a><a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a><a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a><a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a><a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a><a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a><a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a><a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a><a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a><a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a><a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a></div></div></div>
+<header class="header"><div class="header-inner"><a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a><button class="menu-toggle" aria-label="القائمة">☰</button><nav class="nav"><a href="/">الرئيسية</a><a href="/#converter">محولات</a><a href="/#financial">حاسبات مالية</a><a href="/#security">أدوات أمنية</a><a href="/#text">أدوات نصية</a><a href="/pages/privacy.html">سياسة الخصوصية</a></nav></div></header>
+<nav class="breadcrumb"><a href="/">الرئيسية</a><span class="separator">/</span><a href="/#converter">محولات</a><span class="separator">/</span><span class="current">حاسبة مقاس الخاتم</span></nav>
+<main class="tool-page">
+  <h1>💍 حاسبة مقاس الخاتم</h1>
+  <p class="tool-desc">حاسبة مقاس الخاتم بثلاث طرق: محيط الإصبع، قطر الخاتم، أو مقاس حالي. تحويل بين المقاييس الدولية والأمريكية والبريطانية والأوروبية واليابانية مع جدول مقاسات شامل.</p>
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:#64748b">مشاركة:</span><a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a><a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a><a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a></div>
+<script>function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}</script>
+  <div class="ad-slot"></div>
+  <div class="calc-box">
+    <div class="form-group"><label>📏 طريقة القياس</label><div class="method-select"><button type="button" class="method-btn active" data-method="circumference" onclick="selectMethod('circumference')">📐 محيط الإصبع</button><button type="button" class="method-btn" data-method="diameter" onclick="selectMethod('diameter')">⭕ قطر الخاتم</button><button type="button" class="method-btn" data-method="current" onclick="selectMethod('current')">🔢 مقاس حالي</button></div></div>
+    <div id="circumferenceGroup"><div class="form-group"><label for="circumference">📐 محيط الإصبع (ملم)</label><input type="number" id="circumference" placeholder="مثال: 54" min="30" max="90" step="0.5"></div></div>
+    <div id="diameterGroup" style="display:none"><div class="form-group"><label for="diameter">⭕ قطر الخاتم الداخلي (ملم)</label><input type="number" id="diameter" placeholder="مثال: 17.2" min="8" max="30" step="0.1"></div></div>
+    <div id="currentGroup" style="display:none">
+      <div class="form-group"><label for="currentSystem">🔢 نظام المقاس الحالي</label><select id="currentSystem"><option value="us">أمريكي (US)</option><option value="uk">بريطاني (UK)</option><option value="eu">أوروبي (EU)</option><option value="jp">ياباني (JP)</option></select></div>
+      <div class="form-group"><label for="currentSize">🔢 المقاس الحالي</label><select id="currentSize"></select></div>
+    </div>
+    <button type="button" class="btn-calc" onclick="calculateRingSize()">💍 احسب مقاس الخاتم</button>
+  </div>
+  <div id="result" style="max-width:600px;margin:20px auto"></div>
+  <div id="sizeTable" style="max-width:800px;margin:20px auto"></div>
+  <div class="ad-slot"></div>
+  <div class="tool-content">
+    <h2>ما هي حاسبة مقاس الخاتم؟</h2>
+    <p>حاسبة مقاس الخاتم هي أداة مجانية تساعدك في معرفة مقاس خاتمك الدقيق بثلاث طرق مختلفة. يمكنك قياس محيط إصبعك بالملم، أو قطر خاتم موجود لديك، أو إدخال مقاسك الحالي. تقوم الحاسبة بتحويل المقاس بين جميع الأنظمة العالمية: الدولي (ISO)، الأمريكي، البريطاني، الأوروبي، والياباني.</p>
+    <h3>كيف تقيس مقاس خاتمك في المنزل؟</h3>
+    <p>الطريقة الأولى: استخدم خيطاً أو شريط قياس ناعماً، لفه حول إصبعك في أوسع نقطة، حدد نقطة التقاطع بقلم، ثم قس الطول بالملم باستخدام مسطرة. الطريقة الثانية: إذا كان لديك خاتم يناسبك، قس القطر الداخلي للخاتم بالملم باستخدام مسطرة. الطريقة الثالثة: إذا كنت تعرف مقاسك الحالي بأي نظام، أدخله وسنحول لك الباقي.</p>
+    <h3>نصائح لاختيار المقاس الصحيح</h3>
+    <ul>
+      <li><strong>الوقت المناسب:</strong> قس إصبعك في نهاية اليوم عندما يكون الإصبع في أكبر حجم.</li>
+      <li><strong>درجة الحرارة:</strong> في الطقس البارد، الأصابع تكون أصغر حجماً. قس في درجة حرارة معتدلة.</li>
+      <li><strong>اليد المسيطرة:</strong> إصبع اليد المسيطرة (اليمنى لليمينيين) عادة ما يكون أكبر قليلاً.</li>
+      <li><strong>عرض الخاتم:</strong> الخواتم العريضة (أكثر من 6 ملم) تحتاج مقاساً أكبر قليلاً.</li>
+      <li><strong>المفصل:</strong> إذا كان مفصل إصبعك أكبر من قاعدة الإصبع، قس كليهما واختر مقاساً وسطاً.</li>
+    </ul>
+    <div class="ad-slot"></div>
+    <h2>جدول مقاسات الخواتم</h2>
+    <p>الجدول أدناه يوضح المقاسات المكافئة بين جميع الأنظمة العالمية. استخدمه كمرجع سريع عند شراء الخواتم من متاجر دولية. تذكر أن المقاسات قد تختلف قليلاً بين المصنعين المختلفين، لذا يُنصح دائماً بقياس الإصبع مباشرة عند الشراء.</p>
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item"><strong>كيف أعرف مقاس خاتمي؟</strong><p>يمكنك قياس محيط إصبعك بالملم أو قطر خاتم موجود لديك. أدخل القياس وستحصل على المقاس بجميع الأنظمة.</p></div>
+    <div class="faq-item"><strong>ما الفرق بين المقاس الأمريكي والأوروبي؟</strong><p>المقاس الأمريكي يستخدم أرقاماً (5-13)، بينما الأوروبي يستخدم أرقاماً أكبر (44-72) تعبر عن محيط الإصبع بالملم.</p></div>
+    <div class="faq-item"><strong>كيف أقيس محيط إصبعي في المنزل؟</strong><p>استخدم خيطاً أو شريط قياس ناعماً، لفه حول إصبعك، حدد نقطة التقاطع، ثم قس الطول بالملم باستخدام مسطرة.</p></div>
+  </div>
+</main>
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/currency-converter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">💱</span> محول العملات</a>
+    <a href="/tools/temperature-converter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🌡️</span> محول الحرارة</a>
+    <a href="/tools/percentage-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">📊</span> حاسبة النسبة المئوية</a>
+    <a href="/tools/bmi-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">⚖️</span> حاسبة BMI</a>
+    <a href="/tools/age-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🎂</span> حاسبة العمر</a>
+  </div>
+</div>
+<footer class="footer"><div class="footer-inner"><div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div><div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div><div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div><div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div></div><div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div></footer>
+<script src="/js/main.js?v=20260621a"></script>
+<script>
+function formatNum(n,d){if(d===undefined)d=2;return Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});}
+
+// Ring size data: [circumference_mm, diameter_mm, US, UK, EU, JP]
+var RING_SIZES = [
+  [44.0,14.0,3,'F',44,4],
+  [44.9,14.3,3.5,'F 1/2',45,5],
+  [45.8,14.6,4,'G',46,6],
+  [46.8,14.9,4.5,'G 1/2',47,7],
+  [47.8,15.2,5,'H',48,8],
+  [48.7,15.5,5.5,'H 1/2',49,9],
+  [49.6,15.8,6,'I',50,10],
+  [50.6,16.1,6.5,'J',51,11],
+  [51.5,16.4,7,'J 1/2',52,12],
+  [52.5,16.7,7.5,'K',53,13],
+  [53.4,17.0,8,'K 1/2',54,14],
+  [54.4,17.3,8.5,'L',55,15],
+  [55.3,17.6,9,'L 1/2',56,16],
+  [56.3,17.9,9.5,'M',57,17],
+  [57.2,18.2,10,'M 1/2',58,18],
+  [58.1,18.5,10.5,'N',59,19],
+  [59.1,18.8,11,'N 1/2',60,20],
+  [60.0,19.1,11.5,'O',61,21],
+  [61.0,19.4,12,'O 1/2',62,22],
+  [61.9,19.7,12.5,'P',63,23],
+  [62.8,20.0,13,'P 1/2',64,24],
+  [63.8,20.3,13.5,'Q',65,25],
+  [64.7,20.6,14,'Q 1/2',66,26],
+  [65.7,20.9,14.5,'R',67,27],
+  [66.6,21.2,15,'R 1/2',68,28],
+  [67.6,21.5,15.5,'S',69,29],
+  [68.5,21.8,16,'S 1/2',70,30],
+  [69.4,22.1,16.5,'T',71,31],
+  [70.4,22.4,17,'T 1/2',72,32]
+];
+
+var currentMethod='circumference';
+
+function selectMethod(m){
+  currentMethod=m;
+  document.querySelectorAll('.method-btn').forEach(function(b){b.classList.remove('active');});
+  document.querySelector('.method-btn[data-method="'+m+'"]').classList.add('active');
+  document.getElementById('circumferenceGroup').style.display=m==='circumference'?'block':'none';
+  document.getElementById('diameterGroup').style.display=m==='diameter'?'block':'none';
+  document.getElementById('currentGroup').style.display=m==='current'?'block':'none';
+  if(m==='current')populateCurrentSizes();
+}
+
+function populateCurrentSizes(){
+  var sys=document.getElementById('currentSystem').value;
+  var sel=document.getElementById('currentSize');
+  sel.innerHTML='';
+  for(var i=0;i<RING_SIZES.length;i++){
+    var s=RING_SIZES[i];
+    var val,label;
+    if(sys==='us'){val=s[2];label='US '+s[2];}
+    else if(sys==='uk'){val=s[3];label='UK '+s[3];}
+    else if(sys==='eu'){val=s[4];label='EU '+s[4];}
+    else if(sys==='jp'){val=s[5];label='JP '+s[5];}
+    var opt=document.createElement('option');
+    opt.value=val;
+    opt.textContent=label;
+    sel.appendChild(opt);
+  }
+}
+
+document.getElementById('currentSystem').addEventListener('change',populateCurrentSizes);
+
+function findClosestSize(circ){
+  var closest=0;
+  var minDiff=999;
+  for(var i=0;i<RING_SIZES.length;i++){
+    var diff=Math.abs(RING_SIZES[i][0]-circ);
+    if(diff<minDiff){minDiff=diff;closest=i;}
+  }
+  return closest;
+}
+
+function calculateRingSize(){
+  var circ=0;
+  if(currentMethod==='circumference'){
+    circ=parseFloat(document.getElementById('circumference').value);
+    if(isNaN(circ)||circ<=0){document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">يرجى إدخال محيط الإصبع بالملم</p>';return;}
+  }else if(currentMethod==='diameter'){
+    var d=parseFloat(document.getElementById('diameter').value);
+    if(isNaN(d)||d<=0){document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">يرجى إدخال قطر الخاتم بالملم</p>';return;}
+    circ=d*Math.PI;
+  }else if(currentMethod==='current'){
+    var sys=document.getElementById('currentSystem').value;
+    var val=document.getElementById('currentSize').value;
+    var found=false;
+    for(var i=0;i<RING_SIZES.length;i++){
+      var s=RING_SIZES[i];
+      var matchVal;
+      if(sys==='us')matchVal=s[2];
+      else if(sys==='uk')matchVal=s[3];
+      else if(sys==='eu')matchVal=s[4];
+      else if(sys==='jp')matchVal=s[5];
+      if(String(matchVal)===String(val)){circ=s[0];found=true;break;}
+    }
+    if(!found){document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">لم يتم العثور على المقاس</p>';return;}
+  }
+
+  var idx=findClosestSize(circ);
+  var s=RING_SIZES[idx];
+
+  var html='<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">💍 مقاس الخاتم المناسب</h3>';
+  html+='<div class="result-grid">';
+  html+='<div class="result-card result-highlight"><span class="result-label">دولي (ISO)</span><span class="result-value">'+formatNum(s[0],1)+' ملم</span></div>';
+  html+='<div class="result-card"><span class="result-label">أمريكي (US)</span><span class="result-value">'+s[2]+'</span></div>';
+  html+='<div class="result-card"><span class="result-label">بريطاني (UK)</span><span class="result-value">'+s[3]+'</span></div>';
+  html+='<div class="result-card"><span class="result-label">أوروبي (EU)</span><span class="result-value">'+s[4]+'</span></div>';
+  html+='<div class="result-card"><span class="result-label">ياباني (JP)</span><span class="result-value">'+s[5]+'</span></div>';
+  html+='</div>';
+  html+='<div style="margin-top:12px;text-align:center;font-size:.85rem;color:#64748b">محيط الإصبع: '+formatNum(s[0],1)+' ملم | القطر: '+formatNum(s[1],1)+' ملم</div>';
+
+  document.getElementById('result').innerHTML=html;
+  showSizeTable(idx);
+}
+
+function showSizeTable(highlightIdx){
+  var html='<h3 style="text-align:center;color:#1e40af;margin:24px 0 16px">📋 جدول مقاسات الخواتم الشامل</h3>';
+  html+='<div style="max-height:500px;overflow-y:auto;border:1px solid #e5e7eb;border-radius:8px">';
+  html+='<table class="size-table"><thead><tr><th>محيط (ملم)</th><th>القطر (ملم)</th><th>US</th><th>UK</th><th>EU</th><th>JP</th></tr></thead><tbody>';
+  for(var i=0;i<RING_SIZES.length;i++){
+    var s=RING_SIZES[i];
+    var hl=(i===highlightIdx)?'highlight-row':'';
+    html+='<tr class="'+hl+'"><td>'+formatNum(s[0],1)+'</td><td>'+formatNum(s[1],1)+'</td><td>'+s[2]+'</td><td>'+s[3]+'</td><td>'+s[4]+'</td><td>'+s[5]+'</td></tr>';
+  }
+  html+='</tbody></table></div>';
+
+  html+='<div class="tips-box"><h4>💡 نصائح لاختيار المقاس الصحيح</h4><ul><li><strong>الوقت المناسب:</strong> قس إصبعك في نهاية اليوم عندما يكون في أكبر حجم.</li><li><strong>درجة الحرارة:</strong> في الطقس البارد، الأصابع تكون أصغر حجماً.</li><li><strong>اليد المسيطرة:</strong> إصبع اليد المسيطرة عادة ما يكون أكبر قليلاً.</li><li><strong>عرض الخاتم:</strong> الخواتم العريضة (أكثر من 6 ملم) تحتاج مقاساً أكبر قليلاً.</li><li><strong>المفصل:</strong> إذا كان مفصل إصبعك أكبر من القاعدة، قس كليهما واختر مقاساً وسطاً.</li></ul></div>';
+
+  document.getElementById('sizeTable').innerHTML=html;
+}
+
+// Init current sizes on load
+window.addEventListener('DOMContentLoaded',function(){populateCurrentSizes();});
+</script>
+</body></html>

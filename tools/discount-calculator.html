@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حاسبة الخصم | SP5 Tools</title>
+<meta name="description" content="حاسبة الخصم المجانية: احسب السعر بعد الخصم بنسبة الخصم بين سعرين أو الخصم المتتالي. أدخل السعر والخصم لمعرفة السعر النهائي.">
+<meta name="keywords" content="حاسبة الخصم, حساب الخصم, حاسبة تخفيضات, حساب السعر بعد الخصم, خصم متتالي, discount calculator, حاسبة تخفيض">
+<link rel="canonical" href="https://sp5.fun/tools/discount-calculator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260609d">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة الخصم","description":"حاسبة الخصم المجانية لحساب السعر بعد الخصم والخصم المتتالي.","url":"https://sp5.fun/tools/discount-calculator.html","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"inLanguage":"ar","isPartOf":{"@type":"WebSite","name":"SP5 Tools","url":"https://sp5.fun"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "كيف أحسب السعر بعد الخصم؟", "acceptedAnswer": {"@type": "Answer", "text": "أدخل السعر الأصلي ونسبة الخصم ثم اضغط احسب. ستحصل على السعر بعد الخصم ومبلغ الخصم."}},{"@type": "Question", "name": "ما هو الخصم المتتالي؟", "acceptedAnswer": {"@type": "Answer", "text": "الخصم المتتالي هو تطبيق أكثر من خصم على نفس المنتج. مثال: خصم 20% ثم خصم 10% إضافي = الخصم الكلي ليس 30% بل 28%."}},{"@type": "Question", "name": "كيف أحسب نسبة الخصم بين سعرين؟", "acceptedAnswer": {"@type": "Answer", "text": "نسبة الخصم = ((السعر الأصلي - السعر بعد الخصم) / السعر الأصلي) × 100."}}]}</script>
+<meta property="og:title" content="حاسبة الخصم | SP5 Tools">
+<meta property="og:description" content="حاسبة الخصم المجانية: احسب السعر بعد الخصم بنسبة الخصم بين سعرين أو الخصم المتتالي. أدخل السعر والخصم لمعرفة السعر النهائي.">
+<meta property="og:url" content="https://sp5.fun/tools/discount-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="حاسبة الخصم | SP5 Tools">
+<meta name="twitter:description" content="حاسبة الخصم المجانية: احسب السعر بعد الخصم بنسبة الخصم بين سعرين أو الخصم المتتالي. أدخل السعر والخص">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:600px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.calc-box .result{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:8px;padding:16px;margin-top:16px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600}
+.btn-calc:hover{background:#1d4ed8}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.result-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.result-card .result-label{display:block;font-size:.85rem;color:#64748b;margin-bottom:4px}
+.result-card .result-value{display:block;font-size:1.2rem;font-weight:700;color:#1e40af}
+.result-card.result-highlight{background:linear-gradient(135deg,#2563eb,#1d4ed8);border:none}
+.result-card.result-highlight .result-label{color:rgba(255,255,255,.8)}
+.result-card.result-highlight .result-value{color:#fff;font-size:1.4rem}
+</style>
+
+</head>
+<body>
+<div class="news-ticker"><div class="ticker-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>الأكثر استخداماً</div><div class="ticker-track"><div class="ticker-scroll"><a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a><a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a><a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a><a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a><a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a><a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a><a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a><a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a><a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a><a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a><a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a><a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a></div></div></div>
+<header class="header"><div class="header-inner"><a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a><button class="menu-toggle" aria-label="القائمة">☰</button><nav class="nav"><a href="/">الرئيسية</a><a href="/#financial">حاسبات مالية</a><a href="/#converter">محولات</a><a href="/#security">أدوات أمنية</a><a href="/#text">أدوات نصية</a><a href="/pages/privacy.html">سياسة الخصوصية</a></nav></div></header>
+<nav class="breadcrumb"><a href="/">الرئيسية</a><span class="separator">/</span><a href="/#financial">حاسبات</a><span class="separator">/</span><span class="current">حاسبة الخصم</span></nav>
+<main class="tool-page">
+  <h1>🏷️ حاسبة الخصم</h1>
+  <p class="tool-desc">حاسبة الخصم المجانية: احسب السعر بعد الخصم بنسبة الخصم بين سعرين أو الخصم المتتالي. أدخل السعر والخصم لمعرفة السعر النهائي.</p>
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:#64748b">مشاركة:</span><a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a><a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a><a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a></div>
+<script>function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}</script>
+  <div class="ad-slot"></div>
+  <div class="calc-box">
+    <div class="form-group"><label for="discMode">🧮 اختر نوع الحساب</label>
+      <select id="discMode" onchange="updateDiscMode()">
+        <option value="1">السعر بعد الخصم</option>
+        <option value="2">نسبة الخصم بين سعرين</option>
+        <option value="3">الخصم المتتالي</option>
+      </select>
+    </div>
+    <div id="dmode1"><div class="form-group"><label for="dprice">💰 السعر الأصلي</label><input type="number" id="dprice" placeholder="مثال: 500" step="0.01"></div><div class="form-group"><label for="ddisc">🏷️ نسبة الخصم (%)</label><input type="number" id="ddisc" placeholder="مثال: 25" step="0.01"></div></div>
+    <div id="dmode2" style="display:none"><div class="form-group"><label for="dorig">💰 السعر الأصلي</label><input type="number" id="dorig" placeholder="مثال: 500" step="0.01"></div><div class="form-group"><label for="dafter">🏷️ السعر بعد الخصم</label><input type="number" id="dafter" placeholder="مثال: 400" step="0.01"></div></div>
+    <div id="dmode3" style="display:none"><div class="form-group"><label for="d3price">💰 السعر الأصلي</label><input type="number" id="d3price" placeholder="مثال: 1000" step="0.01"></div><div class="form-group"><label for="d3disc1">🏷️ الخصم الأول (%)</label><input type="number" id="d3disc1" placeholder="مثال: 20" step="0.01"></div><div class="form-group"><label for="d3disc2">🏷️ الخصم الثاني (%)</label><input type="number" id="d3disc2" placeholder="مثال: 10" step="0.01"></div></div>
+    <button type="button" class="btn-calc" onclick="calculateDiscount()" style="width:100%">🏷️ احسب الخصم</button>
+  </div>
+  <div id="result" style="max-width:600px;margin:20px auto"></div>
+  <div id="extraResult" style="max-width:800px;margin:20px auto"></div>
+  <div class="ad-slot"></div>
+  <div class="tool-content">
+    <h2>ما هي حاسبة الخصم؟</h2>
+    <p>حاسبة الخصم من SP5 Tools هي أداة مجانية تساعدك على حساب السعر بعد الخصم بسهولة. تدعم الحاسبة ثلاثة أوضاع: حساب السعر بعد الخصم، حساب نسبة الخصم بين سعرين، وحساب الخصم المتتالي.</p>
+    <h3>أنواع حساب الخصم</h3>
+    <ul>
+      <li><strong>السعر بعد الخصم:</strong> أدخل السعر الأصلي ونسبة الخصم لمعرفة السعر النهائي ومبلغ الخصم</li>
+      <li><strong>نسبة الخصم بين سعرين:</strong> أدخل السعر الأصلي والسعر بعد الخصم لمعرفة نسبة الخصم</li>
+      <li><strong>الخصم المتتالي:</strong> احسب السعر بعد تطبيق خصمين متتاليين. مثال: خصم 20% ثم 10% = خصم فعلي 28%</li>
+    </ul>
+    <h2>كيف تحسب الخصم المتتالي؟</h2>
+    <p>الخصم المتتالي لا يساوي مجموع الخصمين. مثال: خصم 20% ثم خصم 10% على منتج سعره 1000 ريال:</p>
+    <ul>
+      <li>بعد الخصم الأول (20%): 800 ريال</li>
+      <li>بعد الخصم الثاني (10% على 800): 720 ريال</li>
+      <li>الخصم الفعلي الكلي: 28% وليس 30%</li>
+    </ul>
+    <div class="ad-slot"></div>
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item"><strong>كيف أحسب السعر بعد الخصم؟</strong><p>أدخل السعر الأصلي ونسبة الخصم ثم اضغط احسب.</p></div>
+    <div class="faq-item"><strong>ما هو الخصم المتتالي؟</strong><p>الخصم المتتالي هو تطبيق أكثر من خصم على نفس المنتج. الخصم الكلي لا يساوي مجموع الخصوم.</p></div>
+    <div class="faq-item"><strong>كيف أحسب نسبة الخصم بين سعرين؟</strong><p>نسبة الخصم = ((السعر الأصلي - السعر بعد الخصم) / السعر الأصلي) × 100.</p></div>
+  </div>
+</main>
+<div class="content-section">
+<h2>أنواع الخصومات وكيفية حسابها بذكاء</h2>
+<p>الخصومات هي إحدى أقوى أدوات التسويق في عالم التجارة، وفهم أنواعها يساعدك في اتخاذ قرارات شراء أفضل. في عام 2026، تتنوع الخصومات في المتاجر بين الخصم النسبي (نسبة مئوية من السعر)، والخصم المطلق (مبلغ ثابت مخفض)، والخصم المتتالي (تطبيق أكثر من خصم على نفس المنتج). من المهم أن تعرف أن الخصم المتتالي لا يساوي مجموع الخصمين، فمثلاً خصم 20% ثم خصم 10% إضافي على منتج سعره 1000 ريال يعني خصماً فعلياً كلياً 28% وليس 30%. هذا الفرق البسيط قد يكلفك مبالغ كبيرة إذا لم تنتبه.</p>
+<p>مواسم التخفيضات في العالم العربي تشمل الجمعة البيضاء (البلاك فرايداي)، موسم العودة إلى المدارس، تخفيضات نهاية الموسم، تخفيضات رمضان وعيد الفطر، وتخفيضات الجمعة الحمراء في السعودية. في هذه المواسم، تصل الخصومات إلى 70% وأكثر، لكن يجب أن تكون حذراً من الخصومات الوهمية التي ترفع السعر قبل التخفيض. نصيحة ذكية: تابع أسعار المنتجات قبل مواسم التخفيضات بأسبوعين على الأقل لتعرف السعر الحقيقي، واستخدم حاسبة الخصم للتأكد من أنك تحصل على أفضل صفقة.</p>
+<p>نصائح للتسوق الذكي: قارن بين الخصم النسبي والخصم المطلق لتعرف أيهما أفضل — فخصم 50% على منتج سعره 50 ريال يعني توفير 25 ريال، بينما خصم 20 ريالاً مطلقاً على نفس المنتج يعني توفير 20 ريالاً فقط. احسب دائماً السعر النهائي بعد الخصم وليس نسبة الخصم فقط. استخدم حاسبة الخصم لحساب الخصم المتتالي بدقة، فبعض المتاجر تقدم خصماً إضافياً على المشتريات فوق مبلغ معين. وأخيراً، لا تشتري منتجاً فقط لأنه عليه خصم — اسأل نفسك: هل كنت ستشتريه بالسعر الأصلي؟ إذا كانت الإجابة لا، فالخصم ليس صفقة جيدة.</p>
+</div>
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/percentage-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">📊</span> حاسبة النسبة المئوية</a>
+    <a href="/tools/vat-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🧾</span> حاسبة الضريبة VAT</a>
+    <a href="/tools/salary-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">💰</span> حاسبة الرواتب</a>
+    <a href="/tools/loan-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🏦</span> حاسبة القروض</a>
+    <a href="/tools/ratio-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">➗</span> حاسبة النسبة والتناسب</a>
+  </div>
+</div>
+<footer class="footer"><div class="footer-inner"><div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div><div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div><div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div><div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div></div><div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div></footer>
+<script src="/js/main.js?v=20260609d"></script>
+<script>
+function formatNum(n,d){if(d===undefined)d=2;return Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});}
+
+function updateDiscMode(){var m=document.getElementById('discMode').value;document.getElementById('dmode1').style.display=m==='1'?'block':'none';document.getElementById('dmode2').style.display=m==='2'?'block':'none';document.getElementById('dmode3').style.display=m==='3'?'block':'none';}
+function calculateDiscount(){
+  var mode=document.getElementById('discMode').value;
+  var html='<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">🏷️ النتيجة</h3><div class="result-grid">';
+  if(mode==='1'){
+    var price=parseFloat(document.getElementById('dprice').value);
+    var disc=parseFloat(document.getElementById('ddisc').value);
+    if(isNaN(price)||isNaN(disc)){html+='<p style="color:#dc2626;text-align:center">يرجى إدخال القيم</p></div>';document.getElementById('result').innerHTML=html;return;}
+    var discountAmt=price*disc/100;
+    var finalPrice=price-discountAmt;
+    html+='<div class="result-card result-highlight"><span class="result-label">السعر بعد الخصم</span><span class="result-value">'+formatNum(finalPrice)+' ر.س</span></div>';
+    html+='<div class="result-card"><span class="result-label">مبلغ الخصم</span><span class="result-value" style="color:#dc2626">'+formatNum(discountAmt)+' ر.س</span></div>';
+    html+='<div class="result-card"><span class="result-label">السعر الأصلي</span><span class="result-value">'+formatNum(price)+' ر.س</span></div>';
+  }else if(mode==='2'){
+    var orig=parseFloat(document.getElementById('dorig').value);
+    var after=parseFloat(document.getElementById('dafter').value);
+    if(isNaN(orig)||isNaN(after)||orig===0){html+='<p style="color:#dc2626;text-align:center">يرجى إدخال القيم</p></div>';document.getElementById('result').innerHTML=html;return;}
+    var discPct=((orig-after)/orig)*100;
+    html+='<div class="result-card result-highlight"><span class="result-label">نسبة الخصم</span><span class="result-value">'+discPct.toFixed(2)+'%</span></div>';
+    html+='<div class="result-card"><span class="result-label">مبلغ الخصم</span><span class="result-value">'+formatNum(orig-after)+' ر.س</span></div>';
+  }else{
+    var price=parseFloat(document.getElementById('d3price').value);
+    var d1=parseFloat(document.getElementById('d3disc1').value);
+    var d2=parseFloat(document.getElementById('d3disc2').value);
+    if(isNaN(price)||isNaN(d1)||isNaN(d2)){html+='<p style="color:#dc2626;text-align:center">يرجى إدخال القيم</p></div>';document.getElementById('result').innerHTML=html;return;}
+    var after1=price*(1-d1/100);
+    var after2=after1*(1-d2/100);
+    var totalDiscPct=((price-after2)/price)*100;
+    html+='<div class="result-card result-highlight"><span class="result-label">السعر النهائي</span><span class="result-value">'+formatNum(after2)+' ر.س</span></div>';
+    html+='<div class="result-card"><span class="result-label">الخصم الفعلي الكلي</span><span class="result-value">'+totalDiscPct.toFixed(2)+'%</span></div>';
+    html+='<div class="result-card"><span class="result-label">بعد الخصم الأول</span><span class="result-value">'+formatNum(after1)+' ر.س</span></div>';
+    html+='<div class="result-card"><span class="result-label">مبلغ الخصم الكلي</span><span class="result-value" style="color:#dc2626">'+formatNum(price-after2)+' ر.س</span></div>';
+  }
+  html+='</div>';document.getElementById('result').innerHTML=html;
+}
+</script>
+</body></html>

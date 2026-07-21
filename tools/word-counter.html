@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عداد الكلمات والحروف - احسب عدد الكلمات والأحرف | SP5 Tools</title>
+  <meta name="description" content="أداة مجانية لحساب عدد الكلمات والأحرف والجمل والفقرات في النص العربي. احسب وقت القراءة وأكثر الكلمات تكراراً بسهولة.">
+  <meta name="keywords" content="عداد الكلمات, عداد الحروف, حساب عدد الكلمات, عدد الأحرف, وقت القراءة, تحليل النص العربي">
+  <link rel="canonical" href="https://sp5.fun/tools/word-counter.html">
+  <link rel="stylesheet" href="/css/style.css?v=20260609d">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "عداد الكلمات والحروف",
+    "description": "أداة مجانية لحساب عدد الكلمات والأحرف والجمل والفقرات في النص العربي",
+    "url": "https://sp5.fun/tools/word-counter.html",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "SAR" },
+    "inLanguage": "ar"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "كيف أحسب عدد الكلمات في نصي؟", "acceptedAnswer": { "@type": "Answer", "text": "الصق النص في المربع أعلاه وسيتم حساب عدد الكلمات والحورف تلقائياً وبشكل فوري." } },
+      { "@type": "Question", "name": "هل يمكنني حساب عدد الحروف بدون المسافات؟", "acceptedAnswer": { "@type": "Answer", "text": "نعم، يعرض العداد عدد الحروف مع المسافات وبدونها بشكل منفصل." } },
+      { "@type": "Question", "name": "كيف يتم حساب وقت القراءة؟", "acceptedAnswer": { "@type": "Answer", "text": "يتم الحساب بناءً على متوسط سرعة قراءة النص العربي وهو 200 كلمة في الدقيقة." } }
+    ]
+  }
+  </script>
+  <meta property="og:title" content="عداد الكلمات والحروف | SP5 Tools">
+  <meta property="og:description" content="عدّ الكلمات والحروف والجمل والفقرات مع إحصائيات مفصلة.">
+  <meta property="og:url" content="https://sp5.fun/tools/word-counter.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SP5 Tools">
+  <meta property="og:locale" content="ar_SA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="عداد الكلمات والحروف | SP5 Tools">
+  <meta name="twitter:description" content="عدّ الكلمات والحروف والجمل والفقرات مع إحصائيات مفصلة.">
+  <style>
+    /* === Word Counter Custom Styles === */
+    .wc-hero {
+      background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+      color: #fff;
+      padding: 32px 20px 28px;
+      text-align: center;
+      margin: -10px -10px 0;
+      border-radius: 0;
+    }
+    .wc-hero h1 { font-size: 1.65rem; margin: 0 0 8px; font-weight: 700; }
+    .wc-hero p { font-size: .92rem; opacity: .92; margin: 0; line-height: 1.6; }
+    @media(max-width:600px) {
+      .wc-hero { padding: 22px 14px 18px; }
+      .wc-hero h1 { font-size: 1.3rem; }
+      .wc-hero p { font-size: .82rem; }
+    }
+
+    .wc-textarea-wrap {
+      position: relative;
+      margin: 20px 0;
+    }
+    .wc-textarea-wrap textarea {
+      width: 100%;
+      min-height: 220px;
+      padding: 16px 18px;
+      border: 2px solid #e2e8f0;
+      border-radius: 14px;
+      font-size: 1rem;
+      font-family: 'Tajawal', sans-serif;
+      line-height: 1.9;
+      resize: vertical;
+      background: #fff;
+      color: #1e293b;
+      transition: border-color .2s, box-shadow .2s;
+      box-sizing: border-box;
+    }
+    .wc-textarea-wrap textarea:focus {
+      outline: none;
+      border-color: #7c3aed;
+      box-shadow: 0 0 0 4px rgba(124,58,237,.12);
+    }
+    .wc-textarea-wrap textarea::placeholder {
+      color: #94a3b8;
+    }
+    .wc-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .wc-actions button {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+      color: #475569;
+      font-size: .85rem;
+      font-family: 'Tajawal', sans-serif;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .wc-actions button:hover {
+      background: #eef2ff;
+      border-color: #7c3aed;
+      color: #7c3aed;
+    }
+    .wc-actions button svg { width: 15px; height: 15px; }
+
+    /* Stats Grid */
+    .wc-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .wc-stat {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 14px 12px;
+      text-align: center;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .wc-stat:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(37,99,235,.1);
+    }
+    .wc-stat .num {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #2563eb;
+      line-height: 1.2;
+    }
+    .wc-stat .lbl {
+      font-size: .78rem;
+      color: #64748b;
+      margin-top: 4px;
+    }
+    @media(max-width:480px) {
+      .wc-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .wc-stat { padding: 10px 8px; }
+      .wc-stat .num { font-size: 1.35rem; }
+      .wc-stat .lbl { font-size: .72rem; }
+    }
+
+    /* Reading time bar */
+    .wc-reading {
+      background: linear-gradient(135deg, #f0f7ff, #eef2ff);
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 16px 0;
+    }
+    .wc-reading svg { flex-shrink: 0; color: #2563eb; }
+    .wc-reading .wc-rt-val { font-size: 1.3rem; font-weight: 700; color: #2563eb; }
+    .wc-reading .wc-rt-lbl { font-size: .85rem; color: #475569; }
+
+    /* Freq list */
+    .wc-freq-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 24px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .wc-freq-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .wc-freq-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      margin-bottom: 6px;
+      transition: background .15s;
+    }
+    .wc-freq-item:hover { background: #f8fafc; }
+    .wc-freq-rank {
+      width: 28px; height: 28px;
+      background: #eef2ff;
+      color: #7c3aed;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-left: 10px;
+    }
+    .wc-freq-word {
+      font-weight: 600;
+      color: #1e293b;
+      font-size: .95rem;
+    }
+    .wc-freq-count {
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: .8rem;
+      font-weight: 600;
+    }
+    @media(max-width:480px) {
+      .wc-freq-item { padding: 8px 10px; }
+      .wc-freq-rank { width: 24px; height: 24px; font-size: .72rem; }
+      .wc-freq-word { font-size: .85rem; }
+    }
+
+    /* Empty state */
+    .wc-empty {
+      text-align: center;
+      padding: 40px 20px;
+      color: #94a3b8;
+    }
+    .wc-empty svg { width: 48px; height: 48px; margin-bottom: 12px; opacity: .5; }
+    .wc-empty p { font-size: .95rem; }
+
+    /* Progress bar for reading time */
+    .wc-bar-wrap {
+      flex: 1;
+      background: #e2e8f0;
+      border-radius: 6px;
+      height: 8px;
+      overflow: hidden;
+    }
+    .wc-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #2563eb, #7c3aed);
+      border-radius: 6px;
+      transition: width .4s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="news-ticker">
+    <div class="ticker-label">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      الأكثر استخداماً
+    </div>
+    <div class="ticker-track">
+      <div class="ticker-scroll">
+        <a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل</a>
+        <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+        <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+        <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+        <a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات</a>
+        <a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a>
+        <a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة</a>
+        <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+        <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+        <a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+      <button class="menu-toggle" aria-label="القائمة" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+      <nav class="nav">
+        <a href="/">الرئيسية</a>
+        <a href="/tools/loan-calculator.html">حاسبات</a>
+        <a href="/tools/currency-converter.html">محولات</a>
+        <a href="/tools/word-counter.html" class="active">نصية</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="مسار التنقل">
+    <a href="/">الرئيسية</a>
+    <span class="separator">/</span>
+    <a href="/">الأدوات</a>
+    <span class="separator">/</span>
+    <span class="current">عداد الكلمات والحروف</span>
+  </nav>
+
+  <main class="tool-page">
+    <!-- Hero Section -->
+    <div class="wc-hero">
+      <h1>📝 عداد الكلمات والحروف</h1>
+      <p>أداة مجانية لتحليل النص العربي — احسب الكلمات والأحرف والجمل ووقت القراءة</p>
+    </div>
+
+    <div class="ad-slot">مساحة إعلانية</div>
+
+    <!-- Text Input -->
+    <div class="calc-box" style="max-width:800px;margin:20px auto">
+      <div class="wc-textarea-wrap">
+        <textarea id="textInput" placeholder="اكتب أو الصق النص هنا لتحليله... ✍️" rows="8"></textarea>
+      </div>
+      <div class="wc-actions">
+        <button onclick="pasteText()" title="لصق من الحافظة">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          لصق
+        </button>
+        <button onclick="clearText()" title="مسح النص">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+          مسح
+        </button>
+        <button onclick="copyResult()" title="نسخ الإحصائيات">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          نسخ النتائج
+        </button>
+      </div>
+    </div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="wc-empty">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      <p>ابدأ بكتابة أو لصق النص لعرض الإحصائيات</p>
+    </div>
+
+    <!-- Stats Section -->
+    <div id="statsSection" style="display:none">
+      <div style="max-width:800px;margin:0 auto;padding:0 15px">
+        <div class="wc-stats" id="statsGrid">
+          <div class="wc-stat" style="border-top:3px solid #2563eb">
+            <div class="num" id="wordCount">0</div>
+            <div class="lbl">كلمة</div>
+          </div>
+          <div class="wc-stat" style="border-top:3px solid #7c3aed">
+            <div class="num" id="charCount">0</div>
+            <div class="lbl">حرف (مع المسافات)</div>
+          </div>
+          <div class="wc-stat" style="border-top:3px solid #8b5cf6">
+            <div class="num" id="charNoSpaceCount">0</div>
+            <div class="lbl">حرف (بدون مسافات)</div>
+          </div>
+          <div class="wc-stat" style="border-top:3px solid #06b6d4">
+            <div class="num" id="sentenceCount">0</div>
+            <div class="lbl">جملة</div>
+          </div>
+          <div class="wc-stat" style="border-top:3px solid #10b981">
+            <div class="num" id="paragraphCount">0</div>
+            <div class="lbl">فقرة</div>
+          </div>
+          <div class="wc-stat" style="border-top:3px solid #f59e0b">
+            <div class="num" id="avgWordLength">0</div>
+            <div class="lbl">متوسط طول الكلمة</div>
+          </div>
+        </div>
+
+        <!-- Reading Time -->
+        <div class="wc-reading" id="readingBar">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <span class="wc-rt-val" id="readingTime">0</span>
+            <span class="wc-rt-lbl">دقيقة قراءة</span>
+          </div>
+          <div class="wc-bar-wrap">
+            <div class="wc-bar" id="readingBarFill" style="width:0%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ad-slot">مساحة إعلانية</div>
+
+    <!-- Word Frequency -->
+    <div id="freqSection" style="display:none">
+      <div style="max-width:800px;margin:0 auto;padding:0 15px">
+        <div class="wc-freq-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          أكثر الكلمات تكراراً
+        </div>
+        <ul class="wc-freq-list" id="freqList"></ul>
+      </div>
+    </div>
+
+    <!-- Share -->
+    <div class="share-bar" style="max-width:800px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:0 15px">
+      <span style="font-size:.85rem;color:#64748b">مشاركة:</span>
+      <a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        فيسبوك
+      </a>
+      <a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+        تويتر
+      </a>
+      <a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>
+        واتساب
+      </a>
+    </div>
+
+    <!-- Related Tools -->
+    <div class="related-tools" style="max-width:800px;margin:20px auto;padding:0 15px">
+      <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px">
+        <a href="/tools/lorem-ipsum.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s">
+          <span style="font-size:1.2rem">📄</span> مولد نص عربي
+        </a>
+        <a href="/tools/hashtag-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s">
+          <span style="font-size:1.2rem">#️⃣</span> مولد هاشتاقات
+        </a>
+        <a href="/tools/instagram-bio-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s">
+          <span style="font-size:1.2rem">📱</span> مولد بيو انستغرام
+        </a>
+        <a href="/tools/qr-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s">
+          <span style="font-size:1.2rem">📷</span> مولد رمز QR
+        </a>
+        <a href="/tools/password-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s">
+          <span style="font-size:1.2rem">🔐</span> مولد كلمات المرور
+        </a>
+        <a href="/tools/love-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s">
+          <span style="font-size:1.2rem">💕</span> حاسبة الحب
+        </a>
+      </div>
+    </div>
+
+    <div class="ad-slot">مساحة إعلانية</div>
+
+    <!-- SEO Content -->
+    <div class="tool-content" style="max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444">
+      <h2>ما هو عداد الكلمات والحروف؟</h2>
+      <p>عداد الكلمات والحروف هو أداة مجانية أونلاين تتيح لك تحليل أي نص عربي بسرعة ودقة. سواء كنت كاتباً محترفاً أو طالباً أو مدوناً، فإن معرفة عدد الكلمات والأحرف في نصك أمر ضروري لتحسين جودة المحتوى والتزام حدود الطول المطلوبة في مختلف المنصات.</p>
+
+      <h2>كيف تستخدم عداد الكلمات؟</h2>
+      <p>ببساطة الصق أو اكتب النص في المربع أعلاه، وسيقوم العداد تلقائياً بحساب جميع الإحصائيات بشكل فوري بدون الحاجة للضغط على أي زر. يمكنك نسخ النتائج بضغطة زر واحدة.</p>
+
+      <h2>ما الذي يحسبه العداد؟</h2>
+      <ul>
+        <li><strong>عدد الكلمات:</strong> يحسب الكلمات المنفصلة بمسافات في النص</li>
+        <li><strong>عدد الأحرف مع المسافات:</strong> إجمالي الأحرف بما فيها المسافات</li>
+        <li><strong>عدد الأحرف بدون مسافات:</strong> الأحرف الفعلية فقط</li>
+        <li><strong>عدد الجمل:</strong> يحسب الجمل بناءً على علامات الترقيم العربية</li>
+        <li><strong>عدد الفقرات:</strong> يحسب الفقرات المنفصلة بأسطر فارغة</li>
+        <li><strong>وقت القراءة:</strong> يقدر الوقت بناءً على متوسط 200 كلمة/دقيقة</li>
+        <li><strong>متوسط طول الكلمة:</strong> متوسط عدد الأحرف في كل كلمة</li>
+      </ul>
+
+      <h2>لماذا تحتاج عداد الكلمات؟</h2>
+      <p>في عالم كتابة المحتوى الرقمي، عدد الكلمات معيار مهم جداً. محركات البحث مثل جوجل تفضل المقالات ذات الطول المناسب (عادةً 300+ كلمة للمحتوى العربي). منصات التواصل الاجتماعي لديها حدود محددة: تويتر يسمح بـ 280 حرف، انستغرام 2200 حرف في الوصف، ولينكدإن 3000 حرف في المنشورات.</p>
+
+      <h2>نصائح لتحسين كتابتك</h2>
+      <ul>
+        <li>احرص على أن يكون متوسط طول الكلمة بين 4-6 أحرف للنص العربي المقروء</li>
+        <li>قسّم النص لفقرات قصيرة (3-5 جمل لكل فقرة) لسهولة القراءة</li>
+        <li>استخدم علامات الترقيم بشكل صحيح لتحسين دقة عداد الجمل</li>
+        <li>راجع الكلمات الأكثر تكراراً لتجنب التكرار الممل</li>
+      </ul>
+
+      <h3>الأسئلة الشائعة</h3>
+      <div class="faq-item">
+        <strong>هل العداد مجاني؟</strong>
+        <p>نعم، العداد مجاني تماماً بدون تسجيل أو حدود استخدام.</p>
+      </div>
+      <div class="faq-item">
+        <strong>كيف يتم حساب وقت القراءة؟</strong>
+        <p>يتم الحساب بناءً على متوسط سرعة قراءة النص العربي وهو 200 كلمة في الدقيقة.</p>
+      </div>
+      <div class="faq-item">
+        <strong>هل يعمل العداد مع النصوص الإنجليزية؟</strong>
+        <p>نعم، يعمل مع أي لغة. لكن كلمات التوقف العربية يتم استثنائها من إحصاء التكرار فقط.</p>
+      </div>
+      <div class="faq-item">
+        <strong>هل يتم حفظ النص الذي أدخله؟</strong>
+        <p>لا، كل الحسابات تتم في متصفحك ولا يتم إرسال أي نص للخادم.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div>
+      <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/savings-calculator.html">حاسبة التوفير</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div>
+      <div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div>
+      <div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div>
+  </footer>
+
+  <script src="/js/main.js?v=20260609d"></script>
+  <script>
+  (function() {
+    'use strict';
+
+    var textInput = document.getElementById('textInput');
+    var statsSection = document.getElementById('statsSection');
+    var freqSection = document.getElementById('freqSection');
+    var emptyState = document.getElementById('emptyState');
+
+    var stopWords = new Set([
+      'في','من','إلى','على','عن','مع','هذا','هذه','ذلك','تلك',
+      'التي','الذي','الذين','اللذين','اللتين','هو','هي','هم','هن',
+      'أنا','نحن','أنت','أنتم','أنتن','كان','كانت','يكون','تكون',
+      'قد','لقد','لن','لم','لا','إن','أن','ما','حتى','إلا',
+      'و','أو','ثم','ف','ب','ل','ك','لل','بال','فال','وال',
+      'كل','بعض','غير','أي','بين','عند','بعد','قبل','منذ',
+      'أيضا','أيضًا','جدا','جدًا','هنا','هناك','حيث','كيف',
+      'أم','بل','لكن','لكنّ','إذا','إذ','لو','لأن','كي',
+      'سوف','هل','أ','ال','له','لها','لهم','به','بها','بهم','فيه','فيها','منه','منها'
+    ]);
+
+    function analyzeText(text) {
+      if (!text.trim()) {
+        statsSection.style.display = 'none';
+        freqSection.style.display = 'none';
+        emptyState.style.display = '';
+        return;
+      }
+
+      emptyState.style.display = 'none';
+      statsSection.style.display = '';
+
+      var words = text.trim().split(/\s+/).filter(function(w) { return w.length > 0; });
+      var wordCount = words.length;
+      var charCount = text.length;
+      var charNoSpaceCount = text.replace(/\s/g, '').length;
+      var sentences = text.split(/[.!?؟。؛\n]+/).filter(function(s) { return s.trim().length > 0; });
+      var sentenceCount = sentences.length;
+      var paragraphs = text.split(/\n\s*\n/).filter(function(p) { return p.trim().length > 0; });
+      if (paragraphs.length === 0 && text.trim().length > 0) paragraphs = [text.trim()];
+      var paragraphCount = Math.max(paragraphs.length, text.trim() ? 1 : 0);
+      var readingMinutes = wordCount / 200;
+      var totalChars = 0;
+      words.forEach(function(w) { totalChars += w.length; });
+      var avgWordLength = wordCount > 0 ? (totalChars / wordCount).toFixed(1) : 0;
+
+      document.getElementById('wordCount').textContent = wordCount.toLocaleString('en-US');
+      document.getElementById('charCount').textContent = charCount.toLocaleString('en-US');
+      document.getElementById('charNoSpaceCount').textContent = charNoSpaceCount.toLocaleString('en-US');
+      document.getElementById('sentenceCount').textContent = sentenceCount.toLocaleString('en-US');
+      document.getElementById('paragraphCount').textContent = paragraphCount.toLocaleString('en-US');
+      document.getElementById('readingTime').textContent = readingMinutes < 1 ? 'أقل من 1' : Math.ceil(readingMinutes).toLocaleString('en-US');
+      document.getElementById('avgWordLength').textContent = avgWordLength;
+
+      // Reading bar (max 10 minutes = 100%)
+      var pct = Math.min(100, (readingMinutes / 10) * 100);
+      document.getElementById('readingBarFill').style.width = pct + '%';
+
+      // Word frequency
+      var freq = {};
+      words.forEach(function(w) {
+        var clean = w.replace(/[^\u0600-\u06FF\u0750-\u077Fa-zA-Z]/g, '').toLowerCase();
+        if (clean.length < 2) return;
+        if (stopWords.has(clean)) return;
+        freq[clean] = (freq[clean] || 0) + 1;
+      });
+
+      var sorted = Object.entries(freq).sort(function(a, b) { return b[1] - a[1]; });
+      var top10 = sorted.slice(0, 10);
+
+      var freqList = document.getElementById('freqList');
+      freqList.innerHTML = '';
+
+      if (top10.length > 0) {
+        freqSection.style.display = '';
+        top10.forEach(function(item, i) {
+          var li = document.createElement('li');
+          li.className = 'wc-freq-item';
+          li.innerHTML = '<div style="display:flex;align-items:center;gap:8px">' +
+            '<span class="wc-freq-rank">' + (i+1) + '</span>' +
+            '<span class="wc-freq-word">' + sanitize(item[0]) + '</span>' +
+            '</div>' +
+            '<span class="wc-freq-count">' + item[1].toLocaleString('en-US') + ' تكرار</span>';
+          freqList.appendChild(li);
+        });
+      } else {
+        freqSection.style.display = 'none';
+      }
+    }
+
+    function sanitize(str) {
+      var div = document.createElement('div');
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    textInput.addEventListener('input', function() {
+      analyzeText(textInput.value);
+    });
+
+    // Paste from clipboard
+    window.pasteText = function() {
+      if (navigator.clipboard && navigator.clipboard.readText) {
+        navigator.clipboard.readText().then(function(t) {
+          textInput.value = t;
+          analyzeText(t);
+        }).catch(function() {
+          textInput.focus();
+          document.execCommand('paste');
+        });
+      } else {
+        textInput.focus();
+        document.execCommand('paste');
+      }
+    };
+
+    // Clear
+    window.clearText = function() {
+      textInput.value = '';
+      analyzeText('');
+    };
+
+    // Copy results
+    window.copyResult = function() {
+      if (!textInput.value.trim()) return;
+      var words = textInput.value.trim().split(/\s+/).filter(function(w) { return w.length > 0; });
+      var text = '📊 نتائج تحليل النص\n' +
+        '━━━━━━━━━━━━━━\n' +
+        '📝 الكلمات: ' + words.length.toLocaleString('en-US') + '\n' +
+        '🔡 الأحرف (مع مسافات): ' + textInput.value.length.toLocaleString('en-US') + '\n' +
+        '🔡 الأحرف (بدون مسافات): ' + textInput.value.replace(/\s/g, '').length.toLocaleString('en-US') + '\n' +
+        '📝 الجمل: ' + textInput.value.split(/[.!?؟。؛\n]+/).filter(function(s){return s.trim().length>0}).length + '\n' +
+        '⏱ وقت القراءة: ~' + Math.ceil(words.length/200) + ' دقيقة\n' +
+        '━━━━━━━━━━━━━━\n' +
+        '✨ عبر SP5 Tools';
+      navigator.clipboard.writeText(text).then(function() {
+        var btn = document.querySelector('.wc-actions button:last-child');
+        var orig = btn.innerHTML;
+        btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><polyline points="20 6 9 17 4 12"/></svg> تم النسخ!';
+        setTimeout(function() { btn.innerHTML = orig; }, 2000);
+      });
+    };
+
+    // Share
+    window.shareOn = function(platform) {
+      var u = window.location.href;
+      var t = 'عداد الكلمات والحروف — أداة مجانية لتحليل النص العربي';
+      var urls = {
+        facebook: 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(u),
+        twitter: 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(u) + '&text=' + encodeURIComponent(t),
+        whatsapp: 'https://wa.me/?text=' + encodeURIComponent(t + ' ' + u)
+      };
+      window.open(urls[platform], 'share', 'width=600,height=400');
+      return false;
+    };
+
+    if (textInput.value.trim()) analyzeText(textInput.value);
+  })();
+  </script>
+</body>
+</html>

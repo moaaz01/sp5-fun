@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حاسبة الحمل بالأسابيع | SP5 Tools</title>
+<meta name="description" content="حاسبة الحمل بالأسابيع والأيام: احسب عمر الحمل وموعد الولادة المتوقع بناءً على تاريخ آخر دورة شهرية. جدول تطور الجنين أسبوعياً مع تقويم الثلث.">
+<meta name="keywords" content="حاسبة الحمل, حساب الحمل بالأسابيع, موعد الولادة, عمر الحمل, pregnancy calculator, due date calculator, EDD, LMP, تطور الجنين, الثلث الأول, الثلث الثاني, الثلث الثالث">
+<link rel="canonical" href="https://sp5.fun/tools/pregnancy-weeks-calculator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260621a">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة الحمل بالأسابيع","description":"حاسبة الحمل بالأسابيع والأيام: احسب عمر الحمل وموعد الولادة المتوقع مع جدول تطور الجنين.","url":"https://sp5.fun/tools/pregnancy-weeks-calculator.html","applicationCategory":"HealthApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"inLanguage":"ar","isPartOf":{"@type":"WebSite","name":"SP5 Tools","url":"https://sp5.fun"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "كيف أحسب عمر الحمل بالأسابيع؟", "acceptedAnswer": {"@type": "Answer", "text": "أدخل تاريخ آخر دورة شهرية (LMP) أو تاريخ الولادة المتوقع. سنحسب عمر الحمل بالأسابيع والأيام، موعد الولادة، والثلث الحالي."}},{"@type": "Question", "name": "ما هو موعد الولادة المتوقع؟", "acceptedAnswer": {"@type": "Answer", "text": "موعد الولادة المتوقع (EDD) هو LMP + 280 يوم (40 أسبوعاً). هذه الحاسبة تحسبه تلقائياً."}},{"@type": "Question", "name": "ما هي أطوار الحمل الثلاثة؟", "acceptedAnswer": {"@type": "Answer", "text": "الثلث الأول: الأسبوع 1-13، الثلث الثاني: الأسبوع 14-27، الثلث الثالث: الأسبوع 28-40."}}]}</script>
+<meta property="og:title" content="حاسبة الحمل بالأسابيع | SP5 Tools">
+<meta property="og:description" content="حاسبة الحمل بالأسابيع والأيام: احسب عمر الحمل وموعد الولادة المتوقع. جدول تطور الجنين أسبوعياً.">
+<meta property="og:url" content="https://sp5.fun/tools/pregnancy-weeks-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="حاسبة الحمل بالأسابيع | SP5 Tools">
+<meta name="twitter:description" content="حاسبة الحمل بالأسابيع والأيام: احسب عمر الحمل وموعد الولادة المتوقع.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:600px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600;width:100%}
+.btn-calc:hover{background:#1d4ed8}
+.btn-reset{background:#e5e7eb;color:#1e293b;border:none;padding:10px 20px;border-radius:8px;font-size:.9rem;font-family:inherit;cursor:pointer;font-weight:500}
+.btn-reset:hover{background:#d1d5db}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:16px}
+.result-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.result-card .result-label{display:block;font-size:.85rem;color:#64748b;margin-bottom:4px}
+.result-card .result-value{display:block;font-size:1.2rem;font-weight:700;color:#1e40af}
+.result-card.result-highlight{background:linear-gradient(135deg,#2563eb,#1d4ed8);border:none}
+.result-card.result-highlight .result-label{color:rgba(255,255,255,.8)}
+.result-card.result-highlight .result-value{color:#fff;font-size:1.4rem}
+.trimester-bar{display:flex;height:30px;border-radius:15px;overflow:hidden;margin:16px 0;position:relative}
+.trimester-bar .seg{flex:1;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:600;color:#fff}
+.trimester-bar .seg.t1{background:#3b82f6}
+.trimester-bar .seg.t2{background:#10b981}
+.trimester-bar .seg.t3{background:#f59e0b}
+.trimester-bar .marker{position:absolute;top:-4px;width:4px;height:38px;background:#1e293b;border-radius:2px;transition:right .5s}
+.week-table{width:100%;border-collapse:collapse;margin-top:16px;font-size:.85rem}
+.week-table th,.week-table td{padding:8px 10px;text-align:right;border-bottom:1px solid #e5e7eb}
+.week-table th{background:#f0f7ff;color:#1e40af;font-weight:700;font-size:.8rem}
+.week-table tr:nth-child(even) td{background:#fafbfc}
+.week-table .current-week{background:#fef3c7!important;font-weight:700}
+.week-table .trimester-t1{border-right:3px solid #3b82f6}
+.week-table .trimester-t2{border-right:3px solid #10b981}
+.week-table .trimester-t3{border-right:3px solid #f59e0b}
+</style>
+</head>
+<body>
+<div class="news-ticker"><div class="ticker-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>الأكثر استخداماً</div><div class="ticker-track"><div class="ticker-scroll"><a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a><a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a><a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a><a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a><a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a><a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a><a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a><a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a><a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a><a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a><a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a><a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a></div></div></div>
+<header class="header"><div class="header-inner"><a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a><button class="menu-toggle" aria-label="القائمة">☰</button><nav class="nav"><a href="/">الرئيسية</a><a href="/#financial">حاسبات مالية</a><a href="/#converter">محولات</a><a href="/#security">أدوات أمنية</a><a href="/#text">أدوات نصية</a><a href="/pages/privacy.html">سياسة الخصوصية</a></nav></div></header>
+<nav class="breadcrumb"><a href="/">الرئيسية</a><span class="separator">/</span><a href="/#health">صحة</a><span class="separator">/</span><span class="current">حاسبة الحمل بالأسابيع</span></nav>
+<main class="tool-page">
+  <h1>🤰 حاسبة الحمل بالأسابيع</h1>
+  <p class="tool-desc">حاسبة الحمل بالأسابيع والأيام: احسبي عمر حملك وموعد الولادة المتوقع بناءً على تاريخ آخر دورة شهرية. جدول تطور الجنين أسبوعياً مع تقويم الثلث.</p>
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:#64748b">مشاركة:</span><a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a><a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a><a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a></div>
+<script>function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}</script>
+  <div class="ad-slot"></div>
+  <div class="calc-box">
+    <div class="form-group"><label for="calcMethod">📅 طريقة الحساب</label><select id="calcMethod" onchange="toggleMethod()"><option value="lmp">تاريخ آخر دورة شهرية (LMP)</option><option value="edd">تاريخ الولادة المتوقع (EDD)</option></select></div>
+    <div class="form-group" id="lmpGroup"><label for="lmpDate">📆 تاريخ آخر دورة شهرية</label><input type="date" id="lmpDate"></div>
+    <div class="form-group" id="eddGroup" style="display:none"><label for="eddDate">📆 تاريخ الولادة المتوقع</label><input type="date" id="eddDate"></div>
+    <button type="button" class="btn-calc" onclick="calculatePregnancy()">🤰 احسبي حملك</button>
+  </div>
+  <div id="result" style="max-width:600px;margin:20px auto"></div>
+  <div id="weekDetail" style="max-width:800px;margin:20px auto"></div>
+  <div class="ad-slot"></div>
+  <div class="tool-content">
+    <h2>ما هي حاسبة الحمل بالأسابيع؟</h2>
+    <p>حاسبة الحمل بالأسابيع هي أداة مجانية تساعد الأمهات الحوامل على حساب عمر الحمل بدقة بالأسابيع والأيام، ومعرفة موعد الولادة المتوقع (EDD)، وتحديد الثلث الحالي من الحمل. تعتمد الحاسبة على تاريخ آخر دورة شهرية (LMP) أو تاريخ الولادة المتوقع لحساب جميع المعلومات.</p>
+    <h3>كيف يتم حساب الحمل؟</h3>
+    <p>يُحسب عمر الحمل عادةً من أول يوم في آخر دورة شهرية (LMP). يستمر الحمل الطبيعي حوالي 40 أسبوعاً (280 يوماً) من LMP. تنقسم فترة الحمل إلى ثلاثة أثلاث: الثلث الأول (الأسبوع 1-13)، الثلث الثاني (الأسبوع 14-27)، والثلث الثالث (الأسبوع 28-40). كل ثلث يتميز بتطورات مختلفة للجنين وأعراض مختلفة للأم.</p>
+    <h3>تطور الجنين أسبوعياً</h3>
+    <p>خلال رحلة الحمل التي تستمر 40 أسبوعاً، يمر الجنين بمراحل تطور مذهلة. في الأسابيع الأولى، تبدأ الخلايا في الانقسام وتكوين الأعضاء الأساسية. بحلول الأسبوع 12، تكون جميع أعضاء الجنين قد تكونت. في الثلث الثاني، يبدأ الجنين في الحركة والنمو السريع. في الثلث الثالث، يكتمل نمو الرئتين والجهاز العصبي استعداداً للولادة.</p>
+    <div class="ad-slot"></div>
+    <h2>نصائح للحامل</h2>
+    <ul>
+      <li><strong>المتابعة الطبية:</strong> احرصي على زيارة الطبيب بانتظام لمتابعة تطور الحمل.</li>
+      <li><strong>التغذية:</strong> تناولي غذاء متوازناً غنياً بحمض الفوليك والحديد والكالسيوم.</li>
+      <li><strong>الراحة:</strong> احصلي على قسط كافٍ من الراحة والنوم.</li>
+      <li><strong>الرياضة:</strong> مارسي التمارين الخفيفة بعد استشارة الطبيب.</li>
+      <li><strong>الترطيب:</strong> اشربي كمية كافية من الماء يومياً.</li>
+    </ul>
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item"><strong>كيف أحسب عمر الحمل بالأسابيع؟</strong><p>أدخلي تاريخ آخر دورة شهرية (LMP) أو تاريخ الولادة المتوقع. سنحسب عمر الحمل بالأسابيع والأيام، موعد الولادة، والثلث الحالي.</p></div>
+    <div class="faq-item"><strong>ما هو موعد الولادة المتوقع؟</strong><p>موعد الولادة المتوقع (EDD) هو LMP + 280 يوم (40 أسبوعاً). هذه الحاسبة تحسبه تلقائياً.</p></div>
+    <div class="faq-item"><strong>ما هي أطوار الحمل الثلاثة؟</strong><p>الثلث الأول: الأسبوع 1-13، الثلث الثاني: الأسبوع 14-27، الثلث الثالث: الأسبوع 28-40.</p></div>
+  </div>
+</main>
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/bmi-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">⚖️</span> حاسبة BMI</a>
+    <a href="/tools/age-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🎂</span> حاسبة العمر</a>
+    <a href="/tools/ideal-weight-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">⚖️</span> حاسبة الوزن المثالي</a>
+    <a href="/tools/calorie-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🔥</span> حاسبة السعرات</a>
+    <a href="/tools/date-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">📅</span> حاسبة التاريخ</a>
+  </div>
+</div>
+<footer class="footer"><div class="footer-inner"><div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div><div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div><div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div><div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div></div><div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div></footer>
+<script src="/js/main.js?v=20260621a"></script>
+<script>
+function formatNum(n,d){if(d===undefined)d=2;return Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});}
+
+function toggleMethod(){
+  var method=document.getElementById('calcMethod').value;
+  document.getElementById('lmpGroup').style.display=method==='lmp'?'block':'none';
+  document.getElementById('eddGroup').style.display=method==='edd'?'block':'none';
+}
+
+var FETAL_DESCRIPTIONS = {
+  1:{title:'الأسبوع 1',desc:'بداية الدورة الشهرية. لم يحدث الحمل بعد. الجسم يستعد للإباضة.'},
+  2:{title:'الأسبوع 2',desc:'الإباضة. تتحرر البويضة من المبيض وتنتظر التلقيح.'},
+  3:{title:'الأسبوع 3',desc:'التلقيح. تلتقي البويضة مع الحيوان المنوي وتتكون البويضة الملقحة.'},
+  4:{title:'الأسبوع 4',desc:'انغراس البويضة في جدار الرحم. تبدأ هرمونات الحمل في الظهور.'},
+  5:{title:'الأسبوع 5',desc:'يبدأ القلب في النبض. يتكون الحبل الشوكي والدماغ. حجم الجنين مثل حبة الأرز.'},
+  6:{title:'الأسبوع 6',desc:'تتكون ملامح الوجه الأولية. يبدأ الجهاز الهضمي والتنفسي في التكون.'},
+  7:{title:'الأسبوع 7',desc:'تتكون الذراعان والساقان. يبدأ الدماغ في النمو السريع.'},
+  8:{title:'الأسبوع 8',desc:'تتكون الأصابع. تبدأ العيون والأذنان في التكون. حجم الجنين مثل حبة العنب.'},
+  9:{title:'الأسبوع 9',desc:'يكتمل تكوين الأعضاء الرئيسية. يبدأ الجنين في الحركة.'},
+  10:{title:'الأسبوع 10',desc:'تتكون الأظافر. يبدأ الجهاز التناسلي في التمايز.'},
+  11:{title:'الأسبوع 11',desc:'يكاد رأس الجنين يشكل نصف حجمه. تبدأ الكلى في إنتاج البول.'},
+  12:{title:'الأسبوع 12',desc:'اكتمال الأعضاء الأساسية. يمكن سماع نبض القلب بالدوبلر. حجم الجنين مثل حبة الليمون.'},
+  13:{title:'الأسبوع 13',desc:'بداية الثلث الثاني. تبدأ الجفون في الانغلاق. تظهر بصمات الأصابع.'},
+  14:{title:'الأسبوع 14',desc:'يبدأ الجنين في الحركة المنتظمة. يبدأ الكبد في إنتاج خلايا الدم.'},
+  15:{title:'الأسبوع 15',desc:'تتكون حاسة التذوق. يبدأ الشعر في الظهور على الرأس.'},
+  16:{title:'الأسبوع 16',desc:'يمكن للجنين سماع الأصوات. تبدأ العينان في الحركة البطيئة.'},
+  17:{title:'الأسبوع 17',desc:'يبدأ الدهن في التكون تحت الجلد. يزداد نشاط الجنين.'},
+  18:{title:'الأسبوع 18',desc:'يمكن الشعور بحركة الجنين بوضوح. يتكون الجهاز المناعي.'},
+  19:{title:'الأسبوع 19',desc:'يبدأ الجنين في البلع. تتكون براعم الأسنان الدائمة.'},
+  20:{title:'الأسبوع 20',desc:'نصف الحمل. يمكن معرفة جنس الجنين بالموجات فوق الصوتية. حجم الجنين مثل حبة الموز.'},
+  21:{title:'الأسبوع 21',desc:'يزداد نشاط الجنين. يبدأ الجهاز الهضمي في العمل.'},
+  22:{title:'الأسبوع 22',desc:'تتكون الحواجب والرموش. يبدأ الجنين في الاستجابة للأصوات.'},
+  23:{title:'الأسبوع 23',desc:'تتكون الرئتان بشكل أكبر. يبدأ نخاع العظم في إنتاج خلايا الدم.'},
+  24:{title:'الأسبوع 24',desc:'يكتسب الجنين دهوناً تحت الجلد. تفتح العينان.'},
+  25:{title:'الأسبوع 25',desc:'يكتمل تكوين الحويصلات الهوائية في الرئتين.'},
+  26:{title:'الأسبوع 26',desc:'يبدأ الجنين في فتح عينيه. يزداد وزنه بشكل ملحوظ.'},
+  27:{title:'الأسبوع 27',desc:'نهاية الثلث الثاني. يمكن للجنين أن يرمش.'},
+  28:{title:'الأسبوع 28',desc:'بداية الثلث الثالث. تتوسع الرئتان استعداداً للتنفس.'},
+  29:{title:'الأسبوع 29',desc:'يزداد وزن الجنين بسرعة. تتحرك العظام وتصبح أقوى.'},
+  30:{title:'الأسبوع 30',desc:'يكتمل نمو الشعر على الرأس. يزداد الدهن تحت الجلد.'},
+  31:{title:'الأسبوع 31',desc:'يكتمل نمو الجهاز العصبي. يبدأ الجنين في التقلب.'},
+  32:{title:'الأسبوع 32',desc:'تتكون الأظافر بشكل كامل. يزداد وزن الجنين.'},
+  33:{title:'الأسبوع 33',desc:'يكتمل نمو الرئتين تقريباً. ينام الجنين و يستيقظ بشكل منتظم.'},
+  34:{title:'الأسبوع 34',desc:'يكتمل نمو الجهاز المناعي. يبدأ الجنين في التوجه للأسفل.'},
+  35:{title:'الأسبوع 35',desc:'يكتمل نمو الكليتين. يزداد وزن الجنين بمعدل 200 غرام أسبوعياً.'},
+  36:{title:'الأسبوع 36',desc:'يكتمل نمو الرئتين. يتحرك الجنين إلى وضعية الولادة.'},
+  37:{title:'الأسبوع 37',desc:'حمل مكتمل. الجنين جاهز للولادة. يزن حوالي 2.8 كجم.'},
+  38:{title:'الأسبوع 38',desc:'يكتمل نمو الدماغ. يزداد وزن الجنين.'},
+  39:{title:'الأسبوع 39',desc:'الجنين جاهز للولادة. يزن حوالي 3.2 كجم.'},
+  40:{title:'الأسبوع 40',desc:'موعد الولادة المتوقع. يكتمل نمو الجنين تماماً.'},
+  41:{title:'الأسبوع 41',desc:'تأخر الحمل. متابعة طبية ضرورية.'},
+  42:{title:'الأسبوع 42',desc:'تأخر الحمل. تدخل طبي قد يكون ضرورياً.'}
+};
+
+function getTrimester(week){
+  if(week<=13)return{name:'الثلث الأول',color:'#3b82f6',class:'t1'};
+  if(week<=27)return{name:'الثلث الثاني',color:'#10b981',class:'t2'};
+  return{name:'الثلث الثالث',color:'#f59e0b',class:'t3'};
+}
+
+function calculatePregnancy(){
+  var method=document.getElementById('calcMethod').value;
+  var lmpDate,eddDate,weeks,days;
+
+  if(method==='lmp'){
+    lmpDate=document.getElementById('lmpDate').value;
+    if(!lmpDate){document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">يرجى إدخال تاريخ آخر دورة شهرية</p>';return;}
+    lmpDate=new Date(lmpDate);
+    eddDate=new Date(lmpDate);
+    eddDate.setDate(eddDate.getDate()+280);
+  }else{
+    eddDate=document.getElementById('eddDate').value;
+    if(!eddDate){document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">يرجى إدخال تاريخ الولادة المتوقع</p>';return;}
+    eddDate=new Date(eddDate);
+    lmpDate=new Date(eddDate);
+    lmpDate.setDate(lmpDate.getDate()-280);
+  }
+
+  var today=new Date();
+  var diffMs=today-lmpDate;
+  var totalDays=Math.floor(diffMs/(1000*60*60*24));
+  if(totalDays<0){document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">تاريخ آخر دورة شهرية لا يمكن أن يكون في المستقبل</p>';return;}
+
+  weeks=Math.floor(totalDays/7);
+  days=totalDays%7;
+  if(weeks>42){weeks=42;days=0;}
+
+  var trimester=getTrimester(weeks);
+  var remainingWeeks=40-weeks;
+  var remainingDays=remainingWeeks*7-days;
+  if(remainingDays<0)remainingDays=0;
+
+  var eddStr=eddDate.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+  var lmpStr=lmpDate.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+
+  var markerPct=Math.min(100,(weeks/40)*100);
+
+  var html='<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">📊 نتائج الحمل</h3>';
+  html+='<div class="result-grid">';
+  html+='<div class="result-card result-highlight"><span class="result-label">عمر الحمل</span><span class="result-value">'+weeks+' أسبوع'+' و '+days+' يوم</span></div>';
+  html+='<div class="result-card"><span class="result-label">الثلث الحالي</span><span class="result-value" style="color:'+trimester.color+'">'+trimester.name+'</span></div>';
+  html+='<div class="result-card"><span class="result-label">موعد الولادة المتوقع</span><span class="result-value" style="font-size:1rem">'+eddStr+'</span></div>';
+  html+='<div class="result-card"><span class="result-label">المتبقي على الولادة</span><span class="result-value" style="color:#f59e0b">'+remainingWeeks+' أسبوع</span></div>';
+  html+='</div>';
+
+  // Trimester bar
+  html+='<div class="trimester-bar">';
+  html+='<div class="seg t1">الثلث الأول<br>1-13</div>';
+  html+='<div class="seg t2">الثلث الثاني<br>14-27</div>';
+  html+='<div class="seg t3">الثلث الثالث<br>28-40</div>';
+  html+='<div class="marker" style="right:'+markerPct+'%"></div>';
+  html+='</div>';
+
+  document.getElementById('result').innerHTML=html;
+
+  // Week detail table
+  var detailHtml='<h3 style="text-align:center;color:#1e40af;margin:24px 0 16px">📋 جدول تطور الجنين أسبوعياً</h3>';
+  detailHtml+='<div style="max-height:500px;overflow-y:auto;border:1px solid #e5e7eb;border-radius:8px">';
+  detailHtml+='<table class="week-table"><thead><tr><th>الأسبوع</th><th>الثلث</th><th>الوصف</th></tr></thead><tbody>';
+
+  for(var w=1;w<=42;w++){
+    var t=getTrimester(w);
+    var info=FETAL_DESCRIPTIONS[w]||{title:'الأسبوع '+w,desc:'تطور مستمر للجنين.'};
+    var isCurrent=(w===weeks)?'current-week':'';
+    detailHtml+='<tr class="'+isCurrent+' trimester-'+t.class+'"><td style="font-weight:700">'+info.title+'</td><td><span style="color:'+t.color+'">'+t.name+'</span></td><td style="font-size:.82rem;color:#64748b">'+info.desc+'</td></tr>';
+  }
+
+  detailHtml+='</tbody></table></div>';
+  document.getElementById('weekDetail').innerHTML=detailHtml;
+}
+</script>
+</body></html>

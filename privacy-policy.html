@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية — StudyAI | Privacy Policy</title>
+    <meta name="description" content="سياسة الخصوصية لتطبيق StudyAI - تعرف على كيفية حماية بياناتك ومعلوماتك الشخصية">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sp5.fun/privacy-policy.html">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="سياسة الخصوصية — StudyAI">
+    <meta property="og:description" content="تعرف على كيفية حماية تطبيق StudyAI لبياناتك ومعلوماتك الشخصية">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sp5.fun/privacy-policy.html">
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:locale:alternate" content="en_US">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --primary-light: #dbeafe;
+            --primary-lighter: #eff6ff;
+            --secondary: #0f172a;
+            --accent: #f59e0b;
+            --success: #10b981;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --text-lighter: #94a3b8;
+            --border: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.08);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --font-ar: 'Tajawal', 'Segoe UI', Tahoma, sans-serif;
+            --font-en: 'Inter', 'Segoe UI', sans-serif;
+            --max-w: 860px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-ar);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            direction: rtl;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            background-image: 
+                radial-gradient(ellipse at 20% 0%, rgba(37,99,235,0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 100%, rgba(245,158,11,0.04) 0%, transparent 50%);
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            background: linear-gradient(135deg, var(--secondary) 0%, #1e293b 100%);
+            color: #fff;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        .header-inner {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text span { color: var(--accent); }
+
+        .lang-toggle {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: var(--font-en);
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .lang-toggle:hover {
+            background: rgba(255,255,255,0.2);
+            border-color: rgba(255,255,255,0.3);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #1e40af 50%, #312e81 100%);
+            color: #fff;
+            padding: 60px 24px 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 300px;
+            height: 300px;
+            background: rgba(245,158,11,0.08);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: var(--max-w);
+            margin: 0 auto;
+        }
+
+        .hero-icon {
+            width: 72px;
+            height: 72px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 36px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .hero h1 .en-title {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 600;
+            opacity: 0.85;
+            font-family: var(--font-en);
+            direction: ltr;
+            margin-top: 4px;
+        }
+
+        .hero .update-date {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.15);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* ===== CONTENT ===== */
+        .content {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 40px 24px 60px;
+        }
+
+        .section {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            transition: all 0.2s ease;
+        }
+
+        .section:hover {
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: #fff;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-left: 16px;
+            flex-shrink: 0;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--secondary);
+            line-height: 1.5;
+        }
+
+        .section h2 .en-heading {
+            display: block;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-light);
+            font-family: var(--font-en);
+            direction: ltr;
+            margin-top: 2px;
+        }
+
+        .section p, .section li {
+            color: var(--text);
+            line-height: 1.9;
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+            margin: 12px 0;
+        }
+
+        .section ul li {
+            padding: 10px 16px 10px 44px;
+            margin-bottom: 8px;
+            background: var(--primary-lighter);
+            border-radius: var(--radius-sm);
+            position: relative;
+            border-right: 3px solid var(--primary);
+        }
+
+        .section ul li::before {
+            content: '✓';
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--primary-lighter) 0%, #fef3c7 100%);
+            border: 1px solid var(--primary-light);
+            border-radius: var(--radius-sm);
+            padding: 20px 24px;
+            margin: 16px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0 !important;
+        }
+
+        .email-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: #fff !important;
+            padding: 12px 24px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            margin-top: 8px;
+        }
+
+        .email-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37,99,235,0.3);
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 24px;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--secondary);
+            color: rgba(255,255,255,0.7);
+            padding: 32px 24px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover { color: var(--accent); }
+
+        .footer p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 640px) {
+            .hero { padding: 40px 16px 36px; }
+            .hero h1 { font-size: 1.5rem; }
+            .hero h1 .en-title { font-size: 1.05rem; }
+            .content { padding: 24px 16px 40px; }
+            .section { padding: 24px 18px; }
+            .section-number { width: 34px; height: 34px; font-size: 0.95rem; }
+            .section h2 { font-size: 1.1rem; }
+            .header-inner { padding: 12px 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="https://sp5.fun" class="logo" aria-label="StudyAI Home">
+                <div class="logo-icon">🧠</div>
+                <div class="logo-text">Study<span>AI</span></div>
+            </a>
+            <a href="/terms-of-service.html" class="lang-toggle" title="شروط الخدمة">
+                📜 شروط الخدمة
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-icon">🔒</div>
+            <h1>
+                سياسة الخصوصية
+                <span class="en-title">Privacy Policy</span>
+            </h1>
+            <div class="update-date">📅 يونيو 2026 — June 2026</div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <div class="content">
+
+        <!-- Intro -->
+        <div class="section" style="background: linear-gradient(135deg, var(--primary-lighter) 0%, #fff 100%); border-color: var(--primary-light);">
+            <p style="font-size: 1.05rem; margin-bottom: 0;">
+                يلتزم تطبيق <strong>StudyAI</strong> بحماية خصوصية مستخدميه وتوفير تجربة تعليمية آمنة وموثوقة. توضح هذه السياسة البيانات التي نجمعها وكيفية التعامل معها.
+            </p>
+            <p style="font-family: var(--font-en); direction: ltr; color: var(--text-light); font-size: 0.95rem; margin-top: 8px; margin-bottom: 0;">
+                <strong>StudyAI</strong> is committed to protecting your privacy and providing a safe learning experience. This policy explains what data we collect and how we handle it.
+            </p>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">1</div>
+                <h2>
+                    البيانات التي نجمعها
+                    <span class="en-heading">Information We Collect</span>
+                </h2>
+            </div>
+            <p>عند استخدامك ميزة تسجيل الدخول عبر جوجل (Google Sign-In)، فإننا نطلب الوصول فقط إلى البيانات الأساسية غير الحساسة الخاصة بحسابك:</p>
+            <p style="font-family: var(--font-en); direction: ltr; color: var(--text-light); font-size: 0.92rem;">
+                When you use Google Sign-In, we only request access to basic, non-sensitive account information:
+            </p>
+            <ul>
+                <li>
+                    <strong>البريد الإلكتروني</strong> — Email Address
+                </li>
+                <li>
+                    <strong>الاسم الكامل للمستخدم</strong> — User Name
+                </li>
+                <li>
+                    <strong>الصورة الشخصية للحساب</strong> — Profile Picture
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">2</div>
+                <h2>
+                    كيف نستخدم بياناتك
+                    <span class="en-heading">How We Use Your Data</span>
+                </h2>
+            </div>
+            <p>نستخدم البيانات التي نجمعها للأغراض التالية فقط:</p>
+            <p style="font-family: var(--font-en); direction: ltr; color: var(--text-light); font-size: 0.92rem;">
+                We use the collected data solely for the following purposes:
+            </p>
+            <ul>
+                <li>
+                    إنشاء حسابك الشخصي وتأمين عملية تسجيل الدخول عبر الـ Backend الخاص بنا (نظام Supabase الآمن)
+                    <br><span style="font-family: var(--font-en); direction: ltr; font-size: 0.88rem; color: var(--text-lighter);">Creating your account and securing login via our backend (Supabase)</span>
+                </li>
+                <li>
+                    ربط وحفظ ملفاتك المرفوعة، ملخصاتك، ونتائج اختباراتك بحسابك لتتمكن من الوصول إليها من أي جهاز
+                    <br><span style="font-family: var(--font-en); direction: ltr; font-size: 0.88rem; color: var(--text-lighter);">Linking your uploaded files, summaries, and quiz results to your account for cross-device access</span>
+                </li>
+                <li>
+                    تحسين وتقديم خدمات الذكاء الاصطناعي المخصصة لك داخل التطبيق
+                    <br><span style="font-family: var(--font-en); direction: ltr; font-size: 0.88rem; color: var(--text-lighter);">Improving and delivering personalized AI-powered features within the app</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">3</div>
+                <h2>
+                    حماية ومعالجة الملفات المرفوعة
+                    <span class="en-heading">Uploaded File Protection & Processing</span>
+                </h2>
+            </div>
+            <div class="highlight-box">
+                <p>
+                    الملفات والمستندات (PDF, Word, PowerPoint) التي تقوم برفعها عبر التطبيق يتم معالجتها بشكل آمن تماماً لغرض <strong>التلخيص وتوليد الأسئلة فقط</strong>، ولا يتم بيعها أو مشاركتها أو استخدامها لأي أغراض أخرى خارج نطاق خدمتك التعليمية.
+                </p>
+                <p style="font-family: var(--font-en); direction: ltr; font-size: 0.92rem; color: var(--text-light); margin-top: 8px; margin-bottom: 0;">
+                    Uploaded files (PDF, Word, PowerPoint) are processed securely for <strong>summarization and question generation only</strong>. They are never sold, shared, or used outside the scope of your educational service.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">4</div>
+                <h2>
+                    مشاركة البيانات مع أطراف ثالثة
+                    <span class="en-heading">Data Sharing with Third Parties</span>
+                </h2>
+            </div>
+            <div class="highlight-box" style="background: linear-gradient(135deg, #fef3c7 0%, #fef9c3 100%); border-color: #fde68a;">
+                <p style="margin-bottom: 0;">
+                    ⚡ نحن <strong>لا نقوم ببيع، المتاجرة، أو مشاركة</strong> بياناتك الشخصية أو ملفاتك مع أي جهات خارجية أو أطراف ثالثة لأغراض إعلانية أو تجارية مطلقاً.
+                </p>
+                <p style="font-family: var(--font-en); direction: ltr; font-size: 0.92rem; color: var(--text-light); margin-top: 8px; margin-bottom: 0;">
+                    ⚡ We <strong>do not sell, trade, or share</strong> your personal data or files with any third parties for advertising or commercial purposes whatsoever.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 5: Contact -->
+        <div class="section contact-card">
+            <div class="section-header" style="justify-content: center;">
+                <div class="section-number">5</div>
+                <h2>
+                    التواصل معنا
+                    <span class="en-heading">Contact Us</span>
+                </h2>
+            </div>
+            <p>إذا كانت لديك أي استفسارات أو أسئلة بخصوص سياسة الخصوصية، يمكنك مراسلتنا عبر البريد الإلكتروني الرسمي للمطور:</p>
+            <p style="font-family: var(--font-en); direction: ltr; color: var(--text-light); font-size: 0.92rem;">
+                If you have any questions regarding this privacy policy, please contact us at:
+            </p>
+            <a href="mailto:alirzq1995@gmail.com" class="email-link">
+                ✉️ alirzq1995@gmail.com
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://sp5.fun">🏠 الرئيسية</a>
+            <a href="/privacy-policy.html">🔒 سياسة الخصوصية</a>
+            <a href="/terms-of-service.html">📜 شروط الخدمة</a>
+        </div>
+        <p>© 2026 StudyAI — جميع الحقوق محفوظة</p>
+    </footer>
+
+</body>
+</html>

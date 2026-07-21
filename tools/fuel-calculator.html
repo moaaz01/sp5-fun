@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حاسبة استهلاك الوقود - احسب كمية الوقود وتكلفة الرحلة | SP5 Tools</title>
+<meta name="description" content="حاسبة استهلاك الوقود المجانية: احسب كمية الوقود وتكلفة الرحلة بناءً على المسافة واستهلاك الوقود وسعر اللتر. سهلة وسريعة.">
+<meta name="keywords" content="حاسبة استهلاك الوقود, حساب تكلفة الرحلة, استهلاك البنزين, كمية الوقود, تكلفة السفر, fuel calculator">
+<link rel="canonical" href="https://sp5.fun/tools/fuel-calculator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260609d">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "حاسبة استهلاك الوقود",
+  "description": "أداة مجانية لحساب كمية الوقود وتكلفة الرحلة بناءً على المسافة ومعدل الاستهلاك وسعر اللتر.",
+  "url": "https://sp5.fun/tools/fuel-calculator.html",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "SAR"},
+  "inLanguage": "ar",
+  "isPartOf": {"@type": "WebSite", "name": "SP5 Tools", "url": "https://sp5.fun"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "كيف أحسب تكلفة الرحلة؟", "acceptedAnswer": {"@type": "Answer", "text": "أدخل المسافة بالكيلومتر ومعدل استهلاك الوقود (لتر/100كم) وسعر اللتر ثم اضغط احسب. ستظهر كمية الوقود وتكلفة الرحلة فوراً."}},
+    {"@type": "Question", "name": "ما هو معدل استهلاك الوقود؟", "acceptedAnswer": {"@type": "Answer", "text": "معدل استهلاك الوقود هو عدد اللترات التي يستهلكها السيارة لكل 100 كيلومتر. يختلف حسب نوع السيارة وطريقة القيادة وحالة الطريق."}},
+    {"@type": "Question", "name": "كيف أعرف معدل استهلاك سيارتي؟", "acceptedAnswer": {"@type": "Answer", "text": "يمكنك حسابه بتعبئة خزان الوقود بالكامل وتسجيل عداد المسافات ثم القيادة حتى إعادة التعبئة وقسمة اللترات على المسافة المقطوعة مضروبة في 100."}}
+  ]
+}
+</script>
+<meta property="og:title" content="حاسبة استهلاك الوقود | SP5 Tools">
+<meta property="og:description" content="احسب كمية الوقود وتكلفة الرحلة بناءً على المسافة واستهلاك الوقود وسعر اللتر.">
+<meta property="og:url" content="https://sp5.fun/tools/fuel-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="حاسبة استهلاك الوقود | SP5 Tools">
+<meta name="twitter:description" content="احسب كمية الوقود وتكلفة الرحلة بسهولة.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:600px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600;transition:all .2s}
+.btn-calc:hover{background:#1d4ed8}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.result-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.result-card .result-label{display:block;font-size:.85rem;color:#64748b;margin-bottom:4px}
+.result-card .result-value{display:block;font-size:1.2rem;font-weight:700;color:#1e40af}
+.result-card.result-highlight{background:linear-gradient(135deg,#2563eb,#1d4ed8);border:none}
+.result-card.result-highlight .result-label{color:rgba(255,255,255,.8)}
+.result-card.result-highlight .result-value{color:#fff;font-size:1.4rem}
+</style>
+</head>
+<body>
+
+<div class="news-ticker">
+  <div class="ticker-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    الأكثر استخداماً
+  </div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a>
+      <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+      <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+      <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+      <a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a>
+      <a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a>
+      <a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a>
+      <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+      <a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a>
+      <a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a>
+      <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+      <a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+    <button class="menu-toggle" aria-label="القائمة">☰</button>
+    <nav class="nav">
+      <a href="/">الرئيسية</a>
+      <a href="/#financial">حاسبات مالية</a>
+      <a href="/#converter">محولات</a>
+      <a href="/#security">أدوات أمنية</a>
+      <a href="/#text">أدوات نصية</a>
+      <a href="/pages/privacy.html">سياسة الخصوصية</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="/">الرئيسية</a>
+  <span class="separator">/</span>
+  <a href="/#financial">حاسبات مالية</a>
+  <span class="separator">/</span>
+  <span class="current">حاسبة استهلاك الوقود</span>
+</nav>
+
+<main class="tool-page">
+  <h1>⛽ حاسبة استهلاك الوقود</h1>
+  <p class="tool-desc">احسب كمية الوقود وتكلفة الرحلة بناءً على المسافة ومعدل استهلاك الوقود وسعر اللتر. خطط لرحلتك بذكاء!</p>
+
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+    <span style="font-size:.85rem;color:#64748b">مشاركة:</span>
+    <a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a>
+    <a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a>
+    <a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a>
+  </div>
+
+  <div class="ad-slot"></div>
+
+  <div class="calc-box">
+    <div class="form-group">
+      <label for="distance">🛣️ المسافة (كم)</label>
+      <input type="number" id="distance" placeholder="مثال: 500" min="0" step="1">
+    </div>
+    <div class="form-group">
+      <label for="consumption">⛽ استهلاك الوقود (لتر/100كم)</label>
+      <input type="number" id="consumption" placeholder="مثال: 8" min="0" step="0.1" value="8">
+    </div>
+    <div class="form-group">
+      <label for="fuelPrice">💰 سعر اللتر (ر.س)</label>
+      <input type="number" id="fuelPrice" placeholder="مثال: 2.33" min="0" step="0.01" value="2.33">
+    </div>
+    <button type="button" class="btn-calc" onclick="calculateFuel()" style="width:100%">⛽ احسب تكلفة الرحلة</button>
+  </div>
+
+  <div id="result" style="max-width:600px;margin:20px auto"></div>
+
+  <div class="ad-slot"></div>
+
+  <div style="max-width:600px;margin:20px auto;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
+    <h3 style="text-align:center;color:#1e40af;margin-bottom:12px">🚗 معدل استهلاك السيارات الشائعة</h3>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:.85rem">
+        <thead><tr style="background:#2563eb;color:#fff"><th style="padding:10px 8px;text-align:center">السيارة</th><th style="padding:10px 8px;text-align:center">لتر/100كم</th><th style="padding:10px 8px;text-align:center">كم/لتر</th></tr></thead>
+        <tbody>
+          <tr style="background:#f8fafc"><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">تويوتا كامري</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">7.5</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">13.3</td></tr>
+          <tr><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">هيونداي النترا</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">6.8</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">14.7</td></tr>
+          <tr style="background:#f8fafc"><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">تويوتا هيلكس</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">9.5</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">10.5</td></tr>
+          <tr><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">نيسان باترول</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">14.0</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">7.1</td></tr>
+          <tr style="background:#f8fafc"><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">تويوتا يارس</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">5.8</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">17.2</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tool-content">
+    <h2>ما هي حاسبة استهلاك الوقود؟</h2>
+    <p>حاسبة استهلاك الوقود من SP5 Tools هي أداة مجانية تمكنك من حساب كمية الوقود اللازمة لرحلتك وتكلفتها بناءً على المسافة ومعدل استهلاك سيارتك وسعر اللتر. تساعدك على التخطيط لميزانية رحلتك بدقة.</p>
+
+    <h3>كيفية حساب استهلاك الوقود</h3>
+    <p>الصيغة المستخدمة في الحساب:</p>
+    <p style="background:#f0f7ff;padding:12px;border-radius:8px;text-align:center;font-size:1.05rem;direction:ltr">كمية الوقود = (المسافة ÷ 100) × معدل الاستهلاك</p>
+    <p style="background:#f0f7ff;padding:12px;border-radius:8px;text-align:center;font-size:1.05rem;direction:ltr">تكلفة الرحلة = كمية الوقود × سعر اللتر</p>
+
+    <h2>نصائح لتقليل استهلاك الوقود</h2>
+    <ul>
+      <li><strong>القيادة بمعدل سرعة ثابت:</strong> السرعة الثابتة تقلل الاستهلاك بنسبة تصل إلى 10%</li>
+      <li><strong>صيانة السيارة الدورية:</strong> فلاتر الهواء والزيت النظيف يحسن الكفاءة</li>
+      <li><strong>ضغط الإطارات:</strong> ضغط هواء منخفض يزيد الاستهلاك بنسبة 3-5%</li>
+      <li><strong>تقليل الحمل:</strong> كل 50 كجم زيادة ترفع الاستهلاك 1-2%</li>
+      <li><strong>إغلاق النوافذ على السرعات العالية:</strong> المقاومة الهوائية تزيد الاستهلاك</li>
+      <li><strong>عدم ترك المحرك يعمل:</strong> إيقاف المحرك عند الانتظار أكثر من 30 ثانية</li>
+    </ul>
+
+    <div class="ad-slot"></div>
+
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item">
+      <strong>كيف أحسب معدل استهلاك سيارتي؟</strong>
+      <p>عند تعبئة خزان الوقود بالكامل، سجّل قراءة العداد. عند التعبئة مرة أخرى، سجّل عدد اللترات والمسافة المقطوعة. معدل الاستهلاك = (اللترات ÷ المسافة) × 100.</p>
+    </div>
+    <div class="faq-item">
+      <strong>ما الفرق بين لتر/100كم وكم/لتر؟</strong>
+      <p>لتر/100كم هو عدد اللترات المستهلكة لقطع 100 كم (الأقل أفضل). كم/لتر هو عدد الكيلومترات المقطوعة بلتر واحد (الأكثر أفضل). لتحويل: كم/لتر = 100 ÷ لتر/100كم.</p>
+    </div>
+    <div class="faq-item">
+      <strong>هل الحاسبة تأخذ في الاعتبار حالة الطريق؟</strong>
+      <p>الحاسبة تعطي تقديراً بناءً على معدل الاستهلاك الذي تدخله. يجب أن تأخذ في الاعتبار أن القيادة في المدينة أو على طرق جبلية قد تزيد الاستهلاك بنسبة 15-30%.</p>
+    </div>
+    <div class="faq-item">
+      <strong>هل الحاسبة مجانية بالكامل؟</strong>
+      <p>نعم، حاسبة استهلاك الوقود مجانية تماماً وتعمل في متصفحك مباشرة بدون تسجيل.</p>
+    </div>
+  </div>
+</main>
+
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/loan-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🏦</span> حاسبة القروض</a>
+    <a href="/tools/salary-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">💰</span> حاسبة الرواتب</a>
+    <a href="/tools/discount-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🏷️</span> حاسبة الخصم</a>
+    <a href="/tools/vat-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🧾</span> حاسبة الضريبة VAT</a>
+    <a href="/tools/ratio-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">➗</span> حاسبة النسبة والتناسب</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div>
+    <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div>
+    <div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div>
+    <div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div>
+</footer>
+
+<script src="/js/main.js?v=20260609d"></script>
+<script>
+function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}
+
+function formatNum(n,d){if(d===undefined)d=2;return Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});}
+
+function calculateFuel(){
+  var distance=parseFloat(document.getElementById('distance').value);
+  var consumption=parseFloat(document.getElementById('consumption').value);
+  var fuelPrice=parseFloat(document.getElementById('fuelPrice').value);
+
+  if(isNaN(distance)||distance<=0){document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">يرجى إدخال المسافة</p>';return;}
+  if(isNaN(consumption)||consumption<=0){document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">يرجى إدخال معدل الاستهلاك</p>';return;}
+  if(isNaN(fuelPrice)||fuelPrice<=0){document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">يرجى إدخال سعر اللتر</p>';return;}
+
+  var fuelNeeded=(distance/100)*consumption;
+  var tripCost=fuelNeeded*fuelPrice;
+  var kmPerLiter=100/consumption;
+  var costPerKm=fuelPrice/consumption*1;
+
+  var html='<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">⛽ نتائج حساب الوقود</h3>';
+  html+='<div class="result-grid">';
+  html+='<div class="result-card result-highlight"><span class="result-label">تكلفة الرحلة</span><span class="result-value">'+formatNum(tripCost)+' ر.س</span></div>';
+  html+='<div class="result-card"><span class="result-label">كمية الوقود المطلوبة</span><span class="result-value">'+formatNum(fuelNeeded)+' لتر</span></div>';
+  html+='<div class="result-card"><span class="result-label">المسافة</span><span class="result-value">'+formatNum(distance,0)+' كم</span></div>';
+  html+='<div class="result-card"><span class="result-label">معدل الاستهلاك</span><span class="result-value">'+formatNum(consumption)+' لتر/100كم</span></div>';
+  html+='<div class="result-card"><span class="result-label">الكفاءة</span><span class="result-value">'+formatNum(kmPerLiter)+' كم/لتر</span></div>';
+  html+='<div class="result-card"><span class="result-label">تكلفة الكيلومتر</span><span class="result-value">'+formatNum(costPerKm)+' ر.س/كم</span></div>';
+  html+='</div>';
+
+  document.getElementById('result').innerHTML=html;
+}
+
+document.getElementById('distance').addEventListener('input',calculateFuel);
+document.getElementById('consumption').addEventListener('input',calculateFuel);
+document.getElementById('fuelPrice').addEventListener('input',calculateFuel);
+</script>
+</body>
+</html>

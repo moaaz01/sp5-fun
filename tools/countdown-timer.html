@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عداد تنازلي أونلاين - عد الأيام والساعات | SP5 Tools</title>
+<meta name="description" content="عداد تنازلي مجاني أونلاين — احسب الأيام والساعات والدقائق والثواني المتبقية لأي مناسبة: رمضان، عيد، زواج، تخرج، أو أي حدث مهم.">
+<meta name="keywords" content="عداد تنازلي, عداد تنازلي أونلاين, كم باقي على رمضان, كم باقي على العيد, حساب الأيام, عد تنازلي للمناسبات">
+<link rel="canonical" href="https://sp5.fun/tools/countdown-timer.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260610a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "عداد تنازلي أونلاين",
+  "description": "عداد تنازلي مجاني أونلاين — احسب الأيام والساعات والدقائق والثواني المتبقية لأي مناسبة",
+  "url": "https://sp5.fun/tools/countdown-timer.html",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "SAR"
+  },
+  "inLanguage": "ar",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "SP5 Tools",
+    "url": "https://sp5.fun"
+  }
+}
+</script>
+<meta property="og:title" content="عداد تنازلي أونلاين | SP5 Tools">
+<meta property="og:description" content="عداد تنازلي مجاني أونلاين — احسب الأيام والساعات المتبقية لأي مناسبة.">
+<meta property="og:url" content="https://sp5.fun/tools/countdown-timer.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="عداد تنازلي أونلاين | SP5 Tools">
+<meta name="twitter:description" content="عداد تنازلي مجاني أونلاين — احسب الأيام والساعات المتبقية لأي مناسبة.">
+<style>
+.countdown-display{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:24px 0;direction:ltr}
+.cd-unit{background:linear-gradient(135deg,#1e293b,#334155);color:#fff;border-radius:16px;padding:16px 12px;min-width:80px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,.15)}
+.cd-unit .cd-num{font-size:2.4rem;font-weight:800;display:block;line-height:1.1}
+.cd-unit .cd-label{font-size:.75rem;color:rgba(255,255,255,.7);margin-top:4px;display:block;direction:rtl}
+.cd-event-name{font-size:1.3rem;font-weight:700;color:var(--primary-dark);text-align:center;margin:12px 0}
+.cd-progress{width:100%;max-width:500px;margin:16px auto;height:8px;background:#e2e8f0;border-radius:99px;overflow:hidden}
+.cd-progress-bar{height:100%;background:linear-gradient(90deg,var(--primary),#6366f1);border-radius:99px;transition:width .5s ease}
+.cd-quick{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:16px 0}
+.cd-quick button{padding:8px 16px;border:1px solid var(--border);border-radius:99px;background:var(--card-bg);color:var(--text);font-family:inherit;font-size:.85rem;cursor:pointer;transition:var(--transition)}
+.cd-quick button:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-light)}
+.cd-message{text-align:center;padding:16px;background:var(--primary-light);border-radius:var(--radius-sm);color:var(--primary-dark);font-weight:600;margin:12px 0}
+@media(max-width:480px){
+  .cd-unit{min-width:65px;padding:12px 8px}
+  .cd-unit .cd-num{font-size:1.8rem}
+  .cd-unit .cd-label{font-size:.65rem}
+  .countdown-display{gap:8px}
+}
+</style>
+</head>
+<body>
+
+<div class="news-ticker">
+  <div class="ticker-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    الأكثر استخداماً
+  </div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a>
+      <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+      <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+      <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+      <a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a>
+      <a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a>
+      <a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a>
+      <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+      <a href="/tools/instagram-bio-generator.html" class="ticker-item"><span class="ticker-icon">📱</span>مولد بيو انستغرام</a>
+      <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+      <a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a>
+      <a href="/tools/geometry-calculator.html" class="ticker-item"><span class="ticker-icon">📐</span>حاسبة الأشكال الهندسية</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+    <button class="menu-toggle" aria-label="القائمة">☰</button>
+    <nav class="nav">
+      <a href="/">الرئيسية</a>
+      <a href="/#financial">حاسبات مالية</a>
+      <a href="/#converter">محولات</a>
+      <a href="/#security">أدوات أمنية</a>
+      <a href="/#text">أدوات نصية</a>
+      <a href="/pages/privacy.html">سياسة الخصوصية</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="/">الرئيسية</a>
+  <span class="separator">/</span>
+  <a href="/#text">أدوات نصية وترفيهية</a>
+  <span class="separator">/</span>
+  <span class="current">عداد تنازلي</span>
+</nav>
+
+<main class="tool-page">
+  <h1>⏱️ عداد تنازلي أونلاين</h1>
+  <p class="tool-desc">أنشئ عداداً تنازلياً لأي مناسبة — رمضان، العيد، زواج، تخرج، سفر، أو أي حدث مهم. تابع الأيام والساعات والدقائق والثواني المتبقية مباشرة.</p>
+
+  <div class="share-bar">
+    <button class="share-toggle" onclick="toggleShareMenu()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+      مشاركة
+    </button>
+    <button class="share-btn share-btn--copy" onclick="copyToolLink(this)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+      نسخ الرابط
+    </button>
+    <div class="share-menu" id="shareMenu">
+      <a class="share-btn" href="#" onclick="shareTool('whatsapp');return false;" style="color:#25D366;border-color:#25D366;">واتساب</a>
+      <a class="share-btn" href="#" onclick="shareTool('telegram');return false;" style="color:#0088cc;border-color:#0088cc;">تيليجرام</a>
+      <a class="share-btn" href="#" onclick="shareTool('twitter');return false;" style="color:#000;border-color:#000;">تويتر</a>
+      <a class="share-btn" href="#" onclick="shareTool('facebook');return false;" style="color:#1877F2;border-color:#1877F2;">فيسبوك</a>
+    </div>
+  </div>
+
+  <div class="ad-slot"></div>
+
+  <div class="calc-box">
+    <div class="form-group">
+      <label for="eventName">اسم المناسبة</label>
+      <input type="text" id="eventName" placeholder="مثال: عيد الفطر، زفاف أحمد..." maxlength="60">
+    </div>
+    <div class="form-group">
+      <label for="targetDate">التاريخ المستهدف</label>
+      <input type="date" id="targetDate">
+    </div>
+    <div class="form-group">
+      <label for="targetTime">الوقت (اختياري)</label>
+      <input type="time" id="targetTime">
+    </div>
+    <button type="button" class="btn btn-primary btn-lg" onclick="startCountdown()">⏱️ ابدأ العد التنازلي</button>
+  </div>
+
+  <div id="countdownResult"></div>
+
+  <div class="ad-slot"></div>
+
+  <div class="content-section">
+    <h2>كيف يعمل العداد التنازلي؟</h2>
+    <p>يحسب العداد الفرق الدقيق بين اللحظة الحالية والتاريخ والوقت المحدد، ثم يحدّث العدّ كل ثانية تلقائياً. يمكنك استخدامه لـ:</p>
+    <ul>
+      <li><strong>المناسبات الدينية:</strong> رمضان، عيد الفطر، عيد الأضحى، ليلة القدر</li>
+      <li><strong>المناسبات الشخصية:</strong> زواج، تخرج، سفر، عيد ميلاد</li>
+      <li><strong>المواعيد النهائية:</strong> تسليم مشروع، نهاية عرض، امتحان</li>
+      <li><strong>الفعاليات:</strong> مباراة، حفل، افتتاح</li>
+    </ul>
+
+    <h2>لماذا تحتاج عداداً تنازلياً؟</h2>
+    <ul>
+      <li>التحفيز — رؤية الوقت المتبقي يدفعك لإنجاز مهامك</li>
+      <li>التنظيم — تتبع المواعيد المهمة بدقة</li>
+      <li>الإثارة — العد التنازلي يضيف حماساً للمناسبات</li>
+    </ul>
+  </div>
+</main>
+
+<div class="content-section">
+<h2>فوائد العد التنازلي للمناسبات والأحداث</h2>
+<p>العد التنازلي للمناسبات ليس مجرد أداة لقياس الوقت، بل هو وسيلة فعالة لتنظيم الحياة وزيادة الحماس والترقب. في عالمنا العربي، تتنوع المناسبات التي نستخدم فيها العد التنازلي، بدءاً من المناسبات الدينية مثل شهر رمضان المبارك وعيد الفطر وعيد الأضحى وليلة القدر، وصولاً إلى المناسبات الشخصية كالزواج والتخرج والسفر وأعياد الميلاد. في عام 2026، أصبح العد التنازلي أداة أساسية للتخطيط المسبق، حيث يساعد الأفراد والعائلات على الاستعداد النفسي والعملي للمناسبات المهمة.</p>
+<p>للعد التنازلي فوائد نفسية وعملية متعددة. فهو يحفز على الإنجاز من خلال رؤية الوقت المتبقي، مما يدفعك لإكمال مهامك قبل الموعد النهائي. كما يساعد في تنظيم الوقت وتتبع المواعيد المهمة بدقة، سواء كانت مواعيد تسليم المشاريع، نهاية العروض الترويجية، أو مواعيد الامتحانات. بالإضافة إلى ذلك، يضيف العد التنازلي إحساساً بالإثارة والترقب للمناسبات السعيدة، مما يجعل لحظة الوصول أكثر متعة وتأثيراً. في شهر رمضان مثلاً، يستخدم الملايين العد التنازلي لموعد الإفطار وليلة القدر وصلاة العيد.</p>
+<p>تطبيقات العد التنازلي لا تقتصر على المناسبات فقط، بل تمتد لتشمل الفعاليات الرياضية كالمباريات والبطولات، والحفلات الموسيقية، وافتتاح المشاريع، وحتى العد التنازلي للإجازات والعطلات الرسمية. باستخدام عداد تنازلي دقيق، يمكنك متابعة الوقت المتبقي لأي حدث مهم في حياتك، مما يمنحك شعوراً بالسيطرة على وقتك وتنظيم أولوياتك بشكل أفضل.</p>
+</div>
+<div class="related-tools">
+  <h3>🔗 أدوات ذات صلة</h3>
+  <div class="related-grid">
+    <a href="/tools/age-calculator.html" class="related-card"><span class="rc-icon">🎂</span><span class="rc-text">حاسبة العمر</span></a>
+    <a href="/tools/date-calculator.html" class="related-card"><span class="rc-icon">📅</span><span class="rc-text">حاسبة التاريخ</span></a>
+    <a href="/tools/hijri-converter.html" class="related-card"><span class="rc-icon">🌙</span><span class="rc-text">محول الهجري</span></a>
+    <a href="/tools/time-calculator.html" class="related-card"><span class="rc-icon">⏱️</span><span class="rc-text">حاسبة الوقت</span></a>
+    <a href="/tools/timezone-converter.html" class="related-card"><span class="rc-icon">🕐</span><span class="rc-text">محول المنطقة الزمنية</span></a>
+    <a href="/tools/prayer-times.html" class="related-card"><span class="rc-icon">🕋</span><span class="rc-text">مواقيت الصلاة</span></a>
+    <a href="/tools/pregnancy-calculator.html" class="related-card"><span class="rc-icon">🤰</span><span class="rc-text">حاسبة الحمل</span></a>
+    <a href="/tools/love-calculator.html" class="related-card"><span class="rc-icon">💕</span><span class="rc-text">حاسبة الحب</span></a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div>
+    <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة</a></div>
+    <div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة.</div>
+</footer>
+
+<script src="/js/main.js?v=20260610a"></script>
+<script>
+var countdownInterval = null;
+
+function startCountdown() {
+  var dateVal = document.getElementById('targetDate').value;
+  if (!dateVal) {
+    document.getElementById('countdownResult').innerHTML = '<p style="color:var(--danger);text-align:center;">يرجى اختيار التاريخ المستهدف</p>';
+    return;
+  }
+  var timeVal = document.getElementById('targetTime').value || '00:00';
+  var eventDate = new Date(dateVal + 'T' + timeVal + ':00');
+  if (isNaN(eventDate.getTime())) {
+    document.getElementById('countdownResult').innerHTML = '<p style="color:var(--danger);text-align:center;">التاريخ غير صالح</p>';
+    return;
+  }
+  if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
+
+  var eventName = document.getElementById('eventName').value.trim() || 'المناسبة';
+
+  function update() {
+    var now = new Date();
+    var diff = eventDate.getTime() - now.getTime();
+    var resultDiv = document.getElementById('countdownResult');
+
+    if (diff <= 0) {
+      if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
+      resultDiv.innerHTML = '<div class="cd-message">🎉 وصلت المناسبة! «' + escapeHtml(eventName) + '» الآن! 🎉</div>';
+      return;
+    }
+
+    var seconds = Math.floor(diff / 1000) % 60;
+    var minutes = Math.floor(diff / (1000 * 60)) % 60;
+    var hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    var weeks = Math.floor(days / 7);
+    var remainDays = days % 7;
+
+    // Progress: percentage of year or from now
+    var totalSpan = eventDate.getTime() - (eventDate.getTime() - diff);
+    var progress = 0;
+    if (diff > 0) {
+      var totalDiff = eventDate.getTime() - now.getTime();
+      var fromStart = now.getTime() - (eventDate.getTime() - diff);
+      // Simple progress: assume start was when user clicked
+    }
+
+    resultDiv.innerHTML =
+      '<div class="cd-event-name">🎯 ' + escapeHtml(eventName) + '</div>' +
+      '<div class="countdown-display">' +
+        '<div class="cd-unit"><span class="cd-num">' + days + '</span><span class="cd-label">يوم</span></div>' +
+        '<div class="cd-unit"><span class="cd-num">' + padZero(hours) + '</span><span class="cd-label">ساعة</span></div>' +
+        '<div class="cd-unit"><span class="cd-num">' + padZero(minutes) + '</span><span class="cd-label">دقيقة</span></div>' +
+        '<div class="cd-unit"><span class="cd-num">' + padZero(seconds) + '</span><span class="cd-label">ثانية</span></div>' +
+      '</div>' +
+      '<div style="text-align:center;color:var(--text-light);font-size:.85rem">' +
+        '📅 ' + formatDateAr(eventDate) + ' — 📊 ' + weeks + ' أسبوع و ' + remainDays + ' يوم' +
+      '</div>';
+  }
+
+  update();
+  countdownInterval = setInterval(update, 1000);
+}
+
+function padZero(n) { return n < 10 ? '0' + n : '' + n; }
+
+function escapeHtml(str) {
+  var div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function formatDateAr(d) {
+  var months = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+  var days = ['الأحد','الإثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
+  return days[d.getDay()] + ' ' + d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear();
+}
+
+// Clean up on page unload
+window.addEventListener('beforeunload', function() {
+  if (countdownInterval) clearInterval(countdownInterval);
+});
+</script>
+</body>
+</html>

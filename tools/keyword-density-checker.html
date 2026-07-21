@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حاسبة كثافة الكلمات المفتاحية | Keyword Density Checker | SP5 Tools</title>
+<meta name="description" content="حاسبة كثافة الكلمات المفتاحية المجانية: حلل كثافة الكلمات في أي نص عربي أو إنجليزي. احسب إجمالي الكلمات، الكلمات الفريدة، النسبة المئوية للتكرار مع استبعاد كلمات الوقف.">
+<meta name="keywords" content="كثافة الكلمات المفتاحية, keyword density checker, تحليل النص, حاسبة الكلمات المفتاحية, SEO, تحسين محركات البحث, stop words">
+<link rel="canonical" href="https://sp5.fun/tools/keyword-density-checker.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260621a">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة كثافة الكلمات المفتاحية","description":"حاسبة كثافة الكلمات المفتاحية المجانية لتحليل النصوص العربية والإنجليزية.","url":"https://sp5.fun/tools/keyword-density-checker.html","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"inLanguage":"ar","isPartOf":{"@type":"WebSite","name":"SP5 Tools","url":"https://sp5.fun"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "ما هي كثافة الكلمات المفتاحية؟", "acceptedAnswer": {"@type": "Answer", "text": "كثافة الكلمات المفتاحية هي النسبة المئوية لظهور كلمة معينة في النص مقارنة بإجمالي عدد الكلمات. تُستخدم في تحسين محركات البحث SEO لتقييم مدى تركيز المحتوى على كلمة معينة."}},{"@type": "Question", "name": "ما هي كلمات الوقف (Stop Words)؟", "acceptedAnswer": {"@type": "Answer", "text": "كلمات الوقف هي الكلمات الشائعة التي لا تحمل معنى جوهرياً مثل حروف الجر والضمائر. يتم استبعادها من تحليل الكثافة للحصول على نتائج دقيقة."}},{"@type": "Question", "name": "ما هي كثافة الكلمات المثالية لتحسين SEO؟", "acceptedAnswer": {"@type": "Answer", "text": "يُنصح بأن تكون كثافة الكلمة المفتاحية بين 1% و 3% من إجمالي الكلمات. الكثافة الزائدة قد تعتبر حشواً (Keyword Stuffing) وتؤثر سلباً على ترتيب الموقع."}}]}</script>
+<meta property="og:title" content="حاسبة كثافة الكلمات المفتاحية | SP5 Tools">
+<meta property="og:description" content="حاسبة كثافة الكلمات المفتاحية المجانية: حلل كثافة الكلمات في أي نص عربي أو إنجليزي.">
+<meta property="og:url" content="https://sp5.fun/tools/keyword-density-checker.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="حاسبة كثافة الكلمات المفتاحية | SP5 Tools">
+<meta name="twitter:description" content="حاسبة كثافة الكلمات المفتاحية المجانية: حلل كثافة الكلمات في أي نص عربي أو إنجليزي.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:700px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.calc-box .result{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:8px;padding:16px;margin-top:16px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group textarea,.form-group input{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group textarea:focus,.form-group input:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600}
+.btn-calc:hover{background:#1d4ed8}
+.btn-calc:disabled{opacity:.6;cursor:not-allowed}
+.btn-outline{background:transparent;color:#2563eb;border:2px solid #2563eb;padding:10px 24px;border-radius:8px;font-size:.9rem;font-family:inherit;cursor:pointer;font-weight:600}
+.btn-outline:hover{background:#eff6ff}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0}
+.stat-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.stat-card .stat-num{display:block;font-size:1.5rem;font-weight:700;color:#1e40af}
+.stat-card .stat-lbl{display:block;font-size:.8rem;color:#64748b;margin-top:4px}
+.density-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.85rem}
+.density-table th,.density-table td{padding:8px 10px;text-align:right;border-bottom:1px solid #e5e7eb}
+.density-table th{background:#2563eb;color:#fff;font-weight:600;font-size:.8rem}
+.density-table tr:nth-child(even) td{background:#f8fafc}
+.density-table .bar-cell{padding:8px 0}
+.density-bar{height:18px;border-radius:4px;background:linear-gradient(90deg,#2563eb,#7c3aed);min-width:4px;max-width:100%;transition:width .3s}
+.density-table .high-density{color:#dc2626;font-weight:700}
+.density-table .good-density{color:#059669;font-weight:700}
+.density-table .low-density{color:#f59e0b}
+.single-check{display:flex;gap:10px;align-items:center;margin-top:16px;flex-wrap:wrap}
+.single-check input{flex:1;min-width:150px;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit}
+.single-check input:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.single-check .result-tag{padding:8px 16px;border-radius:8px;font-weight:600;font-size:.9rem}
+.single-check .result-tag.good{background:#d1fae5;color:#065f46}
+.single-check .result-tag.high{background:#fee2e2;color:#991b1b}
+.single-check .result-tag.low{background:#fef3c7;color:#92400e}
+.tab-bar{display:flex;gap:0;margin-bottom:16px;border-bottom:2px solid #e5e7eb}
+.tab-btn{padding:10px 20px;border:none;background:transparent;font-family:inherit;font-size:.9rem;cursor:pointer;color:#64748b;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .2s}
+.tab-btn.active{color:#2563eb;border-bottom-color:#2563eb;font-weight:600}
+.tab-btn:hover{color:#2563eb}
+</style>
+</head>
+<body>
+<div class="news-ticker"><div class="ticker-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>الأكثر استخداماً</div><div class="ticker-track"><div class="ticker-scroll"><a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a><a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a><a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a><a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a><a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a><a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a><a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a><a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a><a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a><a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a><a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a><a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a></div></div></div>
+<header class="header"><div class="header-inner"><a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a><button class="menu-toggle" aria-label="القائمة">☰</button><nav class="nav"><a href="/">الرئيسية</a><a href="/#financial">حاسبات مالية</a><a href="/#converter">محولات</a><a href="/#security">أدوات أمنية</a><a href="/#text">أدوات نصية</a><a href="/pages/privacy.html">سياسة الخصوصية</a></nav></div></header>
+<nav class="breadcrumb"><a href="/">الرئيسية</a><span class="separator">/</span><a href="/#text">أدوات نصية</a><span class="separator">/</span><span class="current">حاسبة كثافة الكلمات المفتاحية</span></nav>
+<main class="tool-page">
+  <h1>📊 حاسبة كثافة الكلمات المفتاحية</h1>
+  <p class="tool-desc">حلل كثافة الكلمات المفتاحية في أي نص عربي أو إنجليزي. احسب إجمالي الكلمات، الكلمات الفريدة، والنسبة المئوية للتكرار مع استبعاد كلمات الوقف (Stop Words).</p>
+  <div class="share-bar" style="max-width:700px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:#64748b">مشاركة:</span><a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a><a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a><a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a></div>
+<script>function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}</script>
+  <div class="ad-slot"></div>
+  <div class="calc-box">
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="switchTab('text')">📝 لصق نص</button>
+      <button class="tab-btn" onclick="switchTab('url')">🔗 إدخال URL</button>
+    </div>
+    <div id="tab-text">
+      <div class="form-group"><label for="inputText">📝 الصق النص هنا</label><textarea id="inputText" rows="8" placeholder="الصق النص الذي تريد تحليله هنا..."></textarea></div>
+    </div>
+    <div id="tab-url" style="display:none">
+      <div class="form-group"><label for="inputUrl">🔗 رابط الصفحة</label><input type="url" id="inputUrl" placeholder="https://example.com/page"></div>
+      <button type="button" class="btn-outline" onclick="fetchUrlText()">📥 جلب النص من الرابط</button>
+      <div id="urlStatus" style="margin-top:8px;font-size:.85rem;color:#64748b"></div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+      <button type="button" class="btn-calc" onclick="analyzeDensity()">📊 تحليل الكثافة</button>
+      <button type="button" class="btn-outline" onclick="clearAll()">🗑️ مسح</button>
+    </div>
+  </div>
+  <div id="result" style="max-width:700px;margin:20px auto"></div>
+  <div class="ad-slot"></div>
+  <div class="tool-content">
+    <h2>ما هي كثافة الكلمات المفتاحية؟</h2>
+    <p>كثافة الكلمات المفتاحية (Keyword Density) هي النسبة المئوية لظهور كلمة أو عبارة معينة في النص مقارنة بإجمالي عدد الكلمات. تُستخدم هذه الأداة بشكل أساسي في تحسين محركات البحث (SEO) لتقييم مدى تركيز المحتوى على كلمة مفتاحية معينة. كلما زادت كثافة الكلمة المفتاحية بشكل طبيعي، زادت فرصة تصدر النتائج في محركات البحث.</p>
+    <h3>كيف تعمل حاسبة كثافة الكلمات المفتاحية؟</h3>
+    <p>تقوم الأداة بتحليل النص الذي تدخله خطوة بخطوة: أولاً، تحسب إجمالي عدد الكلمات في النص. ثانياً، تستبعد كلمات الوقف (Stop Words) مثل "في"، "من"، "إلى"، "عن" وغيرها من الكلمات الشائعة التي لا تحمل معنى جوهرياً. ثالثاً، تحسب عدد مرات تكرار كل كلمة فريدة ونسبتها المئوية. وأخيراً، تعرض لك أعلى 20 كلمة تكراراً في جدول ملوّن مع شريط تقدم يوضح الكثافة.</p>
+    <h3>ما هي كلمات الوقف (Stop Words)؟</h3>
+    <p>كلمات الوقف هي الكلمات الشائعة التي تظهر بكثرة في النصوص ولا تحمل معنى جوهرياً لتحسين محركات البحث. تشمل حروف الجر (في، من، إلى، على، عن)، الضمائر (هو، هي، هم، أنت)، أدوات الربط (و، ف، ثم، لكن)، وأفعال مساعدة (كان، كانت، يكون). استبعاد هذه الكلمات يعطيك صورة دقيقة عن الكلمات المهمة حقاً في المحتوى الخاص بك.</p>
+    <div class="ad-slot"></div>
+    <h2>ما هي كثافة الكلمات المثالية لتحسين SEO؟</h2>
+    <p>يوصي خبراء تحسين محركات البحث بأن تكون كثافة الكلمة المفتاحية بين 1% و 3% من إجمالي الكلمات في النص. الكثافة الأقل من 1% قد لا تكون كافية لترتيب الكلمة في محركات البحث، بينما الكثافة الأعلى من 5% قد تعتبر حشواً (Keyword Stuffing) وتؤدي إلى عقوبات من جوجل. استخدم أداتنا للحفاظ على التوازن المثالي في المحتوى الخاص بك.</p>
+    <h3>نصائح لتحسين كثافة الكلمات المفتاحية</h3>
+    <ul>
+      <li><strong>الطبيعية أولاً:</strong> اكتب محتوى طبيعياً للقارئ أولاً، ثم راجع الكثافة.</li>
+      <li><strong>التنويع:</strong> استخدم مرادفات الكلمة المفتاحية والكلمات ذات الصلة.</li>
+      <li><strong>التوزيع:</strong> وزع الكلمة المفتاحية في العنوان، الفقرات الأولى، والعناوين الفرعية.</li>
+      <li><strong>التكرار المعتدل:</strong> حافظ على كثافة بين 1% و 3% لتجنب عقوبات الحشو.</li>
+      <li><strong>التحليل الدوري:</strong> استخدم أداتنا لتحليل كل مقال قبل النشر.</li>
+    </ul>
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item"><strong>ما هي كثافة الكلمات المفتاحية؟</strong><p>هي النسبة المئوية لظهور كلمة معينة في النص مقارنة بإجمالي عدد الكلمات. تُستخدم في SEO لتقييم تركيز المحتوى.</p></div>
+    <div class="faq-item"><strong>ما هي كلمات الوقف (Stop Words)؟</strong><p>كلمات شائعة مثل حروف الجر والضمائر التي تستبعد من التحليل للحصول على نتائج دقيقة عن الكلمات المهمة.</p></div>
+    <div class="faq-item"><strong>ما هي كثافة الكلمات المثالية؟</strong><p>يُنصح بأن تكون بين 1% و 3%. الكثافة الزائدة تعتبر حشواً وتؤثر سلباً على ترتيب الموقع.</p></div>
+    <div class="faq-item"><strong>هل تدعم الأداة اللغة العربية؟</strong><p>نعم، تدعم الأداة اللغتين العربية والإنجليزية مع قوائم كلمات وقف مدمجة لكل لغة.</p></div>
+  </div>
+</main>
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/hashtag-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">#️⃣</span> مولد هاشتاقات</a>
+    <a href="/tools/word-counter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🔢</span> عداد الكلمات</a>
+    <a href="/tools/password-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🔐</span> مولد كلمات المرور</a>
+    <a href="/tools/robots-txt-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🤖</span> مولد robots.txt</a>
+    <a href="/tools/sitemap-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🗺️</span> مولد Sitemap</a>
+  </div>
+</div>
+<footer class="footer"><div class="footer-inner"><div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div><div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div><div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div><div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div></div><div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div></footer>
+<script src="/js/main.js?v=20260621a"></script>
+<script>
+// Arabic stop words
+var AR_STOP = new Set([
+  'إن','في','من','إلى','على','عن','مع','هذا','هذه','الذي','التي','الذين','اللواتي',
+  'كان','كانت','وقد','ولقد','فإن','فمن','إلا','لكن','لكنه','لكنها','هو','هي','هم','هن',
+  'نحن','أنت','أنتم','أنتن','أنا','أن','أنه','أنها','أنهم','أنهن',
+  'و','ف','ب','ل','ك','ثم','أو','أم','لم','لن','لما','قد','لا','ما',
+  'إذا','إذ','حيث','حين','بين','بعد','قبل','تحت','فوق','خلف','أمام','دون',
+  'كل','بعض','أي','أيها','أيتها','ذلك','تلك','أولئك','هؤلاء','هناك','هنا',
+  'عند','لدى','لدي','لنا','لكم','لهم','لهن','له','لها','لهم',
+  'بها','بهم','به','بنا','بكم','فيه','فيها','فيهم','فينا','فيكم',
+  'عنه','عنها','عنهم','عنا','عنكم','معه','معها','معهم','منا','منكم',
+  'كأن','كأنه','كأنها','لعل','لعلها','لعلهم','ربما','سوف','سأ','سن',
+  'قد','قط','قط','أبداً','أبدا','أيضاً','أيضا','أكثر','أقل','غير',
+  'نعم','بلى','كلا','إي','أجل','بئس','حسب','نفس','ذات','ذو','ذوو',
+  'اللذان','اللتان','اللاتي','اللائي','اللذين','اللتين',
+  'ال','بال','كال','فل','هل','بل','منذ','مذ','متى','أين','كيف','كم',
+  'أي','أيان','أينما','حيثما','كيفما','أنى','مهم','مهما','مما','ممن',
+  'بما','بمن','فيما','فيمن','عما','عمن','لمن','لما','كمن','كلا'
+]);
+
+// English stop words
+var EN_STOP = new Set([
+  'a','an','the','and','or','but','in','on','at','to','for','of','by','with',
+  'from','up','about','into','over','after','before','between','under','above',
+  'below','out','off','through','during','without','within','along','around',
+  'is','am','are','was','were','be','been','being','have','has','had','having',
+  'do','does','did','doing','will','would','shall','should','may','might','must',
+  'can','could','need','dare','ought','used','not','no','nor','never','neither',
+  'i','you','he','she','it','we','they','me','him','her','us','them','my',
+  'your','his','its','our','their','mine','yours','hers','ours','theirs',
+  'this','that','these','those','some','any','all','each','every','both',
+  'few','many','much','more','most','other','another','such','what','which',
+  'who','whom','whose','where','when','why','how','if','then','else','than',
+  'as','so','too','very','just','also','only','even','still','already','yet',
+  'here','there','now','then','again','once','well','really','quite','enough',
+  'like','because','although','though','while','since','until','unless',
+  'whether','either','neither','per','via','versus','plus','minus','except',
+  'but','however','therefore','thus','hence','accordingly','consequently',
+  'furthermore','moreover','nevertheless','nonetheless','notwithstanding',
+  'regarding','including','excluding','toward','towards','onto','upon',
+  'amid','amidst','among','amongst','beside','besides','beyond','circa',
+  'despite','down','inside','into','less','like','minus','near','next',
+  'onto','opposite','outside','past','plus','round','save','since','than',
+  'through','throughout','till','toward','towards','under','underneath',
+  'unlike','until','up','upon','via','with','within','without','worth'
+]);
+
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active')});
+  document.getElementById('tab-text').style.display = tab === 'text' ? '' : 'none';
+  document.getElementById('tab-url').style.display = tab === 'url' ? '' : 'none';
+  if (tab === 'text') document.querySelector('.tab-btn[onclick*="text"]').classList.add('active');
+  else document.querySelector('.tab-btn[onclick*="url"]').classList.add('active');
+}
+
+function fetchUrlText() {
+  var url = document.getElementById('inputUrl').value.trim();
+  var status = document.getElementById('urlStatus');
+  if (!url) { status.innerHTML = '<span style="color:#dc2626">يرجى إدخال رابط صحيح</span>'; return; }
+  status.innerHTML = '<span style="color:#2563eb">⏳ جاري جلب النص...</span>';
+  var proxy = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url);
+  fetch(proxy)
+    .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
+    .then(function(html){
+      var parser = new DOMParser();
+      var doc = parser.parseFromString(html, 'text/html');
+      var text = (doc.body ? doc.body.textContent : html).trim();
+      if (text.length < 20) throw new Error('النص قصير جداً');
+      document.getElementById('inputText').value = text;
+      status.innerHTML = '<span style="color:#059669">✅ تم جلب النص بنجاح (' + text.length.toLocaleString('en-US') + ' حرف)</span>';
+    })
+    .catch(function(e){
+      status.innerHTML = '<span style="color:#dc2626">❌ فشل جلب النص: ' + e.message + '</span>';
+    });
+}
+
+function analyzeDensity() {
+  var text = document.getElementById('inputText').value.trim();
+  if (!text) { document.getElementById('result').innerHTML = '<p style="color:#dc2626;text-align:center">يرجى إدخال نص للتحليل</p>'; return; }
+
+  // Tokenize
+  var rawWords = text.split(/[\s\n\r\t،,.;:!؟?()""''""\[\]{}«»\-_\/\\|@#$%^&*+=~`<>]+/).filter(function(w){ return w.length > 0; });
+  var totalWords = rawWords.length;
+
+  // Detect language and filter stop words
+  var arCount = 0, enCount = 0;
+  rawWords.forEach(function(w){
+    if (/[\u0600-\u06FF]/.test(w)) arCount++;
+    else if (/[a-zA-Z]/.test(w)) enCount++;
+  });
+  var isArabic = arCount > enCount;
+
+  // Count words (excluding stop words)
+  var wordCount = {};
+  rawWords.forEach(function(w){
+    var lower = w.toLowerCase();
+    if (isArabic && AR_STOP.has(lower)) return;
+    if (!isArabic && EN_STOP.has(lower)) return;
+    wordCount[lower] = (wordCount[lower] || 0) + 1;
+  });
+
+  // Sort by frequency
+  var sorted = Object.keys(wordCount).sort(function(a,b){ return wordCount[b] - wordCount[a]; });
+  var uniqueWords = sorted.length;
+  var top20 = sorted.slice(0, 20);
+
+  // Build stats
+  var html = '<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">📊 نتائج تحليل الكثافة</h3>';
+  html += '<div class="stats-grid">';
+  html += '<div class="stat-card"><span class="stat-num">' + totalWords.toLocaleString('en-US') + '</span><span class="stat-lbl">إجمالي الكلمات</span></div>';
+  html += '<div class="stat-card"><span class="stat-num">' + uniqueWords.toLocaleString('en-US') + '</span><span class="stat-lbl">الكلمات الفريدة</span></div>';
+  html += '<div class="stat-card"><span class="stat-num">' + (totalWords - uniqueWords).toLocaleString('en-US') + '</span><span class="stat-lbl">كلمات مكررة</span></div>';
+  html += '<div class="stat-card"><span class="stat-num">' + (totalWords - Object.keys(wordCount).reduce(function(s,k){return s+wordCount[k];},0)).toLocaleString('en-US') + '</span><span class="stat-lbl">كلمات وقف مستبعدة</span></div>';
+  html += '</div>';
+
+  // Top 20 table
+  html += '<h4 style="color:#1e293b;margin-bottom:8px">🏆 أعلى 20 كلمة تكراراً</h4>';
+  html += '<table class="density-table"><thead><tr><th>#</th><th>الكلمة</th><th>التكرار</th><th>النسبة</th><th>الكثافة</th></tr></thead><tbody>';
+  var maxFreq = wordCount[top20[0]] || 1;
+  top20.forEach(function(word, i){
+    var freq = wordCount[word];
+    var pct = (freq / totalWords * 100);
+    var barW = (freq / maxFreq * 100);
+    var cls = '';
+    if (pct > 5) cls = 'high-density';
+    else if (pct >= 1) cls = 'good-density';
+    else cls = 'low-density';
+    html += '<tr><td>' + (i+1) + '</td><td><strong>' + word + '</strong></td><td>' + freq.toLocaleString('en-US') + '</td><td class="' + cls + '">' + pct.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}) + '%</td><td class="bar-cell"><div class="density-bar" style="width:' + barW + '%"></div></td></tr>';
+  });
+  html += '</tbody></table>';
+
+  // Single word check
+  html += '<div class="separator" style="height:1px;background:#e5e7eb;margin:20px 0"></div>';
+  html += '<h4 style="color:#1e293b;margin-bottom:8px">🔍 فحص كلمة واحدة</h4>';
+  html += '<div class="single-check">';
+  html += '<input type="text" id="singleWord" placeholder="أدخل كلمة لفحص كثافتها..." onkeydown="if(event.key===\'Enter\')checkSingleWord()">';
+  html += '<button type="button" class="btn-calc" onclick="checkSingleWord()" style="padding:10px 20px;font-size:.9rem">🔍 افحص</button>';
+  html += '<div id="singleResult"></div>';
+  html += '</div>';
+
+  document.getElementById('result').innerHTML = html;
+}
+
+function checkSingleWord() {
+  var word = document.getElementById('singleWord').value.trim().toLowerCase();
+  if (!word) { document.getElementById('singleResult').innerHTML = ''; return; }
+  var text = document.getElementById('inputText').value.trim();
+  if (!text) { document.getElementById('singleResult').innerHTML = '<span class="result-tag low">أدخل نصاً أولاً</span>'; return; }
+  var rawWords = text.split(/[\s\n\r\t،,.;:!؟?()""''""\[\]{}«»\-_\/\\|@#$%^&*+=~`<>]+/).filter(function(w){ return w.length > 0; });
+  var total = rawWords.length;
+  var count = 0;
+  rawWords.forEach(function(w){ if(w.toLowerCase() === word) count++; });
+  var pct = (count / total * 100);
+  var tag = '';
+  if (pct > 5) tag = '<span class="result-tag high">⚠️ كثافة عالية: ' + pct.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}) + '% (' + count.toLocaleString('en-US') + ' مرة)</span>';
+  else if (pct >= 1) tag = '<span class="result-tag good">✅ كثافة جيدة: ' + pct.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}) + '% (' + count.toLocaleString('en-US') + ' مرة)</span>';
+  else tag = '<span class="result-tag low">ℹ️ كثافة منخفضة: ' + pct.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}) + '% (' + count.toLocaleString('en-US') + ' مرة)</span>';
+  document.getElementById('singleResult').innerHTML = tag;
+}
+
+function clearAll() {
+  document.getElementById('inputText').value = '';
+  document.getElementById('inputUrl').value = '';
+  document.getElementById('urlStatus').innerHTML = '';
+  document.getElementById('result').innerHTML = '';
+}
+</script>
+</body></html>

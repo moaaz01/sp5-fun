@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محول JSON ↔ YAML ↔ TOML - تحويل الصيغ أونلاين | SP5 Tools</title>
+<meta name="description" content="محول JSON و YAML و TOML المجاني: تحويل بين صيغ البيانات أونلاين. JSON إلى YAML، YAML إلى JSON، JSON إلى TOML، والعكس. معالجة الأخطاء ونسخ النتيجة.">
+<meta name="keywords" content="محول JSON, محول YAML, محول TOML, JSON to YAML, YAML to JSON, JSON to TOML, TOML to JSON, محول صيغ البيانات, data format converter, json yaml converter">
+<link rel="canonical" href="https://sp5.fun/tools/json-yaml-converter.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260621a">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "محول JSON ↔ YAML ↔ TOML",
+  "description": "محول JSON و YAML و TOML المجاني للتحويل بين صيغ البيانات أونلاين مع معالجة الأخطاء.",
+  "url": "https://sp5.fun/tools/json-yaml-converter.html",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "All",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "SAR"},
+  "inLanguage": "ar",
+  "isPartOf": {"@type": "WebSite", "name": "SP5 Tools", "url": "https://sp5.fun"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "ما هو محول JSON ↔ YAML ↔ TOML؟", "acceptedAnswer": {"@type": "Answer", "text": "محول JSON ↔ YAML ↔ TOML هو أداة مجانية للتحويل بين صيغ البيانات الشائعة. يدعم التحويل في أي اتجاه: JSON إلى YAML، YAML إلى JSON، JSON إلى TOML، TOML إلى JSON، YAML إلى TOML، TOML إلى YAML."}},
+    {"@type": "Question", "name": "كيف أحول JSON إلى YAML؟", "acceptedAnswer": {"@type": "Answer", "text": "اختر صيغة الإدخال JSON وصيغة الإخراج YAML، الصق كود JSON في مربع الإدخال، ثم اضغط تحويل. ستحصل على كود YAML المقابل."}},
+    {"@type": "Question", "name": "ما الفرق بين JSON و YAML و TOML؟", "acceptedAnswer": {"@type": "Answer", "text": "JSON (JavaScript Object Notation) صيغة خفيفة لتبادل البيانات. YAML (YAML Ain't Markup Language) صيغة أكثر قابلية للقراءة البشرية. TOML (Tom's Obvious Minimal Language) صيغة بسيطة تركز على سهولة القراءة وتستخدم في ملفات الإعدادات."}}
+  ]
+}
+</script>
+<meta property="og:title" content="محول JSON ↔ YAML ↔ TOML | SP5 Tools">
+<meta property="og:description" content="محول JSON و YAML و TOML المجاني: تحويل بين صيغ البيانات أونلاين مع معالجة الأخطاء ونسخ النتيجة.">
+<meta property="og:url" content="https://sp5.fun/tools/json-yaml-converter.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="محول JSON ↔ YAML ↔ TOML | SP5 Tools">
+<meta name="twitter:description" content="تحويل بين JSON و YAML و TOML أونلاين مجاناً.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:750px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.form-group textarea{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.9rem;font-family:monospace;box-sizing:border-box;direction:ltr;text-align:left;min-height:200px;resize:vertical}
+.form-group textarea:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600}
+.btn-calc:hover{background:#1d4ed8}
+.btn-calc.btn-success{background:#16a34a}
+.btn-calc.btn-success:hover{background:#15803d}
+.btn-calc.btn-warning{background:#f59e0b}
+.btn-calc.btn-warning:hover{background:#d97706}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:16px}
+.result-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.result-card .result-label{display:block;font-size:.85rem;color:#64748b;margin-bottom:4px}
+.result-card .result-value{display:block;font-size:1.2rem;font-weight:700;color:#1e40af}
+.result-card.result-highlight{background:linear-gradient(135deg,#2563eb,#1d4ed8);border:none}
+.result-card.result-highlight .result-label{color:rgba(255,255,255,.8)}
+.result-card.result-highlight .result-value{color:#fff;font-size:1.4rem}
+.format-selectors{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+.format-selectors select{flex:1;min-width:120px;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;background:#fff}
+.format-selectors select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.format-selectors .arrow{font-size:1.5rem;color:#2563eb;font-weight:700}
+.output-box{background:#1e293b;color:#e2e8f0;padding:16px;border-radius:8px;font-family:monospace;font-size:.8rem;direction:ltr;text-align:left;max-height:300px;overflow:auto;white-space:pre-wrap;word-break:break-all;margin-top:12px}
+.error-box{background:#fef2f2;border:1px solid #fca5a5;border-radius:8px;padding:12px;margin-top:12px;color:#991b1b;font-size:.85rem;direction:ltr;text-align:left;font-family:monospace}
+</style>
+</head>
+<body>
+
+<div class="news-ticker">
+  <div class="ticker-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    الأكثر استخداماً
+  </div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a>
+      <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+      <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+      <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+      <a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a>
+      <a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a>
+      <a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a>
+      <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+      <a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a>
+      <a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a>
+      <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+      <a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+    <button class="menu-toggle" aria-label="القائمة">☰</button>
+    <nav class="nav">
+      <a href="/">الرئيسية</a>
+      <a href="/#financial">حاسبات مالية</a>
+      <a href="/#converter">محولات</a>
+      <a href="/#security">أدوات أمنية</a>
+      <a href="/#text">أدوات نصية</a>
+      <a href="/pages/privacy.html">سياسة الخصوصية</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="/">الرئيسية</a>
+  <span class="separator">/</span>
+  <a href="/#converter">محولات</a>
+  <span class="separator">/</span>
+  <span class="current">محول JSON ↔ YAML ↔ TOML</span>
+</nav>
+
+<main class="tool-page">
+  <h1>🔄 محول JSON ↔ YAML ↔ TOML</h1>
+  <p class="tool-desc">محول JSON و YAML و TOML المجاني: تحويل بين صيغ البيانات الشائعة أونلاين. يدعم التحويل في أي اتجاه مع معالجة الأخطاء ونسخ النتيجة بضغطة زر.</p>
+
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+    <span style="font-size:.85rem;color:#64748b">مشاركة:</span>
+    <a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a>
+    <a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a>
+    <a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a>
+  </div>
+
+  <div class="ad-slot"></div>
+
+  <div class="calc-box" style="max-width:750px">
+    <div class="format-selectors">
+      <select id="inputFormat">
+        <option value="json">JSON</option>
+        <option value="yaml">YAML</option>
+        <option value="toml">TOML</option>
+      </select>
+      <span class="arrow">⟷</span>
+      <select id="outputFormat">
+        <option value="yaml">YAML</option>
+        <option value="json">JSON</option>
+        <option value="toml">TOML</option>
+      </select>
+      <button type="button" class="btn-calc" onclick="swapFormats()" style="padding:8px 12px;font-size:.8rem;background:#64748b">🔄 تبديل</button>
+    </div>
+
+    <div class="form-group">
+      <label for="inputData">📄 أدخل البيانات</label>
+      <textarea id="inputData" placeholder='{
+  "name": "SP5 Tools",
+  "version": "1.0",
+  "features": ["converter", "calculator"],
+  "active": true
+}'></textarea>
+    </div>
+
+    <button type="button" class="btn-calc" onclick="convertData()" style="width:100%">🔄 تحويل</button>
+  </div>
+
+  <div id="result" style="max-width:750px;margin:20px auto"></div>
+
+  <div class="ad-slot"></div>
+
+  <div class="tool-content">
+    <h2>ما هو محول JSON ↔ YAML ↔ TOML؟</h2>
+    <p>محول JSON ↔ YAML ↔ TOML هو أداة مجانية للتحويل بين صيغ البيانات الشائعة المستخدمة في البرمجة وتطوير الويب. يدعم التحويل في أي اتجاه بين الصيغ الثلاث: JSON (JavaScript Object Notation)، YAML (YAML Ain't Markup Language)، وTOML (Tom's Obvious Minimal Language). كل صيغة لها مزاياها واستخداماتها، وهذه الأداة تساعدك على التحويل بينها بسهولة.</p>
+
+    <h3>مقارنة بين الصيغ</h3>
+    <table class="conversion-table" style="width:100%;border-collapse:collapse;margin:16px 0;font-size:.85rem">
+      <thead><tr style="background:#2563eb;color:#fff"><th style="padding:10px;text-align:center">الميزة</th><th style="padding:10px;text-align:center">JSON</th><th style="padding:10px;text-align:center">YAML</th><th style="padding:10px;text-align:center">TOML</th></tr></thead>
+      <tbody>
+        <tr><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">سهولة القراءة</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">متوسطة</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">عالية جداً</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">عالية</td></tr>
+        <tr style="background:#f8fafc"><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">التعليقات</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">غير مدعومة</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">مدعومة (#)</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">مدعومة (#)</td></tr>
+        <tr><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">الاستخدام الشائع</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">APIs, تبادل البيانات</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">إعدادات, CI/CD</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">إعدادات (Rust, Python)</td></tr>
+        <tr style="background:#f8fafc"><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">حجم الملف</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">صغير</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">متوسط</td><td style="padding:8px;border-bottom:1px solid #e5e7eb;text-align:center">متوسط</td></tr>
+      </tbody>
+    </table>
+
+    <h2>كيف تستخدم المحول؟</h2>
+    <p>استخدام الأداة بسيط: اختر صيغة الإدخال (JSON، YAML، أو TOML) من القائمة المنسدلة الأولى، اختر صيغة الإخراج من القائمة الثانية، الصق البيانات في مربع الإدخال، ثم اضغط "تحويل". يمكنك استخدام زر "تبديل" لعكس اتجاه التحويل بسرعة. النتيجة تظهر فوراً مع إمكانية نسخها بنقرة واحدة.</p>
+
+    <h3>أنواع البيانات المدعومة</h3>
+    <ul>
+      <li><strong>سلاسل نصية (Strings):</strong> نصوص عادية ومقتبسة</li>
+      <li><strong>أرقام (Numbers):</strong> أعداد صحيحة وعشرية</li>
+      <li><strong>قيم منطقية (Booleans):</strong> true/false</li>
+      <li><strong>مصفوفات (Arrays):</strong> قوائم مرتبة من القيم</li>
+      <li><strong>كائنات (Objects):</strong> مجموعات من أزواج المفتاح-القيمة</li>
+      <li><strong>قيم فارغة (Null):</strong> null/None</li>
+    </ul>
+
+    <div class="ad-slot"></div>
+
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item">
+      <strong>ما هو محول JSON ↔ YAML ↔ TOML؟</strong>
+      <p>محول JSON ↔ YAML ↔ TOML هو أداة مجانية للتحويل بين صيغ البيانات الشائعة. يدعم التحويل في أي اتجاه: JSON إلى YAML، YAML إلى JSON، JSON إلى TOML، TOML إلى JSON، YAML إلى TOML، TOML إلى YAML.</p>
+    </div>
+    <div class="faq-item">
+      <strong>كيف أحول JSON إلى YAML؟</strong>
+      <p>اختر صيغة الإدخال JSON وصيغة الإخراج YAML، الصق كود JSON في مربع الإدخال، ثم اضغط تحويل. ستحصل على كود YAML المقابل.</p>
+    </div>
+    <div class="faq-item">
+      <strong>ما الفرق بين JSON و YAML و TOML؟</strong>
+      <p>JSON صيغة خفيفة لتبادل البيانات تستخدم في APIs. YAML صيغة أكثر قابلية للقراءة البشرية تستخدم في ملفات الإعدادات. TOML صيغة بسيطة تركز على سهولة القراءة وتستخدم في إعدادات المشاريع مثل Rust (Cargo.toml) وPython (pyproject.toml).</p>
+    </div>
+    <div class="faq-item">
+      <strong>هل يدعم المحول التعليقات؟</strong>
+      <p>نعم، عند التحويل من YAML أو TOML إلى JSON، يتم تجاهل التعليقات لأن JSON لا يدعمها. عند التحويل من JSON إلى YAML أو TOML، لا تتم إضافة تعليقات تلقائياً. يمكنك إضافة التعليقات يدوياً بعد التحويل.</p>
+    </div>
+  </div>
+</main>
+
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/html-compressor.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🗜️</span> ضاغط HTML/CSS/JS</a>
+    <a href="/tools/text-to-pdf.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">📄</span> محول نص إلى PDF</a>
+    <a href="/tools/currency-converter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">💱</span> محول العملات</a>
+    <a href="/tools/hijri-converter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🌙</span> محول الهجري</a>
+    <a href="/tools/password-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🔐</span> مولد كلمات المرور</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div>
+    <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div>
+    <div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div>
+    <div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div>
+</footer>
+
+<script src="/js/main.js?v=20260621a"></script>
+<script>
+function formatNum(n,d){if(d===undefined)d=2;return Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});}
+
+function swapFormats(){
+  var inFmt=document.getElementById('inputFormat');
+  var outFmt=document.getElementById('outputFormat');
+  var tmp=inFmt.value;
+  inFmt.value=outFmt.value;
+  outFmt.value=tmp;
+  document.getElementById('result').innerHTML='';
+}
+
+function convertData(){
+  var input=document.getElementById('inputData').value.trim();
+  if(!input){
+    document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">يرجى إدخال البيانات أولاً</p>';
+    return;
+  }
+
+  var inFmt=document.getElementById('inputFormat').value;
+  var outFmt=document.getElementById('outputFormat').value;
+
+  if(inFmt===outFmt){
+    document.getElementById('result').innerHTML='<p style="color:#f59e0b;text-align:center">صيغة الإدخال والإخراج متطابقة. اختر صيغة مختلفة للإخراج.</p>';
+    return;
+  }
+
+  try{
+    var parsed=parseInput(input,inFmt);
+    var output=stringifyOutput(parsed,outFmt);
+
+    var html='<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">🔄 نتيجة التحويل</h3>';
+    html+='<div style="display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:12px">';
+    html+='<span style="background:#e0e7ff;padding:4px 12px;border-radius:6px;font-size:.85rem;font-weight:600;color:#2563eb">'+inFmt.toUpperCase()+'</span>';
+    html+='<span style="font-size:1.2rem;color:#2563eb">→</span>';
+    html+='<span style="background:#e0e7ff;padding:4px 12px;border-radius:6px;font-size:.85rem;font-weight:600;color:#2563eb">'+outFmt.toUpperCase()+'</span>';
+    html+='</div>';
+    html+='<div class="output-box" id="convertedOutput">'+escapeHtml(output)+'</div>';
+    html+='<div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">';
+    html+='<button type="button" class="btn-calc btn-success" onclick="copyConverted()" style="font-size:.85rem;padding:8px 16px">📋 نسخ النتيجة</button>';
+    html+='</div>';
+
+    document.getElementById('result').innerHTML=html;
+  }catch(e){
+    var html='<h3 style="text-align:center;color:#dc2626;margin-bottom:12px">❌ خطأ في التحويل</h3>';
+    html+='<div class="error-box">'+escapeHtml(e.message||'خطأ غير معروف')+'</div>';
+    document.getElementById('result').innerHTML=html;
+  }
+}
+
+function parseInput(input,format){
+  if(format==='json'){
+    return JSON.parse(input);
+  }else if(format==='yaml'){
+    return parseYaml(input);
+  }else if(format==='toml'){
+    return parseToml(input);
+  }
+  throw new Error('صيغة غير معروفة: '+format);
+}
+
+function stringifyOutput(data,format){
+  if(format==='json'){
+    return JSON.stringify(data,null,2);
+  }else if(format==='yaml'){
+    return stringifyYaml(data);
+  }else if(format==='toml'){
+    return stringifyToml(data);
+  }
+  throw new Error('صيغة غير معروفة: '+format);
+}
+
+// Simple YAML parser
+function parseYaml(input){
+  var lines=input.split('\n');
+  var result={};
+  var currentObj=result;
+  var stack=[{obj:result,indent:-1}];
+  var lastKey=null;
+
+  for(var i=0;i<lines.length;i++){
+    var line=lines[i];
+    var trimmed=line.trim();
+    if(!trimmed||trimmed.startsWith('#')) continue;
+
+    var indent=line.search(/\S/);
+    if(indent<0) indent=0;
+
+    // Pop stack to correct indent level
+    while(stack.length>1&&stack[stack.length-1].indent>=indent){
+      stack.pop();
+    }
+    currentObj=stack[stack.length-1].obj;
+
+    // Array item
+    if(trimmed.startsWith('- ')){
+      var val=trimmed.substring(2).trim();
+      if(!Array.isArray(currentObj)){
+        // Convert to array
+        var parent=stack[stack.length-2]?stack[stack.length-2].obj:null;
+        if(parent&&lastKey){
+          parent[lastKey]=[];
+          currentObj=parent[lastKey];
+          stack[stack.length-1].obj=currentObj;
+        }else{
+          currentObj=[];
+          stack[stack.length-1].obj=currentObj;
+        }
+      }
+      currentObj.push(parseYamlValue(val));
+    }else if(trimmed.endsWith(':')){
+      var key=trimmed.slice(0,-1).trim();
+      currentObj[key]=currentObj[key]||{};
+      stack.push({obj:currentObj[key],indent:indent});
+      lastKey=key;
+    }else{
+      var colonIdx=trimmed.indexOf(':');
+      if(colonIdx>0){
+        var key=trimmed.substring(0,colonIdx).trim();
+        var val=trimmed.substring(colonIdx+1).trim();
+        if(val===''){
+          currentObj[key]=currentObj[key]||{};
+          stack.push({obj:currentObj[key],indent:indent});
+          lastKey=key;
+        }else{
+          currentObj[key]=parseYamlValue(val);
+          lastKey=key;
+        }
+      }
+    }
+  }
+  return result;
+}
+
+function parseYamlValue(val){
+  if(val==='true') return true;
+  if(val==='false') return false;
+  if(val==='null'||val==='~') return null;
+  if(!isNaN(val)&&val!=='') return Number(val);
+  if((val.startsWith('"')&&val.endsWith('"'))||(val.startsWith("'")&&val.endsWith("'"))){
+    return val.slice(1,-1);
+  }
+  return val;
+}
+
+// Simple YAML stringifier
+function stringifyYaml(data,depth){
+  if(depth===undefined) depth=0;
+  var indent='  '.repeat(depth);
+  var result='';
+
+  if(data===null||data===undefined) return indent+'null\n';
+  if(typeof data==='boolean') return indent+(data?'true\n':'false\n');
+  if(typeof data==='number') return indent+data+'\n';
+  if(typeof data==='string'){
+    if(data.includes('\n')||data.includes(':')||data.includes('#')){
+      return indent+JSON.stringify(data)+'\n';
+    }
+    return indent+data+'\n';
+  }
+  if(Array.isArray(data)){
+    for(var i=0;i<data.length;i++){
+      if(typeof data[i]==='object'&&data[i]!==null&&!Array.isArray(data[i])){
+        result+=indent+'- \n';
+        result+=stringifyYaml(data[i],depth+2);
+      }else{
+        result+=indent+'- '+stringifyYaml(data[i],0).trim()+'\n';
+      }
+    }
+    return result;
+  }
+  if(typeof data==='object'){
+    var keys=Object.keys(data);
+    for(var i=0;i<keys.length;i++){
+      var k=keys[i];
+      var v=data[k];
+      if(typeof v==='object'&&v!==null&&!Array.isArray(v)){
+        result+=indent+k+':\n';
+        result+=stringifyYaml(v,depth+1);
+      }else if(Array.isArray(v)){
+        result+=indent+k+':\n';
+        result+=stringifyYaml(v,depth+1);
+      }else{
+        result+=indent+k+': '+stringifyYaml(v,0).trim()+'\n';
+      }
+    }
+    return result;
+  }
+  return indent+String(data)+'\n';
+}
+
+// Simple TOML parser
+function parseToml(input){
+  var lines=input.split('\n');
+  var result={};
+  var currentTable=result;
+  var currentTableName='';
+
+  for(var i=0;i<lines.length;i++){
+    var line=lines[i].trim();
+    if(!line||line.startsWith('#')) continue;
+
+    // Table header
+    var tableMatch=line.match(/^\[([^\]]+)\]$/);
+    if(tableMatch){
+      currentTableName=tableMatch[1].trim();
+      var parts=currentTableName.split('.');
+      currentTable=result;
+      for(var p=0;p<parts.length;p++){
+        if(!currentTable[parts[p]]) currentTable[parts[p]]={};
+        currentTable=currentTable[parts[p]];
+      }
+      continue;
+    }
+
+    // Key = value
+    var eqIdx=line.indexOf('=');
+    if(eqIdx>0){
+      var key=line.substring(0,eqIdx).trim();
+      var val=line.substring(eqIdx+1).trim();
+      currentTable[key]=parseTomlValue(val);
+    }
+  }
+  return result;
+}
+
+function parseTomlValue(val){
+  if(val==='true') return true;
+  if(val==='false') return false;
+  if(val.startsWith('"')&&val.endsWith('"')) return val.slice(1,-1);
+  if(val.startsWith("'")&&val.endsWith("'")) return val.slice(1,-1);
+  if(val.startsWith('[')&&val.endsWith(']')){
+    var inner=val.slice(1,-1).trim();
+    if(!inner) return [];
+    return inner.split(',').map(function(x){return parseTomlValue(x.trim());});
+  }
+  if(!isNaN(val)&&val!=='') return Number(val);
+  return val;
+}
+
+// Simple TOML stringifier
+function stringifyToml(data,prefix){
+  if(prefix===undefined) prefix='';
+  var result='';
+
+  if(data===null||data===undefined) return '';
+  if(typeof data==='boolean'||typeof data==='number'||typeof data==='string') return '';
+
+  if(Array.isArray(data)){
+    if(prefix){
+      result+=prefix+' = [';
+      var items=[];
+      for(var i=0;i<data.length;i++){
+        items.push(tomlValStr(data[i]));
+      }
+      result+=items.join(', ')+']\n';
+    }
+    return result;
+  }
+
+  var keys=Object.keys(data);
+  var tables=[];
+
+  for(var i=0;i<keys.length;i++){
+    var k=keys[i];
+    var v=data[k];
+    if(typeof v==='object'&&v!==null&&!Array.isArray(v)){
+      tables.push({key:k,val:v});
+    }else if(Array.isArray(v)){
+      // Check if array of tables
+      if(v.length>0&&typeof v[0]==='object'&&v[0]!==null){
+        for(var a=0;a<v.length;a++){
+          var tablePrefix=prefix?prefix+'.'+k:k;
+          result+='[['+tablePrefix+']]\n';
+          result+=stringifyToml(v[a],tablePrefix);
+        }
+      }else{
+        result+=k+' = ['+v.map(function(x){return tomlValStr(x);}).join(', ')+']\n';
+      }
+    }else{
+      result+=k+' = '+tomlValStr(v)+'\n';
+    }
+  }
+
+  for(var t=0;t<tables.length;t++){
+    var tablePrefix=prefix?prefix+'.'+tables[t].key:tables[t].key;
+    result+='['+tablePrefix+']\n';
+    result+=stringifyToml(tables[t].val,tablePrefix);
+  }
+
+  return result;
+}
+
+function tomlValStr(v){
+  if(v===null||v===undefined) return '';
+  if(typeof v==='boolean') return v?'true':'false';
+  if(typeof v==='number') return String(v);
+  if(typeof v==='string') return JSON.stringify(v);
+  return String(v);
+}
+
+function escapeHtml(str){
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function copyConverted(){
+  var el=document.getElementById('convertedOutput');
+  if(!el) return;
+  var text=el.textContent||el.innerText;
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(function(){
+      showCopyMsg('✅ تم نسخ النتيجة');
+    }).catch(function(){
+      fallbackCopy(text);
+    });
+  }else{
+    fallbackCopy(text);
+  }
+}
+
+function fallbackCopy(text){
+  var ta=document.createElement('textarea');
+  ta.value=text;
+  ta.style.position='fixed';
+  ta.style.left='-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try{document.execCommand('copy');showCopyMsg('✅ تم نسخ النتيجة');}catch(e){showCopyMsg('❌ فشل النسخ');}
+  document.body.removeChild(ta);
+}
+
+function showCopyMsg(msg){
+  var el=document.createElement('div');
+  el.textContent=msg;
+  el.style.cssText='position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#16a34a;color:#fff;padding:10px 20px;border-radius:8px;font-size:.9rem;z-index:9999;box-shadow:0 4px 12px rgba(0,0,0,.2)';
+  document.body.appendChild(el);
+  setTimeout(function(){el.remove();},2000);
+}
+</script>
+</body>
+</html>

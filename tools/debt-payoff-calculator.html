@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حاسبة الديون - Snowball & Avalanche | SP5 Tools</title>
+<meta name="description" content="حاسبة الديون المجانية: خطط لسداد ديونك بطريقتين Snowball (الأصغر أولاً) و Avalanche (الأعلى فائدة أولاً). أضف ديونك المتعددة واحسب الجدول الزمني للتسديد.">
+<meta name="keywords" content="حاسبة الديون, Snowball, Avalanche, سداد الديون, حاسبة سداد الديون, debt payoff calculator, تسديد القروض, خطة سداد">
+<link rel="canonical" href="https://sp5.fun/tools/debt-payoff-calculator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260621a">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة الديون - Snowball & Avalanche","description":"حاسبة الديون المجانية لخطة سداد الديون بطريقتين Snowball و Avalanche مع جدول زمني ومقارنة.","url":"https://sp5.fun/tools/debt-payoff-calculator.html","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"inLanguage":"ar","isPartOf":{"@type":"WebSite","name":"SP5 Tools","url":"https://sp5.fun"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "ما هي طريقة Snowball لسداد الديون؟", "acceptedAnswer": {"@type": "Answer", "text": "طريقة Snowball تركز على سداد أصغر دين أولاً بغض النظر عن نسبة الفائدة. بعد سداده، ينتقل المبلغ المخصص له إلى الدين التالي الأصغر، وهكذا. هذه الطريقة تعطي دفعة نفسية قوية."}},{"@type": "Question", "name": "ما هي طريقة Avalanche لسداد الديون؟", "acceptedAnswer": {"@type": "Answer", "text": "طريقة Avalanche تركز على سداد الدين ذي أعلى نسبة فائدة أولاً. هذه الطريقة توفر أكبر مبلغ من الفائدة إجمالاً لكنها قد تكون أبطأ في إعطاء نتائج نفسية."}},{"@type": "Question", "name": "أي طريقة أفضل Snowball أم Avalanche؟", "acceptedAnswer": {"@type": "Answer", "text": "Avalanche أفضل رياضياً لأنها توفر فائدة أكثر. Snowball أفضل نفسياً لأن سداد ديون صغيرة أولاً يعطي حافزاً. اختر ما يناسب شخصيتك."}}]}</script>
+<meta property="og:title" content="حاسبة الديون - Snowball & Avalanche | SP5 Tools">
+<meta property="og:description" content="خطط لسداد ديونك بطريقتين Snowball و Avalanche. أضف ديونك المتعددة واحسب الجدول الزمني للتسديد.">
+<meta property="og:url" content="https://sp5.fun/tools/debt-payoff-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="حاسبة الديون | SP5 Tools">
+<meta name="twitter:description" content="خطط لسداد ديونك بطريقتين Snowball و Avalanche.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:600px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.calc-box .result{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:8px;padding:16px;margin-top:16px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600}
+.btn-calc:hover{background:#1d4ed8}
+.btn-danger{background:#dc2626;color:#fff;border:none;padding:8px 16px;border-radius:6px;font-size:.85rem;font-family:inherit;cursor:pointer;font-weight:500}
+.btn-danger:hover{background:#b91c1c}
+.btn-success{background:#059669;color:#fff;border:none;padding:8px 16px;border-radius:6px;font-size:.85rem;font-family:inherit;cursor:pointer;font-weight:500}
+.btn-success:hover{background:#047857}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.result-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.result-card .result-label{display:block;font-size:.85rem;color:#64748b;margin-bottom:4px}
+.result-card .result-value{display:block;font-size:1.2rem;font-weight:700;color:#1e40af}
+.result-card.result-highlight{background:linear-gradient(135deg,#2563eb,#1d4ed8);border:none}
+.result-card.result-highlight .result-label{color:rgba(255,255,255,.8)}
+.result-card.result-highlight .result-value{color:#fff;font-size:1.4rem}
+.result-card.result-snow{background:linear-gradient(135deg,#059669,#047857);border:none}
+.result-card.result-snow .result-label{color:rgba(255,255,255,.8)}
+.result-card.result-snow .result-value{color:#fff;font-size:1.4rem}
+.result-card.result-avalanche{background:linear-gradient(135deg,#7c3aed,#6d28d9);border:none}
+.result-card.result-avalanche .result-label{color:rgba(255,255,255,.8)}
+.result-card.result-avalanche .result-value{color:#fff;font-size:1.4rem}
+.debt-row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:8px;align-items:end;margin-bottom:10px;padding:10px;background:#f8fafc;border-radius:8px;border:1px solid #e5e7eb}
+.debt-row .form-group{margin-bottom:0}
+.debt-row .form-group label{font-size:.8rem}
+.debt-row .form-group input{font-size:.85rem;padding:8px 10px}
+.debt-row .remove-btn{background:#fee2e2;color:#dc2626;border:none;border-radius:6px;width:32px;height:32px;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center}
+.debt-row .remove-btn:hover{background:#fecaca}
+.amort-table{width:100%;border-collapse:collapse;margin-top:16px;font-size:.8rem}
+.amort-table th{background:#2563eb;color:#fff;padding:8px 6px;text-align:center}
+.amort-table td{padding:6px;border-bottom:1px solid #e5e7eb;text-align:center}
+.amort-table tr:nth-child(even){background:#f8fafc}
+.comparison-box{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media(max-width:600px){.comparison-box{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="news-ticker"><div class="ticker-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>الأكثر استخداماً</div><div class="ticker-track"><div class="ticker-scroll"><a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a><a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a><a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a><a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a><a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a><a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a><a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a><a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a><a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a><a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a><a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a><a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a></div></div></div>
+<header class="header"><div class="header-inner"><a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a><button class="menu-toggle" aria-label="القائمة">☰</button><nav class="nav"><a href="/">الرئيسية</a><a href="/#financial">حاسبات مالية</a><a href="/#converter">محولات</a><a href="/#security">أدوات أمنية</a><a href="/#text">أدوات نصية</a><a href="/pages/privacy.html">سياسة الخصوصية</a></nav></div></header>
+<nav class="breadcrumb"><a href="/">الرئيسية</a><span class="separator">/</span><a href="/#financial">حاسبات مالية</a><span class="separator">/</span><span class="current">حاسبة الديون</span></nav>
+<main class="tool-page">
+  <h1>💰 حاسبة الديون - Snowball & Avalanche</h1>
+  <p class="tool-desc">خطط لسداد ديونك بذكاء باستخدام طريقتين مثبتتين: Snowball (سداد الأصغر أولاً) و Avalanche (سداد الأعلى فائدة أولاً). أضف ديونك المتعددة واكتشف أسرع وأوفر خطة للتسديد.</p>
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:#64748b">مشاركة:</span><a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a><a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a><a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a></div>
+<script>function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}</script>
+  <div class="ad-slot"></div>
+  <div class="calc-box">
+    <h3 style="text-align:center;color:#1e40af;margin-bottom:16px">📋 إضافة ديون</h3>
+    <div id="debtList"></div>
+    <div style="display:flex;gap:8px;margin-bottom:16px">
+      <button type="button" class="btn-success" onclick="addDebt()" style="flex:1">➕ إضافة دين</button>
+      <button type="button" class="btn-danger" onclick="clearAll()">🗑️ مسح الكل</button>
+    </div>
+    <div class="form-group"><label for="extraPayment">💵 المبلغ الإضافي الشهري (اختياري)</label><input type="number" id="extraPayment" placeholder="مثال: 500" min="0" step="100"></div>
+    <button type="button" class="btn-calc" onclick="calculateDebt()" style="width:100%">💰 احسب خطة السداد</button>
+  </div>
+  <div id="result" style="max-width:800px;margin:20px auto"></div>
+  <div class="ad-slot"></div>
+  <div class="tool-content">
+    <h2>ما هي حاسبة الديون Snowball & Avalanche؟</h2>
+    <p>حاسبة الديون من SP5 Tools هي أداة مالية متقدمة تساعدك على وضع خطة فعالة لسداد ديونك المتعددة. تدعم الحاسبة طريقتين مثبتتين عالمياً: طريقة Snowball (كرة الثلج) التي تركز على سداد أصغر دين أولاً لتعطيك دفعة نفسية، وطريقة Avalanche (الانهيار الجليدي) التي تركز على سداد الدين ذي أعلى فائدة أولاً لتوفير أكبر مبلغ من الفائدة.</p>
+    <p>سواء كان لديك ديون بطاقات ائتمان أو قروض شخصية أو قروض سيارات أو ديون دراسية، ستساعدك هذه الحاسبة على مقارنة الطريقتين واختيار الأنسب لوضعك المالي. كل ما عليك هو إضافة ديونك وتحديد المبلغ الإضافي الشهري الذي يمكنك تخصيصه للسداد.</p>
+    <h3>طريقة Snowball (كرة الثلج)</h3>
+    <p>تعتمد هذه الطريقة على ترتيب الديون من الأصغر إلى الأكبر بغض النظر عن نسبة الفائدة. تبدأ بسداد أصغر دين بأسرع ما يمكن مع دفع الحد الأدنى لباقي الديون. بعد سداد أول دين، ينتقل المبلغ الكامل الذي كنت تدفعه له إلى الدين التالي الأصغر، وهكذا. الميزة الرئيسية: النتائج السريعة تعطي حافزاً نفسياً قوياً للاستمرار.</p>
+    <h3>طريقة Avalanche (الانهيار الجليدي)</h3>
+    <p>تعتمد هذه الطريقة على ترتيب الديون من الأعلى فائدة إلى الأقل. تبدأ بسداد الدين ذي أعلى نسبة فائدة أولاً لأنه الأكثر تكلفة. بعد سداده، ينتقل المبلغ إلى الدين التالي في قائمة الفائدة. الميزة الرئيسية: توفير أكبر مبلغ ممكن من الفائدة الإجمالية، مما يعني أنك تسدد ديونك بأقل تكلفة ممكنة.</p>
+    <h2>كيف تستخدم حاسبة الديون؟</h2>
+    <p>أضف ديونك واحداً تلو الآخر: اسم الدين، المبلغ المستحق، الحد الأدنى للقسط الشهري، ونسبة الفائدة السنوية. يمكنك إضافة أي عدد من الديون. حدد المبلغ الإضافي الشهري الذي يمكنك دفعه فوق الحد الأدنى (اختياري). اضغط على زر "احسب خطة السداد" لترى مقارنة كاملة بين الطريقتين: الجدول الزمني للتسديد، إجمالي الفائدة المدفوعة، وتاريخ التسديد النهائي لكل طريقة.</p>
+    <p>استخدم النتائج لاتخاذ قرار مستنير: إذا كنت تحتاج تحفيزاً نفسياً، اختر Snowball. إذا كنت تريد توفير أكبر مبلغ من الفائدة، اختر Avalanche. الأهم هو الالتزام بالخطة التي تختارها.</p>
+    <div class="ad-slot"></div>
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item"><strong>ما هي طريقة Snowball لسداد الديون؟</strong><p>طريقة Snowball تركز على سداد أصغر دين أولاً بغض النظر عن نسبة الفائدة. بعد سداده، ينتقل المبلغ المخصص له إلى الدين التالي الأصغر، وهكذا. هذه الطريقة تعطي دفعة نفسية قوية.</p></div>
+    <div class="faq-item"><strong>ما هي طريقة Avalanche لسداد الديون؟</strong><p>طريقة Avalanche تركز على سداد الدين ذي أعلى نسبة فائدة أولاً. هذه الطريقة توفر أكبر مبلغ من الفائدة إجمالاً لكنها قد تكون أبطأ في إعطاء نتائج نفسية.</p></div>
+    <div class="faq-item"><strong>أي طريقة أفضل Snowball أم Avalanche؟</strong><p>Avalanche أفضل رياضياً لأنها توفر فائدة أكثر. Snowball أفضل نفسياً لأن سداد ديون صغيرة أولاً يعطي حافزاً. اختر ما يناسب شخصيتك. الأهم هو الالتزام بالخطة.</p></div>
+    <div class="faq-item"><strong>هل يمكنني إضافة ديون متعددة؟</strong><p>نعم، يمكنك إضافة أي عدد من الديون. كل دين يتطلب: اسم الدين، المبلغ، الحد الأدنى للقسط، ونسبة الفائدة السنوية.</p></div>
+    <div class="faq-item"><strong>ما هو المبلغ الإضافي الشهري؟</strong><p>هو المبلغ الذي يمكنك دفعه فوق الحد الأدنى للأقساط الشهرية. كلما زاد هذا المبلغ، أسرعت في سداد الديون وقلت الفائدة المدفوعة.</p></div>
+  </div>
+</main>
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/loan-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🏦</span> حاسبة القروض</a>
+    <a href="/tools/savings-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">💰</span> حاسبة التوفير</a>
+    <a href="/tools/compound-interest.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">📈</span> حاسبة الفائدة المركبة</a>
+    <a href="/tools/salary-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">💼</span> حاسبة الرواتب</a>
+    <a href="/tools/budget-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">📊</span> حاسبة الميزانية</a>
+  </div>
+</div>
+<footer class="footer"><div class="footer-inner"><div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div><div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div><div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div><div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div></div><div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div></footer>
+<script src="/js/main.js?v=20260621a"></script>
+<script>
+function formatNum(n,d){if(d===undefined)d=2;return Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});}
+
+var debtCount=0;
+
+function addDebt(name,balance,minPayment,rate){
+  debtCount++;
+  var n=debtCount;
+  var html='<div class="debt-row" id="debtRow'+n+'">';
+  html+='<div class="form-group"><label>اسم الدين</label><input type="text" id="dName'+n+'" placeholder="مثال: بطاقة ائتمان" value="'+(name||'')+'"></div>';
+  html+='<div class="form-group"><label>المبلغ</label><input type="number" id="dBalance'+n+'" placeholder="مثال: 5000" min="0" step="100" value="'+(balance||'')+'"></div>';
+  html+='<div class="form-group"><label>الحد الأدنى</label><input type="number" id="dMin'+n+'" placeholder="مثال: 200" min="0" step="10" value="'+(minPayment||'')+'"></div>';
+  html+='<div class="form-group"><label>الفائدة %</label><input type="number" id="dRate'+n+'" placeholder="مثال: 18" min="0" step="0.1" value="'+(rate||'')+'"></div>';
+  html+='<button class="remove-btn" onclick="removeDebt('+n+')" title="حذف">✕</button>';
+  html+='</div>';
+  document.getElementById('debtList').insertAdjacentHTML('beforeend',html);
+}
+
+function removeDebt(n){
+  var el=document.getElementById('debtRow'+n);
+  if(el)el.remove();
+}
+
+function clearAll(){
+  document.getElementById('debtList').innerHTML='';
+  debtCount=0;
+}
+
+function getDebts(){
+  var debts=[];
+  var rows=document.querySelectorAll('.debt-row');
+  rows.forEach(function(row){
+    var inputs=row.querySelectorAll('input');
+    if(inputs.length<4)return;
+    var name=inputs[0].value.trim();
+    var balance=parseFloat(inputs[1].value);
+    var minPayment=parseFloat(inputs[2].value);
+    var rate=parseFloat(inputs[3].value);
+    if(name&&!isNaN(balance)&&balance>0&&!isNaN(minPayment)&&minPayment>0){
+      debts.push({name:name,balance:balance,minPayment:minPayment,rate:isNaN(rate)?0:rate});
+    }
+  });
+  return debts;
+}
+
+function simulatePayoff(debts,method,extraPayment){
+  var d=debts.map(function(x){return Object.assign({},x);});
+  var totalMonths=0;
+  var totalInterest=0;
+  var schedule=[];
+
+  while(d.length>0){
+    // Sort by method
+    if(method==='snowball'){
+      d.sort(function(a,b){return a.balance-b.balance;});
+    }else{
+      d.sort(function(a,b){return b.rate-a.rate;});
+    }
+
+    var target=d[0];
+    var monthlyRate=target.rate/100/12;
+    var totalMinPayment=0;
+    for(var i=0;i<d.length;i++)totalMinPayment+=d[i].minPayment;
+    var available=totalMinPayment+extraPayment;
+
+    // Pay minimum on all except target
+    var targetPayment=available;
+    for(var i=1;i<d.length;i++)targetPayment-=d[i].minPayment;
+
+    if(targetPayment<=0)targetPayment=target.minPayment;
+
+    var months=0;
+    var bal=target.balance;
+    var minP=target.minPayment;
+
+    while(bal>0.01){
+      months++;
+      var interest=bal*monthlyRate;
+      totalInterest+=interest;
+      var payment=Math.min(targetPayment,bal+interest);
+      bal=bal+interest-payment;
+      if(bal<0)bal=0;
+      if(months>600)break; // safety
+    }
+    totalMonths+=months;
+    schedule.push({name:target.name,balance:target.balance,months:months,interest:totalInterest});
+    d.shift();
+  }
+  return {totalMonths:totalMonths,totalInterest:totalInterest,schedule:schedule};
+}
+
+function calculateDebt(){
+  var debts=getDebts();
+  if(debts.length===0){document.getElementById('result').innerHTML='<p style="color:#dc2626;text-align:center">يرجى إضافة دين واحد على الأقل</p>';return;}
+  var extra=parseFloat(document.getElementById('extraPayment').value);
+  if(isNaN(extra))extra=0;
+
+  var snow=simulatePayoff(debts,'snowball',extra);
+  var ava=simulatePayoff(debts,'avalanche',extra);
+
+  var totalDebt=0;
+  debts.forEach(function(d){totalDebt+=d.balance;});
+
+  var html='<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">📊 مقارنة خطط السداد</h3>';
+
+  // Summary cards
+  html+='<div class="result-grid">';
+  html+='<div class="result-card result-highlight"><span class="result-label">إجمالي الديون</span><span class="result-value">'+formatNum(totalDebt)+' ر.س</span></div>';
+  html+='<div class="result-card"><span class="result-label">عدد الديون</span><span class="result-value">'+debts.length+'</span></div>';
+  html+='<div class="result-card"><span class="result-label">المبلغ الإضافي</span><span class="result-value">'+formatNum(extra)+' ر.س/شهر</span></div>';
+  html+='</div>';
+
+  // Comparison
+  html+='<div class="comparison-box">';
+
+  // Snowball
+  html+='<div style="background:#f0fdf4;border:2px solid #059669;border-radius:12px;padding:16px">';
+  html+='<h4 style="color:#059669;margin:0 0 12px;text-align:center">❄️ Snowball (الأصغر أولاً)</h4>';
+  html+='<div class="result-grid" style="grid-template-columns:1fr 1fr">';
+  html+='<div class="result-card result-snow"><span class="result-label">مدة السداد</span><span class="result-value">'+snow.totalMonths+' شهر</span></div>';
+  html+='<div class="result-card result-snow"><span class="result-label">إجمالي الفائدة</span><span class="result-value">'+formatNum(snow.totalInterest)+' ر.س</span></div>';
+  html+='</div>';
+  html+='<div style="margin-top:10px;font-size:.8rem;color:#475569"><strong>ترتيب السداد:</strong><ol style="margin:6px 0 0;padding-right:20px">';
+  snow.schedule.forEach(function(s){
+    html+='<li>'+s.name+' - '+formatNum(s.balance)+' ر.س ('+s.months+' شهر)</li>';
+  });
+  html+='</ol></div></div>';
+
+  // Avalanche
+  html+='<div style="background:#f5f3ff;border:2px solid #7c3aed;border-radius:12px;padding:16px">';
+  html+='<h4 style="color:#7c3aed;margin:0 0 12px;text-align:center">⛰️ Avalanche (الأعلى فائدة أولاً)</h4>';
+  html+='<div class="result-grid" style="grid-template-columns:1fr 1fr">';
+  html+='<div class="result-card result-avalanche"><span class="result-label">مدة السداد</span><span class="result-value">'+ava.totalMonths+' شهر</span></div>';
+  html+='<div class="result-card result-avalanche"><span class="result-label">إجمالي الفائدة</span><span class="result-value">'+formatNum(ava.totalInterest)+' ر.س</span></div>';
+  html+='</div>';
+  html+='<div style="margin-top:10px;font-size:.8rem;color:#475569"><strong>ترتيب السداد:</strong><ol style="margin:6px 0 0;padding-right:20px">';
+  ava.schedule.forEach(function(s){
+    html+='<li>'+s.name+' - '+formatNum(s.balance)+' ر.س ('+s.months+' شهر)</li>';
+  });
+  html+='</ol></div></div>';
+
+  html+='</div>'; // end comparison-box
+
+  // Savings comparison
+  var savings=ava.totalInterest-snow.totalInterest;
+  var monthsDiff=snow.totalMonths-ava.totalMonths;
+  if(savings>0||monthsDiff>0){
+    html+='<div style="background:#fefce8;border:1px solid #facc15;border-radius:10px;padding:14px;margin-top:16px;text-align:center">';
+    html+='<strong style="color:#854d0e">💡 الفرق بين الطريقتين:</strong><br>';
+    if(savings>0)html+='Avalanche يوفر <strong>'+formatNum(savings)+' ر.س</strong> في الفائدة';
+    if(monthsDiff>0)html+=' ويسدد أسرع بـ <strong>'+monthsDiff+' شهر</strong>';
+    html+='</div>';
+  }
+
+  document.getElementById('result').innerHTML=html;
+}
+
+// Initialize with 2 example debts
+addDebt('بطاقة ائتمان 1','5000','200','18');
+addDebt('قرض شخصي','15000','500','12');
+</script>
+</body>
+</html>

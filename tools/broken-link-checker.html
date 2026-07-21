@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فاحص الروابط المكسورة | Broken Link Checker | SP5 Tools</title>
+<meta name="description" content="فاحص الروابط المكسورة المجاني: افحص أي صفحة ويب واكتشف الروابط المعطلة. حلل جميع الروابط والصور وملفات CSS وتحقق من حالتها (200, 404, 301).">
+<meta name="keywords" content="broken link checker, فاحص الروابط المكسورة, فحص الروابط, روابط معطلة, SEO, تحسين محركات البحث, link checker">
+<link rel="canonical" href="https://sp5.fun/tools/broken-link-checker.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260621a">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"فاحص الروابط المكسورة","description":"فاحص الروابط المكسورة المجاني لفحص أي صفحة ويب واكتشاف الروابط المعطلة.","url":"https://sp5.fun/tools/broken-link-checker.html","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"inLanguage":"ar","isPartOf":{"@type":"WebSite","name":"SP5 Tools","url":"https://sp5.fun"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "ما هي الروابط المكسورة؟", "acceptedAnswer": {"@type": "Answer", "text": "الروابط المكسورة (Broken Links) هي روابط تؤدي إلى صفحات غير موجودة (404) أو خادمة (500). تؤثر سلباً على تجربة المستخدم وترتيب الموقع في محركات البحث."}},{"@type": "Question", "name": "كيف يعمل فاحص الروابط المكسورة؟", "acceptedAnswer": {"@type": "Answer", "text": "يدخل الرابط، يحلل HTML الصفحة، يستخرج جميع الروابط والصور وملفات CSS، ثم يفحص كل رابط بإرسال طلب HTTP للتحقق من حالته."}},{"@type": "Question", "name": "لماذا يجب فحص الروابط المكسورة؟", "acceptedAnswer": {"@type": "Answer", "text": "الروابط المكسورة تضر بتجربة المستخدم وتصنيف SEO. الفحص المنتظم يساعد في الحفاظ على جودة الموقع."}}]}</script>
+<meta property="og:title" content="فاحص الروابط المكسورة | SP5 Tools">
+<meta property="og:description" content="فاحص الروابط المكسورة المجاني: افحص أي صفحة ويب واكتشف الروابط المعطلة.">
+<meta property="og:url" content="https://sp5.fun/tools/broken-link-checker.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="فاحص الروابط المكسورة | SP5 Tools">
+<meta name="twitter:description" content="فاحص الروابط المكسورة المجاني: افحص أي صفحة ويب واكتشف الروابط المعطلة.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:700px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600}
+.btn-calc:hover{background:#1d4ed8}
+.btn-calc:disabled{opacity:.6;cursor:not-allowed}
+.btn-outline{background:transparent;color:#2563eb;border:2px solid #2563eb;padding:10px 24px;border-radius:8px;font-size:.9rem;font-family:inherit;cursor:pointer;font-weight:600}
+.btn-outline:hover{background:#eff6ff}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin:16px 0}
+.stat-card{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;text-align:center}
+.stat-card .stat-num{display:block;font-size:1.5rem;font-weight:700}
+.stat-card .stat-lbl{display:block;font-size:.8rem;color:#64748b;margin-top:4px}
+.stat-card.good .stat-num{color:#059669}
+.stat-card.bad .stat-num{color:#dc2626}
+.stat-card.warn .stat-num{color:#f59e0b}
+.stat-card.info .stat-num{color:#2563eb}
+.link-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.82rem}
+.link-table th,.link-table td{padding:8px 10px;text-align:right;border-bottom:1px solid #e5e7eb;word-break:break-all}
+.link-table th{background:#1e293b;color:#fff;font-weight:600;font-size:.78rem}
+.link-table tr:nth-child(even) td{background:#f8fafc}
+.link-table .status-badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:.75rem;font-weight:600}
+.status-badge.ok{background:#d1fae5;color:#065f46}
+.status-badge.redirect{background:#fef3c7;color:#92400e}
+.status-badge.broken{background:#fee2e2;color:#991b1b}
+.status-badge.error{background:#fce7f3;color:#9d174d}
+.status-badge.pending{background:#e5e7eb;color:#475569}
+.link-table .link-url{color:#2563eb;text-decoration:none;font-size:.8rem}
+.link-table .link-url:hover{text-decoration:underline}
+.progress-bar{height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;margin:12px 0}
+.progress-fill{height:100%;background:linear-gradient(90deg,#2563eb,#7c3aed);border-radius:3px;transition:width .3s;width:0}
+.progress-text{font-size:.85rem;color:#64748b;text-align:center;margin-bottom:8px}
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.filter-btn{padding:6px 14px;border:2px solid #e5e7eb;border-radius:20px;background:#fff;font-family:inherit;font-size:.8rem;cursor:pointer;transition:all .2s}
+.filter-btn.active{border-color:#2563eb;color:#2563eb;background:#eff6ff}
+.filter-btn:hover{border-color:#2563eb}
+.note-box{background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;padding:12px;margin:12px 0;font-size:.85rem;color:#92400e}
+</style>
+</head>
+<body>
+<div class="news-ticker"><div class="ticker-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>الأكثر استخداماً</div><div class="ticker-track"><div class="ticker-scroll"><a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a><a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a><a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a><a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a><a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a><a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a><a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a><a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a><a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a><a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a><a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a><a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a></div></div></div>
+<header class="header"><div class="header-inner"><a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a><button class="menu-toggle" aria-label="القائمة">☰</button><nav class="nav"><a href="/">الرئيسية</a><a href="/#financial">حاسبات مالية</a><a href="/#converter">محولات</a><a href="/#security">أدوات أمنية</a><a href="/#text">أدوات نصية</a><a href="/pages/privacy.html">سياسة الخصوصية</a></nav></div></header>
+<nav class="breadcrumb"><a href="/">الرئيسية</a><span class="separator">/</span><a href="/#security">أدوات أمنية</a><span class="separator">/</span><span class="current">فاحص الروابط المكسورة</span></nav>
+<main class="tool-page">
+  <h1>🔗 فاحص الروابط المكسورة</h1>
+  <p class="tool-desc">افحص أي صفحة ويب واكتشف الروابط المعطلة. حلل جميع الروابط والصور وملفات CSS وتحقق من حالتها (200, 404, 301, إلخ).</p>
+  <div class="share-bar" style="max-width:700px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:#64748b">مشاركة:</span><a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a><a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a><a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a></div>
+<script>function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}</script>
+  <div class="ad-slot"></div>
+  <div class="calc-box">
+    <div class="form-group"><label for="pageUrl">🔗 رابط الصفحة المراد فحصها</label><input type="url" id="pageUrl" placeholder="https://example.com/page" value="https://sp5.fun"></div>
+    <div class="note-box">⚠️ قد لا تعمل الأداة مع بعض المواقع بسبب قيود CORS. نستخدم وكيل (CORS Proxy) لتجاوز هذه المشكلة. الفحص قد يستغرق بضع ثوانٍ حسب عدد الروابط.</div>
+    <button type="button" class="btn-calc" onclick="startCheck()" id="checkBtn" style="width:100%">🔍 بدء الفحص</button>
+  </div>
+  <div id="progress" style="max-width:700px;margin:20px auto;display:none">
+    <div class="progress-text" id="progressText">جاري تحليل الصفحة...</div>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+  </div>
+  <div id="result" style="max-width:700px;margin:20px auto"></div>
+  <div class="ad-slot"></div>
+  <div class="tool-content">
+    <h2>ما هي الروابط المكسورة؟</h2>
+    <p>الروابط المكسورة (Broken Links) هي روابط تشعبية تؤدي إلى صفحات ويب غير موجودة أو غير متاحة. عندما ينقر المستخدم على رابط مكسور، يظهر له خطأ 404 (صفحة غير موجودة) أو 500 (خطأ في الخادم). هذه الروابط تضر بتجربة المستخدم وتؤثر سلباً على ترتيب موقعك في محركات البحث. حتى الروابط التي تعيد التوجيه (301) قد تؤثر على أداء الموقع إذا كانت كثيرة.</p>
+    <h3>كيف يعمل فاحص الروابط المكسورة؟</h3>
+    <p>أداة فاحص الروابط المكسورة من SP5 Tools تعمل بطريقة ذكية: أولاً، تقوم بجلب محتوى الصفحة التي تدخلها عبر وكيل CORS لتجاوز قيود الأمان. ثانياً، تحلل كود HTML وتستخرج جميع الروابط (وسوم a)، الصور (وسوم img)، وملفات CSS (وسوم link). ثالثاً، ترسل طلب HTTP لكل رابط للتحقق من حالته. وأخيراً، تعرض لك النتائج في جدول ملوّن يوضح الروابط السليمة والمكسورة والمعاد توجيهها.</p>
+    <h3>لماذا يجب فحص الروابط المكسورة بانتظام؟</h3>
+    <p>الفحص المنتظم للروابط المكسورة أمر ضروري لأي موقع ويب لعدة أسباب: تحسين تجربة المستخدم حيث لا شيء يزعج الزائر أكثر من رابط لا يعمل، الحفاظ على تصنيف SEO حيث تعتبر محركات البحث الروابط المكسورة علامة على موقع مهمل، توفير حصة الزحف (Crawl Budget) لمحركات البحث، واكتشاف المحتوى المحذوف أو المنقول. استخدم أداتنا لفحص موقعك بشكل دوري والحفاظ على جودته.</p>
+    <div class="ad-slot"></div>
+    <h2>نصائح للتعامل مع الروابط المكسورة</h2>
+    <ul>
+      <li><strong>الفحص الدوري:</strong> افحص موقعك مرة شهرياً على الأقل لاكتشاف الروابط المكسورة.</li>
+      <li><strong>التصحيح الفوري:</strong> بمجرد اكتشاف رابط مكسور، قم بتصحيحه أو إعادة توجيهه إلى صفحة بديلة.</li>
+      <li><strong>استخدم التوجيه 301:</strong> إذا نقلت محتوى، استخدم توجيه 301 الدائم بدلاً من ترك رابط مكسور.</li>
+      <li><strong>تجنب الروابط الخارجية:</strong> المواقع الخارجية قد تحذف محتواها فجأة، راقب روابطك الخارجية.</li>
+      <li><strong>النسخ الاحتياطي:</strong> احتفظ بنسخة من هيكل موقعك لتتمكن من استعادة المحتوى المحذوف.</li>
+    </ul>
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item"><strong>ما هي الروابط المكسورة؟</strong><p>روابط تؤدي إلى صفحات غير موجودة (404) أو خادمة (500). تضر بتجربة المستخدم وترتيب الموقع.</p></div>
+    <div class="faq-item"><strong>كيف يعمل الفاحص؟</strong><p>يجلب الصفحة، يستخرج جميع الروابط والصور وملفات CSS، ثم يفحص كل رابط بإرسال طلب HTTP.</p></div>
+    <div class="faq-item"><strong>لماذا لا تعمل الأداة مع بعض المواقع؟</strong><p>بعض المواقع تمنع جلب محتواها عبر CORS. نستخدم وكيلاً لتجاوز ذلك، لكن قد لا يعمل مع جميع المواقع.</p></div>
+    <div class="faq-item"><strong>كم من الوقت يستغرق الفحص؟</strong><p>يعتمد على عدد الروابط في الصفحة. عادةً ما يستغرق من 5 إلى 30 ثانية.</p></div>
+  </div>
+</main>
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/robots-txt-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🤖</span> مولد robots.txt</a>
+    <a href="/tools/sitemap-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🗺️</span> مولد Sitemap</a>
+    <a href="/tools/keyword-density-checker.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">📊</span> حاسبة كثافة الكلمات</a>
+    <a href="/tools/password-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🔐</span> مولد كلمات المرور</a>
+    <a href="/tools/hashtag-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">#️⃣</span> مولد هاشتاقات</a>
+  </div>
+</div>
+<footer class="footer"><div class="footer-inner"><div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div><div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div><div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div><div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div></div><div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div></footer>
+<script src="/js/main.js?v=20260621a"></script>
+<script>
+var CORS_PROXY = 'https://api.allorigins.win/raw?url=';
+
+function startCheck() {
+  var url = document.getElementById('pageUrl').value.trim();
+  if (!url) { document.getElementById('result').innerHTML = '<p style="color:#dc2626;text-align:center">يرجى إدخال رابط صحيح</p>'; return; }
+
+  document.getElementById('checkBtn').disabled = true;
+  document.getElementById('checkBtn').textContent = '⏳ جاري الفحص...';
+  document.getElementById('progress').style.display = 'block';
+  document.getElementById('progressText').textContent = '⏳ جاري جلب الصفحة...';
+  document.getElementById('progressFill').style.width = '5%';
+  document.getElementById('result').innerHTML = '';
+
+  var proxyUrl = CORS_PROXY + encodeURIComponent(url);
+
+  fetch(proxyUrl)
+    .then(function(r){
+      if (!r.ok) throw new Error('فشل جلب الصفحة (HTTP ' + r.status + ')');
+      return r.text();
+    })
+    .then(function(html){
+      document.getElementById('progressText').textContent = '📄 جاري تحليل HTML واستخراج الروابط...';
+      document.getElementById('progressFill').style.width = '20%';
+
+      var parser = new DOMParser();
+      var doc = parser.parseFromString(html, 'text/html');
+
+      // Extract all links
+      var links = [];
+      var seen = new Set();
+
+      // <a href>
+      doc.querySelectorAll('a[href]').forEach(function(el){
+        var href = el.getAttribute('href').trim();
+        if (href && !href.startsWith('#') && !href.startsWith('javascript:') && !href.startsWith('mailto:') && !href.startsWith('tel:')) {
+          var abs = resolveUrl(url, href);
+          if (abs && !seen.has(abs)) {
+            seen.add(abs);
+            links.push({url: abs, type: 'رابط', text: el.textContent.trim().substring(0, 60) || 'رابط'});
+          }
+        }
+      });
+
+      // <img src>
+      doc.querySelectorAll('img[src]').forEach(function(el){
+        var src = el.getAttribute('src').trim();
+        if (src) {
+          var abs = resolveUrl(url, src);
+          if (abs && !seen.has(abs)) {
+            seen.add(abs);
+            links.push({url: abs, type: 'صورة', text: el.getAttribute('alt') || 'صورة'});
+          }
+        }
+      });
+
+      // <link href> (CSS, etc)
+      doc.querySelectorAll('link[href]').forEach(function(el){
+        var href = el.getAttribute('href').trim();
+        if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
+          var abs = resolveUrl(url, href);
+          if (abs && !seen.has(abs)) {
+            seen.add(abs);
+            links.push({url: abs, type: 'CSS/مورد', text: el.getAttribute('rel') || 'مورد'});
+          }
+        }
+      });
+
+      if (links.length === 0) {
+        document.getElementById('progress').style.display = 'none';
+        document.getElementById('checkBtn').disabled = false;
+        document.getElementById('checkBtn').textContent = '🔍 بدء الفحص';
+        document.getElementById('result').innerHTML = '<p style="color:#f59e0b;text-align:center">لم يتم العثور على روابط في هذه الصفحة</p>';
+        return;
+      }
+
+      document.getElementById('progressText').textContent = '🔍 جاري فحص ' + links.length.toLocaleString('en-US') + ' رابط...';
+      document.getElementById('progressFill').style.width = '30%';
+
+      // Check each link
+      var results = [];
+      var checked = 0;
+
+      function checkNext() {
+        if (checked >= links.length) {
+          showResults(results, links.length);
+          return;
+        }
+
+        var link = links[checked];
+        document.getElementById('progressText').textContent = '🔍 فحص الرابط ' + (checked + 1).toLocaleString('en-US') + ' من ' + links.length.toLocaleString('en-US');
+        document.getElementById('progressFill').style.width = (30 + (checked / links.length) * 60) + '%';
+
+        // Check via proxy
+        var checkProxy = CORS_PROXY + encodeURIComponent(link.url);
+        fetch(checkProxy, {method: 'HEAD', mode: 'cors'})
+          .then(function(r){
+            var status = r.status;
+            var statusText = r.statusText || '';
+            var result;
+            if (status >= 200 && status < 300) {
+              result = {status: 'ok', code: status, text: 'سليم ✓'};
+            } else if (status >= 300 && status < 400) {
+              result = {status: 'redirect', code: status, text: 'معاد توجيهه ↻'};
+            } else if (status >= 400 && status < 500) {
+              result = {status: 'broken', code: status, text: 'مكسور ✗'};
+            } else {
+              result = {status: 'error', code: status, text: 'خطأ خادم ✗'};
+            }
+            results.push({url: link.url, type: link.type, text: link.text, result: result});
+          })
+          .catch(function(){
+            results.push({url: link.url, type: link.type, text: link.text, result: {status: 'error', code: '—', text: 'فشل الاتصال'}});
+          })
+          .finally(function(){
+            checked++;
+            setTimeout(checkNext, 200); // Small delay to avoid rate limiting
+          });
+      }
+
+      checkNext();
+    })
+    .catch(function(e){
+      document.getElementById('progress').style.display = 'none';
+      document.getElementById('checkBtn').disabled = false;
+      document.getElementById('checkBtn').textContent = '🔍 بدء الفحص';
+      document.getElementById('result').innerHTML = '<p style="color:#dc2626;text-align:center">❌ ' + e.message + '</p>';
+    });
+}
+
+function resolveUrl(base, rel) {
+  try {
+    // Handle protocol-relative URLs
+    if (rel.startsWith('//')) return 'https:' + rel;
+    // Handle absolute URLs
+    if (rel.startsWith('http://') || rel.startsWith('https://')) return rel;
+    // Handle root-relative URLs
+    if (rel.startsWith('/')) {
+      var u = new URL(base);
+      return u.protocol + '//' + u.host + rel;
+    }
+    // Handle relative URLs
+    var baseUrl = base.endsWith('/') ? base : base.substring(0, base.lastIndexOf('/') + 1);
+    return new URL(rel, baseUrl).href;
+  } catch(e) {
+    return null;
+  }
+}
+
+function showResults(results, total) {
+  document.getElementById('progress').style.display = 'none';
+  document.getElementById('checkBtn').disabled = false;
+  document.getElementById('checkBtn').textContent = '🔍 بدء الفحص';
+
+  var ok = results.filter(function(r){ return r.result.status === 'ok'; }).length;
+  var broken = results.filter(function(r){ return r.result.status === 'broken'; }).length;
+  var redirect = results.filter(function(r){ return r.result.status === 'redirect'; }).length;
+  var error = results.filter(function(r){ return r.result.status === 'error'; }).length;
+
+  var html = '<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">📊 نتائج فحص الروابط</h3>';
+  html += '<div class="stats-grid">';
+  html += '<div class="stat-card info"><span class="stat-num">' + total.toLocaleString('en-US') + '</span><span class="stat-lbl">إجمالي الروابط</span></div>';
+  html += '<div class="stat-card good"><span class="stat-num">' + ok.toLocaleString('en-US') + '</span><span class="stat-lbl">روابط سليمة</span></div>';
+  html += '<div class="stat-card bad"><span class="stat-num">' + broken.toLocaleString('en-US') + '</span><span class="stat-lbl">روابط مكسورة</span></div>';
+  html += '<div class="stat-card warn"><span class="stat-num">' + redirect.toLocaleString('en-US') + '</span><span class="stat-lbl">معاد توجيهها</span></div>';
+  html += '<div class="stat-card bad"><span class="stat-num">' + error.toLocaleString('en-US') + '</span><span class="stat-lbl">أخطاء اتصال</span></div>';
+  html += '</div>';
+
+  // Filter buttons
+  html += '<div class="filter-bar">';
+  html += '<button class="filter-btn active" onclick="filterLinks(\'all\',this)" data-filter="all">الكل (' + total.toLocaleString('en-US') + ')</button>';
+  html += '<button class="filter-btn" onclick="filterLinks(\'ok\',this)" data-filter="ok">سليمة (' + ok.toLocaleString('en-US') + ')</button>';
+  html += '<button class="filter-btn" onclick="filterLinks(\'broken\',this)" data-filter="broken">مكسورة (' + broken.toLocaleString('en-US') + ')</button>';
+  html += '<button class="filter-btn" onclick="filterLinks(\'redirect\',this)" data-filter="redirect">معاد توجيهها (' + redirect.toLocaleString('en-US') + ')</button>';
+  html += '<button class="filter-btn" onclick="filterLinks(\'error\',this)" data-filter="error">أخطاء (' + error.toLocaleString('en-US') + ')</button>';
+  html += '</div>';
+
+  // Table
+  html += '<div style="max-height:500px;overflow-y:auto">';
+  html += '<table class="link-table" id="linkTable"><thead><tr><th>#</th><th>النوع</th><th>الوصف</th><th>الرابط</th><th>الحالة</th></tr></thead><tbody>';
+  results.forEach(function(r, i){
+    var badgeClass = r.result.status === 'ok' ? 'ok' : r.result.status === 'redirect' ? 'redirect' : r.result.status === 'broken' ? 'broken' : 'error';
+    var displayUrl = r.url.length > 60 ? r.url.substring(0, 60) + '...' : r.url;
+    html += '<tr data-status="' + r.result.status + '">';
+    html += '<td>' + (i+1) + '</td>';
+    html += '<td>' + r.type + '</td>';
+    html += '<td>' + escapeHtml(r.text) + '</td>';
+    html += '<td><a href="' + r.url + '" target="_blank" class="link-url" title="' + escapeHtml(r.url) + '">' + escapeHtml(displayUrl) + '</a></td>';
+    html += '<td><span class="status-badge ' + badgeClass + '">' + r.result.code + ' ' + r.result.text + '</span></td>';
+    html += '</tr>';
+  });
+  html += '</tbody></table></div>';
+
+  document.getElementById('result').innerHTML = html;
+  window._linkResults = results;
+}
+
+function escapeHtml(str) {
+  var div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function filterLinks(filter, btn) {
+  document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('#linkTable tbody tr').forEach(function(row){
+    if (filter === 'all' || row.dataset.status === filter) {
+      row.style.display = '';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+}
+</script>
+</body></html>

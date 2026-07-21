@@ -1,0 +1,525 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>آلة حاسبة علمية - حاسبة متقدمة بالجيب والتمام واللوغاريتمات | SP5 Tools</title>
+<meta name="description" content="آلة حاسبة علمية مجانية أونلاين: حساب sin/cos/tan و log/ln والجذور والمعاملات والأُسس. مع دعم لوحة المفاتيح وسجل العمليات.">
+<meta name="keywords" content="آلة حاسبة علمية, حاسبة علمية, حاسبة sin cos tan, حاسبة لوغاريتم, حاسبة جذر, حاسبة عاملية, حاسبة متقدمة, حاسبة رياضيات">
+<link rel="canonical" href="https://sp5.fun/tools/scientific-calculator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260609d">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "آلة حاسبة علمية",
+  "description": "آلة حاسبة علمية مجانية أونلاين مع دعم الدوال المثلثية واللوغاريتمية والجذور والمعاملات والأُسس.",
+  "url": "https://sp5.fun/tools/scientific-calculator.html",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "SAR"},
+  "inLanguage": "ar",
+  "isPartOf": {"@type": "WebSite", "name": "SP5 Tools", "url": "https://sp5.fun"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "كيف تستخدم الآلة الحاسبة العلمية؟", "acceptedAnswer": {"@type": "Answer", "text": "اختر وضع الزوايا (درجات أو راديان)، ثم أدخل الأرقام والعمليات باستخدام الأزرار أو لوحة المفاتيح. اضغط = للحصول على النتيجة. يمكنك استخدام الدوال المثلثية واللوغاريتمية والجذور وغيرها."}},
+    {"@type": "Question", "name": "ما الفرق بين وضع الدرجات والراديان؟", "acceptedAnswer": {"@type": "Answer", "text": "وضع الدرجات (DEG) يستخدم الدرجة العادية (0°-360°) لحساب sin/cos/tan، بينما وضع الراديان (RAD) يستخدم الوحدة الرياضية راديان. اختر الوضع المناسب لعملك."}},
+    {"@type": "Question", "name": "هل يمكنني استخدام لوحة المفاتيح مع الحاسبة؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، يمكنك استخدام لوحة المفاتيح لإدخال الأرقام والعمليات الأساسية. الأرقام 0-9 والعلامات + - * / وأقواس ( ) وزر = لحساب النتيجة وزر Escape للمسح."}}
+  ]
+}
+</script>
+<meta property="og:title" content="آلة حاسبة علمية | SP5 Tools">
+<meta property="og:description" content="حاسبة علمية مجانية مع sin/cos/tan و log/ln والجذور والمعاملات. دعم لوحة المفاتيح وسجل العمليات.">
+<meta property="og:url" content="https://sp5.fun/tools/scientific-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="آلة حاسبة علمية | SP5 Tools">
+<meta name="twitter:description" content="حاسبة علمية مجانية مع دوال مثلثية ولوغاريتمية وجذور ومعاملات.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-container{max-width:400px;margin:20px auto;background:#fff;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.calc-display{background:linear-gradient(135deg,#1e293b,#0f172a);padding:16px 20px;min-height:110px;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-end}
+.calc-expression{color:#94a3b8;font-size:.85rem;min-height:20px;word-break:break-all;text-align:left;width:100%;direction:ltr;margin-bottom:4px}
+.calc-result{color:#fff;font-size:2rem;font-weight:700;direction:ltr;text-align:left;width:100%;word-break:break-all;min-height:36px}
+.calc-mode{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;background:#f1f5f9;border-bottom:1px solid #e5e7eb}
+.calc-mode-btns{display:flex;gap:6px}
+.mode-btn{padding:4px 12px;border:1px solid #cbd5e1;border-radius:6px;background:#fff;font-size:.75rem;font-family:inherit;cursor:pointer;font-weight:600;color:#475569;transition:all .2s}
+.mode-btn.active{background:#2563eb;color:#fff;border-color:#2563eb}
+.calc-actions{display:flex;gap:4px}
+.act-btn{padding:4px 10px;border:1px solid #cbd5e1;border-radius:6px;background:#fff;font-size:.75rem;font-family:inherit;cursor:pointer;color:#475569;transition:all .2s}
+.act-btn:hover{background:#e2e8f0}
+.calc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#e5e7eb;padding:0}
+.calc-btn{padding:14px 4px;border:none;background:#fff;font-size:.95rem;font-family:inherit;cursor:pointer;transition:all .1s;text-align:center;font-weight:500;color:#1e293b}
+.calc-btn:hover{background:#f0f7ff}
+.calc-btn:active{background:#e0e7ff;transform:scale(.97)}
+.calc-btn.func{background:#f8fafc;color:#1e40af;font-weight:600}
+.calc-btn.func:hover{background:#e8f0fe}
+.calc-btn.op{background:#eff6ff;color:#2563eb;font-weight:700;font-size:1.1rem}
+.calc-btn.op:hover{background:#dbeafe}
+.calc-btn.equals{background:#2563eb;color:#fff;font-weight:700;font-size:1.2rem}
+.calc-btn.equals:hover{background:#1d4ed8}
+.calc-btn.equals:active{background:#1e40af}
+.calc-btn.clear{background:#fef2f2;color:#dc2626;font-weight:700}
+.calc-btn.clear:hover{background:#fee2e2}
+.calc-btn.del{background:#fef2f2;color:#ef4444;font-weight:600;font-size:.85rem}
+.calc-btn.del:hover{background:#fee2e2}
+.calc-btn.wide2{grid-column:span 2}
+.history-panel{max-width:400px;margin:0 auto 20px;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;background:#fff}
+.history-header{background:#f8fafc;padding:10px 16px;font-weight:700;color:#1e40af;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e5e7eb}
+.history-clear{font-size:.8rem;color:#64748b;background:none;border:none;cursor:pointer;font-family:inherit;text-decoration:underline}
+.history-clear:hover{color:#dc2626}
+.history-list{max-height:250px;overflow-y:auto;padding:0}
+.history-item{padding:10px 16px;border-bottom:1px solid #f1f5f9;cursor:pointer;transition:background .15s}
+.history-item:hover{background:#f0f7ff}
+.history-item:last-child{border-bottom:none}
+.history-expr{font-size:.8rem;color:#64748b;direction:ltr;text-align:left}
+.history-val{font-size:1rem;font-weight:600;color:#1e293b;direction:ltr;text-align:left}
+.history-empty{text-align:center;color:#94a3b8;padding:20px;font-size:.9rem}
+</style>
+</head>
+<body>
+
+<div class="news-ticker">
+  <div class="ticker-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    الأكثر استخداماً
+  </div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a>
+      <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+      <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+      <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+      <a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a>
+      <a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a>
+      <a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a>
+      <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+      <a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a>
+      <a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a>
+      <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+      <a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+    <button class="menu-toggle" aria-label="القائمة">☰</button>
+    <nav class="nav">
+      <a href="/">الرئيسية</a>
+      <a href="/#financial">حاسبات مالية</a>
+      <a href="/#converter">محولات</a>
+      <a href="/#security">أدوات أمنية</a>
+      <a href="/#text">أدوات نصية</a>
+      <a href="/pages/privacy.html">سياسة الخصوصية</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="/">الرئيسية</a>
+  <span class="separator">/</span>
+  <a href="/#financial">حاسبات مالية</a>
+  <span class="separator">/</span>
+  <span class="current">آلة حاسبة علمية</span>
+</nav>
+
+<main class="tool-page">
+  <h1>🔬 آلة حاسبة علمية</h1>
+  <p class="tool-desc">حاسبة علمية متقدمة مجانية أونلاين مع دوال مثلثية ولوغاريتمية وجذور ومعاملات. تدعم وضع الدرجات والراديان مع سجل العمليات ودعم لوحة المفاتيح.</p>
+
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+    <span style="font-size:.85rem;color:#64748b">مشاركة:</span>
+    <a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a>
+    <a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a>
+    <a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a>
+  </div>
+
+  <div class="ad-slot"></div>
+
+  <div class="calc-container">
+    <div class="calc-display">
+      <div class="calc-expression" id="calcExpression"></div>
+      <div class="calc-result" id="calcResult">0</div>
+    </div>
+    <div class="calc-mode">
+      <div class="calc-mode-btns">
+        <button class="mode-btn active" id="degBtn" onclick="setMode('deg')">DEG</button>
+        <button class="mode-btn" id="radBtn" onclick="setMode('rad')">RAD</button>
+      </div>
+      <div class="calc-actions">
+        <button class="act-btn" onclick="copyResult()" title="نسخ النتيجة">📋 نسخ</button>
+      </div>
+    </div>
+    <div class="calc-grid">
+      <button class="calc-btn func" onclick="calcFunc('sin')">sin</button>
+      <button class="calc-btn func" onclick="calcFunc('cos')">cos</button>
+      <button class="calc-btn func" onclick="calcFunc('tan')">tan</button>
+      <button class="calc-btn func" onclick="calcFunc('log')">log</button>
+      <button class="calc-btn func" onclick="calcFunc('ln')">ln</button>
+
+      <button class="calc-btn func" onclick="calcFunc('sinh')">sinh</button>
+      <button class="calc-btn func" onclick="calcFunc('cosh')">cosh</button>
+      <button class="calc-btn func" onclick="calcFunc('tanh')">tanh</button>
+      <button class="calc-btn func" onclick="calcFunc('sqrt')">√x</button>
+      <button class="calc-btn func" onclick="calcFunc('cbrt')">∛x</button>
+
+      <button class="calc-btn func" onclick="calcFunc('square')">x²</button>
+      <button class="calc-btn func" onclick="calcFunc('pow')">xⁿ</button>
+      <button class="calc-btn func" onclick="calcFunc('tenPow')">10ⁿ</button>
+      <button class="calc-btn func" onclick="calcFunc('factorial')">n!</button>
+      <button class="calc-btn func" onclick="calcFunc('inv')">1/x</button>
+
+      <button class="calc-btn func" onclick="calcConst('pi')">π</button>
+      <button class="calc-btn func" onclick="calcConst('e')">e</button>
+      <button class="calc-btn func" onclick="calcFunc('abs')">|x|</button>
+      <button class="calc-btn func" onclick="calcFunc('exp')">eˣ</button>
+      <button class="calc-btn func" onclick="calcFunc('percent')">%</button>
+
+      <button class="calc-btn clear" onclick="calcClear()">AC</button>
+      <button class="calc-btn del" onclick="calcBackspace()">⌫</button>
+      <button class="calc-btn op" onclick="calcInput('(')"> (</button>
+      <button class="calc-btn op" onclick="calcInput(')')">)</button>
+      <button class="calc-btn op" onclick="calcOp('/')">÷</button>
+
+      <button class="calc-btn" onclick="calcInput('7')">7</button>
+      <button class="calc-btn" onclick="calcInput('8')">8</button>
+      <button class="calc-btn" onclick="calcInput('9')">9</button>
+      <button class="calc-btn op" onclick="calcOp('*')">×</button>
+      <button class="calc-btn op" onclick="calcOp('-')">−</button>
+
+      <button class="calc-btn" onclick="calcInput('4')">4</button>
+      <button class="calc-btn" onclick="calcInput('5')">5</button>
+      <button class="calc-btn" onclick="calcInput('6')">6</button>
+      <button class="calc-btn op" onclick="calcOp('+')">+</button>
+      <button class="calc-btn equals" style="grid-row:span 2" onclick="calcEvaluate()">=</button>
+
+      <button class="calc-btn" onclick="calcInput('1')">1</button>
+      <button class="calc-btn" onclick="calcInput('2')">2</button>
+      <button class="calc-btn" onclick="calcInput('3')">3</button>
+      <button class="calc-btn op" onclick="calcInput('.')">.</button>
+
+      <button class="calc-btn wide2" onclick="calcInput('0')">0</button>
+      <button class="calc-btn" onclick="calcInput('00')">00</button>
+      <button class="calc-btn func" onclick="calcToggleSign()">±</button>
+    </div>
+  </div>
+
+  <div class="history-panel" style="margin-top:20px">
+    <div class="history-header">
+      <span>📋 سجل العمليات</span>
+      <button class="history-clear" onclick="clearHistory()">مسح السجل</button>
+    </div>
+    <div class="history-list" id="historyList">
+      <div class="history-empty">لا توجد عمليات سابقة</div>
+    </div>
+  </div>
+
+  <div class="ad-slot"></div>
+
+  <div class="tool-content">
+    <h2>ما هي الآلة الحاسبة العلمية؟</h2>
+    <p>الآلة الحاسبة العلمية من SP5 Tools هي أداة مجانية متقدمة تتيح لك إجراء العمليات الحسابية المعقدة مباشرة في متصفحك. تشمل الدوال المثلثية (sin, cos, tan) واللوغاريتمية (log, ln) والجذور والمعاملات والأُسس، مما يجعلها مثالية للطلاب والمهندسين والعلماء والمهتمين بالرياضيات.</p>
+
+    <h3>الدوال المدعومة</h3>
+    <ul>
+      <li><strong>الدوال المثلثية:</strong> sin, cos, tan, sinh, cosh, tanh مع دعم وضع الدرجات (DEG) والراديان (RAD)</li>
+      <li><strong>اللوغاريتمات:</strong> log (أساس 10) و ln (أساس e الطبيعي)</li>
+      <li><strong>الجذور:</strong> الجذر التربيعي (√x) والجذر التكعيبي (∛x)</li>
+      <li><strong>الأُسس:</strong> مربع (x²)، قوة (xⁿ)، عشرة للقوة (10ⁿ)، e للقوة (eˣ)</li>
+      <li><strong>القيم المطلقة:</strong> |x| للقيمة المطلقة لأي عدد</li>
+      <li><strong>المعاملات:</strong> n! لحساب المضروب لعدد صحيح</li>
+      <li><strong>المقلوب:</strong> 1/x لحساب مقلوب العدد</li>
+      <li><strong>النسبة المئوية:</strong> % لتحويل النسبة</li>
+      <li><strong>الثوابت:</strong> π (باي ≈ 3.14159) و e (أويلر ≈ 2.71828)</li>
+    </ul>
+
+    <h2>كيف تستخدم الآلة الحاسبة العلمية</h2>
+    <ol>
+      <li><strong>اختر وضع الزوايا:</strong> اضغط على DEG للدرجات أو RAD للراديان قبل استخدام الدوال المثلثية</li>
+      <li><strong>أدخل الأرقام:</strong> استخدم الأزرار أو لوحة المفاتيح لإدخال الأرقام والعمليات</li>
+      <li><strong>استخدم الدوال:</strong> اضغط على اسم الدالة ثم أدخل العدد أو أدخل العدد ثم اضغط على الدالة</li>
+      <li><strong>احسب النتيجة:</strong> اضغط على = أو زر Enter في لوحة المفاتيح</li>
+      <li><strong>راجع السجل:</strong> شاهد آخر 10 عمليات في سجل العمليات واضغط على أي منها لإعادة استخدامها</li>
+    </ol>
+
+    <h2>اختصارات لوحة المفاتيح</h2>
+    <ul>
+      <li><strong>الأرقام 0-9:</strong> إدخال الأرقام مباشرة</li>
+      <li><strong>+ - * /:</strong> العمليات الحسابية الأساسية</li>
+      <li><strong>( ):</strong> الأقواس لتحديد أولوية العمليات</li>
+      <li><strong>Enter أو =:</strong> حساب النتيجة</li>
+      <li><strong>Escape:</strong> مسح الكل (AC)</li>
+      <li><strong>Backspace:</strong> حذف آخر رقم</li>
+      <li><strong>.</strong> الفاصلة العشرية</li>
+    </ul>
+
+    <div class="ad-slot"></div>
+
+    <h2>الأسئلة الشائعة حول الآلة الحاسبة العلمية</h2>
+    <div class="faq-item">
+      <strong>ما الفرق بين وضع الدرجات والراديان؟</strong>
+      <p>وضع الدرجات (DEG) يستخدم الدرجة العادية حيث الدائرة الكاملة 360°. وضع الراديان (RAD) يستخدم الراديان حيث الدائرة الكاملة 2π ≈ 6.283. في معظم التطبيقات الهندسية اليومية نستخدم الدرجات، بينما في الرياضيات المتقدمة نستخدم الراديان. اختر الوضع المناسب لعملك.</p>
+    </div>
+    <div class="faq-item">
+      <strong>كيف أحسب المضروب (n!)؟</strong>
+      <p>أدخل الرقم ثم اضغط على زر n!. المضروب هو حاصل ضرب كل الأعداد الصحيحة من 1 حتى n. مثلاً: 5! = 1 × 2 × 3 × 4 × 5 = 120.</p>
+    </div>
+    <div class="faq-item">
+      <strong>هل يمكنني استخدام الأقواس؟</strong>
+      <p>نعم، يمكنك استخدام الأقواس ( ) لتحديد أولوية العمليات. مثلاً: (2+3)×4 = 20 بينما 2+3×4 = 14.</p>
+    </div>
+    <div class="faq-item">
+      <strong>ما الفرق بين log و ln؟</strong>
+      <p>log هو اللوغاريتم الطالع للأساس 10 (log₁₀)، بينما ln هو اللوغاريتم الطبيعي للأساس e (log_e). مثلاً: log(100) = 2 و ln(e) = 1.</p>
+    </div>
+    <div class="faq-item">
+      <strong>هل الحاسبة مجانية بالكامل؟</strong>
+      <p>نعم، الآلة الحاسبة العلمية مجانية تماماً وتعمل مباشرة في متصفحك بدون الحاجة لتحميل أي تطبيق. جميع الحسابات تتم محلياً لحماية خصوصيتك.</p>
+    </div>
+  </div>
+</main>
+
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/geometry-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">📐</span> حاسبة الهندسة</a>
+    <a href="/tools/ratio-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">➗</span> حاسبة النسبة والتناسب</a>
+    <a href="/tools/percentage-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">📊</span> حاسبة النسبة المئوية</a>
+    <a href="/tools/gpa-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">🎓</span> حاسبة المعدل الجامعي</a>
+    <a href="/tools/fuel-calculator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem;transition:all .2s"><span style="font-size:1.2rem">⛽</span> حاسبة استهلاك الوقود</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div>
+    <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div>
+    <div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div>
+    <div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div>
+</footer>
+
+<script src="/js/main.js?v=20260609d"></script>
+<script>
+var calcMode='deg';
+var expression='';
+var displayExpr='';
+var lastResult=null;
+var newInput=true;
+var history=[];
+
+function setMode(mode){
+  calcMode=mode;
+  document.getElementById('degBtn').classList.toggle('active',mode==='deg');
+  document.getElementById('radBtn').classList.toggle('active',mode==='rad');
+}
+
+function calcInput(val){
+  if(newInput&&/[0-9]/.test(val)){
+    expression='';
+    displayExpr='';
+    newInput=false;
+  }
+  if(newInput&&/[.]/.test(val)){
+    expression='0';
+    displayExpr='0';
+    newInput=false;
+  }
+  if(!newInput||!/[0-9]/.test(val)){newInput=false;}
+  expression+=val;
+  displayExpr+=val;
+  updateDisplay();
+}
+
+function calcOp(op){
+  newInput=false;
+  expression+=op;
+  var displayOps={'*':'×','/':'÷'};
+  displayExpr+=(displayOps[op]||op);
+  updateDisplay();
+}
+
+function calcFunc(func){
+  var current=expression?parseFloat(evalInternal(expression)):0;
+  if(isNaN(current)&&func!=='pi'&&func!=='e'){current=0;}
+  var result;
+  var funcLabel=func;
+  var val=expression||'0';
+
+  switch(func){
+    case'sin':result=Math.sin(calcMode==='deg'?toRad(parseFloat(evalInternal(val))):parseFloat(evalInternal(val)));funcLabel='sin('+displayExpr+')';break;
+    case'cos':result=Math.cos(calcMode==='deg'?toRad(parseFloat(evalInternal(val))):parseFloat(evalInternal(val)));funcLabel='cos('+displayExpr+')';break;
+    case'tan':result=Math.tan(calcMode==='deg'?toRad(parseFloat(evalInternal(val))):parseFloat(evalInternal(val)));funcLabel='tan('+displayExpr+')';break;
+    case'sinh':result=Math.sinh(parseFloat(evalInternal(val)));funcLabel='sinh('+displayExpr+')';break;
+    case'cosh':result=Math.cosh(parseFloat(evalInternal(val)));funcLabel='cosh('+displayExpr+')';break;
+    case'tanh':result=Math.tanh(parseFloat(evalInternal(val)));funcLabel='tanh('+displayExpr+')';break;
+    case'log':result=Math.log10(parseFloat(evalInternal(val)));funcLabel='log('+displayExpr+')';break;
+    case'ln':result=Math.log(parseFloat(evalInternal(val)));funcLabel='ln('+displayExpr+')';break;
+    case'sqrt':result=Math.sqrt(parseFloat(evalInternal(val)));funcLabel='√('+displayExpr+')';break;
+    case'cbrt':result=Math.cbrt(parseFloat(evalInternal(val)));funcLabel='∛('+displayExpr+')';break;
+    case'square':result=Math.pow(parseFloat(evalInternal(val)),2);funcLabel='('+displayExpr+')²';break;
+    case'pow':expression+='**';displayExpr+='^';updateDisplay();return;
+    case'tenPow':result=Math.pow(10,parseFloat(evalInternal(val)));funcLabel='10^('+displayExpr+')';break;
+    case'factorial':result=factorial(parseInt(parseFloat(evalInternal(val))));funcLabel=displayExpr+'!';break;
+    case'inv':result=1/parseFloat(evalInternal(val));funcLabel='1/('+displayExpr+')';break;
+    case'abs':result=Math.abs(parseFloat(evalInternal(val)));funcLabel='|'+displayExpr+'|';break;
+    case'exp':result=Math.exp(parseFloat(evalInternal(val)));funcLabel='e^('+displayExpr+')';break;
+    case'percent':result=parseFloat(evalInternal(val))/100;funcLabel=displayExpr+'%';break;
+    default:result=0;
+  }
+
+  if(!isFinite(result)){result='خطأ';}
+  else{result=parseFloat(result.toPrecision(12));}
+
+  addHistory(funcLabel,result);
+  document.getElementById('calcExpression').textContent=funcLabel+' =';
+  document.getElementById('calcResult').textContent=formatResult(result);
+  expression=''+result;
+  displayExpr=''+result;
+  newInput=true;
+}
+
+function calcConst(c){
+  if(newInput){expression='';displayExpr='';newInput=false;}
+  switch(c){
+    case'pi':expression+=Math.PI;displayExpr+='π';break;
+    case'e':expression+=Math.E;displayExpr+='e';break;
+  }
+  updateDisplay();
+}
+
+function calcToggleSign(){
+  if(expression.startsWith('-')){expression=expression.slice(1);displayExpr=displayExpr.slice(1);}
+  else{expression='-'+expression;displayExpr='−'+displayExpr;}
+  updateDisplay();
+}
+
+function calcEvaluate(){
+  if(!expression)return;
+  try{
+    var result=parseFloat(evalInternal(expression));
+    if(!isFinite(result)){result='خطأ';}
+    else{result=parseFloat(result.toPrecision(12));}
+    addHistory(displayExpr,result);
+    document.getElementById('calcExpression').textContent=displayExpr+' =';
+    document.getElementById('calcResult').textContent=formatResult(result);
+    expression=''+result;
+    displayExpr=''+result;
+    newInput=true;
+  }catch(e){
+    document.getElementById('calcResult').textContent='خطأ';
+    expression='';displayExpr='';newInput=true;
+  }
+}
+
+function evalInternal(expr){
+  var safe=expr.replace(/π/g,'('+Math.PI+')').replace(/e(?![x])/g,'('+Math.E+')');
+  return Function('"use strict";return ('+safe+')')();
+}
+
+function toRad(deg){return deg*Math.PI/180;}
+
+function factorial(n){
+  if(n<0)return NaN;
+  if(n===0||n===1)return 1;
+  if(n>170)return Infinity;
+  var r=1;for(var i=2;i<=n;i++)r*=i;return r;
+}
+
+function calcClear(){
+  expression='';displayExpr='';newInput=true;
+  document.getElementById('calcExpression').textContent='';
+  document.getElementById('calcResult').textContent='0';
+}
+
+function calcBackspace(){
+  if(newInput)return;
+  expression=expression.slice(0,-1);
+  displayExpr=displayExpr.slice(0,-1);
+  updateDisplay();
+}
+
+function updateDisplay(){
+  document.getElementById('calcExpression').textContent='';
+  document.getElementById('calcResult').textContent=displayExpr||'0';
+}
+
+function formatResult(r){
+  if(r==='خطأ')return r;
+  if(Number.isInteger(r)&&Math.abs(r)<1e15)return r.toLocaleString('en-US');
+  return r.toString();
+}
+
+function addHistory(expr,result){
+  history.unshift({expr:expr,result:result});
+  if(history.length>10)history.pop();
+  renderHistory();
+}
+
+function renderHistory(){
+  var list=document.getElementById('historyList');
+  if(!history.length){list.innerHTML='<div class="history-empty">لا توجد عمليات سابقة</div>';return;}
+  list.innerHTML='';
+  history.forEach(function(h){
+    var div=document.createElement('div');
+    div.className='history-item';
+    div.innerHTML='<div class="history-expr">'+h.expr+'</div><div class="history-val">= '+formatResult(h.result)+'</div>';
+    div.onclick=function(){
+      expression=''+h.result;displayExpr=''+h.result;newInput=true;
+      document.getElementById('calcResult').textContent=formatResult(h.result);
+      document.getElementById('calcExpression').textContent=h.expr+' =';
+    };
+    list.appendChild(div);
+  });
+}
+
+function clearHistory(){
+  history=[];renderHistory();
+}
+
+function copyResult(){
+  var text=document.getElementById('calcResult').textContent;
+  if(text&&text!=='0'&&text!=='خطأ'){
+    navigator.clipboard.writeText(text.replace(/,/g,'')).catch(function(){});
+  }
+}
+
+document.addEventListener('keydown',function(e){
+  if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
+  var key=e.key;
+  if(/[0-9]/.test(key)){calcInput(key);e.preventDefault();}
+  else if(key==='+'){calcOp('+');e.preventDefault();}
+  else if(key==='-'){calcOp('-');e.preventDefault();}
+  else if(key==='*'){calcOp('*');e.preventDefault();}
+  else if(key==='/'){calcOp('/');e.preventDefault();}
+  else if(key==='.'){calcInput('.');e.preventDefault();}
+  else if(key==='('){calcInput('(');e.preventDefault();}
+  else if(key===')'){calcInput(')');e.preventDefault();}
+  else if(key==='Enter'||key==='='){calcEvaluate();e.preventDefault();}
+  else if(key==='Escape'){calcClear();e.preventDefault();}
+  else if(key==='Backspace'){calcBackspace();e.preventDefault();}
+});
+</script>
+</body>
+</html>

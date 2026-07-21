@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محول مقاسات الملابس والأحذية - تحويل المقاسات العالمية | SP5 Tools</title>
+<meta name="description" content="محول مقاسات الملابس والأحذية المجاني — حوّل بين المقاسات الأمريكية والبريطانية والأوروبية عند التسوق من شي إن وزارا ونمشي وأمازون.">
+<meta name="keywords" content="محول مقاسات, مقاسات الملابس, مقاسات الأحذية, تحويل المقاسات, مقاس US UK EU, تسوق أونلاين">
+<link rel="canonical" href="https://sp5.fun/tools/clothing-sizes.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260610a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "محول مقاسات الملابس والأحذية",
+  "description": "حوّل بين مقاسات الملابس والأحذية العالمية — US, UK, EU",
+  "url": "https://sp5.fun/tools/clothing-sizes.html",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "SAR" },
+  "inLanguage": "ar",
+  "isPartOf": { "@type": "WebSite", "name": "SP5 Tools", "url": "https://sp5.fun" }
+}
+</script>
+<meta property="og:title" content="محول مقاسات الملابس والأحذية | SP5 Tools">
+<meta property="og:description" content="حوّل بين المقاسات الأمريكية والبريطانية والأوروبية عند التسوق أونلاين.">
+<meta property="og:url" content="https://sp5.fun/tools/clothing-sizes.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<style>
+.size-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0}
+.size-tabs button{padding:10px 18px;border:1px solid var(--border);border-radius:99px;background:var(--card-bg);font-family:inherit;font-size:.9rem;cursor:pointer;transition:var(--transition)}
+.size-tabs button:hover,.size-tabs button.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.size-result{margin:20px 0}
+.size-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.9rem}
+.size-table th{background:var(--primary);color:#fff;padding:10px 12px;text-align:center;font-weight:600}
+.size-table td{padding:8px 12px;text-align:center;border-bottom:1px solid var(--border)}
+.size-table tr:hover td{background:var(--primary-light)}
+.size-table .highlight{background:var(--primary-light);font-weight:700}
+</style>
+</head>
+<body>
+
+<div class="news-ticker">
+  <div class="ticker-label">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    الأكثر استخداماً
+  </div>
+  <div class="ticker-track">
+    <div class="ticker-scroll">
+      <a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a>
+      <a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a>
+      <a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a>
+      <a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a>
+      <a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a>
+      <a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a>
+      <a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a>
+      <a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a>
+      <a href="/tools/instagram-bio-generator.html" class="ticker-item"><span class="ticker-icon">📱</span>مولد بيو انستغرام</a>
+      <a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a>
+      <a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a>
+      <a href="/tools/geometry-calculator.html" class="ticker-item"><span class="ticker-icon">📐</span>حاسبة الأشكال الهندسية</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a>
+    <button class="menu-toggle" aria-label="القائمة">☰</button>
+    <nav class="nav">
+      <a href="/">الرئيسية</a>
+      <a href="/#financial">حاسبات مالية</a>
+      <a href="/#converter">محولات</a>
+      <a href="/#security">أدوات أمنية</a>
+      <a href="/#text">أدوات نصية</a>
+      <a href="/pages/privacy.html">سياسة الخصوصية</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="/">الرئيسية</a>
+  <span class="separator">/</span>
+  <a href="/#converter">محولات</a>
+  <span class="separator">/</span>
+  <span class="current">محول المقاسات</span>
+</nav>
+
+<main class="tool-page">
+  <h1>👗 محول مقاسات الملابس والأحذية</h1>
+  <p class="tool-desc">حوّل بين مقاسات الملابس والأحذية العالمية (US, UK, EU) عند التسوق من شي إن وزارا ونمشي وأمازون. جدول مقاسات شامل مع حاسبة سريعة.</p>
+
+  <div class="share-bar">
+    <button class="share-toggle" onclick="toggleShareMenu()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+      مشاركة
+    </button>
+    <button class="share-btn share-btn--copy" onclick="copyToolLink(this)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+      نسخ الرابط
+    </button>
+    <div class="share-menu" id="shareMenu">
+      <a class="share-btn" href="#" onclick="shareTool('whatsapp');return false;" style="color:#25D366;border-color:#25D366;">واتساب</a>
+      <a class="share-btn" href="#" onclick="shareTool('telegram');return false;" style="color:#0088cc;border-color:#0088cc;">تيليجرام</a>
+      <a class="share-btn" href="#" onclick="shareTool('twitter');return false;" style="color:#000;border-color:#000;">تويتر</a>
+      <a class="share-btn" href="#" onclick="shareTool('facebook');return false;" style="color:#1877F2;border-color:#1877F2;">فيسبوك</a>
+    </div>
+  </div>
+
+  <div class="ad-slot"></div>
+
+  <div class="size-tabs">
+    <button class="active" onclick="showSizeTab(this, 'women-shoes')">👟 أحذية نسائية</button>
+    <button onclick="showSizeTab(this, 'men-shoes')">👞 أحذية رجالية</button>
+    <button onclick="showSizeTab(this, 'women-clothes')">👗 ملابس نسائية</button>
+    <button onclick="showSizeTab(this, 'men-clothes')">👔 ملابس رجالية</button>
+  </div>
+
+  <div class="calc-box">
+    <div class="form-group">
+      <label for="inputSize">المقاس</label>
+      <input type="number" id="inputSize" step="0.5" min="1" max="60" placeholder="أدخل رقم المقاس" oninput="convertSize()">
+    </div>
+    <div class="form-group">
+      <label for="inputSystem">نظام المقاس</label>
+      <select id="inputSystem" onchange="convertSize()">
+        <option value="eu">أوروبي (EU)</option>
+        <option value="us">أمريكي (US)</option>
+        <option value="uk">بريطاني (UK)</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="sizeResult" class="size-result"></div>
+
+  <div id="sizeTableContainer"></div>
+
+  <div class="ad-slot"></div>
+
+  <div class="content-section">
+    <h2>لماذا تحتاج محول المقاسات؟</h2>
+    <p>عند التسوق من المواقع العالمية مثل SHEIN و Zara و Namshi و Amazon، تجد أن كل منطقة تستخدم نظام مقاسات مختلف. هذه الأداة تساعدك على:</p>
+    <ul>
+      <li><strong>تجنب إرجاع الملابس:</strong> اعرف مقاسك الصحيح قبل الشراء</li>
+      <li><strong>التسوق الذكي:</strong> حوّل المقاسات بسرعة بين الأنظمة المختلفة</li>
+      <li><strong>المقارنة:</strong> قارن مقاسك بين العلامات التجارية المختلفة</li>
+    </ul>
+
+    <h2>أنظمة المقاسات الرئيسية</h2>
+    <ul>
+      <li><strong>EU (أوروبي):</strong> المستخدم في أوروبا ومعظم العالم</li>
+      <li><strong>US (أمريكي):</strong> المستخدم في أمريكا الشمالية</li>
+      <li><strong>UK (بريطاني):</strong> المستخدم في بريطانيا وبعض دول الكومنولث</li>
+    </ul>
+  </div>
+</main>
+
+<div class="content-section">
+<h2>فهم مقاسات الملابس بين الأنظمة العالمية</h2>
+<p>يُعد اختلاف مقاسات الملابس بين الدول من أكبر التحديات التي تواجه المتسوقين عبر الإنترنت. في عام 2026، مع استمرار نمو التجارة الإلكترونية، أصبح فهم أنظمة المقاسات المختلفة أمراً ضرورياً لتجنب إرجاع المشتريات. توجد ثلاثة أنظمة رئيسية للمقاسات: النظام الأوروبي (EU) المستخدم في أوروبا ومعظم العالم، النظام الأمريكي (US) السائد في أمريكا الشمالية، والنظام البريطاني (UK) المستخدم في بريطانيا وبعض دول الكومنولث. الفروق بين هذه الأنظمة قد تصل إلى درجتين كاملتين في بعض الأحجام، مما يجعل استخدام محول المقاسات خطوة لا غنى عنها قبل الشراء.</p>
+<p>لقياس مقاسك الصحيح في المنزل، تحتاج إلى شريط قياس مرن واتباع خطوات بسيطة. لقياس محيط الصدر، لف الشريط حول أوسع جزء من صدرك. لقياس الخصر، قس حول أنحف جزء من خصرك. لقياس الوركين، لف الشريط حول أوسع جزء من الوركين. لقياس طول الكم، ابدأ من أعلى الكتف وصولاً إلى المعصم. هذه القياسات الأساسية تكفي لاختيار المقاس المناسب في معظم العلامات التجارية. تذكر أن المقاسات قد تختلف بين الماركات المختلفة، لذا يُنصح دائماً بالرجوع إلى جدول المقاسات الخاص بكل علامة تجارية قبل الشراء.</p>
+<p>نصائح إضافية للتسوق الذكي: اقرأ تقييمات المشترين السابقين حول دقة المقاسات، اختر المقاس الأكبر إذا كنت بين مقاسين، وانتبه إلى أن مقاسات الملابس الرجالية والنسائية تختلف حتى ضمن نفس النظام. استخدام أداة تحويل مقاسات الملابس يساعدك على تجنب الوقوع في خطأ اختيار المقاس الخطأ، مما يوفر عليك عناء الإرجاع والتبديل ويجعل تجربة التسوق عبر الإنترنت أكثر متعة ونجاحاً.</p>
+</div>
+<div class="related-tools">
+  <h3>🔗 أدوات ذات صلة</h3>
+  <div class="related-grid">
+    <a href="/tools/discount-calculator.html" class="related-card"><span class="rc-icon">🏷️</span><span class="rc-text">حاسبة الخصم</span></a>
+    <a href="/tools/currency-converter.html" class="related-card"><span class="rc-icon">💱</span><span class="rc-text">محول العملات</span></a>
+    <a href="/tools/vat-calculator.html" class="related-card"><span class="rc-icon">🧾</span><span class="rc-text">حاسبة الضريبة</span></a>
+    <a href="/tools/bmi-calculator.html" class="related-card"><span class="rc-icon">⚖️</span><span class="rc-text">حاسبة BMI</span></a>
+    <a href="/tools/ideal-weight-calculator.html" class="related-card"><span class="rc-icon">⚖️</span><span class="rc-text">الوزن المثالي</span></a>
+    <a href="/tools/length-converter.html" class="related-card"><span class="rc-icon">📐</span><span class="rc-text">محول الطول</span></a>
+    <a href="/tools/countdown-timer.html" class="related-card"><span class="rc-icon">⏱️</span><span class="rc-text">عداد تنازلي</span></a>
+    <a href="/tools/love-calculator.html" class="related-card"><span class="rc-icon">💕</span><span class="rc-text">حاسبة الحب</span></a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div>
+    <div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة</a></div>
+    <div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة.</div>
+</footer>
+
+<script src="/js/main.js?v=20260610a"></script>
+<script>
+var currentSizeTab = 'women-shoes';
+
+// Women's shoe sizes
+var womenShoes = [
+  {eu:35,us:5,uk:2.5},{eu:35.5,us:5.5,uk:3},{eu:36,us:6,uk:3.5},{eu:37,us:6.5,uk:4},
+  {eu:37.5,us:7,uk:4.5},{eu:38,us:7.5,uk:5},{eu:39,us:8,uk:5.5},{eu:39.5,us:8.5,uk:6},
+  {eu:40,us:9,uk:6.5},{eu:41,us:9.5,uk:7},{eu:42,us:10,uk:7.5}
+];
+
+// Men's shoe sizes
+var menShoes = [
+  {eu:39,us:6.5,uk:6},{eu:40,us:7,uk:6.5},{eu:41,us:7.5,uk:7},{eu:42,us:8,uk:7.5},
+  {eu:42.5,us:8.5,uk:8},{eu:43,us:9,uk:8.5},{eu:44,us:9.5,uk:9},{eu:44.5,us:10,uk:9.5},
+  {eu:45,us:10.5,uk:10},{eu:46,us:11,uk:10.5},{eu:47,us:12,uk:11}
+];
+
+// Women's clothing sizes
+var womenClothes = [
+  {eu:'XS',us:0,uk:4,intl:'XS'},{eu:'S',us:2,uk:6,intl:'S'},{eu:'S',us:4,uk:8,intl:'S'},
+  {eu:'M',us:6,uk:10,intl:'M'},{eu:'M',us:8,uk:12,intl:'M'},{eu:'L',us:10,uk:14,intl:'L'},
+  {eu:'L',us:12,uk:16,intl:'L'},{eu:'XL',us:14,uk:18,intl:'XL'},{eu:'XL',us:16,uk:20,intl:'XL'},
+  {eu:'XXL',us:18,uk:22,intl:'XXL'}
+];
+
+// Men's clothing sizes
+var menClothes = [
+  {eu:'XS',us:'XS',uk:34,intl:'XS'},{eu:'S',us:'S',uk:36,intl:'S'},
+  {eu:'M',us:'M',uk:38,intl:'M'},{eu:'M',us:'M',uk:40,intl:'M'},
+  {eu:'L',us:'L',uk:42,intl:'L'},{eu:'L',us:'L',uk:44,intl:'L'},
+  {eu:'XL',us:'XL',uk:46,intl:'XL'},{eu:'XL',us:'XL',uk:48,intl:'XL'},
+  {eu:'XXL',us:'XXL',uk:50,intl:'XXL'}
+];
+
+function showSizeTab(btn, tab) {
+  currentSizeTab = tab;
+  var btns = document.querySelectorAll('.size-tabs button');
+  for (var i = 0; i < btns.length; i++) { btns[i].classList.remove('active'); }
+  btn.classList.add('active');
+  renderSizeTable();
+  convertSize();
+}
+
+function getData() {
+  switch(currentSizeTab) {
+    case 'women-shoes': return womenShoes;
+    case 'men-shoes': return menShoes;
+    case 'women-clothes': return womenClothes;
+    case 'men-clothes': return menClothes;
+    default: return womenShoes;
+  }
+}
+
+function isShoes() {
+  return currentSizeTab === 'women-shoes' || currentSizeTab === 'men-shoes';
+}
+
+function renderSizeTable() {
+  var data = getData();
+  var container = document.getElementById('sizeTableContainer');
+  var html = '<table class="size-table"><thead><tr><th>EU أوروبي</th><th>US أمريكي</th><th>UK بريطاني</th></tr></thead><tbody>';
+  for (var i = 0; i < data.length; i++) {
+    html += '<tr><td>' + data[i].eu + '</td><td>' + data[i].us + '</td><td>' + data[i].uk + '</td></tr>';
+  }
+  html += '</tbody></table>';
+  container.innerHTML = html;
+}
+
+function convertSize() {
+  var inputVal = document.getElementById('inputSize').value;
+  var system = document.getElementById('inputSystem').value;
+  var resultDiv = document.getElementById('sizeResult');
+
+  if (!inputVal) { resultDiv.innerHTML = ''; return; }
+
+  var inputNum = parseFloat(inputVal);
+  if (isNaN(inputNum)) { resultDiv.innerHTML = ''; return; }
+
+  var data = getData();
+  var found = null;
+
+  for (var i = 0; i < data.length; i++) {
+    var row = data[i];
+    var val = (system === 'eu') ? parseFloat(row.eu) : (system === 'us') ? parseFloat(row.us) : parseFloat(row.uk);
+    if (!isNaN(val) && val === inputNum) {
+      found = row;
+      break;
+    }
+  }
+
+  if (found) {
+    resultDiv.innerHTML = '<div class="result-box"><div class="result-grid">' +
+      '<div class="result-card result-highlight"><span class="result-label">EU أوروبي</span><span class="result-value">' + found.eu + '</span></div>' +
+      '<div class="result-card"><span class="result-label">US أمريكي</span><span class="result-value">' + found.us + '</span></div>' +
+      '<div class="result-card"><span class="result-label">UK بريطاني</span><span class="result-value">' + found.uk + '</span></div>' +
+      '</div></div>';
+  } else {
+    // Approximate conversion for shoes
+    if (isShoes()) {
+      var eu, us, uk;
+      if (system === 'eu') {
+        eu = inputNum;
+        us = eu - 30 + 0.5;
+        uk = eu - 32.5;
+      } else if (system === 'us') {
+        us = inputNum;
+        eu = us + 29.5;
+        uk = us - 2;
+      } else {
+        uk = inputNum;
+        us = uk + 2;
+        eu = uk + 32.5;
+      }
+      us = Math.round(us * 2) / 2;
+      uk = Math.round(uk * 2) / 2;
+      eu = Math.round(eu * 2) / 2;
+      resultDiv.innerHTML = '<div class="result-box"><div class="result-grid">' +
+        '<div class="result-card result-highlight"><span class="result-label">EU أوروبي</span><span class="result-value">≈ ' + eu + '</span></div>' +
+        '<div class="result-card"><span class="result-label">US أمريكي</span><span class="result-value">≈ ' + us + '</span></div>' +
+        '<div class="result-card"><span class="result-label">UK بريطاني</span><span class="result-value">≈ ' + uk + '</span></div>' +
+        '</div><p style="text-align:center;color:var(--text-light);font-size:.8rem;margin-top:8px">⚠️ تقريبي — تحقق من دليل المقاسات الخاص بالمتجر</p></div>';
+    } else {
+      resultDiv.innerHTML = '<div class="result-box"><p style="text-align:center;color:var(--text-light)">المقاس غير موجود في الجدول. تحقق من الجدول أدناه.</p></div>';
+    }
+  }
+}
+
+renderSizeTable();
+</script>
+</body>
+</html>

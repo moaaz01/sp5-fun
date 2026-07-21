@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مولد UUID/GUID - v4, v1 عشوائي | SP5 Tools</title>
+<meta name="description" content="مولد UUID المجاني: أنشئ UUID v4 عشوائي أو v1 بالوقت. اختر العدد والصيغة (أحرف كبيرة/صغيرة، مع/بدون شرطات). نسخ بنقرة واحدة.">
+<meta name="keywords" content="مولد UUID, UUID v4, UUID v1, GUID generator, مولد GUID, random UUID, unique identifier, معرف فريد, مولد معرفات">
+<link rel="canonical" href="https://sp5.fun/tools/uuid-generator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=20260621a">
+<script data-cfasync="false" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2351071222567371"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"مولد UUID/GUID","description":"مولد UUID المجاني لإنشاء UUID v4 عشوائي و v1 بالوقت مع خيارات تخصيص متعددة.","url":"https://sp5.fun/tools/uuid-generator.html","applicationCategory":"UtilityApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"inLanguage":"ar","isPartOf":{"@type":"WebSite","name":"SP5 Tools","url":"https://sp5.fun"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "ما هو UUID؟", "acceptedAnswer": {"@type": "Answer", "text": "UUID (Universally Unique Identifier) هو معرف فريد عالمي مكون من 128 بت، يُستخدم لتعريف الموارد بشكل فريد دون الحاجة إلى خادم مركزي."}},{"@type": "Question", "name": "ما الفرق بين UUID v4 و v1؟", "acceptedAnswer": {"@type": "Answer", "text": "UUID v4 يُنشأ عشوائياً بالكامل. UUID v1 يُنشأ باستخدام الطابع الزمني وعنوان MAC للجهاز، مما يجعله قابلاً للتتبع."}},{"@type": "Question", "name": "هل UUID فريد حقاً؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، احتمالية تكرار UUID v4 ضئيلة جداً (1 في 5.3×10^36). يمكنك إنشاء مليارات المعرفات دون قلق من التكرار."}}]}</script>
+<meta property="og:title" content="مولد UUID/GUID - v4, v1 عشوائي | SP5 Tools">
+<meta property="og:description" content="أنشئ UUID v4 عشوائي أو v1 بالوقت. اختر العدد والصيغة. نسخ بنقرة واحدة.">
+<meta property="og:url" content="https://sp5.fun/tools/uuid-generator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SP5 Tools">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="مولد UUID/GUID | SP5 Tools">
+<meta name="twitter:description" content="أنشئ UUID v4 عشوائي أو v1 بالوقت. اختر العدد والصيغة.">
+<style>
+.tool-content{max-width:800px;margin:30px auto;padding:0 15px;line-height:1.9;color:#444}
+.tool-content h2{font-size:1.4rem;color:#2563eb;margin:30px 0 15px;border-bottom:2px solid #e5e7eb;padding-bottom:8px}
+.tool-content h3{font-size:1.1rem;color:#1e40af;margin:25px 0 10px}
+.tool-content p{margin:12px 0}
+.tool-content ul,.tool-content ol{margin:12px 0;padding-right:25px}
+.tool-content li{margin:6px 0}
+.tool-content .ad-slot{margin:20px 0}
+.tool-content .faq-item{margin:15px 0;padding:15px;background:#f8fafc;border-radius:8px;border-right:4px solid #2563eb}
+.tool-content .faq-item strong{color:#1e40af}
+.calc-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;max-width:600px;margin:20px auto;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.calc-box .result{background:#f0f7ff;border:1px solid #bfdbfe;border-radius:8px;padding:16px;margin-top:16px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-weight:600;margin-bottom:4px;color:#1e293b;font-size:.9rem}
+.form-group input,.form-group select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-size:.95rem;font-family:inherit;box-sizing:border-box}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+.btn-calc{background:#2563eb;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-family:inherit;cursor:pointer;font-weight:600}
+.btn-calc:hover{background:#1d4ed8}
+.btn-copy{background:#059669;color:#fff;border:none;padding:8px 16px;border-radius:6px;font-size:.85rem;font-family:inherit;cursor:pointer;font-weight:500}
+.btn-copy:hover{background:#047857}
+.uuid-output{background:#1e293b;color:#e2e8f0;padding:16px;border-radius:8px;font-family:'Courier New',monospace;font-size:.85rem;direction:ltr;text-align:left;overflow-x:auto;white-space:pre;max-height:400px;overflow-y:auto;margin-top:12px;line-height:1.7}
+.uuid-count{color:#94a3b8;font-size:.8rem;margin-top:8px;text-align:center}
+</style>
+</head>
+<body>
+<div class="news-ticker"><div class="ticker-label"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>الأكثر استخداماً</div><div class="ticker-track"><div class="ticker-scroll"><a href="/tools/pregnancy-calculator.html" class="ticker-item"><span class="ticker-icon">🤰</span>حاسبة الحمل وموعد الولادة</a><a href="/tools/loan-calculator.html" class="ticker-item"><span class="ticker-icon">🏦</span>حاسبة القروض</a><a href="/tools/currency-converter.html" class="ticker-item"><span class="ticker-icon">💱</span>محول العملات</a><a href="/tools/bmi-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة BMI</a><a href="/tools/hashtag-generator.html" class="ticker-item"><span class="ticker-icon">#️⃣</span>مولد هاشتاقات عربي</a><a href="/tools/discount-calculator.html" class="ticker-item"><span class="ticker-icon">🏷️</span>حاسبة الخصم</a><a href="/tools/vat-calculator.html" class="ticker-item"><span class="ticker-icon">🧾</span>حاسبة الضريبة VAT</a><a href="/tools/age-calculator.html" class="ticker-item"><span class="ticker-icon">🎂</span>حاسبة العمر</a><a href="/tools/ideal-weight-calculator.html" class="ticker-item"><span class="ticker-icon">⚖️</span>حاسبة الوزن المثالي</a><a href="/tools/savings-calculator.html" class="ticker-item"><span class="ticker-icon">💰</span>حاسبة التوفير والاستثمار</a><a href="/tools/password-generator.html" class="ticker-item"><span class="ticker-icon">🔐</span>مولد كلمات المرور</a><a href="/tools/hijri-converter.html" class="ticker-item"><span class="ticker-icon">🌙</span>محول الهجري</a></div></div></div>
+<header class="header"><div class="header-inner"><a href="/" class="logo"><span class="logo-icon">🛠</span><span>SP5 Tools</span></a><button class="menu-toggle" aria-label="القائمة">☰</button><nav class="nav"><a href="/">الرئيسية</a><a href="/#financial">حاسبات مالية</a><a href="/#converter">محولات</a><a href="/#security">أدوات أمنية</a><a href="/#text">أدوات نصية</a><a href="/pages/privacy.html">سياسة الخصوصية</a></nav></div></header>
+<nav class="breadcrumb"><a href="/">الرئيسية</a><span class="separator">/</span><a href="/#security">أدوات أمنية</a><span class="separator">/</span><span class="current">مولد UUID</span></nav>
+<main class="tool-page">
+  <h1>🔢 مولد UUID/GUID</h1>
+  <p class="tool-desc">أنشئ معرفات UUID فريدة بسهولة. اختر بين UUID v4 (عشوائي) و UUID v1 (بالوقت)، وحدد العدد والصيغة المناسبة. مثالي للمطورين والمبرمجين.</p>
+  <div class="share-bar" style="max-width:600px;margin:15px auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:.85rem;color:#64748b">مشاركة:</span><a href="#" onclick="shareOn('facebook')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1877f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>فيسبوك</a><a href="#" onclick="shareOn('twitter')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#1da1f2;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>تويتر</a><a href="#" onclick="shareOn('whatsapp')" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#25d366;color:#fff;border-radius:6px;text-decoration:none;font-size:.8rem"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.42 4.432-9.849 9.855-9.849 2.629.001 5.108 1.025 6.974 2.886a9.835 9.835 0 012.889 6.973c-.003 5.421-4.432 9.849-9.856 9.849m8.386-18.233C18.092.552 15.138-.001 12.05 0 5.463 0 .104 5.334.1 11.893c0 2.096.547 4.146 1.59 5.966L0 24l6.304-1.654a11.88 11.88 0 005.683 1.448h.005c6.585 0 11.946-5.355 11.949-11.934.002-3.191-1.242-6.192-3.497-8.434z"/></svg>واتساب</a></div>
+<script>function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}</script>
+  <div class="ad-slot"></div>
+  <div class="calc-box">
+    <div class="form-group"><label for="uuidVersion">📌 نوع UUID</label><select id="uuidVersion"><option value="v4">UUID v4 (عشوائي)</option><option value="v1">UUID v1 (بالوقت)</option></select></div>
+    <div class="form-group"><label for="uuidCount">🔢 العدد (1-100)</label><input type="number" id="uuidCount" value="5" min="1" max="100"></div>
+    <div class="form-group"><label for="uuidCase">🔤 حالة الأحرف</label><select id="uuidCase"><option value="lower">أحرف صغيرة (lowercase)</option><option value="upper">أحرف كبيرة (UPPERCASE)</option></select></div>
+    <div class="form-group"><label for="uuidHyphens">➖ الشرطات</label><select id="uuidHyphens"><option value="with">مع شرطات (with hyphens)</option><option value="without">بدون شرطات (without hyphens)</option></select></div>
+    <button type="button" class="btn-calc" onclick="generateUUIDs()" style="width:100%">🔢 توليد UUID</button>
+  </div>
+  <div id="result" style="max-width:600px;margin:20px auto"></div>
+  <div class="ad-slot"></div>
+  <div class="tool-content">
+    <h2>ما هو UUID؟</h2>
+    <p>UUID (Universally Unique Identifier) هو معرف فريد عالمي مكون من 128 بت، يُستخدم لتعريف الموارد بشكل فريد دون الحاجة إلى خادم مركزي. يتكون UUID من 32 حرفاً سداسياً عشراً (hexadecimal) مقسمة إلى 5 مجموعات بشرطات: 8-4-4-4-12. مولد UUID من SP5 Tools يتيح لك إنشاء UUID v4 عشوائي أو UUID v1 بالوقت مع خيارات تخصيص متعددة.</p>
+    <p>يُستخدم UUID على نطاق واسع في تطوير البرمجيات: معرفات قواعد البيانات، مفاتيح API، معرفات الجلسات، أسماء الملفات الفريدة، ومعرفات الطلبات في الأنظمة الموزعة. الميزة الرئيسية لـ UUID هي أنه يمكن لأي شخص إنشاؤه دون التعارض مع أي شخص آخر.</p>
+    <h3>الفرق بين UUID v4 و v1</h3>
+    <ul>
+      <li><strong>UUID v4 (عشوائي):</strong> يُنشأ عشوائياً بالكامل باستخدام 122 بت من العشوائية. مناسب لمعظم التطبيقات حيث الخصوصية مهمة. احتمالية التكرار ضئيلة جداً (1 في 5.3×10³⁶).</li>
+      <li><strong>UUID v1 (بالوقت):</strong> يُنشأ باستخدام الطابع الزمني الحالي (100 نانوثانية) وعنوان MAC للجهاز. يمكن تتبع وقت الإنشاء والجهاز الذي أنشأه. مناسب للتطبيقات التي تحتاج ترتيباً زمنياً.</li>
+    </ul>
+    <h2>كيف تستخدم مولد UUID؟</h2>
+    <p>اختر نوع UUID (v4 أو v1)، حدد العدد المطلوب (1-100)، اختر حالة الأحرف (أحرف صغيرة أو كبيرة)، واختر ما إذا كنت تريد الشرطات أم لا. اضغط على زر "توليد UUID" لتحصل على المعرفات فوراً. يمكنك نسخ جميع المعرفات بضغطة زر واحدة.</p>
+    <p>مولد UUID مثالي للمطورين الذين يحتاجون معرفات فريدة لقواعد البيانات أو مفاتيح API أو أي غرض يتطلب تفرداً عالمياً. الأداة تعمل بالكامل في متصفحك ولا ترسل أي بيانات إلى الخادم.</p>
+    <div class="ad-slot"></div>
+    <h2>الأسئلة الشائعة</h2>
+    <div class="faq-item"><strong>ما هو UUID؟</strong><p>UUID (Universally Unique Identifier) هو معرف فريد عالمي مكون من 128 بت، يُستخدم لتعريف الموارد بشكل فريد دون الحاجة إلى خادم مركزي.</p></div>
+    <div class="faq-item"><strong>ما الفرق بين UUID v4 و v1؟</strong><p>UUID v4 يُنشأ عشوائياً بالكامل. UUID v1 يُنشأ باستخدام الطابع الزمني وعنوان MAC للجهاز، مما يجعله قابلاً للتتبع.</p></div>
+    <div class="faq-item"><strong>هل UUID فريد حقاً؟</strong><p>نعم، احتمالية تكرار UUID v4 ضئيلة جداً (1 في 5.3×10³⁶). يمكنك إنشاء مليارات المعرفات دون قلق من التكرار.</p></div>
+    <div class="faq-item"><strong>ما الفرق بين UUID و GUID؟</strong><p>لا فرق. GUID (Globally Unique Identifier) هو نفس UUID لكنه مصطلح تستخدمه Microsoft. كلاهما نفس المواصفة RFC 4122.</p></div>
+    <div class="faq-item"><strong>هل يمكنني استخدام UUID كمفتاح أساسي في قاعدة البيانات؟</strong><p>نعم، لكن UUID أبطأ من المفاتيح الرقمية المتزايدة (auto-increment) لأنه أكبر حجماً (128 بت مقابل 32/64 بت). مناسب للأنظمة الموزعة حيث تحتاج معرفات فريدة عالمياً.</p></div>
+  </div>
+</main>
+<div class="related-tools" style="max-width:800px;margin:30px auto;padding:0 15px">
+  <h2 style="font-size:1.2rem;color:#2563eb;margin-bottom:12px;border-bottom:2px solid #e5e7eb;padding-bottom:8px">أدوات ذات صلة</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px">
+    <a href="/tools/password-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🔐</span> مولد كلمات المرور</a>
+    <a href="/tools/hashtag-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">#️⃣</span> مولد هاشتاقات</a>
+    <a href="/tools/meta-tag-generator.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">🏷️</span> مولد Meta Tags</a>
+    <a href="/tools/word-counter.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">📝</span> عداد الكلمات</a>
+    <a href="/tools/text-diff.html" style="display:block;padding:10px 12px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#1e293b;font-size:.85rem"><span style="font-size:1.2rem">📊</span> مقارنة النصوص</a>
+  </div>
+</div>
+<footer class="footer"><div class="footer-inner"><div><h4>SP5 Tools</h4><p style="font-size:0.85rem;opacity:0.8;margin-top:8px;">أدوات مجانية أونلاين سريعة وآمنة. بدون تسجيل، بدون تسريب بيانات.</p></div><div><h4>حاسبات مالية</h4><a href="/tools/loan-calculator.html">حاسبة القروض</a><a href="/tools/salary-calculator.html">حاسبة الرواتب</a><a href="/tools/compound-interest.html">حاسبة الفائدة المركبة</a><a href="/tools/discount-calculator.html">حاسبة الخصم</a><a href="/tools/vat-calculator.html">حاسبة الضريبة VAT</a><a href="/tools/fuel-calculator.html">حاسبة استهلاك الوقود</a><a href="/tools/ratio-calculator.html">حاسبة النسبة والتناسب</a><a href="/tools/savings-calculator.html">حاسبة التوفير والاستثمار</a><a href="/tools/scientific-calculator.html">آلة حاسبة علمية</a></div><div><h4>محولات</h4><a href="/tools/currency-converter.html">محول العملات</a><a href="/tools/hijri-converter.html">محول الهجري</a><a href="/tools/date-calculator.html">حاسبة التاريخ</a><a href="/tools/temperature-converter.html">محول الحرارة</a><a href="/tools/timezone-converter.html">محول المنطقة الزمنية</a></div><div><h4>روابط مهمة</h4><a href="/pages/privacy.html">سياسة الخصوصية</a><a href="/pages/terms.html">شروط الاستخدام</a><a href="/pages/about.html">من نحن</a><a href="/pages/contact.html">اتصل بنا</a><a href="/pages/disclaimer.html">إخلاء المسؤولية</a><a href="/pages/cookies.html">سياسة الكوكيز</a></div></div><div class="footer-bottom">© 2026 SP5 Tools — جميع الحقوق محفوظة. أدوات مجانية للجميع.</div></footer>
+<script src="/js/main.js?v=20260621a"></script>
+<script>
+function shareOn(platform){var u=window.location.href,t=document.title;var urls={facebook:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),twitter:'https://twitter.com/intent/tweet?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),whatsapp:'https://wa.me/?text='+encodeURIComponent(t+' '+u)};window.open(urls[platform],'share','width=600,height=400');return false;}
+
+function generateUUIDv4(){
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){
+    var r=Math.random()*16|0;
+    return (c==='x'?r:(r&0x3|0x8)).toString(16);
+  });
+}
+
+function generateUUIDv1(){
+  var now=new Date();
+  var t=now.getTime();
+  var d=performance.now();
+  var ns=(t*10000+d*10+0x01b21dd213814000)%0x10000000000000000;
+  var timeHex=ns.toString(16).padStart(12,'0');
+  var clockSeq=Math.floor(Math.random()*0x3fff)|0x8000;
+  var node='';
+  for(var i=0;i<6;i++){
+    node+=Math.floor(Math.random()*256).toString(16).padStart(2,'0');
+  }
+  // Set multicast bit
+  node=node.substring(0,1)+(parseInt(node[1],16)|2).toString(16)+node.substring(2);
+  return timeHex.substring(8,12)+'-'+timeHex.substring(4,8)+'-1'+timeHex.substring(1,4)+'-'+clockSeq.toString(16).padStart(4,'0')+'-'+node;
+}
+
+function formatUUID(uuid,caseType,hyphens){
+  if(hyphens==='without')uuid=uuid.replace(/-/g,'');
+  if(caseType==='upper')uuid=uuid.toUpperCase();
+  return uuid;
+}
+
+function generateUUIDs(){
+  var version=document.getElementById('uuidVersion').value;
+  var count=parseInt(document.getElementById('uuidCount').value);
+  var caseType=document.getElementById('uuidCase').value;
+  var hyphens=document.getElementById('uuidHyphens').value;
+
+  if(isNaN(count)||count<1)count=1;
+  if(count>100)count=100;
+
+  var uuids=[];
+  for(var i=0;i<count;i++){
+    var uuid=version==='v4'?generateUUIDv4():generateUUIDv1();
+    uuids.push(formatUUID(uuid,caseType,hyphens));
+  }
+
+  var html='<h3 style="text-align:center;color:#1e40af;margin-bottom:16px">🔢 المعرفات المُنشأة</h3>';
+  html+='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">';
+  html+='<span style="font-weight:600;color:#1e293b;font-size:.9rem">UUID '+version.toUpperCase()+' ('+count+')</span>';
+  html+='<button class="btn-copy" onclick="copyUUIDs()">📋 نسخ الكل</button>';
+  html+='</div>';
+  html+='<div class="uuid-output" id="uuidOutput">'+uuids.join('\n')+'</div>';
+  html+='<div class="uuid-count">تم توليد '+count+' معرف UUID '+version.toUpperCase()+'</div>';
+
+  document.getElementById('result').innerHTML=html;
+}
+
+function copyUUIDs(){
+  var el=document.getElementById('uuidOutput');
+  var text=el.textContent||el.innerText;
+  var ta=document.createElement('textarea');
+  ta.value=text;
+  document.body.appendChild(ta);
+  ta.select();
+  document.execCommand('copy');
+  document.body.removeChild(ta);
+  var btn=document.querySelector('.btn-copy');
+  btn.textContent='✅ تم النسخ!';
+  setTimeout(function(){btn.textContent='📋 نسخ الكل';},2000);
+}
+</script>
+</body>
+</html>
